@@ -1,6 +1,6 @@
 http://localhost {
     gzip
-    root static/
+    root landing/
 
     upframe {
         db_user root
