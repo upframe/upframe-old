@@ -1,198 +1,136 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+* {
+ box-sizing: border-box;
 }
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+body {
+ font-family: 'Open Sans', sans-serif;
+ color: #212121;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+nav {
+ background-color: #fff;
+ line-height: 4em;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+nav ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ text-align: right;
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+nav ul li {
+ display: inline-block;
+ height: 4em;
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+nav a {
+ display: block;
+ text-decoration: none;
+ color: inherit;
+ padding: 0 .5em;
+ font-weight: 800;
 }
 
-textarea {
-    resize: vertical;
+nav ul li:first-of-type {
+ float: left;
 }
 
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+nav img {
+ max-height: 4em;
 }
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+/* CLASSES */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-
+.container {
+ max-width: 960px;
+ width: 90%;
+ margin: 0 auto;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-
+#heading {
+ width: 100%;
+ height: calc(100vh - 4em);
+ text-align: center;
+ background-color: #FF3855;
+ position: relative;
+ color: #fff;
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
+#heading>div {
+ position: relative;
+ top: 50%;
+ transform: translateY(-50%);
+ width: 80%;
+ margin: 0 auto;
 }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+#heading h1 {
+ margin-top: 0;
+ font-size: 8em;
+ margin-bottom: .4em;
 }
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+#heading input {
+ padding: 0;
+ text-align: center;
+ border: 0;
+ font-size: 1.5em;
+ height: 70px;
+ transition: .2s ease-in-out;
+ border-bottom: 2px solid white;
+ background: transparent;
+ color: #fff;
+ width: 0;
+ z-index: 0;
 }
 
-.invisible {
-    visibility: hidden;
+#heading input.active {
+ width: 100%;
 }
 
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+#heading input:focus, #heading input:hover {
+ outline: 0;
 }
 
-.clearfix:after {
-    clear: both;
+#email {
+ position: relative;
+ width: 70%;
+ margin: 0 auto;
 }
 
-.clearfix {
-    *zoom: 1;
+#email span {
+ position: absolute;
+ top: 0;
+ left: 0;
+ display: block;
+ width: 100%;
+ height: 100%;
+ line-height: 70px;
+ font-size: 1.5em;
+ color: rgba(255, 255, 255, 0.5);
+ cursor: text;
+ z-index: 1;
+ transition: .2s ease all;
 }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
+#email.active span {
+ opacity: 1;
+ transform: translateX(-50%);
+ z-index: 0;
+}
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+#email.active input {
+ width: 100%;
+ z-index: 1;
+}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+@keyframes input-text-to-left {
+ from {
+  text-align: center;
+ }
+ to {
+  text-align: left;
+ }
 }

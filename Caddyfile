@@ -1,17 +1,9 @@
 http://localhost {
     gzip
-    root landing/
-
-    # Enables the templates
+    root main/
     templates
-
-    # Blocks the requests to /includes folder
     internal /includes
-
-    # Strips the extension '.html' from the URLs
     ext .html
-
-    # Handles the errors
     errors {
         log errors.log
         404 404.html

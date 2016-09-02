@@ -1,2 +1,4 @@
 02/Sep/2016:12:17:42 +0100 [ERROR 500 /] open templates\index.tmpl: The system cannot find the path specified.
 02/Sep/2016:12:17:43 +0100 [NOTICE 404 /favicon.ico] could not load error page: open fest\404.html: The system cannot find the file specified.
+02/Sep/2016:15:02:24 +0100 [ERROR 500 /] template: index.html:8:11: executing "index.html" at <.Include>: error calling Include: open landing\includes\head.html: The system cannot find the path specified.
+02/Sep/2016:15:02:24 +0100 [NOTICE 404 /favicon.ico] could not load error page: open landing\404.html: The system cannot find the file specified.
