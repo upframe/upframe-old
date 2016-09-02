@@ -53,6 +53,10 @@ nav img {
  margin: 0 auto;
 }
 
+.text {
+    max-width: 600px;
+}
+
 #heading {
  width: 100%;
  height: calc(100vh - 4em);

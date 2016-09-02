@@ -47,6 +47,7 @@ nav img {
 
 /* CLASSES */
 
+
 .container {
  max-width: 960px;
  width: 90%;
@@ -129,6 +130,7 @@ nav img {
  width: 100%;
  z-index: 1;
 }
+
 
 @keyframes input-text-to-left {
  from {
