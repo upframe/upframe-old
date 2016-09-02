@@ -1,6 +1,6 @@
 http://localhost {
     gzip
-    root main/
+    root landing/
     templates
     internal /includes
     ext .html
