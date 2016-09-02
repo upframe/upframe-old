@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     span.addEventListener("click", () => {
         input.focus();
         input.classList.add("active");
-        span.style.textAlign = "left";
     });
 
     input.addEventListener("keyup", function(e) {
@@ -20,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
-
 
     input.addEventListener("blur", () => {
         if (input.value == "") {
