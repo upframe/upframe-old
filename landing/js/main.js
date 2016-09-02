@@ -4,12 +4,33 @@ document.addEventListener("DOMContentLoaded", () => {
     let email = document.querySelector("#email");
 
     span.addEventListener("click", () => {
-        email.classList.add("active");
+        input.focus();
+        input.classList.add("active");
+        span.style.textAlign = "left";
     });
+
+    input.addEventListener("keyup", function(e) {
+        if(input.value.trim() != ""){
+            // working
+            span.classList.add("hidden");
+        } else {
+            console.log("empty input")
+            if(span.classList[0] == "hidden") {
+                span.classList.remove("hidden");
+            }
+        }
+    });
+
 
     input.addEventListener("blur", () => {
         if (input.value == "") {
-            email.classList.remove("active");
+            input.classList.remove("active");
+            span.style.textAlign = "center"
         }
     });
 });
+
+
+function onfoc() {
+    console.log("On focus");
+}
