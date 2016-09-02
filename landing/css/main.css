@@ -36,6 +36,10 @@ nav ul li:first-of-type {
  float: left;
 }
 
+nav ul li:last-child a {
+ padding-right: 0;
+}
+
 nav img {
  max-height: 4em;
 }
