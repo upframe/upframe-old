@@ -1,0 +1,11 @@
+{{ define "title" }}Login | Upframe{{ end }}
+{{ define "content" }}
+
+<form method="post" id="login">
+    <h1>Login</h1>
+    <div id="form-error"></div>
+    <input type="text" placeholder="Email" name="email" required>
+    <input type="password" placeholder="Password" name="password" required>
+    <button type="submit">Login</button>
+</form>
+{{ end }}

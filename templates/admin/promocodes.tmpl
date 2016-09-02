@@ -1,0 +1,53 @@
+{{ define "title" }}Promocodes | Upframe{{ end }}
+{{ define "content" }}
+<div class="container">
+<h1>Promocodes</h1>
+
+<table id="promocodes">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Code</th>
+            <th>Discount</th>
+            <th>Expiration Date (UTC)</th>
+            <th>Deactivated</th>
+            <th></th>
+        </tr>
+    </thead>
+    {{range $promocode := .Data}}
+    <tr>
+        <td>{{ $promocode.ID }}</td>
+        <td>{{ $promocode.Code }}</td>
+        <td>{{ $promocode.Discount }}</td>
+        <td>{{ $promocode.Expires.Format "02 Jan 06 15:04 MST" }}</td>
+        <td><input type="checkbox" disabled value="second_checkbox" {{ if $promocode.Deactivated }}checked{{ end }}></td>
+        <td><button>&#9998;</button></td>
+    </tr>
+    {{ end }}
+</table>
+</div>
+
+<form method="POST" id="single-form">
+    <h1>Promocode #0</h1>
+
+    <div>
+        <input name="ID" id="ID" required readonly type="hidden" value="">
+
+        <label for="Code">Code</label>
+        <input name="Code" id="Code" required type="text" value="">
+
+        <label for="Discount">Discount</label>
+        <input name="Discount" id="Discount" required type="number" value="">
+
+        <label for="Expires">Expiration Date (UTC)</label>
+        <input name="Expires" id="Expires" required type="datetime-local" value="">
+
+        <label for="Disabled">Disabled</label>
+        <input name="Disabled" id="Disabled" type="checkbox">
+        
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+
+{{ end }}
