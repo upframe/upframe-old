@@ -1,9 +1,9 @@
 http://8df5v1s98d51vcxa4815scdx.dynip.sapo.pt,
 http://localhost {
     gzip
-    root landing/
-    templates
+    root ./upframe.xyz/
     internal /includes
+    templates
     ext .html
     errors {
         log errors.log
@@ -13,7 +13,8 @@ http://localhost {
 
 http://fest.localhost {
     gzip
-    root fest/
+    root ./fest.upframe.xyz/
+    internal /templates
 
     fest {
         db_user root
@@ -21,6 +22,7 @@ http://fest.localhost {
         db_host 127.0.0.1
         db_name upframe
 
+        # This are only test data
         smtp_user noreply@bitsn.me
         smtp_pass noreplytesteupframe
         smtp_host smtp.mailgun.org
