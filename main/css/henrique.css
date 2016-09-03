@@ -23,7 +23,7 @@
  padding: 1em;
 }
 
-.faq>div div {
+.faq>div > div {
  margin-bottom: 1em;
  background-color: #FF3855;
  break-inside: avoid;
