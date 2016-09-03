@@ -1,7 +1,7 @@
 http://8df5v1s98d51vcxa4815scdx.dynip.sapo.pt,
 http://localhost {
     gzip
-    root ./upframe.xyz/
+    root ./main/
     internal /includes
     templates
     ext .html
@@ -13,7 +13,7 @@ http://localhost {
 
 http://fest.localhost {
     gzip
-    root ./fest.upframe.xyz/
+    root ./fest/
     internal /templates
 
     fest {
