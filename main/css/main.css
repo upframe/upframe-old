@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font: 1em/1.6 'Open Sans', sans-serif;
     color: #212121;
 }
 
@@ -19,6 +19,7 @@ nav {
     left: 0;
     z-index: 999999;
     width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -54,6 +55,19 @@ nav ul li:first-of-type {
     margin-right: auto;
 }
 
+nav ul li:first-of-type a {
+
+margin: 0;
+
+border: 0 !important;
+
+font-weight: normal;
+
+display: inherit;
+
+transition: none;
+}
+
 nav ul li:last-child a {
     padding-right: 0;
 }
@@ -77,40 +91,49 @@ nav img {
 
 #heading {
     width: 100%;
-    height: calc(100vh - 4em);
+    height: calc(100vh - 5em);
     text-align: center;
-    background-color: #FF3855;
     position: relative;
     color: #fff;
     margin-top: 5em;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom right, #121952, #3d4694);
+    /* background: linear-gradient(to bottom right, #00E5D4, #01887e); */
+    /* background: linear-gradient(to bottom right, #FF3855, #b13345); */
 }
 
 #heading>div {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 80%;
+    width: 90%;
+    max-width: 980px;
     margin: 0 auto;
 }
 
 #heading h1 {
     margin-top: 0;
-    font-size: 8em;
+    font-size: 11vw;
     margin-bottom: .4em;
+}
+
+@media (min-width: 1132px) {
+    #heading h1 {
+        font-size: 8em;
+    }
 }
 
 
 /* FAQ */
 
 .faq {
-    background-color: #121952;
+    background-color: #fff;
 }
 
 .faq>div:first-child {
     text-align: center;
-    color: #fff;
+    /* color: #fff; */
     padding: .5em 0;
     font-size: 3em;
 }
@@ -120,38 +143,27 @@ nav img {
 }
 
 .faq>div:nth-child(2) {
-    /* display: flex; */
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
     column-count: 3;
     column-gap: 1em;
     padding: 1em;
 }
 
 .faq>div>div {
-    margin-bottom: 1em;
-    background-color: #FF3855;
+    background-color: #ffffff;
     break-inside: avoid;
     break-before: avoid;
-    color: #fff;
-    padding: 2em;
+    padding: 0 2em 1em;
 }
 
-.faq>div div:nth-child(odd) {
-    background-color: #E3FD31;
-    color: #212121;
-}
+.faq>div div:nth-child(odd) {}
 
 .faq>div h3 {
-    margin: -2em -2em 0 -2em;
-    padding: 2em 2em 1em 2em;
-    background-color: rgba(0, 0, 0, 0.05);
     ,
     : 0 font-size: 1;
-    font-size: 1em;
-    zoom: 1.5;
-    text-align: center;
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #464141;
+    font-weight: 800;
 }
 
 .faq>div p {}
@@ -161,7 +173,8 @@ nav img {
 
 #email {
     position: relative;
-    width: 70%;
+    width: 100%;
+    min-width: 500px;
     margin: 0 auto;
 }
 
@@ -180,7 +193,8 @@ nav img {
 }
 
 #heading input.active {
-    width: 40%;
+    width: 100%;
+    max-width: 300px;
     padding: 0px 8px;
 }
 
