@@ -22,43 +22,50 @@
         <link rel="manifest" href="/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <meta name="theme-color" content="#00e5d4">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <nav>
-            <ul class="container">
-                <li><a href="/"><img src="/img/logo.png"></a></li>
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#faq">FAQ</a></li>
+            <ul>
+                <li><a href="/"><img src="/img/logo.svg"></a></li>
+                <li><a href="#faq" data-scroll >FAQ</a></li>
+                <li><a href="#contacts" data-scroll >Contacts</a></li>
             </ul>
         </nav>
 
         <div id="heading">
             <div>
                 <h1>Do you want to know more?</h1>
+                <input type="text" placeholder="Tell us your email" required>
+                <a href="#faq" data-scroll><img src="/img/arrow.png"></a>
+            </div>
+        </div>
 
-                <div id="email">
-                    <input type="text" ondragenter="alert("test");" required>
-                    <span>Just tell us your email...</span>
+        {{ .Include "includes/faq.html" }}
+
+        <div id="contacts">
+            <div>
+                <div>
+                    <h2>Contacts</h2>
+                    <p><a href="mailto:info@upframe.xyz">info@upframe.xyz</a></p>
+                </div>
+                <div>
+                    <h2>Follow us</h2>
+                    <p><a href="https://www.facebook.com/upframe">Facebook</a> / <a href="https://twitter.com/upframexyz">Twitter</a></p>
                 </div>
             </div>
         </div>
 
+        <footer>
+            <p>&copy; 2016 Upframe. All right reserved.</p>
+        </footer>
 
-            {{ .Include "includes/faq.html" }}
-
-
-        <div>
-            <h2><a name="contacts">Contacts</a></h2>
-
-        </div>
-
-        {{ .Include "includes/footer.html" }}
-
-        <script src="js/main.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script>
+            smoothScroll.init();
+        </script>
     </body>
 </html>
