@@ -16,11 +16,13 @@ a {
     background: #fff;
 }
 
-#site-nav ul {
+#site-nav > ul {
     padding: 0;
     list-style: none;
     width: 95%;
     margin: 0 auto;
+    display: flex;
+    align-content: center;
 }
 
 #site-nav li {
@@ -28,11 +30,24 @@ a {
     vertical-align: middle;
 }
 
+#site-nav > ul > li:last-child {
+    margin-left: auto;
+}
+
 #site-nav a {
     display: block;
     text-decoration: none;
     color: inherit;
     margin: 2em 0.5em;
+}
+
+#site-nav > ul >li > ul {
+    position: absolute;
+    width: auto;
+}
+
+#site-nav li ul li {
+    display: block;
 }
 
 #site-nav img {

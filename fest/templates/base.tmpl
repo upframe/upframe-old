@@ -12,16 +12,21 @@
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/store">Store</a></li>
-            {{ if .IsLoggedIn }}
-            <li><a href="/cart">Cart</a></li>
-            <li><a href="/checkout">Checkout</a></li>
-            <li><a href="/settings">Settings</a></li>
-            <li><a href="/logout">Logout</a></li>
-            <li><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}?s=200" /></li>
-            {{ end }}
             {{ if not .IsLoggedIn }}
             <li><a href="/register">Register</a></li>
             <li><a href="/login">Login</a></li>
+            {{ end }}
+            {{ if .IsLoggedIn }}
+            <li><a href="/cart">Cart</a></li>
+            <li>
+                <a><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}?s=200" /><span>{{ .Session.FirstName }} {{ .Session.LastName }}</span></a>
+                <ul>
+                    <li><a href="/settings">Settings</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                    {{ if .Session.IsAdmin }}<li><a href="/admin">Admin</a></li>{{ end }}
+                </ul>
+
+            </li>
             {{ end }}
         </ul>
     </nav>
