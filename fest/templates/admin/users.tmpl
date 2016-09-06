@@ -1,45 +1,45 @@
 {{ define "title" }}Users | Upframe {{ end }}
 {{ define "content" }}
-<div class="container">
-<h1>Users</h1>
+<main role="main" class="container backend">
+    <h1>Users</h1>
 
-<table id="users">
-    <thead>
+    <table id="users">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Invites</th>
+                <th>Credit</th>
+                <th>Confirmed</th>
+                <th>Referral</th>
+                <th>Referrer</th>
+                <th>Admin</th>
+                <th>Deactivated</th>
+                <th></th>
+            </tr>
+        </thead>
+        {{range $user := .Data}}
         <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Address</th>
-            <th>Invites</th>
-            <th>Credit</th>
-            <th>Confirmed</th>
-            <th>Referral</th>
-            <th>Referrer</th>
-            <th>Admin</th>
-            <th>Deactivated</th>
-            <th></th>
+            <td data-name="ID">{{ $user.ID }}</td>
+            <td data-name="FirstName">{{ $user.FirstName }}</td>
+            <td data-name="LastName">{{ $user.LastName }}</td>
+            <td data-name="Email">{{ $user.Email }}</td>
+            <td data-name="Address">{{ if $user.Address.Valid }}{{ $user.Address.String }}{{ else }}null{{ end }}</td>
+            <td data-name="Invites">{{ $user.Invites }}</td>
+            <td data-name="Credit">{{ $user.Credit }}</td>
+            <td data-name="Confirmed"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Confirmed }}checked{{ end }}></td>
+            <td>{{ $user.Referral }}</td> <!-- This is readyonly; at least for now. -->
+            <td>{{ if $user.Referrer.Valid }}{{ $user.Referrer.Int64 }}{{ else }}null{{ end }}</td> <!-- This is readyonly; at least for now. -->
+            <td data-name="Admin"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Admin }}checked{{ end }}></td>
+            <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Deactivated }}checked{{ end }}></td>
+            <td><button class="btnEdit">&#9998;</button></td>
         </tr>
-    </thead>
-    {{range $user := .Data}}
-    <tr>
-        <td data-name="ID">{{ $user.ID }}</td>
-        <td data-name="FirstName">{{ $user.FirstName }}</td>
-        <td data-name="LastName">{{ $user.LastName }}</td>
-        <td data-name="Email">{{ $user.Email }}</td>
-        <td data-name="Address">{{ $user.Address }}</td>
-        <td data-name="Invites">{{ $user.Invites }}</td>
-        <td data-name="Credit">{{ $user.Credit }}</td>
-        <td data-name="Confirmed"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Confirmed }}checked{{ end }}></td>
-        <td>{{ $user.Referral }}</td> <!-- This is readyonly; at least for now. -->
-        <td>{{ $user.Referrer }}</td> <!-- This is readyonly; at least for now. -->
-        <td data-name="Admin"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Admin }}checked{{ end }}></td>
-        <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Deactivated }}checked{{ end }}></td>
-        <td><button class="btnEdit">&#9998;</button></td>
-    </tr>
-    {{ end }}
-</table>
-</div>
+        {{ end }}
+    </table>
+</main>
 
 <form method="POST" id="single-form">
     <h1>User #<span id="barID"></span></h1>
@@ -65,19 +65,18 @@
         <label for="Credit">Credit</label>
         <input name="Credit" id="Credit" required type="number" value="">
 
-        <label for="Confirmed">Confirmed</label>
         <input name="Confirmed" id="Confirmed" required type="checkbox">
+        <label for="Confirmed">Confirmed</label>
 
-        <label for="Admin">Admin</label>
         <input name="Admin" id="Admin" type="checkbox">
+        <label for="Admin">Admin</label>
 
-        <label for="Deactivated">Disabled</label>
         <input name="Deactivated" id="Deactivated" type="checkbox">
+        <label for="Deactivated">Disabled</label>
 
         <button type="submit">Save</button>
-    </form>
-</div>
-
+    </div>
+</form>
 
 <script src="/js/backend.js"></script>
 {{ end }}

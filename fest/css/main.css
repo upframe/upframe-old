@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 a {
     color: inherit;
 }
@@ -15,9 +19,8 @@ a {
 #site-nav ul {
     padding: 0;
     list-style: none;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
-    max-width: 960px;
 }
 
 #site-nav li {
@@ -28,7 +31,7 @@ a {
 #site-nav a {
     display: block;
     text-decoration: none;
-    color: #212121;
+    color: inherit;
 }
 
 #form-error {
@@ -101,6 +104,25 @@ form#register button {
     padding: .7em 2em;
 }
 
+#single-form label {
+    margin-bottom: .5em;
+    display: block;
+    font-weight: bold;
+}
+
+#single-form input[type="checkbox"] {
+    display: inline-block;
+    width: 1em;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+#single-form input[type="checkbox"]~label {
+    width: calc(100% - 2em);
+    display: inline-block;
+}
+
 .shake {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 }
@@ -129,8 +151,7 @@ form#register button {
 /* BACK END */
 
 .container {
-    width: 90%;
-    max-width: 960px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -208,11 +229,13 @@ form#register button {
 }
 
 #single-form div {
-    padding: 2em;
+    padding: 1.5em;
+    overflow-y: auto;
+    display: block;
+    max-height: 80vh;
 }
 
 #single-form button {}
-
 
 .fadeIn {
     animation-name: fadeIn;
@@ -229,11 +252,19 @@ form#register button {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1 }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
 }

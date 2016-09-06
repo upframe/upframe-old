@@ -3,6 +3,7 @@
 <head>
     <title>{{ template "title" }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -16,6 +17,7 @@
             <li><a href="/checkout">Checkout</a></li>
             <li><a href="/settings">Settings</a></li>
             <li><a href="/logout">Logout</a></li>
+            <li><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}" /></li>
             {{ end }}
             {{ if not .IsLoggedIn }}
             <li><a href="/register">Register</a></li>

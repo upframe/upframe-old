@@ -1,33 +1,33 @@
 {{ define "title" }}Orders | Upframe {{ end }}
 {{ define "content" }}
-<div class="container">
-<h1>Orders</h1>
+<main role="main" class="container backend">
+    <h1>Orders</h1>
 
-<table id="orders">
-    <thead>
+    <table id="orders">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>User ID</th>
+                <th>Product ID</th>
+                <th>Promocode ID</th>
+                <th>Value</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        {{range $order := .Data}}
         <tr>
-            <th>#</th>
-            <th>User ID</th>
-            <th>Product ID</th>
-            <th>Promocode ID</th>
-            <th>Value</th>
-            <th>Status</th>
-            <th></th>
+            <td data-name="ID">{{ $order.ID }}</td>
+            <td data-name="UserID">{{ $order.UserID }}</td>
+            <td data-name="ProductID">{{ $order.ProductID }}</td>
+            <td data-name="PromocodeID">{{ $order.PromocodeID }}</td>
+            <td data-name="Value">{{ $order.Value }}</td>
+            <td data-name="Status">{{ $order.Status }}</td>
+            <td><button class="btnEdit">&#9998;</button></td>
         </tr>
-    </thead>
-    {{range $order := .Data}}
-    <tr>
-        <td data-name="ID">{{ $order.ID }}</td>
-        <td data-name="UserID">{{ $order.UserID }}</td>
-        <td data-name="ProductID">{{ $order.ProductID }}</td>
-        <td data-name="PromocodeID">{{ $order.PromocodeID }}</td>
-        <td data-name="Value">{{ $order.Value }}</td>
-        <td data-name="Status">{{ $order.Status }}</td>
-        <td><button class="btnEdit">&#9998;</button></td>
-    </tr>
-    {{ end }}
-</table>
-</div>
+        {{ end }}
+    </table>
+</main>
 
 <form method="POST" id="single-form">
     <h1>Order #<span id="barID"></span></h1>
@@ -54,9 +54,8 @@
         <input name="Deactivated" id="Deactivated" type="checkbox">
 
         <button type="submit">Save</button>
-    </form>
-</div>
-
+    </div>
+</form>
 
 <script src="/js/backend.js"></script>
 {{ end }}

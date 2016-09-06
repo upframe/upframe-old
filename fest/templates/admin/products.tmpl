@@ -1,33 +1,33 @@
 {{ define "title" }}Products | Upframe {{ end }}
 {{ define "content" }}
-<div class="container">
-<h1>Products</h1>
+<main role="main" class="container backend">
+    <h1>Products</h1>
 
-<table id="products">
-    <thead>
+    <table id="products">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Picture</th>
+                <th>Deactivated</th>
+                <th></th>
+            </tr>
+        </thead>
+        {{range $product := .Data}}
         <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Picture</th>
-            <th>Deactivated</th>
-            <th></th>
+            <td data-name="ID">{{ $product.ID }}</td>
+            <td data-name="Name">{{ $product.Name }}</td>
+            <td data-name="Description">{{ $product.Description }}</td>
+            <td data-name="Price">{{ $product.Price }}</td>
+            <td data-name="Picture">{{ $product.Picture }}</td>
+            <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $product.Deactivated }}checked{{ end }}></td>
+            <td><button class="btnEdit">&#9998;</button></td>
         </tr>
-    </thead>
-    {{range $product := .Data}}
-    <tr>
-        <td data-name="ID">{{ $product.ID }}</td>
-        <td data-name="Name">{{ $product.Name }}</td>
-        <td data-name="Description">{{ $product.Description }}</td>
-        <td data-name="Price">{{ $product.Price }}</td>
-        <td data-name="Picture">{{ $product.Picture }}</td>
-        <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $product.Deactivated }}checked{{ end }}></td>
-        <td><button class="btnEdit">&#9998;</button></td>
-    </tr>
-    {{ end }}
-</table>
-</div>
+        {{ end }}
+    </table>
+</main>
 
 <form method="POST" id="single-form">
     <h1>Product #<span id="barID"></span></h1>
@@ -51,9 +51,8 @@
         <input name="Deactivated" id="Deactivated" type="checkbox">
 
         <button type="submit">Save</button>
-    </form>
-</div>
-
+    </div>
+</form>
 
 <script src="/js/backend.js"></script>
 {{ end }}
