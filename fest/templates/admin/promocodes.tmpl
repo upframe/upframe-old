@@ -16,19 +16,19 @@
     </thead>
     {{range $promocode := .Data}}
     <tr>
-        <td>{{ $promocode.ID }}</td>
-        <td>{{ $promocode.Code }}</td>
-        <td>{{ $promocode.Discount }}</td>
-        <td>{{ $promocode.Expires.Format "02 Jan 06 15:04 MST" }}</td>
-        <td><input type="checkbox" disabled value="second_checkbox" {{ if $promocode.Deactivated }}checked{{ end }}></td>
-        <td><button>&#9998;</button></td>
+        <td data-name="ID">{{ $promocode.ID }}</td>
+        <td data-name="Code">{{ $promocode.Code }}</td>
+        <td data-name="Discount">{{ $promocode.Discount }}</td>
+        <td data-name="Expires">{{ $promocode.Expires.Format "02 Jan 06 15:04 MST" }}</td>
+        <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $promocode.Deactivated }}checked{{ end }}></td>
+        <td><button class="btnEdit">&#9998;</button></td>
     </tr>
     {{ end }}
 </table>
 </div>
 
 <form method="POST" id="single-form">
-    <h1>Promocode #0</h1>
+    <h1>Promocode <span id="barID"></span></h1>
 
     <div>
         <input name="ID" id="ID" required readonly type="hidden" value="">
@@ -42,12 +42,13 @@
         <label for="Expires">Expiration Date (UTC)</label>
         <input name="Expires" id="Expires" required type="datetime-local" value="">
 
-        <label for="Disabled">Disabled</label>
-        <input name="Disabled" id="Disabled" type="checkbox">
-        
+        <label for="Deactivated">Disabled</label>
+        <input name="Deactivated" id="Deactivated" type="checkbox">
+
         <button type="submit">Save</button>
     </form>
 </div>
 
 
+<script src="/js/backend.js"></script>
 {{ end }}

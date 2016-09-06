@@ -1,0 +1,59 @@
+{{ define "title" }}Products | Upframe {{ end }}
+{{ define "content" }}
+<div class="container">
+<h1>Products</h1>
+
+<table id="products">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Picture</th>
+            <th>Deactivated</th>
+            <th></th>
+        </tr>
+    </thead>
+    {{range $product := .Data}}
+    <tr>
+        <td data-name="ID">{{ $product.ID }}</td>
+        <td data-name="Name">{{ $product.Name }}</td>
+        <td data-name="Description">{{ $product.Description }}</td>
+        <td data-name="Price">{{ $product.Price }}</td>
+        <td data-name="Picture">{{ $product.Picture }}</td>
+        <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $product.Deactivated }}checked{{ end }}></td>
+        <td><button class="btnEdit">&#9998;</button></td>
+    </tr>
+    {{ end }}
+</table>
+</div>
+
+<form method="POST" id="single-form">
+    <h1>Product #<span id="barID"></span></h1>
+
+    <div>
+        <input name="ID" id="ID" required readonly type="hidden" value="">
+
+        <label for="Name">Name</label>
+        <input name="Name" id="Name" required type="text" value="">
+
+        <label for="Description">Description</label>
+        <input name="Description" id="Description" required type="text" value="">
+
+        <label for="Price">Price</label>
+        <input name="Price" id="Price" required type="number" value="">
+
+        <label for="Picture">Picture</label>
+        <input name="Picture" id="Picture" required type="text" value="">
+
+        <label for="Deactivated">Disabled</label>
+        <input name="Deactivated" id="Deactivated" type="checkbox">
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+
+<script src="/js/backend.js"></script>
+{{ end }}

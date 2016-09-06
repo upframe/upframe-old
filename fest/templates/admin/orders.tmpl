@@ -1,0 +1,62 @@
+{{ define "title" }}Orders | Upframe {{ end }}
+{{ define "content" }}
+<div class="container">
+<h1>Orders</h1>
+
+<table id="orders">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>User ID</th>
+            <th>Product ID</th>
+            <th>Promocode ID</th>
+            <th>Value</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    {{range $order := .Data}}
+    <tr>
+        <td data-name="ID">{{ $order.ID }}</td>
+        <td data-name="User_id">{{ $order.UserID }}</td>
+        <td data-name="Product_id">{{ $order.ProductID }}</td>
+        <td data-name="Promocode_id">{{ $order.PromocodeID }}</td>
+        <td data-name="Value">{{ $order.Value }}</td>
+        <td data-name="Status">{{ $order.Status }}</td>
+        <td><button class="btnEdit">&#9998;</button></td>
+    </tr>
+    {{ end }}
+</table>
+</div>
+
+<form method="POST" id="single-form">
+    <h1>Order #<span id="barID"></span></h1>
+
+    <div>
+        <input name="ID" id="ID" required readonly type="hidden" value="">
+
+        <label for="User_id">User ID</label>
+        <input name="User_id" id="User_id" required type="number" value="">
+
+        <label for="Product_id">Product ID</label>
+        <input name="Product_id" id="Product_id" required type="number" value="">
+
+        <label for="Promocode_id">Promocode ID</label>
+        <input name="Promocode_id" id="Promocode_id" required type="number" value="">
+
+        <label for="Value">Value</label>
+        <input name="Value" id="Value" required type="text" value="">
+
+        <label for="Status">Promocode ID</label>
+        <input name="Status" id="Status" required type="number" value="">
+
+        <label for="Deactivated">Disabled</label>
+        <input name="Deactivated" id="Deactivated" type="checkbox">
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+
+<script src="/js/backend.js"></script>
+{{ end }}
