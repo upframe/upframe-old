@@ -17,7 +17,7 @@
             <li><a href="/checkout">Checkout</a></li>
             <li><a href="/settings">Settings</a></li>
             <li><a href="/logout">Logout</a></li>
-            <li><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}" /></li>
+            <li><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}?s=200" /></li>
             {{ end }}
             {{ if not .IsLoggedIn }}
             <li><a href="/register">Register</a></li>

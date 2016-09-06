@@ -25,13 +25,20 @@ a {
 
 #site-nav li {
     display: inline-block;
-    padding: 2em 0.5em;
+    vertical-align: middle;
 }
 
 #site-nav a {
     display: block;
     text-decoration: none;
     color: inherit;
+    margin: 2em 0.5em;
+}
+
+#site-nav img {
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
 }
 
 #form-error {
