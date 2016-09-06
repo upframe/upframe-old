@@ -22,9 +22,9 @@ http://fest.localhost {
         db_host 127.0.0.1
         db_name upframe
 
-        # This are only test data
-        smtp_user noreply@bitsn.me
-        smtp_pass noreplytesteupframe
+        # This are only test data/sandbox
+        smtp_user postmaster@sandboxef86c8c0316d4b7f9b64d99db9adb2e1.mailgun.org
+        smtp_pass 1310374930f9cc5368ead2bb8b1d2af1
         smtp_host smtp.mailgun.org
         smtp_port 465
     }
