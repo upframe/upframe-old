@@ -114,6 +114,19 @@ nav ul li:last-child a {
     margin: 0 auto;
     max-width: 1.5em;
     margin-top: 8em;
+    animation: 1s bounce infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0em);
+    }
+    75% {
+        transform: translateY(1em);
+    }
+    100% {
+        transform: translateY(0em);
+    }
 }
 
 #heading h1 {
