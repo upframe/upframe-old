@@ -30,9 +30,10 @@
         <td data-name="Address">{{ $user.Address }}</td>
         <td data-name="Invites">{{ $user.Invites }}</td>
         <td data-name="Credit">{{ $user.Credit }}</td>
-        <td data-name="Confirmed">{{ $user.Confirmed }}</td>
-        <td data-name="Referral">{{ $user.Referral }}</td>
-        <td data-name="Referrer">{{ $user.Referrer }}</td>
+        <td data-name="Confirmed"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Confirmed }}checked{{ end }}></td>
+        <td>{{ $user.Referral }}</td> <!-- This is readyonly; at least for now. -->
+        <td>{{ $user.Referrer }}</td> <!-- This is readyonly; at least for now. -->
+        <td data-name="Admin"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Admin }}checked{{ end }}></td>
         <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Deactivated }}checked{{ end }}></td>
         <td><button class="btnEdit">&#9998;</button></td>
     </tr>
@@ -67,11 +68,8 @@
         <label for="Confirmed">Confirmed</label>
         <input name="Confirmed" id="Confirmed" required type="checkbox">
 
-        <label for="Referral">Referral</label>
-        <input name="Referral" id="Referral" readonly required type="text" value="">
-
-        <label for="Referrer">Referrer</label>
-        <input name="Referrer" id="Referrer" readonly required type="text" value="">
+        <label for="Admin">Admin</label>
+        <input name="Admin" id="Admin" type="checkbox">
 
         <label for="Deactivated">Disabled</label>
         <input name="Deactivated" id="Deactivated" type="checkbox">
