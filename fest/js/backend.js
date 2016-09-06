@@ -14,29 +14,20 @@ function editHandler(btn) {
             let data = row.children[x].dataset.name;
             let input = document.querySelector("input[name=" + data + "]");
             let barID = document.querySelector("#barID");
-            console.log(data);
 
+            if (data == "ID") barID.innerHTML = input.value;
+
+            // @fabio, you just need to handle special cases :)
             switch (input.type) {
-                case "text":
-                    input.value = row.children[x].innerHTML;
-                    break;
-                case "number":
-                    input.value = row.children[x].innerHTML;
-                    break;
                 case "datetime-local":
                     input.value = new Date(row.children[x].innerHTML).toISOString().substr(0, 16);
                     break;
                 case "checkbox":
                     input.checked = row.children[x].children[0].checked;
                     break;
-                case "email":
+                default:
                     input.value = row.children[x].innerHTML;
-                    break;
-                case "hidden":
-                    input.value = row.children[x].innerHTML;
-                    barID.innerHTML = input.value;
             }
         }
     });
-
 }
