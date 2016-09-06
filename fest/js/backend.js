@@ -10,14 +10,13 @@ function editHandler(btn) {
         // get row data
         document.querySelector("#single-form").classList.add("fadeIn");
         var row = btn.parentElement.parentElement;
-        for(x = 0; x < row.childElementCount; x++) {
+        for(x = 0; x < row.childElementCount - 1; x++) {
             let data = row.children[x].dataset.name;
             let input = document.querySelector("input[name=" + data + "]");
             let barID = document.querySelector("#barID");
             console.log(data);
 
             switch(input.type) {
-                case "": continue; break;
                 case "text":
                     input.value = row.children[x].innerHTML;
                     break;
@@ -29,6 +28,9 @@ function editHandler(btn) {
                     break;
                 case "checkbox":
                     input.checked = row.children[x].children[0].checked;
+                    break;
+                case "email":
+                    input.value = row.children[x].innerHTML;
                     break;
                 case "hidden":
                     input.value = row.children[x].innerHTML;
