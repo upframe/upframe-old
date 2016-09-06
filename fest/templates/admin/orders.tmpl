@@ -20,7 +20,7 @@
             <td data-name="ID">{{ $order.ID }}</td>
             <td data-name="UserID">{{ $order.UserID }}</td>
             <td data-name="ProductID">{{ $order.ProductID }}</td>
-            <td data-name="PromocodeID">{{ $order.PromocodeID }}</td>
+            <td data-name="PromocodeID">{{ if $order.PromocodeID.Valid }}{{ $order.PromocodeID.Int64 }}{{ else }}null{{ end }}</td>
             <td data-name="Value">{{ $order.Value }}</td>
             <td data-name="Status">{{ $order.Status }}</td>
             <td><button class="btnEdit">&#9998;</button></td>

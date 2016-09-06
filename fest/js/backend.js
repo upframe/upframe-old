@@ -16,8 +16,7 @@ function editHandler(btn) {
             let barID = document.querySelector("#barID");
 
             if (data == "ID") barID.innerHTML = input.value;
-
-            // @fabio, you just need to handle special cases :)
+            
             switch (input.type) {
                 case "datetime-local":
                     input.value = new Date(row.children[x].innerHTML).toISOString().substr(0, 16);
