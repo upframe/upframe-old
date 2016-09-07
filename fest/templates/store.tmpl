@@ -1,4 +1,19 @@
 {{ define "title" }}Store | Upframe{{ end }}
 {{ define "content" }}
-<h1>Store</h1>
+<link rel="stylesheet" href="/css/banana.css">
+
+<main role="main" id="store">
+    <h1>Store</h1>
+
+    <div>
+    {{ range $product := .Data }}
+    <article class="product" data-id="{{ $product.ID }}">
+        <h2>{{ $product.Name }}</h2>
+        <img src="{{ $product.Picture }}">
+        <p>{{ $product.Description }}</p>
+        <p>{{ $product.Price }}€</p>
+    </article>
+    {{ end }}
+</div>
+</main>
 {{ end }}
