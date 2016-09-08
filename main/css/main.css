@@ -81,7 +81,7 @@ nav ul li:last-child a {
     position: relative;
     color: #fff;
     margin-top: 4em;
-    background: #121952;
+    background: url(https://static.pexels.com/photos/7097/people-coffee-tea-meeting.jpg) center center / cover;
 }
 
 #heading>div {
