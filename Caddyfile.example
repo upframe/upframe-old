@@ -1,4 +1,3 @@
-http://8df5v1s98d51vcxa4815scdx.dynip.sapo.pt,
 http://localhost {
     gzip
     root ./main/
@@ -17,16 +16,16 @@ http://fest.localhost {
     internal /templates
 
     fest {
-        db_user root
-        db_pass root
-        db_host 127.0.0.1
-        db_name upframe
+        db_user user
+        db_pass pass
+        db_host host
+        db_name port
 
         # This are only test data/sandbox
-        smtp_user postmaster@sandbox43c1aa137fa34dce91835dea6fcbafd7.mailgun.org
-        smtp_pass a70b66aecc3365b5c4872743c395995e
-        smtp_host smtp.mailgun.org
-        smtp_port 465
+        smtp_user user
+        smtp_pass pass
+        smtp_host host
+        smtp_port port
     }
 
     errors {
