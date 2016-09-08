@@ -107,7 +107,36 @@ var loginHandler = function(event) {
                     formError("Your account is deactivated.", "error")
                     break;
                 case 424:
-                    formError("Check your email to confirm your account first.", "warning")
+                    formError("Check your email to confirm your account first. <a href='#' onclick='resendConfirmation();'>Resend confirmation.</a>", "warning")
+                    break;
+                default:
+                    formError("Something went wrong and we are unable to explain it right now.", "error")
+            }
+        }
+    }
+}
+
+function resendConfirmation() {
+    email = document.querySelector('input[name="email"]');
+
+    if (email.value.search("@") == -1) {
+        return formError("Your email is invalid.", "error");
+    }
+
+    var request = new XMLHttpRequest();
+    request.open("POST", window.location, true);
+    request.setRequestHeader("Resend", "true");
+    request.setRequestHeader("Email", email.value);
+    request.send(form.serialize());
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            switch (request.status) {
+                case 201:
+                case 200:
+                    formError("Check your email!", "success");
+                    break;
+                case 404:
+                    formError("We can't find you in our database. <a href='/register'>Register</a> first.", "error")
                     break;
                 default:
                     formError("Something went wrong and we are unable to explain it right now.", "error")
