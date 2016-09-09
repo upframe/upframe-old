@@ -1,0 +1,17 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Deactivate your account</title>
+</head>
+<body style="background-color: #fff;margin: 0;padding: 0;">
+    <div style="background-color: #f3f3f3;margin: 0;padding: 1em;font-family: arial, sans-serif;font-size: 22px;">
+        <div style="background-color: #fff;  padding: 1em;">
+            <p style="text-align:center"><img width="100%" src="https://scontent.flis5-1.fna.fbcdn.net/t31.0-8/13641161_1719241391675061_1612503881554005884_o.jpg"></p>
+            <p><strong>Hello {{ .Name }},</strong></p>
+            <p>We heard you want to deactivate your account. There is no way back to this action. If you are sure you want to continue, just click on <a target="_blank" href="{{ URL .Host }}/register?confirm={{ URL .Hash }}">this link</a> to deactivate your account.</p>
+        </div>
+    </div>
+</body>
+</html>
