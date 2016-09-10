@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // get all edit buttons
     var btns = document.getElementsByClassName("btnEdit");
     Array.from(btns).forEach(editHandler);
+
+    document.getElementById("single-form").addEventListener('submit', submitHandler);
 });
 
 function editHandler(btn) {
@@ -30,4 +32,54 @@ function editHandler(btn) {
             }
         }
     });
+}
+
+function submitHandler(event) {
+    event.preventDefault();
+
+    var object = new Object();
+    object.ID = 0;
+    var div = this.querySelector('div');
+
+    for (var i = 0; i < div.childElementCount; i++) {
+        let name = div.children[i].name;
+
+        if (typeof name == 'undefined' || name == null || name == "") {
+            continue;
+        }
+
+        switch (div.children[i].type) {
+            case "number":
+                object[name] = parseInt(div.children[i].value);
+                break;
+            case "datetime-local":
+                object[name] = (new Date(div.children[i].value)).toISOString()
+                break;
+            case "checkbox":
+                object[name] = div.children[i].checked;
+                break;
+            default:
+                object[name] = div.children[i].value;
+        }
+    }
+
+    var method = (object.ID == 0) ? 'POST' : 'PUT';
+    var link = this.dataset.link;
+
+    if (object.ID != 0) {
+        link += "/" + object.ID;
+    }
+
+    let request = new XMLHttpRequest();
+    request.open(method, link);
+    request.send(JSON.stringify(object));
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+                // TODO @ffcf mete os dados novos na tabela and fadeoff the editor
+            } else {
+                formError("Something went wrong.", "error")
+            }
+        }
+    }
 }

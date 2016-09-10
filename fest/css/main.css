@@ -262,6 +262,10 @@ form#register button {
     display: inline-block;
 }
 
+input#ID {
+    display: none;
+}
+
 .shake {
     animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
 }
@@ -407,6 +411,8 @@ form#register button {
         opacity: 0;
     }
 }
+
+
 
 
 /* STORE */
