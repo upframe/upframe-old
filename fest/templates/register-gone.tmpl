@@ -1,7 +1,9 @@
 {{ define "title" }}You can't register Now &bull; Upframe{{ end }}
 {{ define "content" }}
-<div id="register-message">
-    <h1>Register</h1>
-    <p>Unfortunately, {{ .Data.FirstName }} {{ .Data.LastName }} doesn't have more invitations available.</p>
-</div>
+<main role="main">
+    <div id="register-message">
+        <h1>Register</h1>
+        <p>Unfortunately, {{ .Data.FirstName }} {{ .Data.LastName }} doesn't have more invitations available.</p>
+    </div>
+</main>
 {{ end }}

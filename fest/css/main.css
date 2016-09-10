@@ -6,6 +6,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+body > main {
+    max-width: 1300px;
+    width: 0 auto;
+}
+
 a {
     color: inherit;
     text-decoration: none;
