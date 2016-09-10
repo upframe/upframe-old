@@ -240,6 +240,7 @@ form#register button {
     border: 0;
     margin: 0 auto;
     padding: .7em 2em;
+    cursor: pointer;
 }
 
 #single-form label {
