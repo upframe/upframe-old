@@ -14,9 +14,10 @@ function editHandler(btn) {
             let data = row.children[x].dataset.name;
             let input = document.querySelector("input[name=" + data + "]");
             let barID = document.querySelector("#barID");
+            if (data == "ID") {
+                barID.innerHTML = row.children[x].innerHTML;
+            }
 
-            if (data == "ID") barID.innerHTML = input.value;
-            
             switch (input.type) {
                 case "datetime-local":
                     input.value = new Date(row.children[x].innerHTML).toISOString().substr(0, 16);
