@@ -29,11 +29,13 @@
     </table>
 </main>
 
-<form method="POST" id="single-form">
+<form method="POST" id="single-form"  data-link="/admin/orders">
     <h1>Order #<span id="barID"></span></h1>
 
     <div>
         <input name="ID" id="ID" required readonly type="hidden" value="">
+
+        <div id="form-error"></div>
 
         <label for="UserID">User ID</label>
         <input name="UserID" id="UserID" required type="number" value="">

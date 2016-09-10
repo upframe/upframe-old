@@ -41,11 +41,13 @@
     </table>
 </main>
 
-<form method="POST" id="single-form">
+<form method="POST" id="single-form"  data-link="/admin/users">
     <h1>User #<span id="barID"></span></h1>
 
     <div>
         <input name="ID" id="ID" required readonly type="hidden" value="">
+
+        <div id="form-error"></div>
 
         <label for="FirstName">First name</label>
         <input name="FirstName" id="FirstName" required type="text" value="">

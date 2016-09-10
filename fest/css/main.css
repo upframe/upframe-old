@@ -18,6 +18,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+body > main {
+    max-width: 1300px;
+    width: 0 auto;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -28,7 +33,8 @@ img {
 }
 
 body>main {
-    max-width: 95%;
+    width: 95%;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -75,6 +81,10 @@ body>nav a {
     line-height: 1;
     margin: 2em 1.25em;
     transition: .2s ease-in all;
+}
+
+body > nav> ul >li:first-child a {
+    margin-left: 0;
 }
 
 body>nav>ul>li a:hover {
@@ -242,6 +252,7 @@ form#register button {
     border: 0;
     margin: 0 auto;
     padding: .7em 2em;
+    cursor: pointer;
 }
 
 #single-form label {
@@ -261,6 +272,10 @@ form#register button {
 #single-form input[type="checkbox"]~label {
     width: calc(100% - 2em);
     display: inline-block;
+}
+
+input#ID {
+    display: none;
 }
 
 .shake {
@@ -368,8 +383,8 @@ form#register button {
     font-size: 1.25em;
 }
 
-#single-form div {
-    padding: 1.5em;
+#single-form> div {
+    padding: .5em 1.5em 1.5em;
     overflow-y: auto;
     display: block;
     max-height: 80vh;
@@ -408,6 +423,8 @@ form#register button {
         opacity: 0;
     }
 }
+
+
 
 
 /* STORE */
