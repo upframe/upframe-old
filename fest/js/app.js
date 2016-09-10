@@ -12,10 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-function slideDropdown() {
-    document.querySelector("#nav-dropdown").classList.toggle("active");
-}
-
 Object.prototype.serialize = function() {
     var str = [];
     for (var p in this) {

@@ -8,27 +8,32 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <nav class="nav-main">
+    <nav>
         <ul>
-            <li><a href="/" class="nav-item">Home</a></li>
-            <li><a href="/store" class="nav-item">Store</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/store">Store</a></li>
+
             {{ if not .IsLoggedIn }}
-            <li><a href="/register" class="nav-item">Register</a></li>
-            <li><a href="/login" class="nav-item">Login</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
             {{ end }}
+
             {{ if .IsLoggedIn }}
-            <li><a href="/cart" class="nav-item">Cart</a></li>
-            <li onclick="slideDropdown();">
-                <a class="nav-item"><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}?s=200" /><span>{{ .Session.FirstName }} {{ .Session.LastName }}</span></a>
-                <ul id="nav-dropdown">
+            <li><a href="/cart" >Cart</a></li>
+            <li>
+                <label for="dropdown"><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}?s=200" /><span>{{ .Session.FirstName }} {{ .Session.LastName }}</span></label>
+                <input type="checkbox" id="dropdown">
+                <ul>
                     <li><a href="/settings">Settings</a></li>
                     <li><a href="/logout">Logout</a></li>
                     {{ if .Session.IsAdmin }}<li><a href="/admin">Admin</a></li>{{ end }}
                 </ul>
             </li>
             {{ end }}
+
         </ul>
     </nav>
+
     {{ template "content" . }}
 
     <footer>

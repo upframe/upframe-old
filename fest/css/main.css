@@ -8,18 +8,22 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 img {
     max-width: 100%;
 }
 
-body > main {
+body>main {
     max-width: 95%;
     margin: 0 auto;
 }
 
-.nav-main {
+
+/* NAVIGATION BAR */
+
+body>nav {
     background-color: #00e5d4;
     top: 0;
     left: 0;
@@ -29,7 +33,7 @@ body > main {
     color: #fff;
 }
 
-.nav-main > ul {
+body>nav>ul {
     background-color: #00e5d4;
     padding: 0;
     margin: auto;
@@ -38,16 +42,16 @@ body > main {
     height: 10vh;
 }
 
-.nav-main > ul > li {
+body>nav>ul>li {
     display: inline-block;
 }
 
-.nav-main > ul > li:last-of-type {
+body>nav>ul>li:last-of-type {
     float: right;
     box-sizing: none;
 }
 
-.nav-item {
+body>nav>ul>li {
     display: inline-block;
     height: 10vh;
     line-height: 10vh;
@@ -59,11 +63,11 @@ body > main {
     cursor: pointer;
 }
 
-.nav-item:hover {
+body>nav>ul>li:hover {
     color: #121952;
 }
 
-.nav-item img {
+body>nav>ul>li img {
     height: 3em;
     width: 3em;
     border-radius: 50%;
@@ -71,13 +75,17 @@ body > main {
     vertical-align: middle;
 }
 
-.nav-item span {
+body>nav>ul>li span {
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
 }
 
-#nav-dropdown {
+body>nav input {
+    display: none;
+}
+
+body>nav li>ul {
     background-color: #00e5d4;
     padding: 0;
     list-style: none;
@@ -89,29 +97,33 @@ body > main {
     visibility: hidden;
 }
 
-#nav-dropdown.active {
+body>nav input[type="checkbox"]:checked+ul {
     height: 12.9vh;
     opacity: 1;
     visibility: visible;
 }
 
-#nav-dropdown li {
+body>nav li>ul li {
     transition: .2s ease-in all;
 }
 
-#nav-dropdown li:hover {
+body>nav li>ul li:hover {
     background-color: #00ccbc;
     color: #121952;
 }
 
-#nav-dropdown li a {
+body>nav li>ul li a {
     text-decoration: none;
     padding-right: 5px;
     display: block;
     -webkit-user-select: none;
     -ms-user-select: none;
     -moz-user-select: none;
+    line-height: 1.5em;
 }
+
+
+/* FORMS */
 
 #form-error {
     background-color: #FF3855;
@@ -348,8 +360,10 @@ form#register button {
     }
 }
 
+
 /* STORE */
-#store > div {
+
+#store>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -365,8 +379,10 @@ form#register button {
     object-fit: cover;
 }
 
+
 /* footer */
-body > footer p {
+
+body>footer p {
     text-align: center;
     color: #ccc;
     font-size: .9em;
