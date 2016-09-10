@@ -4,8 +4,30 @@
     <h1>Settings</h1>
 
     <form id="settings">
+        <input name="ID" type="hidden" value="{{ .Data.ID }}">
 
+        <label for="FirstName">First Name</label>
+        <input name="FirstName" id="FirstName" type="text" value="{{ .Data.FirstName }}">
 
-    </form>    
+        <label for="LastName">Last Name</label>
+        <input name="LastName" id="LastName" type="text" value="{{ .Data.LastName }}">
+
+        <label for="Email">Email</label>
+        <input name="Email" id="Email" type="text" value="{{ .Data.Email }}">
+
+        <label for="Address">Address</label>
+        <textarea name="Address" id="Address">{{ if .Data.Address.Valid }}{{ .Data.Address.String }}{{ end }}</textarea>
+
+        <button type="submit">Update</button>
+    </form>
+
+    <h2>Credit</h2>
+    <p>{{ .Data.Credit }}€</p>
+
+    <h2>Invites</h2>
+    <p>You have {{ .Data.Invites }} invites left, and your referral invite link is: {{ .Data.Referral }}</p>
+
+    <h2>Radioactive area</h2>
+    <button id="deactivate">Deactivate my account</button>
 </main>
 {{ end }}
