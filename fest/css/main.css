@@ -367,8 +367,8 @@ form#register button {
     font-size: 1.25em;
 }
 
-#single-form div {
-    padding: 1.5em;
+#single-form> div {
+    padding: .5em 1.5em 1.5em;
     overflow-y: auto;
     display: block;
     max-height: 80vh;
