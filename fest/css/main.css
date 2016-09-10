@@ -18,7 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-body > main {
+body>main {
     max-width: 1300px;
     width: 0 auto;
 }
@@ -83,7 +83,7 @@ body>nav a {
     transition: .2s ease-in all;
 }
 
-body > nav> ul >li:first-child a {
+body>nav>ul>li:first-child a {
     margin-left: 0;
 }
 
@@ -329,7 +329,9 @@ input#ID {
     background: #fff;
 }
 
-.container tr {}
+.container tr.highlight {
+    background-color: #fff19d !important;
+}
 
 .container tr:nth-of-type(odd) {
     background: #f9f9f9;
@@ -384,7 +386,7 @@ input#ID {
     font-size: 1.25em;
 }
 
-#single-form> div {
+#single-form>div {
     padding: .5em 1.5em 1.5em;
     overflow-y: auto;
     display: block;
@@ -432,10 +434,6 @@ input#ID {
         z-index: -1000;
     }
 }
-
-
-
-
 
 
 /* STORE */

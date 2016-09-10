@@ -20,7 +20,20 @@ document.addEventListener("DOMContentLoaded", () => {
         var btns = document.getElementsByClassName("btnEdit");
         Array.from(btns).forEach(editHandler);
     }
+
+    highlight();
 });
+
+function highlight() {
+    let hash = window.location.hash.replace('#', '');
+    let items = hash.split(',')
+
+    for (var i = 0; i < items.length; i++) {
+        let row = document.querySelector('tr[data-id="' + items[i] + '"]');
+        if (typeof row == 'undefined' || row == null) continue;
+        row.classList.add('highlight');
+    }
+}
 
 function editHandler(btn) {
     btn.addEventListener("click", function(e) {
