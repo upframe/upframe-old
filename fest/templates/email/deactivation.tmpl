@@ -10,7 +10,7 @@
         <div style="background-color: #fff;  padding: 1em;">
             <p style="text-align:center"><img width="100%" src="https://scontent.flis5-1.fna.fbcdn.net/t31.0-8/13641161_1719241391675061_1612503881554005884_o.jpg"></p>
             <p><strong>Hello {{ .Name }},</strong></p>
-            <p>We heard you want to deactivate your account. There is no way back to this action. If you are sure you want to continue, just click on <a target="_blank" href="{{ URL .Host }}/register?confirm={{ URL .Hash }}">this link</a> to deactivate your account.</p>
+            <p>We heard you want to deactivate your account. There is no way back to this action. If you are sure you want to continue, just click on <a target="_blank" href="{{ URL .Host }}/settings/deactivate?deactivate={{ URL .Hash }}">this link</a> to deactivate your account.</p>
         </div>
     </div>
 </body>
