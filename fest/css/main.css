@@ -373,6 +373,7 @@ input#ID {
     opacity: 0;
     padding: 0;
     margin: 0;
+    z-index: -1000;
 }
 
 #single-form h1 {
@@ -407,22 +408,32 @@ input#ID {
 }
 
 @keyframes fadeIn {
-    from {
+    0% {
         opacity: 0;
     }
-    to {
-        opacity: 1
+    1% {
+        z-index: 1000;
+    }
+    100% {
+        opacity: 1;
+        z-index: 1000;
     }
 }
 
 @keyframes fadeOut {
-    from {
+    0% {
         opacity: 1;
     }
-    to {
+    1% {
+        z-index: -1000;
+    }
+    100% {
         opacity: 0;
+        z-index: -1000;
     }
 }
+
+
 
 
 

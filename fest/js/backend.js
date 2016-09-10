@@ -10,7 +10,7 @@ function editHandler(btn) {
     btn.addEventListener("click", function(e) {
         e.preventDefault();
         // get row data
-        document.querySelector("#single-form").classList.add("fadeIn");
+        document.getElementById("single-form").className = "fadeIn";
         var row = btn.parentElement.parentElement;
         for (x = 0; x < row.childElementCount - 1; x++) {
             let data = row.children[x].dataset.name;
@@ -53,7 +53,7 @@ function submitHandler(event) {
                 object[name] = parseInt(div.children[i].value);
                 break;
             case "datetime-local":
-                object[name] = (new Date(div.children[i].value)).toISOString()
+                object[name] = (new Date(div.children[i].value)).toISOString();
                 break;
             case "checkbox":
                 object[name] = div.children[i].checked;
@@ -77,6 +77,27 @@ function submitHandler(event) {
         if (request.readyState == 4) {
             if (request.status == 200) {
                 // TODO @ffcf mete os dados novos na tabela and fadeoff the editor
+                document.getElementById("single-form").className = "fadeOut";
+                if(method == "PUT") {
+                    var row = document.querySelector('tr[data-id="' + object.ID + '"]');
+                    for (x = 0; x < row.childElementCount - 1; x++) {
+                        let tbspace = row.children[x];
+                        let val = object[x];
+
+                        switch (tbspace.dataset.name) {
+                            case "Expires":
+                                tbspace.value = new Date(object.Expires).toISOString().substr(0, 16);
+                                break;
+                            case "Deactivated":
+                                tbspace.checked = object.Deactivated.checked;
+                                break;
+                            default:
+                                tbspace.innerHTML = object[tbspace.dataset.name];
+                        }
+                    }
+                } else {
+                    window.location.pathname = "/admin/" + window.location.pathname.split("/")[2] + "/" + object.ID;
+                }
             } else {
                 formError("Something went wrong.", "error")
             }

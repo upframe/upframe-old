@@ -15,7 +15,7 @@
             </tr>
         </thead>
         {{range $promocode := .Data}}
-        <tr>
+        <tr data-id="{{ $promocode.ID }}">
             <td data-name="ID">{{ $promocode.ID }}</td>
             <td data-name="Code">{{ $promocode.Code }}</td>
             <td data-name="Discount">{{ $promocode.Discount }}</td>
