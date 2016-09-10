@@ -49,8 +49,8 @@ body > main {
 
 .nav-item {
     display: inline-block;
-    height: 4em;
-    line-height: 4em;
+    height: 10vh;
+    line-height: 10vh;
     text-decoration: none;
     padding: 0px 20px;
     color: white;

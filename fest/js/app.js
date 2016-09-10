@@ -13,11 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function slideDropdown() {
-    if(document.querySelector("#nav-dropdown").classList[0] == "active") {
-        document.querySelector("#nav-dropdown").classList.remove("active");
-    } else {
-        document.querySelector("#nav-dropdown").classList.add("active");
-    }
+    document.querySelector("#nav-dropdown").classList.toggle("active");
 }
 
 Object.prototype.serialize = function() {
