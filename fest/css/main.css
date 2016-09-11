@@ -426,9 +426,10 @@ input#ID {
 @keyframes fadeOut {
     0% {
         opacity: 1;
+        z-index: 1000;
     }
-    1% {
-        z-index: -1000;
+    99% {
+        z-index: 1000;
     }
     100% {
         opacity: 0;

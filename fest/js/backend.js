@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (singleForm) {
         // Add an event listener to the Single Form
+        document.addEventListener("click", pageClick)
         singleForm.addEventListener('submit', submitHandler);
+        singleForm.addEventListener('keyup', escapeHandler)
 
         // Get all the edit buttons and initialize them
         var btns = document.getElementsByClassName("btnEdit");
@@ -35,12 +37,30 @@ function highlight() {
     }
 }
 
+function pageClick(event) {
+    event.preventDefault();
+    if(event.srcElement.className == "btnEdit") {
+        return;
+    }
+    if(singleForm.className == "fadeIn") {
+        singleForm.className = "fadeOut";
+    }
+}
+
+function escapeHandler(event) {
+    event.preventDefault();
+    if(event.key == "Escape") {
+        document.getElementById("single-form").className = "fadeOut";
+    }
+}
+
 function editHandler(btn) {
     btn.addEventListener("click", function(e) {
         e.preventDefault();
         // fades in the form and copies the row information to the form
         singleForm.className = "fadeIn";
         copyRowToForm(btn.parentElement.parentElement);
+        singleForm.children[1].children[3].focus();
     });
 }
 
