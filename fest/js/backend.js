@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
         // Get all the edit buttons and initialize them
         var btns = document.getElementsByClassName("btnEdit");
         Array.from(btns).forEach(editHandler);
+
+        // Get all the add buttons and initialize them
+        document.getElementById("table-toolbar").querySelector(".btnAdd").addEventListener("click", newHandler);
     }
 
     highlight();
@@ -38,27 +41,41 @@ function highlight() {
 }
 
 function pageClick(event) {
-    event.preventDefault();
-    if(event.srcElement.className == "btnEdit") {
+    if(event.path[2].id == "single-form"
+    || event.srcElement.className == "btnEdit"
+    || event.path[1].id == "single-form"
+    || event.path[3].id == "table-toolbar") {
         return;
     }
-    if(singleForm.className == "fadeIn") {
-        singleForm.className = "fadeOut";
+
+    event.preventDefault();
+    if(singleForm.className == "slideUp") {
+        singleForm.className = "slideDown";
     }
 }
 
 function escapeHandler(event) {
     event.preventDefault();
     if(event.key == "Escape") {
-        document.getElementById("single-form").className = "fadeOut";
+        document.getElementById("single-form").className = "slideDown";
     }
+}
+
+function newHandler(event) {
+    console.log(event);
+    singleForm.className = "slideUp";
+    clearForm(singleForm);
+    singleForm.children[1].children[3].focus();
 }
 
 function editHandler(btn) {
     btn.addEventListener("click", function(e) {
         e.preventDefault();
         // fades in the form and copies the row information to the form
-        singleForm.className = "fadeIn";
+        if(singleForm.children[0].innerHTML !='Promocode #<span id="barID"></span>') {
+            singleForm.children[0].innerHTML ='Promocode #<span id="barID"></span>';
+        }
+        singleForm.className = "slideUp";
         copyRowToForm(btn.parentElement.parentElement);
         singleForm.children[1].children[3].focus();
     });
@@ -81,7 +98,7 @@ function submitHandler(event) {
     request.onreadystatechange = function() {
         if (request.readyState == 4) {
             if (request.status == 200) {
-                singleForm.className = "fadeOut";
+                singleForm.className = "slideDown";
 
                 if (method == "PUT") {
                     copyFormToRow(document.querySelector('tr[data-id="' + data.ID + '"]'));
@@ -215,4 +232,27 @@ function copyFormToObject(form) {
 
     if (isNaN(object.ID)) object.ID = 0;
     return object;
+}
+
+function clearForm(form) {
+    var div = form.children[1];
+    form.children[0].innerHTML = "New promocode";
+    for(var x = 0; x < div.childElementCount; x++) {
+        let type = div.children[x].type;
+
+        if(typeof type == "undefined") {
+            continue;
+        }
+
+        switch(type) {
+            case "datetime-local":
+                div.children[x].value = new Date().toISOString().substr(0, 16);
+                break;
+            case "checkbox":
+                div.children[x].checked = false;
+                break;
+            default:
+                div.children[x].value = "";
+        }
+    }
 }

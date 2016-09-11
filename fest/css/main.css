@@ -311,6 +311,29 @@ input#ID {
     background: none;
 }
 
+.btnAdd {
+    border-radius: 6.125%;
+    border: 1px solid #49A34B;
+    background: #1EBE39;
+}
+
+.backend > #table-toolbar > ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.backend > #table-toolbar > ul li {
+    display: inline-block;
+    float: right;
+}
+
+.backend > #table-toolbar > ul li:first-of-type {
+    float: left;
+}
+
 .container table {
     width: 100%;
     border: 0;
@@ -370,13 +393,10 @@ input#ID {
     background-color: #fff;
     transition: .5s ease-in-out all;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+    bottom: -50%;
+    right: 0;
     padding: 0;
     margin: 0;
-    z-index: -1000;
 }
 
 #single-form h1 {
@@ -434,6 +454,33 @@ input#ID {
     100% {
         opacity: 0;
         z-index: -1000;
+    }
+}
+
+.slideUp {
+    animation: slideUp .3s forwards 0s ease-in-out 1;
+}
+
+.slideDown {
+    animation: slideDown .3s forwards 0s ease-in-out 1;
+}
+
+
+@keyframes slideUp {
+    0% {
+        bottom: -50%;
+    }
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -50%;
     }
 }
 
