@@ -24,6 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Get all the add buttons and initialize them
         document.getElementById("table-toolbar").querySelector(".btnAdd").addEventListener("click", newHandler);
+
+        document.getElementById('expand').addEventListener('click', function(event) {
+            event.preventDefault();
+            singleForm.classList.toggle("show");
+        });
+
+        let rows = document.querySelectorAll('tr');
+        Array.from(rows).forEach((row) => {
+            row.addEventListener('click', function(event) {
+                this.classList.toggle('highlight');
+            });
+        });
     }
 
     highlight();
@@ -41,29 +53,28 @@ function highlight() {
 }
 
 function pageClick(event) {
-    if(event.path[2].id == "single-form"
-    || event.srcElement.className == "btnEdit"
-    || event.path[1].id == "single-form"
-    || event.path[3].id == "table-toolbar") {
+    if (event.path[2].id == "single-form" ||
+        event.srcElement.className == "btnEdit" ||
+        event.path[1].id == "single-form" ||
+        event.path[3].id == "table-toolbar") {
         return;
     }
 
-    event.preventDefault();
-    if(singleForm.className == "slideUp") {
-        singleForm.className = "slideDown";
+    if (singleForm.classList.contains("show")) {
+        singleForm.classList.remove("show");
     }
 }
 
 function escapeHandler(event) {
     event.preventDefault();
-    if(event.key == "Escape") {
-        document.getElementById("single-form").className = "slideDown";
+    if (event.key == "Escape") {
+        document.getElementById("single-form").classList.remove("show");
     }
 }
 
 function newHandler(event) {
     console.log(event);
-    singleForm.className = "slideUp";
+    singleForm.classList.add("show");;
     clearForm(singleForm);
     singleForm.children[1].children[3].focus();
 }
@@ -71,11 +82,9 @@ function newHandler(event) {
 function editHandler(btn) {
     btn.addEventListener("click", function(e) {
         e.preventDefault();
-        // fades in the form and copies the row information to the form
-        if(singleForm.children[0].innerHTML !='Promocode #<span id="barID"></span>') {
-            singleForm.children[0].innerHTML ='Promocode #<span id="barID"></span>';
-        }
-        singleForm.className = "slideUp";
+        singleForm.querySelector('#edit-text').style.display = "block";
+        singleForm.querySelector('#new-text').style.display = "none";
+        singleForm.classList.add("show");
         copyRowToForm(btn.parentElement.parentElement);
         singleForm.children[1].children[3].focus();
     });
@@ -98,7 +107,7 @@ function submitHandler(event) {
     request.onreadystatechange = function() {
         if (request.readyState == 4) {
             if (request.status == 200) {
-                singleForm.className = "slideDown";
+                singleForm.className = "Down";
 
                 if (method == "PUT") {
                     copyFormToRow(document.querySelector('tr[data-id="' + data.ID + '"]'));
@@ -236,15 +245,18 @@ function copyFormToObject(form) {
 
 function clearForm(form) {
     var div = form.children[1];
-    form.children[0].innerHTML = "New promocode";
-    for(var x = 0; x < div.childElementCount; x++) {
+
+    singleForm.querySelector('#edit-text').style.display = "none";
+    singleForm.querySelector('#new-text').style.display = "block";
+
+    for (var x = 0; x < div.childElementCount; x++) {
         let type = div.children[x].type;
 
-        if(typeof type == "undefined") {
+        if (typeof type == "undefined") {
             continue;
         }
 
-        switch(type) {
+        switch (type) {
             case "datetime-local":
                 div.children[x].value = new Date().toISOString().substr(0, 16);
                 break;

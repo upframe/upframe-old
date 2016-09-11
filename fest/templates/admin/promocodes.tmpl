@@ -3,7 +3,7 @@
 <main role="main" class="container backend">
     <div id="table-toolbar">
         <ul>
-            <li>Promocodes</li>
+            <li><h1>Promocodes</h1></li>
             <li><button class="btnAdd">&#65291; New</button></li>
         </ul>
     </div>
@@ -32,7 +32,7 @@
 </main>
 
 <form method="POST" id="single-form" data-link="/admin/promocodes">
-    <h1>Promocode #<span id="barID"></span></h1>
+    <h2><span id="new-text">New Promocode</span><span id="edit-text">Promocode #<span id="barID"></span></span><span id="expand">&#9660;</span></h2>
 
     <div>
         <input name="ID" id="ID" required readonly type="number" value="">

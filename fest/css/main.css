@@ -14,6 +14,11 @@
     background-color: transparent;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -315,23 +320,31 @@ input#ID {
     border-radius: 6.125%;
     border: 1px solid #49A34B;
     background: #1EBE39;
+    color: #fff;
 }
 
-.backend > #table-toolbar > ul {
+.backend>#table-toolbar>ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
     padding: 0;
     width: 100%;
     height: 100%;
+    align-items: center;
 }
 
-.backend > #table-toolbar > ul li {
-    display: inline-block;
-    float: right;
+.backend tr {
+    cursor: pointer;
 }
 
-.backend > #table-toolbar > ul li:first-of-type {
-    float: left;
+.backend>#table-toolbar>ul li {}
+
+.backend>#table-toolbar>ul li:first-of-type {
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.backend>#table-toolbar>ul h1 {
+    margin: 0;
 }
 
 .container table {
@@ -393,18 +406,35 @@ input#ID {
     background-color: #fff;
     transition: .5s ease-in-out all;
     position: fixed;
-    bottom: -50%;
-    right: 0;
+    bottom: 0;
+    transform: translateY(calc(100% - 3.375em));
+    right: 2em;
     padding: 0;
     margin: 0;
 }
 
-#single-form h1 {
+#single-form h2 {
     padding: .67em;
     background-color: #FF3855;
     color: #fff;
     margin: 0;
     font-size: 1.25em;
+    text-align: left;
+}
+
+#single-form #expand {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid rgba(0, 0, 0, 0.16);
+    font-size: .8em;
+    border-radius: .2em;
+    color: rgba(0, 0, 0, 0.16);
+    margin: .9em;
+    margin-left: 0;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: .2s ease all;
 }
 
 #single-form>div {
@@ -414,74 +444,16 @@ input#ID {
     max-height: 80vh;
 }
 
-#single-form button {}
-
-.fadeIn {
-    animation-name: fadeIn;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+#single-form.show {
+    transform: translateY(0);
 }
 
-.fadeOut {
-    animation-name: fadeOut;
-    animation-duration: .3s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+#single-form.show #expand {
+    transform: rotate(0);
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    1% {
-        z-index: 1000;
-    }
-    100% {
-        opacity: 1;
-        z-index: 1000;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        z-index: 1000;
-    }
-    99% {
-        z-index: 1000;
-    }
-    100% {
-        opacity: 0;
-        z-index: -1000;
-    }
-}
-
-.slideUp {
-    animation: slideUp .3s forwards 0s ease-in-out 1;
-}
-
-.slideDown {
-    animation: slideDown .3s forwards 0s ease-in-out 1;
-}
-
-
-@keyframes slideUp {
-    0% {
-        bottom: -50%;
-    }
-    100% {
-        bottom: 0px;
-    }
-}
-
-@keyframes slideDown {
-    0% {
-        bottom: 0px;
-    }
-    100% {
-        bottom: -50%;
-    }
+#single-form #edit-text {
+    display: none;
 }
 
 
