@@ -1,7 +1,10 @@
 {{ define "title" }}Users &bull; Upframe {{ end }}
 {{ define "content" }}
-<main role="main" class="container backend">
-    <h1>Users</h1>
+<main role="main" class="backend">
+    <div id="table-toolbar">
+        <h1>Users</h1>
+        <button id="add">&#65291; New</button>
+    </div>
 
     <table id="users">
         <thead>
@@ -45,7 +48,7 @@
     <h2><span id="new-text">New USer</span><span id="edit-text">User #<span id="barID"></span></span><span id="expand">&#9660;</span></h2>
 
     <div>
-        <input name="ID" id="ID" required readonly type="hidden" value="">
+        <input name="ID" id="ID" required readonly type="hidden" value="0">
 
         <div id="form-error"></div>
 
@@ -59,13 +62,13 @@
         <input name="Email" id="Email" required type="email" value="">
 
         <label for="Address">Address</label>
-        <input name="Address" id="Address" required type="text" value="">
+        <input name="Address" id="Address" type="text" value="">
 
         <label for="Invites">Invites</label>
-        <input name="Invites" id="invites" required type="number" value="">
+        <input name="Invites" id="invites" required type="number" value="0">
 
         <label for="Credit">Credit</label>
-        <input name="Credit" id="Credit" required type="number" value="">
+        <input name="Credit" id="Credit" required type="number" value="0">
 
         <input name="Confirmed" id="Confirmed" required type="checkbox">
         <label for="Confirmed">Confirmed</label>

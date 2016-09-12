@@ -1,12 +1,11 @@
 {{ define "title" }}Promocodes &bull; Upframe{{ end }}
 {{ define "content" }}
-<main role="main" class="container backend">
+<main role="main" class="backend">
     <div id="table-toolbar">
-        <ul>
-            <li><h1>Promocodes</h1></li>
-            <li><button class="btnAdd">&#65291; New</button></li>
-        </ul>
+        <h1>Promocodes</h1>
+        <button id="add">&#65291; New</button>
     </div>
+
     <table id="promocodes">
         <thead>
             <tr>
@@ -25,7 +24,7 @@
             <td data-name="Discount">{{ $promocode.Discount }}</td>
             <td data-name="Expires">{{ $promocode.Expires.Format "02 Jan 06 15:04 MST" }}</td>
             <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $promocode.Deactivated }}checked{{ end }}></td>
-            <td><button class="btnEdit">&#9998;</button></td>
+            <td><button class="edit">&#9998;</button></td>
         </tr>
         {{ end }}
     </table>
@@ -35,7 +34,7 @@
     <h2><span id="new-text">New Promocode</span><span id="edit-text">Promocode #<span id="barID"></span></span><span id="expand">&#9660;</span></h2>
 
     <div>
-        <input name="ID" id="ID" required readonly type="number" value="">
+        <input name="ID" id="ID" required readonly type="number" value="0">
 
         <div id="form-error"></div>
 

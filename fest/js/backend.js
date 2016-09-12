@@ -19,11 +19,11 @@ document.addEventListener("DOMContentLoaded", () => {
         singleForm.addEventListener('keyup', escapeHandler)
 
         // Get all the edit buttons and initialize them
-        var btns = document.getElementsByClassName("btnEdit");
+        var btns = document.getElementsByClassName("edit");
         Array.from(btns).forEach(editHandler);
 
-        // Get all the add buttons and initialize them
-        document.getElementById("table-toolbar").querySelector(".btnAdd").addEventListener("click", newHandler);
+        // Initialize add button
+        document.getElementById("add").addEventListener("click", newHandler);
 
         document.getElementById('expand').addEventListener('click', function(event) {
             event.preventDefault();
@@ -53,11 +53,15 @@ function highlight() {
 }
 
 function pageClick(event) {
-    if (event.path[2].id == "single-form" ||
-        event.srcElement.className == "btnEdit" ||
-        event.path[1].id == "single-form" ||
-        event.path[3].id == "table-toolbar") {
-        return;
+    for (let i = 0; i < event.path.length; i++) {
+        if (event.path[i].id == "add" ||
+            event.path[i].id == "single-form") {
+            return true;
+        }
+
+        if (event.path[i].className == "edit") {
+            return true;
+        }
     }
 
     if (singleForm.classList.contains("show")) {
@@ -66,15 +70,16 @@ function pageClick(event) {
 }
 
 function escapeHandler(event) {
-    event.preventDefault();
     if (event.key == "Escape") {
         document.getElementById("single-form").classList.remove("show");
     }
 }
 
 function newHandler(event) {
-    console.log(event);
-    singleForm.classList.add("show");;
+    if (!singleForm.classList.contains("show")) {
+        singleForm.classList.add('show');
+    }
+
     clearForm(singleForm);
     singleForm.children[1].children[3].focus();
 }
@@ -257,11 +262,11 @@ function clearForm(form) {
         }
 
         switch (type) {
-            case "datetime-local":
-                div.children[x].value = new Date().toISOString().substr(0, 16);
-                break;
             case "checkbox":
                 div.children[x].checked = false;
+                break;
+            case "number":
+                div.children[x].value = "0";
                 break;
             default:
                 div.children[x].value = "";

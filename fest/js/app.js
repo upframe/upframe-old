@@ -10,6 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
     if (form = document.getElementById("login")) {
         form.addEventListener("submit", loginHandler);
     }
+
+    document.addEventListener('click', function(event) {
+        if (event.target.id != "dropdown" && event.target.parentElement.getAttribute("for") != "dropdown") {
+            document.querySelector('body>nav input[type="checkbox"]').checked = false;
+        }
+    });
 });
 
 Object.prototype.serialize = function() {

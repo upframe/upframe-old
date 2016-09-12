@@ -1,7 +1,10 @@
 {{ define "title" }}Orders &bull; Upframe {{ end }}
 {{ define "content" }}
-<main role="main" class="container backend">
-    <h1>Orders</h1>
+<main role="main" class="backend">
+    <div id="table-toolbar">
+        <h1>Orders</h1>
+        <button id="add">&#65291; New</button>
+    </div>
 
     <table id="orders">
         <thead>
@@ -23,7 +26,7 @@
             <td data-name="PromocodeID">{{ if $order.PromocodeID.Valid }}{{ $order.PromocodeID.Int64 }}{{ else }}null{{ end }}</td>
             <td data-name="Value">{{ $order.Value }}</td>
             <td data-name="Status">{{ $order.Status }}</td>
-            <td><button class="btnEdit">&#9998;</button></td>
+            <td><button class="edit">&#9998;</button></td>
         </tr>
         {{ end }}
     </table>
@@ -33,7 +36,7 @@
     <h2><span id="new-text">New Order</span><span id="edit-text">Order #<span id="barID"></span></span><span id="expand">&#9660;</span></h2>
 
     <div>
-        <input name="ID" id="ID" required readonly type="hidden" value="">
+        <input name="ID" id="ID" required readonly type="hidden" value="0">
 
         <div id="form-error"></div>
 
@@ -44,13 +47,13 @@
         <input name="ProductID" id="ProductID" required type="number" value="">
 
         <label for="PromocodeID">Promocode ID</label>
-        <input name="PromocodeID" id="PromocodeID" required type="number" value="">
+        <input name="PromocodeID" id="PromocodeID" type="number" value="">
 
         <label for="Value">Value</label>
         <input name="Value" id="Value" required type="text" value="">
 
-        <label for="Status">Promocode ID</label>
-        <input name="Status" id="Status" required type="number" value="">
+        <label for="Status">Status</label>
+        <input name="Status" id="Status" required type="text" value="">
 
         <label for="Deactivated">Disabled</label>
         <input name="Deactivated" id="Deactivated" type="checkbox">
