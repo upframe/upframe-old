@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("add").addEventListener("click", newHandler);
         document.getElementById("delete").addEventListener("click", deleteHandler);
         document.getElementById("edit").addEventListener("click", editMultipleHandler);
+        document.getElementById("activate").addEventListener("click", activateHandler);
 
         document.getElementById('expand').addEventListener('click', function(event) {
             event.preventDefault();
@@ -137,7 +138,7 @@ function deleteHandler(event) {
     Array.from(document.querySelectorAll('tr.highlight')).forEach((row) => {
         let link = "/admin/" + window.location.pathname.split("/")[2] + "/" + row.dataset.id
         let request = new XMLHttpRequest();
-        
+
         request.open("DELETE", link);
         request.onreadystatechange = function() {
             if (request.readyState == 4) {
@@ -148,6 +149,30 @@ function deleteHandler(event) {
             }
         }
         request.send();
+    });
+}
+
+function activateHandler(event) {
+    event.preventDefault();
+
+    Array.from(document.querySelectorAll('tr.highlight')).forEach((row) => {
+        let link = "/admin/" + window.location.pathname.split("/")[2] + "/" + row.dataset.id
+        
+        copyRowToForm(row);
+        let data = copyFormToObject(singleForm);
+        data["Deactivated"] = false;
+
+        let request = new XMLHttpRequest();
+        request.open("PUT", link);
+        request.send(JSON.stringify(data));
+        request.onreadystatechange = function() {
+            if (request.readyState == 4) {
+                if (request.status == 200) {
+                    row.querySelector('td[data-name="Deactivated"] input[type="checkbox"]').checked = false;
+                    row.classList.remove("highlight");
+                }
+            }
+        }
     });
 }
 
