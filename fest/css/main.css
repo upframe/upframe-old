@@ -346,7 +346,7 @@ input#ID {
 /* TABLE TOOLBAR */
 
 #add,
-#delete,
+#deactivate,
 #activate,
 #edit {
     margin-left: 1em;
@@ -359,7 +359,7 @@ input#ID {
     background: #1EBE39;
 }
 
-#delete {
+#deactivate {
     border: 1px solid #e82a46;
     background: #FF3855;
 }

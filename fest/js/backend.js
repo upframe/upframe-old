@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Initialize add button
         document.getElementById("add").addEventListener("click", newHandler);
-        document.getElementById("delete").addEventListener("click", deleteHandler);
+        document.getElementById("deactivate").addEventListener("click", deactivateHandler);
         document.getElementById("edit").addEventListener("click", editMultipleHandler);
         document.getElementById("activate").addEventListener("click", activateHandler);
 
@@ -132,7 +132,7 @@ function editMultipleHandler(event) {
     singleForm.classList.add("show");
 }
 
-function deleteHandler(event) {
+function deactivateHandler(event) {
     event.preventDefault();
 
     Array.from(document.querySelectorAll('tr.highlight')).forEach((row) => {
@@ -157,7 +157,7 @@ function activateHandler(event) {
 
     Array.from(document.querySelectorAll('tr.highlight')).forEach((row) => {
         let link = "/admin/" + window.location.pathname.split("/")[2] + "/" + row.dataset.id
-        
+
         copyRowToForm(row);
         let data = copyFormToObject(singleForm);
         data["Deactivated"] = false;
