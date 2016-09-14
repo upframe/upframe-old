@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Initialize add button
         document.getElementById("add").addEventListener("click", newHandler);
+        document.getElementById("delete").addEventListener("click", deleteHandler);
 
         document.getElementById('expand').addEventListener('click', function(event) {
             event.preventDefault();
@@ -92,6 +93,27 @@ function editHandler(btn) {
         singleForm.classList.add("show");
         copyRowToForm(btn.parentElement.parentElement);
         singleForm.children[1].children[3].focus();
+    });
+}
+
+function deleteHandler(event) {
+    event.preventDefault();
+
+    Array.from(document.querySelectorAll('tr.highlight')).forEach((row) => {
+        let link = "/admin/" + window.location.pathname.split("/")[2] + "/" + row.dataset.id
+        let request = new XMLHttpRequest();
+
+        console.log("MERDA")
+        request.open("DELETE", link);
+        request.onreadystatechange = function() {
+            if (request.readyState == 4) {
+                if (request.status == 200) {
+                    row.querySelector('td[data-name="Deactivated"] input[type="checkbox"]').checked = true;
+                    row.classList.remove("highlight");
+                }
+            }
+        }
+        request.send();
     });
 }
 

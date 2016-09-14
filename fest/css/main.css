@@ -345,11 +345,33 @@ input#ID {
 
 /* TABLE TOOLBAR */
 
+#add,
+#delete,
+#activate,
+#edit {
+    margin-left: 1em;
+    border-radius: .2em;
+    color: #fff;
+}
+
 #add {
-    border-radius: 6.125%;
     border: 1px solid #49A34B;
     background: #1EBE39;
-    color: #fff;
+}
+
+#delete {
+    border: 1px solid #e82a46;
+    background: #FF3855;
+}
+
+#activate {
+    border: 1px solid #0576d0;
+    background: #2196F3;
+}
+
+#edit {
+    border: 1px solid #bb0946;
+    background-color: #E91E63;
 }
 
 #table-toolbar {
