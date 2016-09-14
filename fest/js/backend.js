@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Initialize add button
         document.getElementById("add").addEventListener("click", newHandler);
         document.getElementById("delete").addEventListener("click", deleteHandler);
+        document.getElementById("edit").addEventListener("click", editMultipleHandler);
 
         document.getElementById('expand').addEventListener('click', function(event) {
             event.preventDefault();
@@ -56,7 +57,9 @@ function highlight() {
 function pageClick(event) {
     for (let i = 0; i < event.path.length; i++) {
         if (event.path[i].id == "add" ||
-            event.path[i].id == "single-form") {
+            event.path[i].id == "single-form" ||
+            event.path[i].id == "delete" ||
+            event.path[i].id == "edit") {
             return true;
         }
 
@@ -96,14 +99,45 @@ function editHandler(btn) {
     });
 }
 
+function editMultipleHandler(event) {
+    event.preventDefault();
+
+    var div = singleForm.children[1];
+
+    singleForm.querySelector('#edit-text').style.display = "block";
+    singleForm.querySelector('#new-text').style.display = "none";
+    document.getElementById('barID').innerHTML = "multiple";
+
+    for (var x = 0; x < div.childElementCount; x++) {
+        let type = div.children[x].type;
+
+        if (typeof type == "undefined") {
+            continue;
+        }
+
+        div.children[x].value = "";
+
+        switch (type) {
+            case "checkbox":
+                div.children[x].dataset.initial = false;
+                div.children[x].checked = false;
+                break;
+            default:
+                div.children[x].placeholder = "(multiple values)";
+                break;
+        }
+    }
+
+    singleForm.classList.add("show");
+}
+
 function deleteHandler(event) {
     event.preventDefault();
 
     Array.from(document.querySelectorAll('tr.highlight')).forEach((row) => {
         let link = "/admin/" + window.location.pathname.split("/")[2] + "/" + row.dataset.id
         let request = new XMLHttpRequest();
-
-        console.log("MERDA")
+        
         request.open("DELETE", link);
         request.onreadystatechange = function() {
             if (request.readyState == 4) {
