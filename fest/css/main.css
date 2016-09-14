@@ -496,3 +496,13 @@ body>footer p {
     font-size: .9em;
     margin: 1em;
 }
+
+
+/* settings */
+
+#settings label {
+    display: block;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 1em;
+}
