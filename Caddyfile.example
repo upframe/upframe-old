@@ -26,6 +26,9 @@ http://fest.localhost {
         smtp_pass pass
         smtp_host host
         smtp_port port
+
+        # Other configuration
+        base_invites 5
     }
 
     errors {
