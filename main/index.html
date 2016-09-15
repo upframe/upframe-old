@@ -29,6 +29,8 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+        <img src="/img/cover.jpg" id="cover">
+
         <nav>
             <ul>
                 <li><a href="/"><img src="/img/logo.svg"></a></li>
@@ -38,30 +40,55 @@
             </ul>
         </nav>
 
-        <div id="heading">
-            <div>
-                <h1>#DareToDream</h1>
-                <!-- <input type="text" placeholder="Tell us your email" required> -->
-                <a href="#faq" data-scroll><img src="/img/arrow.png"></a>
-            </div>
-        </div>
+        <header>
+            <a href="#faq" data-scroll><img src="/img/arrow.png"></a>
+        </header>
 
-        {{ .Include "includes/faq.html" }}
+        <main>
+            <div id="about">
+             <h2>About Us</h2>
 
-        <div id="contacts">
-            <div>
-                <div>
-                    <h2>Contacts</h2>
-                    <p><a href="mailto:info@upframe.xyz">info@upframe.xyz</a></p>
-                </div>
-                <div>
-                    <h2>Follow us</h2>
-                    <p><a href="https://www.facebook.com/upframe">Facebook</a> / <a href="https://twitter.com/upframexyz">Twitter</a></p>
-                </div>
+             <h3>Morbi finibus lacus a facilisis sodales?</h3>
+
+             <p>Morbi finibus lacus a facilisis sodales. Nulla vitae erat ullamcorper, imperdiet leo nec, sollicitudin lacus. Praesent eu efficitur neque. Mauris at ultricies arcu. Aliquam vulputate purus eu ligula iaculis pellentesque. Etiam quis purus nisl. Ut
+              mattis auctor velit eu pretium. Duis viverra convallis tortor non blandit. Vestibulum molestie velit ut ipsum condimentum, id condimentum turpis vestibulum. Suspendisse volutpat laoreet elit vel imperdiet.</p>
+
+             <h3>Aliquam lacus est?</h3>
+
+             <p>Aliquam lacus est, vestibulum nec mauris quis, sagittis maximus mauris. Fusce volutpat purus at massa dapibus, tristique maximus enim commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur malesuada bibendum mi quis
+              viverra. Ut finibus nisi lacus, non laoreet lectus dictum sit amet. Sed commodo rhoncus diam. Proin dui velit, malesuada et risus nec, pellentesque condimentum orci.</p>
+
             </div>
-        </div>
+
+            <div id="playground">
+             <h2>Playground</h2>
+
+             <h3>Morbi finibus lacus a facilisis sodales?</h3>
+
+             <p>Morbi finibus lacus a facilisis sodales. Nulla vitae erat ullamcorper, imperdiet leo nec, sollicitudin lacus. Praesent eu efficitur neque. Mauris at ultricies arcu. Aliquam vulputate purus eu ligula iaculis pellentesque. Etiam quis purus nisl. Ut
+              mattis auctor velit eu pretium. Duis viverra convallis tortor non blandit. Vestibulum molestie velit ut ipsum condimentum, id condimentum turpis vestibulum. Suspendisse volutpat laoreet elit vel imperdiet.</p>
+
+             <h3>Aliquam lacus est?</h3>
+
+             <p>Aliquam lacus est, vestibulum nec mauris quis, sagittis maximus mauris. Fusce volutpat purus at massa dapibus, tristique maximus enim commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur malesuada bibendum mi quis
+              viverra. Ut finibus nisi lacus, non laoreet lectus dictum sit amet. Sed commodo rhoncus diam. Proin dui velit, malesuada et risus nec, pellentesque condimentum orci.</p>
+
+            </div>
+        </main>
 
         <footer>
+            <div id="contacts">
+                <div>
+                    <div>
+                        <h2>Contacts</h2>
+                        <p><a href="mailto:info@upframe.xyz">info@upframe.xyz</a></p>
+                    </div>
+                    <div>
+                        <h2>Follow us</h2>
+                        <p><a href="https://www.facebook.com/upframe">Facebook</a> / <a href="https://twitter.com/upframexyz">Twitter</a></p>
+                    </div>
+                </div>
+            </div>
             <p>&copy; 2016 Upframe. All right reserved.</p>
         </footer>
 
