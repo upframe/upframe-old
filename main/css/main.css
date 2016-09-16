@@ -100,11 +100,18 @@ header {
 
 header a {
     position: relative;
-    top: 85vh;
+    top: 48vh;
     display: block;
+    transform: rotate(180deg);
 }
 
-header img {
+header > img {
+    width: 17em;
+    position: relative;
+    top: 25vh;
+}
+
+header a img {
     margin: 0 auto;
     max-width: 1.5em;
     animation: 2s bounce infinite;
@@ -147,7 +154,7 @@ main>div h3 {
 }
 
 footer>div {
-    margin-top: 5em;
+    /* margin-top: 5em; */
     padding: 5em 0;
     color: #fff;
 }
