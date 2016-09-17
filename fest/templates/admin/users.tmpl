@@ -41,7 +41,7 @@
             <td>{{ if $user.Referrer.Valid }}{{ $user.Referrer.Int64 }}{{ else }}null{{ end }}</td> <!-- This is readyonly; at least for now. -->
             <td data-name="Admin"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Admin }}checked{{ end }}></td>
             <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Deactivated }}checked{{ end }}></td>
-            <td><button class="btnEdit">&#9998;</button></td>
+            <td><button class="edit">&#9998;</button></td>
         </tr>
         {{ end }}
     </table>
@@ -51,7 +51,7 @@
     <h2><span id="new-text">New USer</span><span id="edit-text">User #<span id="barID"></span></span><span id="expand">&#9660;</span></h2>
 
     <div>
-        <input name="ID" id="ID" required readonly type="hidden" value="0">
+        <input name="ID" id="ID" required readonly type="number" value="0">
 
         <div id="form-error"></div>
 

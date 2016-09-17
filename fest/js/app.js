@@ -1,22 +1,4 @@
-// Register page JS file
-
-document.addEventListener("DOMContentLoaded", () => {
-    // if register form was loaded it means everything is fine
-    // if not, it means register is only available by invitation
-    if (form = document.getElementById("register")) {
-        form.addEventListener("submit", registerHandler);
-    }
-
-    if (form = document.getElementById("login")) {
-        form.addEventListener("submit", loginHandler);
-    }
-
-    document.addEventListener('click', function(event) {
-        if (event.target.id != "dropdown" && event.target.parentElement.getAttribute("for") != "dropdown") {
-            document.querySelector('body>nav input[type="checkbox"]').checked = false;
-        }
-    });
-});
+'use strict';
 
 Object.prototype.serialize = function() {
     var str = [];
@@ -29,97 +11,142 @@ Object.prototype.serialize = function() {
     return str.join("&");
 }
 
-var registerHandler = function(event) {
+document.addEventListener("DOMContentLoaded", () => {
+    let thing;
+
+    // if register form was loaded it means everything is fine
+    // if not, it means register is only available by invitation
+    if (thing = document.getElementById("register")) {
+        thing.addEventListener("submit", registerHandler);
+    }
+
+    if (thing = document.getElementById("login")) {
+        thing.addEventListener("submit", loginHandler);
+    }
+
+    if (thing = document.getElementById("settings")) {
+        thing.addEventListener('submit', submitSettings);
+    }
+
+    document.addEventListener('click', function(event) {
+        if (event.target.id != "dropdown" && event.target.parentElement.getAttribute("for") != "dropdown") {
+            document.querySelector('body>nav input[type="checkbox"]').checked = false;
+        }
+    });
+});
+
+function submitSettings(event) {
     event.preventDefault();
+    let inputs = this.querySelectorAll('input'),
+        form = new Object();
 
-    if (checkRegisterFields(this)) {
-        // passwords match. so que let fica condicionado ao if{} e var fica na funcao toda
-        var form = new Object();
-        // ugly names!!!
-        form.first_name = this.querySelectorAll('input[name=first_name]')[0].value.trim(),
-            form.last_name = this.querySelectorAll('input[name=last_name]')[0].value.trim(),
-            form.email = this.querySelectorAll("input[name=email]")[0].value.trim(),
-            form.password = this.querySelectorAll("input[name=password]")[0].value;
 
-        let pwdHash = new jsSHA("SHA-256", "TEXT");
-        pwdHash.update(form.password);
-        form.password = pwdHash.getHash("HEX");
-
-        var request = new XMLHttpRequest();
-        request.open("POST", window.location, true);
-        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-        request.send(form.serialize());
-        request.onreadystatechange = function() {
-            if (request.readyState == 4) {
-                switch (request.status) {
-                    case 200:
-                    case 201:
-                        formError("You're now registered. Check your email to confirm.", "success");
-                        break;
-                    case 400:
-                        formError("Some fields are empty or invalid.", "error");
-                        break;
-                    case 403:
-                        formError("The reffer link is invalid.", "error");
-                        break;
-                    case 409:
-                        formError("Your email is already registered. Please <a href='/login'>login</a>.", "error");
-                        break;
-                    case 410:
-                        formError("It seems that in the meanwhile the person that invited you ran out of invites.", "error");
-                        break;
-                    default:
-                        formError("Something went wrong and we are unable to explain it right now.", "error")
-                }
+    var request = new XMLHttpRequest();
+    request.open("PUT", window.location, true);
+    request.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    request.send(JSON.stringify(copyFormToObject(this)));
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            switch (request.status) {
+                case 200:
+                case 201:
+                    console.log("Hey")
+                    break;
+                default:
+                    console.log("BAD")
             }
         }
-    } else {
-        formError("Passwords doesn't match or some fields are empty.", "error")
     }
 }
 
-var loginHandler = function(event) {
+function printMessage(status, hash) {
+    let type = (status >= 200 && status < 300) ? "success" : "error";
+
+    if (status == 424) {
+        type = "warning";
+    }
+
+    if (status in hash) {
+        formError(hash[status], type);
+    } else {
+        formError(hash['default'], type);
+    }
+}
+
+var registerMessages = {
+    200: "You're now registered. Check your email to confirm.",
+    201: "You're now registered. Check your email to confirm.",
+    400: "Some fields are empty or invalid.",
+    403: "The reffer link is invalid.",
+    409: "Your email is already registered. Please <a href='/login'>login</a>.",
+    410: "It seems that in the meanwhile the person that invited you ran out of invites.",
+    'default': "Something went wrong and we are unable to explain it right now."
+}
+
+function registerHandler(event) {
     event.preventDefault();
 
-    // passwords match. so que let fica condicionado ao if{} e var fica na funcao toda
-    var form = new Object();
-    form.email = this.querySelectorAll("input[name=email]")[0].value.trim();
-    form.password = this.querySelectorAll("input[name=password]")[0].value;
+    if (!checkRegisterFields(this)) {
+        formError("Passwords doesn't match or some fields are empty.", "error");
+        return;
+    }
 
-    let pwdHash = new jsSHA("SHA-256", "TEXT");
-    pwdHash.update(form.password);
-    form.password = pwdHash.getHash("HEX");
+    var form = copyFormToObject(this),
+        hash = new jsSHA("SHA-256", "TEXT"),
+        request = new XMLHttpRequest();
 
-    var request = new XMLHttpRequest();
+    hash.update(form.password);
+    form.password = hash.getHash("HEX");
+
     request.open("POST", window.location, true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(form.serialize());
     request.onreadystatechange = function() {
         if (request.readyState == 4) {
-            switch (request.status) {
-                case 200:
-                    window.location = window.location.protocol + "//" + window.location.hostname
-                    break;
-                case 400:
-                    formError("You might have left some fields blank!", "error");
-                    break;
-                case 404:
-                    formError("We can't find you in our database. <a href='/register'>Register</a> first.", "error")
-                    break;
-                case 401:
-                    formError("Incorrect password.", "error")
-                    break;
-                case 423:
-                    formError("Your account is deactivated.", "error")
-                    break;
-                case 424:
-                    formError("Check your email to confirm your account first. <a href='#' onclick='resendConfirmation();'>Resend confirmation.</a>", "warning")
-                    break;
-                default:
-                    formError("Something went wrong and we are unable to explain it right now.", "error")
-            }
+            printMessage(request.status, registerMessages)
         }
     }
+}
+
+var loginMessages = {
+    400: "You might have left some fields blank!",
+    401: "Incorrect password.",
+    404: "We can't find you in our database. <a href='/register'>Register</a> first.",
+    423: "Your account is deactivated.",
+    424: "Check your email to confirm your account first. <a href='#' onclick='resendConfirmation();'>Resend confirmation.</a>",
+    'default': "Something went wrong and we are unable to explain it right now."
+}
+
+function loginHandler(event) {
+    event.preventDefault();
+
+    let form = copyFormToObject(this),
+        hash = new jsSHA("SHA-256", "TEXT"),
+        request = new XMLHttpRequest();
+
+    hash.update(form.password);
+    form.password = hash.getHash("HEX");
+
+    request.open("POST", window.location, true);
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    request.send(form.serialize());
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            if (request.status == 200) {
+                window.location = window.location.protocol + "//" + window.location.hostname;
+                return;
+            }
+
+            printMessage(request.status, loginMessages)
+        }
+    }
+}
+
+var resendMessages = {
+    200: "Check your email!",
+    201: "Check your email!",
+    404: "We can't find you in our database. <a href='/register'>Register</a> first.",
+    'default': "Something went wrong and we are unable to explain it right now."
 }
 
 function resendConfirmation() {
@@ -136,17 +163,7 @@ function resendConfirmation() {
     request.send(form.serialize());
     request.onreadystatechange = function() {
         if (request.readyState == 4) {
-            switch (request.status) {
-                case 201:
-                case 200:
-                    formError("Check your email!", "success");
-                    break;
-                case 404:
-                    formError("We can't find you in our database. <a href='/register'>Register</a> first.", "error")
-                    break;
-                default:
-                    formError("Something went wrong and we are unable to explain it right now.", "error")
-            }
+            printMessage(request.status, resendMessages)
         }
     }
 }
@@ -186,4 +203,36 @@ function checkRegisterFields(form) {
     }
 
     return true;
+}
+
+function copyFormToObject(form) {
+    let object = new Object();
+    object.ID = 0;
+
+    let inputs = form.querySelectorAll('input');
+
+    Array.from(inputs).forEach((input) => {
+        let name = input.name;
+
+        if (typeof name == 'undefined' || name == null || name == "") {
+            return;
+        }
+
+        switch (input.type) {
+            case "number":
+                object[name] = parseInt(input.value);
+                break;
+            case "datetime-local":
+                object[name] = (new Date(input.value)).toISOString();
+                break;
+            case "checkbox":
+                object[name] = input.checked;
+                break;
+            default:
+                object[name] = input.value;
+        }
+    })
+
+    if (isNaN(object.ID)) object.ID = 0;
+    return object;
 }

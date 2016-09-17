@@ -23,6 +23,7 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/img/icons/ms-icon-144x144.png">
         <meta name="theme-color" content="#00e5d4">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
@@ -30,6 +31,9 @@
     </head>
     <body>
         <img src="/img/cover.jpg" id="cover">
+
+        <div id="border-top"></div>
+        <div id="border-bottom"></div>
 
         <nav>
             <ul>
@@ -49,30 +53,16 @@
             <div id="about">
              <h2>About Us</h2>
 
-             <h3>Morbi finibus lacus a facilisis sodales?</h3>
-
-             <p>Morbi finibus lacus a facilisis sodales. Nulla vitae erat ullamcorper, imperdiet leo nec, sollicitudin lacus. Praesent eu efficitur neque. Mauris at ultricies arcu. Aliquam vulputate purus eu ligula iaculis pellentesque. Etiam quis purus nisl. Ut
-              mattis auctor velit eu pretium. Duis viverra convallis tortor non blandit. Vestibulum molestie velit ut ipsum condimentum, id condimentum turpis vestibulum. Suspendisse volutpat laoreet elit vel imperdiet.</p>
-
-             <h3>Aliquam lacus est?</h3>
-
-             <p>Aliquam lacus est, vestibulum nec mauris quis, sagittis maximus mauris. Fusce volutpat purus at massa dapibus, tristique maximus enim commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur malesuada bibendum mi quis
-              viverra. Ut finibus nisi lacus, non laoreet lectus dictum sit amet. Sed commodo rhoncus diam. Proin dui velit, malesuada et risus nec, pellentesque condimentum orci.</p>
+            <p style="font-size: 1.2em">Upframe connects students and recent graduates to the entrepreneurial scene, empowering them to build their own projects and startups.</p>
 
             </div>
 
             <div id="playground">
-             <h2>Playground</h2>
+             <h2>Startup Playground</h2>
 
-             <h3>Morbi finibus lacus a facilisis sodales?</h3>
+             <h3>What is the Startup Playground?</h3>
 
-             <p>Morbi finibus lacus a facilisis sodales. Nulla vitae erat ullamcorper, imperdiet leo nec, sollicitudin lacus. Praesent eu efficitur neque. Mauris at ultricies arcu. Aliquam vulputate purus eu ligula iaculis pellentesque. Etiam quis purus nisl. Ut
-              mattis auctor velit eu pretium. Duis viverra convallis tortor non blandit. Vestibulum molestie velit ut ipsum condimentum, id condimentum turpis vestibulum. Suspendisse volutpat laoreet elit vel imperdiet.</p>
-
-             <h3>Aliquam lacus est?</h3>
-
-             <p>Aliquam lacus est, vestibulum nec mauris quis, sagittis maximus mauris. Fusce volutpat purus at massa dapibus, tristique maximus enim commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur malesuada bibendum mi quis
-              viverra. Ut finibus nisi lacus, non laoreet lectus dictum sit amet. Sed commodo rhoncus diam. Proin dui velit, malesuada et risus nec, pellentesque condimentum orci.</p>
+             <p>A pre-accelerator built by Upframe for students, first time entrepreneurs and recent graduates. It works as a club where students are enabled to work on projects, find partners and access workshops and mentors of different backgrounds.</p>
 
             </div>
         </main>
@@ -82,11 +72,11 @@
                 <div>
                     <div>
                         <h2>Contacts</h2>
-                        <p><a href="mailto:info@upframe.xyz">info@upframe.xyz</a></p>
+                        <p><a href="mailto:hello@upframe.xyz">hello@upframe.xyz</a></p>
                     </div>
                     <div>
                         <h2>Follow us</h2>
-                        <p><a href="https://www.facebook.com/upframe">Facebook</a> / <a href="https://twitter.com/upframexyz">Twitter</a></p>
+                        <p><a href="https://www.facebook.com/upframe">Facebook</a> / <a href="http://instagram.com/upframe">Instagram</a></p>
                     </div>
                 </div>
             </div>
@@ -95,7 +85,27 @@
 
         <script src="js/smooth-scroll.js"></script>
         <script>
-            smoothScroll.init();
+            smoothScroll.init({
+                offset: 60,
+            });
+
+            window.addEventListener('scroll', function(e) {
+                let nav = document.querySelector("nav");
+
+                if (window.scrollY == 0) {
+                    nav.classList.remove("scroll");
+                } else {
+                    nav.classList.add("scroll");
+                }
+
+                if (window.scrollY > window.innerHeight) {
+                    document.querySelector("header > img").style.display = "none";
+                    document.querySelector("header a").style.display = "none";
+                } else {
+                    document.querySelector("header > img").style.display = "block";
+                    document.querySelector("header a").style.display = "block";
+                }
+            });
         </script>
     </body>
 </html>

@@ -1,17 +1,6 @@
 * {
     box-sizing: border-box;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(82, 38, 127);
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: transparent;
+    word-wrap: break-word;
 }
 
 body {
@@ -29,13 +18,19 @@ h4 {
 }
 
 nav {
-    /* background-color: #00e5d4; */
-    position: absolute;
+    position: fixed;
     top: 1.5em;
     left: 1.5em;
     z-index: 999;
     width: calc(100% - 3em);
     color: #fff;
+    transition: .2s ease-in-out all;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+nav.scroll {
+    background-color: #121952;
+    top: 0;
 }
 
 nav ul {
@@ -52,6 +47,7 @@ nav ul li {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
+    font-size: 1.05em;
 }
 
 nav a {
@@ -62,10 +58,16 @@ nav a {
     transition: .2s ease-in all;
     text-transform: uppercase;
     line-height: 1;
+    letter-spacing: .08em;
 }
 
-nav a:hover {
-    color: #121952;
+footer a {
+    transition: .2s ease-in all;
+}
+
+nav a:hover,
+footer a:hover {
+    color: #e3fd31;
 }
 
 nav ul li:first-of-type {
@@ -83,11 +85,13 @@ nav ul li:first-of-type a {
 
 nav ul li:last-child a {
     padding-right: 0;
+    margin-right: 0;
 }
 
 main {
     background: #fff;
     position: relative;
+    padding: 4.15em 0;
 }
 
 #cover {
@@ -111,16 +115,19 @@ header {
 }
 
 header a {
-    position: relative;
-    top: 48vh;
+    position: fixed;
+    bottom: 3em;
     display: block;
-    transform: rotate(180deg);
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
 }
 
 header>img {
     width: 17em;
-    position: relative;
-    top: 25vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 header a img {
@@ -150,19 +157,28 @@ footer>div {
 }
 
 main>div {
-    padding: 4.15em 0;
+    padding: 1em 0;
+    max-width: 48em;
+    transform: translateX(4em);
+}
+
+@media (max-width: 55em) {
+    main>div {
+        transform: translateX(0);
+    }
 }
 
 main>div h2 {
     font-size: 5em;
     margin-top: 0;
+    margin-bottom: .2em;
 }
 
 main>div h3 {
     color: #121952;
     font-weight: lighter;
     font-size: 2.5em;
-    margin: 2em 0 .4em;
+    margin: 1.5em 0 .4em;
 }
 
 footer>div {
@@ -211,4 +227,28 @@ footer {
 footer p {
     margin: 1.5em 0;
     color: #fff;
+}
+
+
+/* BORDERS */
+
+#border-top,
+#border-bottom {
+    position: fixed;
+    z-index: 999;
+    background-color: #fff;
+}
+
+#border-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5em;
+}
+
+#border-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5em;
 }
