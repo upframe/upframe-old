@@ -13,7 +13,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1;
 }
 
@@ -169,9 +169,10 @@ main>div {
 }
 
 main>div h2 {
-    font-size: 5em;
+    font-size: 3.8em;
     margin-top: 0;
     margin-bottom: .2em;
+    text-transform: uppercase;
 }
 
 main>div h3 {
