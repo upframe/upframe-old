@@ -2,6 +2,18 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(82, 38, 127);
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
 body {
     font: 1em/1.6 'Open Sans', sans-serif;
     color: #121952;
@@ -105,7 +117,7 @@ header a {
     transform: rotate(180deg);
 }
 
-header > img {
+header>img {
     width: 17em;
     position: relative;
     top: 25vh;
