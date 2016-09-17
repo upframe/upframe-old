@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 ::-webkit-scrollbar {
@@ -162,6 +163,12 @@ main>div {
     padding: 1em 0;
     max-width: 48em;
     transform: translateX(4em);
+}
+
+@media (max-width: 55em) {
+     main > div {
+         transform: translateX(0);
+     }
 }
 
 main>div h2 {

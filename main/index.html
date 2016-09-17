@@ -88,11 +88,12 @@
 
             window.addEventListener('scroll', function(e) {
                 let nav = document.querySelector("nav");
-              if (window.scrollY == 0) {
-nav.classList.remove("scroll");
-            } else {
-                nav.classList.add("scroll");
-            }
+
+                if (window.scrollY == 0) {
+                    nav.classList.remove("scroll");
+                } else {
+                    nav.classList.add("scroll");
+                }
 
                 if (window.scrollY > window.innerHeight) {
                     document.querySelector("header > img").style.display = "none";
@@ -101,7 +102,6 @@ nav.classList.remove("scroll");
                     document.querySelector("header > img").style.display = "block";
                     document.querySelector("header a").style.display = "block";
                 }
-
             });
         </script>
     </body>
