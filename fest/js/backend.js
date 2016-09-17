@@ -48,6 +48,7 @@ function highlight() {
     let hash = window.location.hash.replace('#', '');
     let items = hash.split(',')
 
+    document.querySelector('tr[data-id="' + items[0] + '"]').scrollIntoView();
     for (var i = 0; i < items.length; i++) {
         let row = document.querySelector('tr[data-id="' + items[i] + '"]');
         if (typeof row == 'undefined' || row == null) continue;
