@@ -298,38 +298,6 @@ function copyRowToForm(row) {
     }
 }
 
-function copyFormToObject(form) {
-    let object = new Object();
-    object.ID = 0;
-
-    let div = form.querySelector('div');
-
-    for (var i = 0; i < div.childElementCount; i++) {
-        let name = div.children[i].name;
-
-        if (typeof name == 'undefined' || name == null || name == "") {
-            continue;
-        }
-
-        switch (div.children[i].type) {
-            case "number":
-                object[name] = parseInt(div.children[i].value);
-                break;
-            case "datetime-local":
-                object[name] = (new Date(div.children[i].value)).toISOString();
-                break;
-            case "checkbox":
-                object[name] = div.children[i].checked;
-                break;
-            default:
-                object[name] = div.children[i].value;
-        }
-    }
-
-    if (isNaN(object.ID)) object.ID = 0;
-    return object;
-}
-
 function clearForm(form) {
     var div = form.children[1];
 

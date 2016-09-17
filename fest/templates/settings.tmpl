@@ -4,7 +4,7 @@
     <h1>Settings</h1>
 
     <form id="settings">
-        <input name="ID" type="hidden" value="{{ .Data.ID }}">
+        <input name="ID" id="ID" type="number" value="{{ .Data.ID }}">
 
         <label for="FirstName">First Name</label>
         <input name="FirstName" id="FirstName" type="text" value="{{ .Data.FirstName }}">
