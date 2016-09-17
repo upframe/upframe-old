@@ -28,7 +28,7 @@
             </tr>
         </thead>
         {{range $user := .Data}}
-        <tr>
+        <tr data-id="{{ $user.ID }}">
             <td data-name="ID">{{ $user.ID }}</td>
             <td data-name="FirstName">{{ $user.FirstName }}</td>
             <td data-name="LastName">{{ $user.LastName }}</td>

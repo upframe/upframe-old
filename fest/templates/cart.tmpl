@@ -2,5 +2,30 @@
 {{ define "content" }}
 <main role="main">
     <h1>Cart</h1>
+
+    <table id="cart">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tr data-id="0">
+            <td data-name="ID">0</td>
+            <td data-name="Name">teste</td>
+            <td data-name="Price">500</td>
+            <td><button class="btnRemove">&#215;</td>
+        </tr>
+        {{ range $product := .Data }}
+        <tr data-id="{{ $product.ID }}">
+            <td data-name="ID">{{ $product.ID }}</td>
+            <td data-name="Name">{{ $product.Name }}</td>
+            <td data-name="Price">{{ $product.Price }}</td>
+            <td><button class="btn-remove">&#215;</td>
+        </tr>
+        {{ end }}
+    </table>
 </main>
 {{ end }}
