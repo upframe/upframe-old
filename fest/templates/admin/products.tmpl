@@ -22,7 +22,7 @@
             </tr>
         </thead>
         {{range $product := .Data}}
-        <tr>
+        <tr data-id="{{ $product.ID }}">
             <td data-name="ID">{{ $product.ID }}</td>
             <td data-name="Name">{{ $product.Name }}</td>
             <td data-name="Description">{{ $product.Description }}</td>

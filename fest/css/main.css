@@ -388,7 +388,7 @@ input#ID {
 
 /* TABLE */
 
-.backend table {
+table {
     width: 100%;
     border: 0;
     padding: 0;
@@ -398,35 +398,35 @@ input#ID {
     border: 1px solid rgba(0, 0, 0, 0.075);
 }
 
-.backend tr {
+table tr {
     cursor: pointer;
 }
 
-.backend thead tr:first-child {
+table thead tr:first-child {
     font-weight: 900;
     background: #EEEEEE;
 }
 
-.backend thead tr:last-child {
+table thead tr:last-child {
     background: #fff;
 }
 
-.backend tr.highlight {
+table tr.highlight {
     background-color: #fff19d !important;
 }
 
-.backend tr:nth-of-type(odd) {
+table tr:nth-of-type(odd) {
     background: #f9f9f9;
 }
 
-.backend td,
-.backend th {
+table td,
+table th {
     padding: 1em .5em;
     text-align: left;
 }
 
-.backend td:first-child,
-.backend th:first-child {
+table td:first-child,
+table th:first-child {
     max-width: 60px;
 }
 
