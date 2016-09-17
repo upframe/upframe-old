@@ -333,6 +333,20 @@ input#ID {
     object-fit: cover;
 }
 
+.product h2,
+.product .btnBuy {
+    display: inline-block;
+}
+
+.product .btnBuy {
+    margin: 1.5em 0;
+    float: right;
+    width: 5em;
+    border-radius: 2.5px;
+    border: 1px solid #49A34B;
+    background: #1EBE39;
+}
+
 
 /* BACK END */
 

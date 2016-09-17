@@ -7,6 +7,7 @@
     {{ range $product := .Data }}
     <article class="product" data-id="{{ $product.ID }}">
         <h2>{{ $product.Name }}</h2>
+        <button class="btnBuy">Buy now</button>
         <img src="{{ $product.Picture }}">
         <p>{{ $product.Description }}</p>
         <p>{{ $product.Price }}€</p>

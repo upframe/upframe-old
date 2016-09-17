@@ -33,7 +33,35 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('body>nav input[type="checkbox"]').checked = false;
         }
     });
+
+    if (thing = document.getElementById("store")) {
+        initializeStore();
+    }
 });
+
+function initializeStore() {
+    Array.from(document.querySelectorAll(".btnBuy")).forEach((btn) => {
+        btn.addEventListener("click", addToCart);
+    });
+}
+
+function addToCart() {
+    var request = new XMLHttpRequest();
+    request.open("POST", window.location.origin + "/cart/" + this.parentElement.dataset.id, true);
+    request.send("");
+    request.onreadystatechange = function() {
+        if(request.readyState == 4) {
+            switch(request.status) {
+                case 200:
+                    console.log("working");
+                    break;
+                default:
+                    console.log("Bad request");
+            }
+        }
+    }
+    console.log(this.parentElement.dataset.id);
+}
 
 function submitSettings(event) {
     event.preventDefault();
