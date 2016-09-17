@@ -84,7 +84,9 @@
 
         <script src="js/smooth-scroll.js"></script>
         <script>
-            smoothScroll.init();
+            smoothScroll.init({
+                offset: 60,
+            });
 
             window.addEventListener('scroll', function(e) {
                 let nav = document.querySelector("nav");
