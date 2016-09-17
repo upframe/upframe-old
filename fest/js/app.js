@@ -16,7 +16,38 @@ document.addEventListener("DOMContentLoaded", () => {
             document.querySelector('body>nav input[type="checkbox"]').checked = false;
         }
     });
+
+    if (settings = document.getElementById("settings")) {
+        settings.addEventListener('submit', submitSettings);
+    }
 });
+
+function submitSettings(event) {
+    event.preventDefault();
+    let inputs = this.querySelectorAll('input'),
+        form = new Object();
+
+    Array.from(inputs).forEach((input) => {
+        form[input.name] = input.value;
+    });
+
+    var request = new XMLHttpRequest();
+    request.open("PUT", window.location, true);
+    request.setRequestHeader("Content-type", "application/json; charset=utf-8");
+    request.send(JSON.stringify(form));
+    request.onreadystatechange = function() {
+        if (request.readyState == 4) {
+            switch (request.status) {
+                case 200:
+                case 201:
+                    console.log("Hey")
+                    break;
+                default:
+                    console.log("BAD")
+            }
+        }
+    }
+}
 
 Object.prototype.serialize = function() {
     var str = [];
