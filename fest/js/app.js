@@ -71,7 +71,15 @@ function cartRequest(method, link, data, itemID) {
         if (request.readyState == 4) {
             switch (request.status) {
                 case 200:
-                    document.querySelector('tr[data-id="' + itemID + '"]').children[3].innerHTML--;
+                    if(method == "DELETE") {
+                        let item = document.querySelector('tr[data-id="' + itemID + '"]');
+                        let price = document.querySelector("#price");
+
+                        item.children[3].innerHTML--;
+                        if(item.children[3].innerHTML == 0) {
+                            item.parentElement.removeChild(item);
+                        }
+                    }
                     break;
                 default:
                     console.log(request.status + ": Bad request");
