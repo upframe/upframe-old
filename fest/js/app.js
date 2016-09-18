@@ -45,6 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if ((thing = document.getElementById("deactivate")) && window.location.pathname == "/settings") {
         thing.addEventListener("click", deactivateAccount);
     }
+
+    new Clipboard('#copy-ref')
 });
 
 function initializeStore() {

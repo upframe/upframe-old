@@ -21,16 +21,10 @@
         <label for="Address">Address</label>
         <textarea name="Address" id="Address">{{ if .Address.Valid }}{{ .Address.String }}{{ end }}</textarea>
 
-        <button type="submit">Update</button>
+        <button type="submit">Update</button> <button id="deactivate">Deactivate my account</button>
     </form>
     {{ end }}
 
-    <h2>Credit</h2>
-    <p>{{ .Data.User.Credit }}€</p>
 
-    <h2>Invites</h2>
-    <p>You have {{ .Data.User.Invites }} invites left, and your referral invite link is: <a href="{{ .Data.BaseURL }}/register?ref={{ .Data.User.Referral }}">{{ .Data.BaseURL }}/register?ref={{ .Data.User.Referral }}</a></p>
-
-    <button id="deactivate">Deactivate my account</button>
 </main>
 {{ end }}

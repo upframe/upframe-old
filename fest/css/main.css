@@ -260,6 +260,7 @@ body>nav li>ul>li a {
     padding: .5em .9em;
     border: 0;
     margin: 0;
+    cursor: pointer;
 }
 
 body>nav>ul ul a:hover {
@@ -409,16 +410,26 @@ body footer {
     background: #1EBE39;
 }
 
+#settings-page button {
+    display: inline-block;
+}
+
 #deactivate {
-    border: none;
-    background: transparent;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: #e82a46;
-    font-weight: bold;
-    text-align: right;
-    font-size: .9em;
+    background: #e82a46;
+    display: block;
+    color: #fff;
+    border-radius: 2px;
+    border: 0;
+    margin: 0 auto;
+    padding: .7em 2em;
+    cursor: pointer;
+    float: right;
+    opacity: .2;
+    transition: .2s ease all;
+}
+
+#deactivate:hover {
+    opacity: 1;
 }
 
 #activate {

@@ -27,7 +27,7 @@
                     <li>{{ .Session.FirstName }} {{ .Session.LastName }}</li>
                     <li><strong>Credit</strong><span>{{ .Session.Credit }}€</span></li>
                     <li><strong>Invites</strong><span>{{ .Session.Invites }}</span></li>
-                    <li><a id="copy-referral" href="{{ .BaseAddress }}/register?ref={{ .Session.Referral }}">Copy Referral</a></li>
+                    <li><a id="copy-ref" data-copy="{{ .BaseAddress }}/register?ref={{ .Session.Referral }}">Copy Referral</a></li>
                     <li><a href="/settings">Settings</a></li>
                     <li><a href="/logout">Logout</a></li>
                     {{ if .Session.IsAdmin }}<li><a href="/admin">Admin</a></li>{{ end }}
