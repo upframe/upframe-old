@@ -5,31 +5,32 @@
 
     <div id="form-error"></div>
 
+    {{ with .Data.User }}
     <form id="settings">
-        <input name="ID" id="ID" type="number" value="{{ .Data.ID }}">
+        <input name="ID" id="ID" type="number" value="{{ .ID }}">
 
         <label for="FirstName">First Name</label>
-        <input name="FirstName" id="FirstName" type="text" value="{{ .Data.FirstName }}">
+        <input name="FirstName" id="FirstName" type="text" value="{{ .FirstName }}">
 
         <label for="LastName">Last Name</label>
-        <input name="LastName" id="LastName" type="text" value="{{ .Data.LastName }}">
+        <input name="LastName" id="LastName" type="text" value="{{ .LastName }}">
 
         <label for="Email">Email</label>
-        <input name="Email" id="Email" type="text" value="{{ .Data.Email }}">
+        <input name="Email" id="Email" type="text" value="{{ .Email }}">
 
         <label for="Address">Address</label>
-        <textarea name="Address" id="Address">{{ if .Data.Address.Valid }}{{ .Data.Address.String }}{{ end }}</textarea>
+        <textarea name="Address" id="Address">{{ if .Address.Valid }}{{ .Address.String }}{{ end }}</textarea>
 
         <button type="submit">Update</button>
     </form>
+    {{ end }}
 
     <h2>Credit</h2>
-    <p>{{ .Data.Credit }}€</p>
+    <p>{{ .Data.User.Credit }}€</p>
 
     <h2>Invites</h2>
-    <p>You have {{ .Data.Invites }} invites left, and your referral invite link is: {{ .Data.Referral }}</p>
+    <p>You have {{ .Data.User.Invites }} invites left, and your referral invite link is: <a href="{{ .Data.BaseURL }}/register?ref={{ .Data.User.Referral }}">{{ .Data.BaseURL }}/register?ref={{ .Data.User.Referral }}</a></p>
 
-    <h2>Radioactive area</h2>
     <button id="deactivate">Deactivate my account</button>
 </main>
 {{ end }}
