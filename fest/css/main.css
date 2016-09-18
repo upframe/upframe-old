@@ -12,7 +12,7 @@ body {
 }
 
 body.covered {
-    background: url(https://static.pexels.com/photos/31257/pexels-photo.jpg) center center / cover;
+    background: url(/imgs/cover.jpg) center center / cover;
 }
 
 body>main {
