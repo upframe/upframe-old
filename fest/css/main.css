@@ -361,6 +361,7 @@ body>footer p {
     cursor: pointer;
     border: 0;
     background: none;
+    color: #212121;
 }
 
 
@@ -370,9 +371,10 @@ body>footer p {
 #deactivate,
 #activate,
 #edit {
-    margin-left: 1em;
     border-radius: .2em;
     color: #fff;
+    padding: .2em .5em;
+    margin: 0 0 0 1em;
 }
 
 #add {
