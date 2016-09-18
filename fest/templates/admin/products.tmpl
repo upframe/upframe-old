@@ -21,7 +21,7 @@
                 <th></th>
             </tr>
         </thead>
-        {{range $product := .Data}}
+        {{range $product := .Data.Items }}
         <tr data-id="{{ $product.ID }}">
             <td data-name="ID">{{ $product.ID }}</td>
             <td data-name="Name">{{ $product.Name }}</td>

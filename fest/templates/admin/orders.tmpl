@@ -19,7 +19,7 @@
                 <th></th>
             </tr>
         </thead>
-        {{range $order := .Data}}
+        {{range $order := .Data.Items }}
         <tr data-id="{{ $order.ID }}">
             <td data-name="ID">{{ $order.ID }}</td>
             <td data-name="UserID">{{ $order.UserID }}</td>

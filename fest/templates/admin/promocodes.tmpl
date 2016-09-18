@@ -20,7 +20,7 @@
                 <th></th>
             </tr>
         </thead>
-        {{range $promocode := .Data}}
+        {{range $promocode := .Data.Items }}
         <tr data-id="{{ $promocode.ID }}">
             <td data-name="ID">{{ $promocode.ID }}</td>
             <td data-name="Code">{{ $promocode.Code }}</td>
