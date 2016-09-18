@@ -45,6 +45,124 @@ body>nav>ul {
 }
 
 
+/* INPUTS & MORE */
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    border: 3px solid #e6e6e6;
+    padding: .5em;
+    margin-bottom: 1em;
+    border-radius: 2px;
+}
+
+button {
+    display: block;
+    background-color: #4e4e4e;
+    color: #fff;
+    border-radius: 2px;
+    border: 0;
+    margin: 0 auto;
+    padding: .7em 2em;
+    cursor: pointer;
+}
+
+label {
+    margin-bottom: .2em;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 1em;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+input[type="checkbox"]~label {
+    width: calc(100% - 2em);
+    display: inline-block;
+}
+
+input#ID {
+    display: none;
+}
+
+#form-error {
+    background-color: #FF3855;
+    margin-bottom: 1em;
+    padding: 0;
+    color: #fff;
+    border-radius: 2px;
+    height: 0;
+    transition: .2s ease height;
+}
+
+#form-error.error,
+#form-error.success,
+#form-error.warning {
+    height: auto;
+    padding: .4em;
+}
+
+#form-error.success {
+    background-color: #00E5D4;
+}
+
+#form-error.warning {
+    background-color: #E3FD31;
+    color: #272727;
+}
+
+#single-form,
+div#register-message,
+form#login,
+form#register {
+    max-width: 350px;
+    width: 90%;
+    padding: 2em;
+    margin: 0 auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 4em;
+    background: #fff;
+}
+
+#single-form h1,
+div#register-message h1,
+form#login h1,
+form#register h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+
 /* NAVIGATION BAR */
 
 body>nav {
@@ -110,7 +228,7 @@ body>nav>ul>li span {
 }
 
 body>nav input {
-    display: none;
+    display: none !important;
 }
 
 body>nav li>ul::before {
@@ -185,129 +303,10 @@ body>nav li>ul>li:last-child a {
     left: 0;
     border: solid transparent;
     content: " ";
-    /* height: 0; */
-    /* width: 0; */
     pointer-events: none;
     border-color: rgba(194, 225, 245, 0);
     border-top-color: #121952;
     border-width: 14px;
-}
-
-
-/* FORMS */
-
-#form-error {
-    background-color: #FF3855;
-    margin-bottom: 1em;
-    padding: 0;
-    color: #fff;
-    border-radius: 2px;
-    height: 0;
-    transition: .2s ease height;
-}
-
-#form-error.error,
-#form-error.success,
-#form-error.warning {
-    height: auto;
-    padding: .4em;
-}
-
-#form-error.success {
-    background-color: #00E5D4;
-}
-
-#form-error.warning {
-    background-color: #E3FD31;
-    color: #272727;
-}
-
-#single-form,
-div#register-message,
-form#login,
-form#register {
-    max-width: 350px;
-    width: 90%;
-    padding: 2em;
-    margin: 0 auto;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    margin-top: 4em;
-    background: #fff;
-}
-
-#single-form h1,
-div#register-message h1,
-form#login h1,
-form#register h1 {
-    margin-top: 0;
-    text-align: center;
-}
-
-input, textarea {
-    width: 100%;
-    display: block;
-    border: 3px solid #e6e6e6;
-    padding: .5em;
-    margin-bottom: 1em;
-    border-radius: 2px;
-}
-
-button {
-    display: block;
-    background-color: #4e4e4e;
-    color: #fff;
-    border-radius: 2px;
-    border: 0;
-    margin: 0 auto;
-    padding: .7em 2em;
-    cursor: pointer;
-}
-
-label {
-    margin-bottom: .2em;
-    display: block;
-    font-weight: bold;
-}
-
-input[type="checkbox"] {
-    display: inline-block;
-    width: 1em;
-    border: 0;
-    padding: 0;
-    border-radius: 0;
-}
-
-input[type="checkbox"]~label {
-    width: calc(100% - 2em);
-    display: inline-block;
-}
-
-input#ID {
-    display: none;
-}
-
-.shake {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-}
-
-@keyframes shake {
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
-    }
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
-    }
 }
 
 
