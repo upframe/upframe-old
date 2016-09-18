@@ -46,8 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
         thing.addEventListener("click", deactivateAccount);
     }
 
-    new Clipboard('#copy-ref')
+    if (thing = document.getElementById("copy-ref")) {
+        thing.addEventListener("click", copyReferral);
+    }
 });
+
+function copyReferral(event) {
+    event.preventDefault();
+
+    var input = document.createElement('textarea');
+    document.body.appendChild(input);
+    input.value = this.dataset.copy;
+    input.focus();
+    input.select();
+    document.execCommand('Copy');
+    input.remove();
+}
 
 function initializeStore() {
     Array.from(document.querySelectorAll(".btnBuy")).forEach((btn) => {
