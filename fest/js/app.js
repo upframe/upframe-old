@@ -41,6 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (thing = document.getElementById("cart")) {
         initializeCart();
     }
+
+    if ((thing = document.getElementById("deactivate")) && window.location.pathname == "/settings") {
+        thing.addEventListener("click", deactivateAccount);
+    }
 });
 
 function initializeStore() {
@@ -89,6 +93,25 @@ function cartRequest(method, link, data, itemID) {
     }
 }
 
+function deactivateAccount(event) {
+    event.preventDefault();
+    if (confirm("Are you sure you want to deactivate your account?")) {
+        let request = new XMLHttpRequest();
+        request.open("POST", "/settings/deactivate", true);
+        request.send();
+        request.onreadystatechange = function() {
+            if (request.readyState == 4) {
+                switch (request.status) {
+                    case 200:
+                        alert("Check your email please.");
+                        break;
+                    default:
+                        alert("Something wrong happened.");
+                }
+            }
+        }
+    }
+}
 
 function submitSettings(event) {
     event.preventDefault();
