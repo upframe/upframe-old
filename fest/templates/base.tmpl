@@ -19,12 +19,15 @@
             {{ end }}
 
             {{ if .IsLoggedIn }}
-            <li><a href="/cart" >Cart</a></li>
+            <li><a href="/cart">Cart</a></li>
             <li>
                 <label for="dropdown"><img src="https://www.gravatar.com/avatar/{{ MD5 .Session.Email }}?s=200" /><span>&#9660;</span></label>
                 <input type="checkbox" id="dropdown">
                 <ul>
                     <li>{{ .Session.FirstName }} {{ .Session.LastName }}</li>
+                    <li><strong>Credit</strong><span>{{ .Session.Credit }}€</span></li>
+                    <li><strong>Invites</strong><span>{{ .Session.Invites }}</span></li>
+                    <li><a id="copy-referral" href="{{ .BaseAddress }}/register?ref={{ .Session.Referral }}">Copy Referral</a></li>
                     <li><a href="/settings">Settings</a></li>
                     <li><a href="/logout">Logout</a></li>
                     {{ if .Session.IsAdmin }}<li><a href="/admin">Admin</a></li>{{ end }}

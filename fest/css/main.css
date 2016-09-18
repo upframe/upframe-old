@@ -253,7 +253,7 @@ body>nav li>ul {
 body>nav input[type="checkbox"]:checked+ul {
     visibility: visible;
     opacity: 1;
-    max-height: 150px;
+    max-height: 233px;
 }
 
 body>nav li>ul>li a {
@@ -266,10 +266,28 @@ body>nav>ul ul a:hover {
     background-color: #121952;
 }
 
-body>nav li>ul>li:first-child {
-    border-bottom: 1px solid;
-    font-weight: bold;
+body>nav li>ul>li:first-child,
+body>nav li>ul>li:nth-child(2),
+body>nav li>ul>li:nth-child(3) {
     padding: .3em .7em;
+}
+
+body>nav li>ul>li:nth-child(2),
+body>nav li>ul>li:nth-child(3) {
+    display: flex;
+}
+
+body>nav li>ul>li:first-child ,
+body>nav li>ul>li:nth-child(3) {
+    border-bottom: 1px solid;
+}
+
+body>nav li>ul>li strong {
+    margin-right: auto;
+}
+
+body>nav li>ul>li:first-child {
+    font-weight: bold;
 }
 
 body>nav li>ul>li:last-child a {
