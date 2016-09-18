@@ -47,21 +47,25 @@ function initializeStore() {
 
 function addToCart() {
     var request = new XMLHttpRequest();
-    request.open("POST", window.location.origin + "/cart/" + this.parentElement.dataset.id, true);
-    request.send("");
+    cartRequest("POST", window.location.origin + "/cart/" + this.parentElement.dataset.id, "", this.parentElement.dataset.id);
+}
+
+function cartRequest(method, link, data, itemID) {
+    let request = new XMLHttpRequest();
+    request.open(method, link, true);
+    request.send(data);
     request.onreadystatechange = function() {
         if(request.readyState == 4) {
             switch(request.status) {
                 case 200:
-                    console.log("working");
-                    break;
+                    console.log("Working!");
                 default:
-                    console.log("Bad request");
+                    console.log(request.status + ": Bad request");
             }
         }
     }
-    console.log(this.parentElement.dataset.id);
 }
+
 
 function submitSettings(event) {
     event.preventDefault();
