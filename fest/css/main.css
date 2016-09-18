@@ -243,7 +243,7 @@ form#register h1 {
     text-align: center;
 }
 
-input {
+input, textarea {
     width: 100%;
     display: block;
     border: 3px solid #e6e6e6;
