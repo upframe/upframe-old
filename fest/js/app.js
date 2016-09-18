@@ -59,6 +59,7 @@ function cartRequest(method, link, data, itemID) {
             switch (request.status) {
                 case 200:
                     console.log("Working!");
+                    break;
                 default:
                     console.log(request.status + ": Bad request");
             }
