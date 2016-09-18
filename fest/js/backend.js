@@ -281,6 +281,10 @@ function copyRowToForm(row) {
             input = form.querySelector("input[name=" + data + "]"),
             barID = form.querySelector("#barID");
 
+        if (data == undefined || input == undefined) {
+            continue;
+        }
+
         if (data == "ID") {
             barID.innerHTML = row.children[x].innerHTML;
         }

@@ -36,11 +36,11 @@
             <td data-name="Address">{{ if $user.Address.Valid }}{{ $user.Address.String }}{{ else }}null{{ end }}</td>
             <td data-name="Invites">{{ $user.Invites }}</td>
             <td data-name="Credit">{{ $user.Credit }}</td>
-            <td data-name="Confirmed"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Confirmed }}checked{{ end }}></td>
+            <td data-name="Confirmed"><input type="checkbox" disabled {{ if $user.Confirmed }}checked{{ end }}></td>
             <td>{{ $user.Referral }}</td> <!-- This is readyonly; at least for now. -->
             <td>{{ if $user.Referrer.Valid }}{{ $user.Referrer.Int64 }}{{ else }}null{{ end }}</td> <!-- This is readyonly; at least for now. -->
-            <td data-name="Admin"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Admin }}checked{{ end }}></td>
-            <td data-name="Deactivated"><input type="checkbox" disabled value="second_checkbox" {{ if $user.Deactivated }}checked{{ end }}></td>
+            <td data-name="Admin"><input type="checkbox" disabled {{ if $user.Admin }}checked{{ end }}></td>
+            <td data-name="Deactivated"><input type="checkbox" disabled {{ if $user.Deactivated }}checked{{ end }}></td>
             <td><button class="edit">&#9998;</button></td>
         </tr>
         {{ end }}
@@ -76,10 +76,10 @@
         <input name="Confirmed" id="Confirmed" required type="checkbox">
         <label for="Confirmed">Confirmed</label>
 
-        <input name="Admin" id="Admin" type="checkbox">
+        <input name="Admin" id="Admin" required type="checkbox">
         <label for="Admin">Admin</label>
 
-        <input name="Deactivated" id="Deactivated" type="checkbox">
+        <input name="Deactivated" id="Deactivated" required type="checkbox">
         <label for="Deactivated">Disabled</label>
 
         <button type="submit">Save</button>
