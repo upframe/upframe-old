@@ -117,10 +117,7 @@ input#ID {
     color: #272727;
 }
 
-#single-form,
-div#register-message,
-form#login,
-form#register {
+.floating-box {
     max-width: 350px;
     width: 90%;
     padding: 2em;
@@ -130,10 +127,7 @@ form#register {
     background: #fff;
 }
 
-#single-form h1,
-div#register-message h1,
-form#login h1,
-form#register h1 {
+.floating-box h1{
     margin-top: 0;
     text-align: center;
 }
