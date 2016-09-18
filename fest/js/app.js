@@ -50,8 +50,8 @@ function addToCart() {
     request.open("POST", window.location.origin + "/cart/" + this.parentElement.dataset.id, true);
     request.send("");
     request.onreadystatechange = function() {
-        if(request.readyState == 4) {
-            switch(request.status) {
+        if (request.readyState == 4) {
+            switch (request.status) {
                 case 200:
                     console.log("working");
                     break;
