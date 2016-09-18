@@ -95,11 +95,10 @@ function submitSettings(event) {
         if (request.readyState == 4) {
             switch (request.status) {
                 case 200:
-                case 201:
-                    console.log("Hey")
+                    alert("Saved.");
                     break;
                 default:
-                    console.log("BAD")
+                    alert("Error.");
             }
         }
     }

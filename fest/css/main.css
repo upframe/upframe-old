@@ -243,9 +243,7 @@ form#register h1 {
     text-align: center;
 }
 
-#single-form input,
-form#login input,
-form#register input {
+input {
     width: 100%;
     display: block;
     border: 3px solid #e6e6e6;
@@ -254,9 +252,7 @@ form#register input {
     border-radius: 2px;
 }
 
-#single-form button,
-form#login button,
-form#register button {
+button {
     display: block;
     background-color: #4e4e4e;
     color: #fff;
@@ -267,13 +263,13 @@ form#register button {
     cursor: pointer;
 }
 
-#single-form label {
-    margin-bottom: .5em;
+label {
+    margin-bottom: .2em;
     display: block;
     font-weight: bold;
 }
 
-#single-form input[type="checkbox"] {
+input[type="checkbox"] {
     display: inline-block;
     width: 1em;
     border: 0;
@@ -281,7 +277,7 @@ form#register button {
     border-radius: 0;
 }
 
-#single-form input[type="checkbox"]~label {
+input[type="checkbox"]~label {
     width: calc(100% - 2em);
     display: inline-block;
 }
@@ -348,7 +344,19 @@ input#ID {
 }
 
 
-/* BACK END */
+/* footer */
+
+body>footer p {
+    text-align: center;
+    color: #ccc;
+    font-size: .9em;
+    margin: 1em;
+}
+
+
+/* ---------------------------------
+------------ BACK END ONLY ---------
+------------------------------------ */
 
 .edit {
     cursor: pointer;
@@ -499,24 +507,4 @@ table th:first-child {
 
 #single-form #edit-text {
     display: none;
-}
-
-
-/* footer */
-
-body>footer p {
-    text-align: center;
-    color: #ccc;
-    font-size: .9em;
-    margin: 1em;
-}
-
-
-/* settings */
-
-#settings label {
-    display: block;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.8);
-    margin-top: 1em;
 }
