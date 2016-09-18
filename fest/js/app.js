@@ -55,8 +55,8 @@ function cartRequest(method, link, data, itemID) {
     request.open(method, link, true);
     request.send(data);
     request.onreadystatechange = function() {
-        if(request.readyState == 4) {
-            switch(request.status) {
+        if (request.readyState == 4) {
+            switch (request.status) {
                 case 200:
                     console.log("Working!");
                 default:
