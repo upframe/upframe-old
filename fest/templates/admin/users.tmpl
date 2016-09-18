@@ -20,7 +20,6 @@
                 <th>Invites</th>
                 <th>Credit</th>
                 <th>Confirmed</th>
-                <th>Referral</th>
                 <th>Referrer</th>
                 <th>Admin</th>
                 <th>Deactivated</th>
@@ -37,7 +36,6 @@
             <td data-name="Invites">{{ $user.Invites }}</td>
             <td data-name="Credit">{{ $user.Credit }}</td>
             <td data-name="Confirmed"><input type="checkbox" disabled {{ if $user.Confirmed }}checked{{ end }}></td>
-            <td>{{ $user.Referral }}</td> <!-- This is readyonly; at least for now. -->
             <td>{{ if $user.Referrer.Valid }}{{ $user.Referrer.Int64 }}{{ else }}null{{ end }}</td> <!-- This is readyonly; at least for now. -->
             <td data-name="Admin"><input type="checkbox" disabled {{ if $user.Admin }}checked{{ end }}></td>
             <td data-name="Deactivated"><input type="checkbox" disabled {{ if $user.Deactivated }}checked{{ end }}></td>

@@ -115,7 +115,7 @@ input#ID {
     background: #fff;
 }
 
-.floating-box h1{
+.floating-box h1 {
     margin-top: 0;
     text-align: center;
 }
@@ -278,7 +278,7 @@ body>nav li>ul>li:nth-child(3) {
     display: flex;
 }
 
-body>nav li>ul>li:first-child ,
+body>nav li>ul>li:first-child,
 body>nav li>ul>li:nth-child(3) {
     border-bottom: 1px solid;
 }
@@ -347,6 +347,7 @@ body>nav li>ul>li:last-child a {
     background: #1EBE39;
 }
 
+
 /* CART / CHECKOUT PAGE */
 
 #checkout-box {
@@ -355,14 +356,14 @@ body>nav li>ul>li:last-child a {
     text-align: left;
 }
 
-#checkout-box > #input-coupon {
+#checkout-box>#input-coupon {
     margin-bottom: 1em;
 }
 
 #checkout-box span {
     float: right;
-
 }
+
 
 /* footer */
 
@@ -389,13 +390,14 @@ body>footer p {
 /* TABLE TOOLBAR */
 
 #add,
-#deactivate,
+#table-toolbar #deactivate,
 #activate,
 #edit {
     border-radius: .2em;
     color: #fff;
     padding: .2em .5em;
     margin: 0 0 0 1em;
+    opacity: 1;
 }
 
 #add {

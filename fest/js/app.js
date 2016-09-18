@@ -91,13 +91,13 @@ function cartRequest(method, link, data, itemID) {
         if (request.readyState == 4) {
             switch (request.status) {
                 case 200:
-                    if(method == "DELETE") {
+                    if (method == "DELETE") {
                         let item = document.querySelector('tr[data-id="' + itemID + '"]');
                         let price = document.querySelector("#price");
 
                         item.children[3].innerHTML--;
                         price.innerHTML -= item.children[2].innerHTML;
-                        if(item.children[3].innerHTML == 0) {
+                        if (item.children[3].innerHTML == 0) {
                             item.parentElement.removeChild(item);
                         }
                     }
