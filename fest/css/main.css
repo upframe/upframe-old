@@ -11,6 +11,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+body.covered {
+    background: url(https://static.pexels.com/photos/31257/pexels-photo.jpg) center center / cover;
+}
+
 body>main {
     max-width: 1300px;
     width: 0 auto;
@@ -153,12 +157,13 @@ input#ID {
 /* NAVIGATION BAR */
 
 body>nav {
-    background-color: #00e5d4;
+    background-color: #fff;
     top: 0;
     left: 0;
     z-index: 999;
     width: 100%;
-    color: #fff;
+    /* color: #fff; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 body>nav ul {
@@ -169,7 +174,7 @@ body>nav ul {
 }
 
 body>nav>ul {
-    background-color: #00e5d4;
+    /* background-color: #00e5d4; */
     align-items: center;
 }
 
@@ -186,7 +191,7 @@ body>nav a {
     display: block;
     padding: 0 0 .2em;
     margin: 2em 1.25em 1.8em;
-    color: white;
+    /* color: white; */
     line-height: 1;
     transition: .2s ease-in all;
     border-bottom: 2px solid #00e5d4;
@@ -223,13 +228,13 @@ body>nav li>ul::before {
     right: 9px;
     left: auto;
     border: 8px solid transparent;
-    border-bottom-color: rgb(0, 229, 212);
+    border-bottom-color: #fff;
     content: '';
     position: absolute;
 }
 
 body>nav li>ul {
-    background-color: #00e5d4;
+    background-color: #fff;
     transition: .2s ease-in-out all;
     font-size: 1.2em;
     opacity: 0;
@@ -253,7 +258,7 @@ body>nav li>ul {
 body>nav input[type="checkbox"]:checked+ul {
     visibility: visible;
     opacity: 1;
-    max-height: 233px;
+    max-height: 15em;
 }
 
 body>nav li>ul>li a {
@@ -280,7 +285,7 @@ body>nav li>ul>li:nth-child(3) {
 
 body>nav li>ul>li:first-child,
 body>nav li>ul>li:nth-child(3) {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #ededed;
 }
 
 body>nav li>ul>li strong {

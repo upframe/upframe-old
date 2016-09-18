@@ -1,5 +1,10 @@
 'use strict';
 
+// Find a better way to do this
+if (document.querySelector("main.covered")) {
+    document.querySelector("body").classList.add("covered");
+}
+
 Object.prototype.serialize = function() {
     var str = [];
     for (var p in this) {
