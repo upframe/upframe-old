@@ -37,6 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (thing = document.getElementById("store")) {
         initializeStore();
     }
+
+    if (thing = document.getElementById("cart")) {
+        initializeCart();
+    }
 });
 
 function initializeStore() {
@@ -45,9 +49,18 @@ function initializeStore() {
     });
 }
 
+function initializeCart() {
+    Array.from(document.querySelectorAll(".btnRemove")).forEach((btn) => {
+        btn.addEventListener("click", removeFromCart);
+    });
+}
+
 function addToCart() {
-    var request = new XMLHttpRequest();
-    cartRequest("POST", window.location.origin + "/cart/" + this.parentElement.dataset.id, "", this.parentElement.dataset.id);
+    cartRequest("POST", window.location.origin + "/cart/" + this.parentElement.dataset.id, "");
+}
+
+function removeFromCart() {
+    cartRequest("DELETE", window.location.origin + "/cart/" + this.parentElement.parentElement.dataset.id, "", this.parentElement.parentElement.dataset.id);
 }
 
 function cartRequest(method, link, data, itemID) {
@@ -58,7 +71,7 @@ function cartRequest(method, link, data, itemID) {
         if (request.readyState == 4) {
             switch (request.status) {
                 case 200:
-                    console.log("Working!");
+                    document.querySelector('tr[data-id="' + itemID + '"]').children[3].innerHTML--;
                     break;
                 default:
                     console.log(request.status + ": Bad request");
