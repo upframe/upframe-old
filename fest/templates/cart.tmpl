@@ -1,5 +1,6 @@
 {{ define "title" }}Cart &bull; Upframe{{ end }}
 {{ define "content" }}
+{{ with .Data }}
 <main role="main">
     <h1>Cart</h1>
 
@@ -9,17 +10,22 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Price</th>
+                <th>Quantity</th>
                 <th></th>
             </tr>
         </thead>
-        {{ range $product := .Data.Products }}
+        {{ range $product := .Products }}
         <tr data-id="{{ $product.ID }}">
             <td data-name="ID">{{ $product.ID }}</td>
             <td data-name="Name">{{ $product.Name }}</td>
             <td data-name="Price">{{ $product.Price }}</td>
+            <td data-name="Quantity">{{ $product.Quantity }}</td>
             <td><button class="btn-remove">&#215;</td>
         </tr>
         {{ end }}
     </table>
+
+    <p>Total: {{ .Total }}€</p>
 </main>
+{{ end }}
 {{ end }}
