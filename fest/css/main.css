@@ -2,18 +2,6 @@
     box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #ccc
-}
-
-::-webkit-scrollbar-track-piece {
-    background-color: transparent;
-}
-
 html,
 body {
     height: 100%;
