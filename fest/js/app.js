@@ -95,7 +95,7 @@ function submitSettings(event) {
         if (request.readyState == 4) {
             switch (request.status) {
                 case 200:
-                    formError("Successfully updated", "success");
+                    formError("Successfully updated.", "success");
                     break;
                 default:
                     formError("Something wrong happened :(", "success");
