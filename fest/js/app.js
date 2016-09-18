@@ -95,10 +95,10 @@ function submitSettings(event) {
         if (request.readyState == 4) {
             switch (request.status) {
                 case 200:
-                    alert("Saved.");
+                    formError("Successfully updated", "success");
                     break;
                 default:
-                    alert("Error.");
+                    formError("Something wrong happened :(", "success");
             }
         }
     }
