@@ -328,6 +328,22 @@ body>nav li>ul>li:last-child a {
     background: #1EBE39;
 }
 
+/* CART / CHECKOUT PAGE */
+
+#checkout-box {
+    margin-top: 2em;
+    float: right;
+    text-align: left;
+}
+
+#checkout-box > #input-coupon {
+    margin-bottom: 1em;
+}
+
+#checkout-box span {
+    float: right;
+
+}
 
 /* footer */
 
@@ -336,6 +352,13 @@ body>footer p {
     color: #ccc;
     font-size: .9em;
     margin: 1em;
+}
+
+body footer {
+    width: 50%;
+    position: relative;
+    bottom: 0px;
+    margin: 0 auto;
 }
 
 

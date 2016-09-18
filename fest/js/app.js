@@ -76,6 +76,7 @@ function cartRequest(method, link, data, itemID) {
                         let price = document.querySelector("#price");
 
                         item.children[3].innerHTML--;
+                        price.innerHTML -= item.children[2].innerHTML;
                         if(item.children[3].innerHTML == 0) {
                             item.parentElement.removeChild(item);
                         }
