@@ -1,5 +1,6 @@
 {{ define "title" }}Cart &bull; Upframe{{ end }}
 {{ define "content" }}
+{{ with .Data }}
 <main role="main">
     <h1>Cart</h1>
 
@@ -13,7 +14,7 @@
                 <th></th>
             </tr>
         </thead>
-        {{ range $product := .Data.Products }}
+        {{ range $product := .Products }}
         <tr data-id="{{ $product.ID }}">
             <td data-name="ID">{{ $product.ID }}</td>
             <td data-name="Name">{{ $product.Name }}</td>
@@ -23,5 +24,8 @@
         </tr>
         {{ end }}
     </table>
+
+    <p>Total: {{ .Total }}€</p>
 </main>
+{{ end }}
 {{ end }}
