@@ -37,8 +37,8 @@
 
         <nav>
             <ul>
-                <li><a href="/"><img src="/img/logo.svg"></a></li>
-                <li><a href="#about" data-scroll >About Us</a></li>
+                <li><a href="/"><div id="logo"></div></a></li>
+                <li><a href="#about" data-scroll >About</a></li>
                 <li><a href="#playground" data-scroll >Playground</a></li>
                 <li><a href="#contacts" data-scroll >Contacts</a></li>
             </ul>
@@ -51,7 +51,7 @@
 
         <main>
             <div id="about">
-             <h2>About Us</h2>
+             <h2>About</h2>
 
             <p style="font-size: 1.2em">Upframe connects students and recent graduates to the entrepreneurial scene, empowering them to build their own projects and startups.</p>
 
@@ -67,6 +67,10 @@
              <h3>How does it work?</h3>
 
              <p>Instead of running for a short and intensive period of time like regular acceleration programs would, Startup Playground consists in 3-hour sessions every Saturday with no end in sight.</p>
+
+            <h3>When does it start?</h3>
+
+        <p>Startup Playground 0.1 will start in the 8st of October. The first editions will be test editions and get massive iterations in order to improve the overall experience for everyone involved.</p>
             </div>
         </main>
 
@@ -90,6 +94,7 @@
         <script>
             smoothScroll.init({
                 offset: 60,
+                speed: 1000,
             });
 
             window.addEventListener('scroll', function(e) {

@@ -29,8 +29,15 @@ nav {
 }
 
 nav.scroll {
-    background-color: #121952;
+    background: #fff;
+    color: #121952;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 100%;
+    left: 0;
     top: 0;
+    padding: 0 1.5em;
 }
 
 nav ul {
@@ -80,7 +87,21 @@ nav ul li:first-of-type a {
     font-weight: normal;
     display: inherit;
     transition: none;
-    font-size: 0;
+}
+
+nav #logo {
+    height: 1.750em;
+    width: 6.813em;
+    background: url('/img/logo-nav.png') no-repeat center center / cover;
+    transition: .2s ease all;
+}
+
+nav.scroll #logo {
+    background-image: url('/img/logo-fixed.png');
+}
+
+nav #logo:hover {
+    background-image: url('/img/logo-hover.png');
 }
 
 nav ul li:last-child a {
@@ -160,6 +181,10 @@ main>div {
     padding: 1em 0;
     max-width: 48em;
     transform: translateX(4em);
+}
+
+main p {
+    font-size: 1.2em;
 }
 
 @media (max-width: 55em) {
