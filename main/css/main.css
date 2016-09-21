@@ -17,6 +17,15 @@ h4 {
     line-height: 1;
 }
 
+#expand,
+#expand-button {
+    display: none;
+}
+
+#expand-button {
+    margin-right: 1em;
+}
+
 nav {
     position: fixed;
     top: 1.5em;
@@ -38,6 +47,35 @@ nav.scroll {
     left: 0;
     top: 0;
     padding: 0 1.5em;
+}
+
+@media (max-width: 720px) {
+    nav {
+        transform: translateY(calc(-100% + 4em));
+    }
+    #expand:checked~nav {
+        transform: translateY(0);
+    }
+    #expand:checked~nav:not(.scroll) {
+        background-color: rgb(172, 40, 110);
+    }
+    nav ul {
+        flex-direction: column-reverse;
+    }
+    #expand-button,
+    nav li:first-of-type a {
+        display: inline-block !important;
+        vertical-align: middle;
+    }
+    nav li {
+        width: 100%;
+        text-align: left;
+        padding: 1em 0 !important;
+    }
+    nav li a {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 nav ul {
@@ -89,6 +127,10 @@ nav ul li:first-of-type a {
     transition: none;
 }
 
+nav ul li:first-of-type a:hover svg path {
+    fill: #e3fd31;
+}
+
 nav #logo {
     height: 1.750em;
     width: 6.813em;
@@ -96,12 +138,12 @@ nav #logo {
     transition: .2s ease all;
 }
 
-nav.scroll #logo {
-    background-image: url('/img/logo-fixed.png');
+nav svg path {
+    transition: .2s ease all;
 }
 
-nav #logo:hover {
-    background-image: url('/img/logo-hover.png');
+nav.scroll svg path {
+    fill: #121952;
 }
 
 nav ul li:last-child a {
