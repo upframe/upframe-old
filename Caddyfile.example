@@ -4,7 +4,6 @@ http://localhost {
     templates
     ext .html
     errors {
-        log errors.log
         404 404.html
     }
 }
