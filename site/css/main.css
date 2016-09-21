@@ -24,6 +24,7 @@ h4 {
 
 #expand-button {
     margin-right: 1em;
+    cursor: pointer;
 }
 
 nav {
