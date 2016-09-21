@@ -498,6 +498,22 @@ table th:first-child {
     max-width: 60px;
 }
 
+/* NAVIGATION BUTTONS */
+
+.navigation {
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+}
+
+.navigation a:first-of-type {
+    margin-right: auto;
+}
+
+.navigation button:disabled {
+    opacity: .5;
+}
+
 
 /* SINGLE FORM */
 

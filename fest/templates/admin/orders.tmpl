@@ -31,6 +31,10 @@
         </tr>
         {{ end }}
     </table>
+    <div class="navigation">
+        <a {{ if .Data.HasPrevious }}href="{{ .Data.LinkPrevious }}" ><button>Previous</button></a>{{ else }}><button disabled>Previous</button>{{ end }}</a>
+        <a {{ if .Data.HasNext }}href="{{ .Data.LinkNext }}" ><button>Next</button></a>{{ else }}><button disabled>Next</button>{{ end }}</a>
+    </div>
 </main>
 
 <form method="POST" id="single-form" class="floating-box"  data-link="/admin/orders">
