@@ -1,36 +1,8 @@
 http://localhost {
     gzip
-    root ./main/
-    internal /includes
+    root ./site/
     templates
     ext .html
-    errors {
-        log errors.log
-        404 404.html
-    }
-}
-
-http://fest.localhost {
-    gzip
-    root ./fest/
-    internal /templates
-
-    fest {
-        db_user user
-        db_pass pass
-        db_host host
-        db_name port
-
-        # This are only test data/sandbox
-        smtp_user user
-        smtp_pass pass
-        smtp_host host
-        smtp_port port
-
-        # Other configuration
-        base_invites 5
-    }
-
     errors {
         log errors.log
         404 404.html
