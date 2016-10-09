@@ -4,7 +4,7 @@
 }
 
 body {
-    font: 1em/1.6 'Open Sans', sans-serif;
+    font: 1em/1.6 Poppins, sans-serif;
     color: #121952;
     padding: 1.5em;
 }
@@ -13,8 +13,20 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Poppins, sans-serif;
     line-height: 1;
+}
+
+#about>h1,
+#about>h2,
+#about>h3,
+#about>h4,
+#playground>h1,
+#playground>h2,
+#playground>h3,
+#playground>h4 {
+    font-weight: 300;
+    color: #ff3855;
 }
 
 #expand,
@@ -39,8 +51,8 @@ nav {
 }
 
 nav.scroll {
-    background: #fff;
-    color: #121952;
+    background: #121952;
+    color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -144,7 +156,7 @@ nav svg path {
 }
 
 nav.scroll svg path {
-    fill: #121952;
+    fill: #ffffff;
 }
 
 nav ul li:last-child a {
@@ -165,6 +177,7 @@ main {
     width: calc(100% - 3em);
     height: calc(100vh - 3em);
     object-fit: cover;
+    background-color: #121952;
 }
 
 
@@ -189,7 +202,7 @@ header a {
 header>img {
     width: 17em;
     position: fixed;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -198,6 +211,14 @@ header a img {
     margin: 0 auto;
     max-width: 1.5em;
     animation: 2s bounce infinite;
+}
+
+header h1.intro {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 5em;
 }
 
 @keyframes bounce {
@@ -211,6 +232,11 @@ header a img {
         transform: translateY(0em);
     }
 }
+
+#partners {
+    background-color: #121952;
+}
+
 
 main>div,
 footer>div {
