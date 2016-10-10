@@ -46,21 +46,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
-        <div id="cover"></div>
-
-        <div id="border-top"></div>
-        <div id="border-bottom"></div>
-
-        <input type="checkbox" id="expand">
-        <nav>
-            <ul>
-                <li><label for="expand" id="expand-button"><span>&#9776;</span></label><a href="/">{{ .Include "img/logo.svg" }}</a></li>
-                <li><a href="#about" data-scroll >About</a></li>
-                <li><a href="#playground" data-scroll >Playground</a></li>
-                <li><a href="#contacts" data-scroll >Contacts</a></li>
-            </ul>
-        </nav>
+    <body id="home">
+        {{ .Include "includes/navbar.html" }}
 
         <header>
             <img src="/img/logo.png">
@@ -69,81 +56,29 @@
         </header>
 
         <main>
-            <div id="about">
-             <h2>About</h2>
+            <h2>About</h2>
 
-            <p style="font-size: 1.2em">Upframe connects students to established tech entrepreneurs providing them tools and empowering them to become more entrepreneurial. More than an organization, Upframe is a community made by people who believe in creating an impact in the life of others.</p>
+            <p>Upframe connects students to established tech entrepreneurs providing them tools and empowering them to become more entrepreneurial. More than an organization, Upframe is a community made by people who believe in creating an impact in the life of others.</p>
 
-            </div>
+            <h2>How we do it?</h2>
 
-            <div id="playground">
-             <h2>Startup Playground</h2>
-
-             <h3>What is the Startup Playground?</h3>
-
-             <p>A pre-accelerator for students, first time entrepreneurs and recent graduates. It works as a club where students are enabled to work on projects, find partners and access workshops and mentors of different backgrounds.</p>
-
-             <h3>How does it work?</h3>
-
-             <p>Instead of running for a short and intensive period of time like regular acceleration programs would, Startup Playground consists in 3-hour sessions every Saturday with no end in sight.</p>
-
-             <h3>When does it start?</h3>
-
-             <p>Startup Playground will start in Lisbon next 8<sup>th</sup> of October. The first editions will get massive iterations in order to improve the overall experience for everyone involved.</p>
-            </div>
-
+            <p>Upframe connects students to established tech entrepreneurs providing them tools and empowering them to become more entrepreneurial. More than an organization, Upframe is a community made by people who believe in creating an impact in the life of others.</p>
         </main>
-        
+
         <footer>
-            <div id="contacts">
+            <div>
                 <div>
-                    <div>
-                        <h2>Contacts</h2>
-                        <p><a href="mailto:hello@upframe.xyz">hello@upframe.xyz</a></p>
-                    </div>
-                    <div>
-                        <h2>Follow us</h2>
-                        <p><a href="https://www.facebook.com/upframe">Facebook</a> / <a href="http://instagram.com/upframe">Instagram</a></p>
-                    </div>
+                    <h2>Contacts</h2>
+                    <p><a href="mailto:hello@upframe.xyz">hello@upframe.xyz</a></p>
+                </div>
+                <div>
+                    <h2>Follow us</h2>
+                    <p><a href="https://www.facebook.com/upframe">Facebook</a> / <a href="http://instagram.com/upframe">Instagram</a></p>
                 </div>
             </div>
             <p>&copy; 2016 Upframe. All right reserved.</p>
         </footer>
 
-        <script src="js/smooth-scroll.js"></script>
-        <script>
-            smoothScroll.init({
-                offset: 60,
-                speed: 1000,
-            });
-
-            window.addEventListener('scroll', function(e) {
-                let nav = document.querySelector("nav");
-
-                if (window.scrollY == 0) {
-                    nav.classList.remove("scroll");
-                } else {
-                    nav.classList.add("scroll");
-                }
-
-                if (window.scrollY > window.innerHeight) {
-                    document.querySelector("header > img").style.display = "none";
-                    document.querySelector("header a").style.display = "none";
-                } else {
-                    document.querySelector("header > img").style.display = "block";
-                    document.querySelector("header a").style.display = "block";
-                }
-            });
-        </script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-85193104-1', 'auto');
-          ga('send', 'pageview');
-
-        </script>
+        {{ .Include "includes/scripts.html" }}
     </body>
 </html>
