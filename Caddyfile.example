@@ -1,6 +1,7 @@
 http://localhost {
     gzip
     root ./site/
+    internal /includes
     templates
     ext .html
     errors {
