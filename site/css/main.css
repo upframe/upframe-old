@@ -137,9 +137,6 @@ nav ul li:last-child a {
     #expand:checked~nav {
         transform: translateY(0);
     }
-    #expand:checked~nav:not(.scroll) {
-        background-color: rgb(172, 40, 110);
-    }
     nav ul {
         flex-direction: column-reverse;
     }
