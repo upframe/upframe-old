@@ -6,6 +6,7 @@
 body {
     font: 1em/1.6 Poppins, sans-serif;
     color: #121952;
+    padding-top: 4.2em;
 }
 
 h1,
@@ -28,7 +29,7 @@ h2 {
     color: #ff3855;
 }
 
-main p {
+p {
     font-size: 1.125em;
     line-height: 1.67;
     letter-spacing: 0.5px;
@@ -36,7 +37,7 @@ main p {
 
 .container {
     max-width: 40em;
-    padding: 8em 0;
+    padding: 6em 0;
     width: 95%;
     margin: 0 auto;
 }
@@ -173,7 +174,7 @@ nav ul li:last-child a {
 
 #home header {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 4.2em);
     text-align: center;
     color: #fff;
     position: relative;
@@ -241,6 +242,25 @@ nav ul li:last-child a {
 
 #playground h2 {
     color: #00e5d4;
+}
+
+#playground h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 0.8;
+    margin: 0;
+    letter-spacing: 1.3px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#playground header p {
+    text-align: center;
+    color: #ffffff;
+}
+
+#playground header {
+    background: url('/img/playground/cover.png') center center / cover;
 }
 
 
