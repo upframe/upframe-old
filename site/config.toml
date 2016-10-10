@@ -1,0 +1,21 @@
+baseurl = "https://upframe.xyz/"
+title = "Upframe"
+languageCode = "en-us"
+
+googleAnalytics = "UA-85193104-1"
+
+[params]
+  Description = "Upframe connects students and recent graduates to the entrepreneurial scene, empowering them to build their own projects and startups."
+  Image = "img/social.jpg"
+  [params.Webmaster]
+    Bing = ""
+    Google = ""
+
+[social]
+  Facebook = "upframe"
+  GitHub = "upframe"
+  GooglePlus = ""
+  Instagram = "upframe"
+  LinkedIn = ""
+  Twitter = "upframexyz"
+  YouTube = "UCEJe-YgDEvr351w1oNjzolw"
