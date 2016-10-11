@@ -178,20 +178,21 @@ nav ul li:last-child a {
     background-color: #121952;
 }
 
-#home header a {
+#home header>div {
     position: absolute;
-    bottom: 3em;
-    display: block;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#home header>img {
-    width: 17em;
-    position: absolute;
-    top: calc(50% - 5em);
+    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+}
+
+#home header a {
+    display: block;
+    margin-top: 6em;
+}
+
+#home header div>img {
+    width: 6.6em;
+    margin-bottom: 1.9em;
 }
 
 #home header button {
@@ -202,7 +203,7 @@ nav ul li:last-child a {
 #home header a img {
     position: absolute;
     left: 50%;
-    bottom: -0.7em;
+    bottom: -1em;
     transform: translateX(-50%) rotate(90deg);
     margin: 0;
 }
@@ -215,10 +216,6 @@ nav ul li:last-child a {
     color: #ffffff;
     max-width: 10em;
     margin: 0 auto;
-    position: absolute;
-    top: calc(50% + 1.75em);
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
 }
 
 
