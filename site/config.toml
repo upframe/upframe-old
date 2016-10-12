@@ -1,7 +1,7 @@
 baseurl = "https://upframe.xyz/"
 title = "Upframe"
 languageCode = "en-us"
-
+uglyurls = true
 googleAnalytics = "UA-85193104-1"
 
 [params]
