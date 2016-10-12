@@ -279,39 +279,37 @@ nav ul li:last-child a {
 }
 
 #contacts h2 {
-  font-weight: 700 !important;
-  color: #121952;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: 0.8px;
+    font-weight: 700 !important;
+    color: #121952;
+    letter-spacing: 0.8px;
+    font-size: 2em;
 }
 
 #contacts .container {
-  display: flex;
-  max-width: 50em;
-  width: 50em;
+    display: flex;
 }
 
 #contacts .container div {
-  flex: 1;
+    flex: 1;
 }
 
 #contacts .container p a img {
-  margin: 0;
+    margin: 0 .4em 0 0;
 }
 
 #contacts .container div p:first-of-type {
-  margin: 18px 0 0 0;
+    margin: 18px 0 0 0;
+    font-size: 1em;
 }
 
 #contacts .container div:nth-child(1) p a {
-  color: #121952;
-  text-decoration: none;
+    color: #121952;
+    text-decoration: none;
 }
 
 #contacts .container div:nth-child(2) p a {
-  margin: 0;
-  display: inline-block;
+    margin: 0;
+    display: inline-block;
 }
 
 #contacts .container .email {
@@ -322,6 +320,7 @@ nav ul li:last-child a {
     color: #00e5d4 !important;
     text-decoration: underline;
 }
+
 
 /* NEWSLETTER */
 
