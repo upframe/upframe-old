@@ -132,9 +132,16 @@ nav ul li:first-of-type a {
     transition: none;
 }
 
-#home a:hover svg path,
-nav ul a:hover svg path {
+#home a:hover svg path {
     fill: #e3fd31;
+}
+
+nav ul a:hover svg path {
+    fill: #ff3855;
+}
+
+nav a.active {
+    color: #ff3855;
 }
 
 nav svg path {
@@ -236,6 +243,7 @@ nav ul li:last-child a {
     margin: 0 auto;
 }
 
+
 /* PARTNERS */
 
 #partners {
@@ -255,6 +263,7 @@ nav ul li:last-child a {
     padding: 6em 0;
 }
 
+
 /* Contacts */
 
 #contacts {
@@ -269,6 +278,7 @@ nav ul li:last-child a {
     font-stretch: normal;
     letter-spacing: 0.8px;
 }
+
 
 /* NEWSLETTER */
 
@@ -296,6 +306,7 @@ nav ul li:last-child a {
     width: 20%;
     color: white;
 }
+
 
 /* PLAYGROUND */
 
@@ -327,6 +338,7 @@ nav ul li:last-child a {
     font-weight: 300;
 }
 
+
 /* MENTORS PAGE */
 
 #mentors .banner button {
@@ -357,6 +369,7 @@ nav ul li:last-child a {
 #mentors header #mentorsgrid {
     display: inline-grid;
 }
+
 
 /* BANNER */
 
