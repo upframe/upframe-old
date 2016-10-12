@@ -1,7 +1,7 @@
 http://localhost {
     gzip
     root ./site/public
-    startup hugo --source site --baseURL "http://localhost/"
+    startup hugo --source site --baseURL "http://localhost/" --watch
     ext .html
     errors {
         404 404.html
