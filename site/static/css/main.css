@@ -7,6 +7,11 @@ body {
     font: 1em/1.6 Poppins, sans-serif;
     color: #121952;
     padding-top: 4.2em;
+    user-select: none;
+}
+
+p {
+    user-select: initial;
 }
 
 h1,
@@ -33,6 +38,16 @@ p {
     font-size: 1.125em;
     line-height: 1.67;
     letter-spacing: 0.5px;
+}
+
+input {
+    transition: .2s ease-in-out all;
+}
+
+input[type="submit"] {
+    background-color: #ff3855;
+    border-style: none;
+    padding: 0.8em;
 }
 
 .container {
@@ -73,6 +88,8 @@ nav {
     background: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    line-height: 4.2em;
+    height: 4.2em;
 }
 
 nav ul {
@@ -163,6 +180,7 @@ nav ul li:last-child a {
     background-color: #121952;
     color: #fff;
     border-bottom: 0;
+    box-shadow: 0 0 0;
 }
 
 #home nav path {
@@ -218,7 +236,6 @@ nav ul li:last-child a {
     margin: 0 auto;
 }
 
-
 /* PARTNERS */
 
 #partners {
@@ -238,6 +255,47 @@ nav ul li:last-child a {
     padding: 6em 0;
 }
 
+/* Contacts */
+
+#contacts {
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+}
+
+#contacts h2 {
+    color: #121952;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0.8px;
+}
+
+/* NEWSLETTER */
+
+#newsletter {
+    background-color: #e3fd31;
+}
+
+#newsletter h2 {
+    letter-spacing: 0.8px;
+    font-size: 2em;
+    font-weight: 300;
+    color: #121952;
+}
+
+#newsletter input[type="email"] {
+    margin-top: 1.8em;
+    border-color: white;
+    border-style: none;
+    padding: 0.8em;
+    width: 75%;
+    margin-right: 1.5em;
+}
+
+#newsletter input[type="submit"] {
+    width: 20%;
+    color: white;
+}
 
 /* PLAYGROUND */
 
@@ -266,8 +324,8 @@ nav ul li:last-child a {
 
 #playground h2 {
     color: #00e5d4;
+    font-weight: 300;
 }
-
 
 /* MENTORS PAGE */
 
@@ -296,6 +354,9 @@ nav ul li:last-child a {
     margin: .5em 0 0 0;
 }
 
+#mentors header #mentorsgrid {
+    display: inline-grid;
+}
 
 /* BANNER */
 
