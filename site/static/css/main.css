@@ -87,10 +87,7 @@ nav {
     transition: .2s ease-in-out all;
     font-family: 'Source Sans Pro', sans-serif;
     background: #fff;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.075);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    line-height: 4.2em;
-    height: 4.2em;
 }
 
 nav ul {
@@ -165,7 +162,7 @@ nav ul li:last-child a {
 
 @media (max-width: 720px) {
     nav {
-        transform: translateY(calc(-100% + 4em));
+        transform: translateY(calc(-100% + 4.2em));
     }
     #expand:checked~nav {
         transform: translateY(0);
