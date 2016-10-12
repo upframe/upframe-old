@@ -285,6 +285,22 @@ nav ul li:last-child a {
     letter-spacing: 0.8px;
 }
 
+#contacts .container {
+  display: flex;
+}
+
+#contacts .container div {
+  flex: 1;
+}
+
+#contacts .container p a img {
+  margin: 0;
+}
+
+#contacts .container div:nth-child(2) p a {
+  margin: 0;
+  display: inline-block;
+}
 
 /* NEWSLETTER */
 
