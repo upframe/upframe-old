@@ -314,6 +314,15 @@ nav ul li:last-child a {
   display: inline-block;
 }
 
+#contacts .container .email {
+    color: #121952;
+}
+
+#contacts .container .link {
+    color: #00e5d4 !important;
+    text-decoration: underline;
+}
+
 /* NEWSLETTER */
 
 #newsletter {
