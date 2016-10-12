@@ -141,6 +141,14 @@ nav ul a:hover svg path {
     fill: #ff3855;
 }
 
+#home nav a:hover {
+    color: #e3fd31;
+}
+
+nav a:hover {
+    color: #ff3855;
+}
+
 nav a.active {
     color: #ff3855;
 }
