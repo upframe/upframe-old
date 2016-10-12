@@ -45,9 +45,10 @@ input {
 }
 
 input[type="submit"] {
-    background-color: #ff3855;
+    background-image: linear-gradient(to left, #ff698e, #ff3855);
     border-style: none;
     padding: 0.8em;
+    cursor: pointer;
 }
 
 .container {
