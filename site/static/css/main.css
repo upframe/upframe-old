@@ -279,14 +279,17 @@ nav ul li:last-child a {
 }
 
 #contacts h2 {
-    color: #121952;
-    font-weight: normal;
-    font-stretch: normal;
-    letter-spacing: 0.8px;
+  font-weight: 700 !important;
+  color: #121952;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0.8px;
 }
 
 #contacts .container {
   display: flex;
+  max-width: 50em;
+  width: 50em;
 }
 
 #contacts .container div {
@@ -295,6 +298,15 @@ nav ul li:last-child a {
 
 #contacts .container p a img {
   margin: 0;
+}
+
+#contacts .container div p:first-of-type {
+  margin: 18px 0 0 0;
+}
+
+#contacts .container div:nth-child(1) p a {
+  color: #121952;
+  text-decoration: none;
 }
 
 #contacts .container div:nth-child(2) p a {
