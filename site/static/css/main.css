@@ -387,16 +387,32 @@ nav ul li:last-child a {
 
 
 /* MENTORS PAGE */
-
 #mentors > .container {
     display: flex;
     flex-flow: row wrap;
-    max-width: 80em;
+    max-width: 60em;
     text-align: center;
+    padding: 0;
 }
 
 #mentors .container .mentor {
     flex: 1;
+    flex-basis: 33%;
+    margin-bottom: 4em;
+}
+
+#mentors .container .mentor img {
+    transition: all .5s ease;
+    margin-bottom: 0.8em;
+}
+
+#mentors .container .mentor img:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+#mentors .container .mentor img:hover p {
+    text-decoration: underline;
 }
 
 #mentors .container .mentor .mentor-name {
@@ -407,7 +423,13 @@ nav ul li:last-child a {
 #mentors .container .mentor .mentor-role {
     margin: 0;
     color: rgba(18, 25, 82, 0.6);
-    text-transform: uppercase;;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+#mentors .container .mentor .mentor-description,
+#mentors .container .mentor .mentor-job {
+    display: none;
 }
 
 #mentors .banner button {
@@ -439,7 +461,80 @@ nav ul li:last-child a {
     display: inline-grid;
 }
 
+/* MENTORS POPUP */
+#mentors .overlay {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
+#mentors .mentor-popup {
+    position: fixed;
+    display: none;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 50em;
+    height: 36em;
+    z-index: 1001;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 2.5em;
+}
+
+#mentors .mentor-popup div:nth-child(1) {
+    width: 40%;
+    height: 100%;
+    float: left;
+    color: rgba(18, 25, 82, 0.6);
+}
+
+#mentors .mentor-popup div:nth-child(2) {
+    width: 60%;
+    height: 100%;
+    float: right;
+}
+
+#mentors .mentor-popup .close-icon {
+    height: 1.5em;
+    width: 1.5em;
+    top: 2em;
+    right: 2em;
+    position: absolute;
+}
+
+#mentors .mentor-popup .close-icon:hover {
+    cursor: pointer;
+}
+
+#mentors .mentor-popup .mentor-popup-name,
+#mentors .mentor-popup .mentor-popup-job {
+    color: #121952;
+    font-weight: 600;
+}
+
+#mentors .mentor-popup .worksat {
+    position: absolute;
+    bottom: 2.5em;
+}
+
+#mentors .mentor-popup div:nth-child(2) h2 {
+    color: rgba(18, 25, 82, 0.15);
+    line-height: 0.8;
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    margin-top: 0.1em;
+}
+
+#mentors .mentor-popup p {
+    margin: 0;
+}
 /* BANNER */
 
 a button {

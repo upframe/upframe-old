@@ -1,21 +1,29 @@
-<!--
-{
-    "mentors":[
-        {"Gustavo Pimenta": "User Experience"},
-        {"Paulo Gonçalves": "Digital Design"},
-        {"Mário Mouraz": "Sales"},
-        {"Leihla Pinho": "User Experience"},
-        {"Daniel Caeiro": "Marketing & Communication"},
-        {"Tiago Moreiras": "Product Management"}
-    ]
-}
--->
 <div id="mentors">
-    <div class="container">
-        <div class="mentor">
+    <div class="overlay"></div>
+    <div class="mentor-popup">
+        <div>
             <img src="/img/mentors/gustavopimenta.jpg">
-            <h2 class="mentor-name">Pedro Jacobina</h2>
-            <p class="mentor-role">User experience</p>
+            <p class="mentor-popup-name">Gustavo Pimenta</p>
+            <p class="mentor-popup-role">User Experience</p>
+
+            <p class="worksat">Works at:<br>
+            <span class="mentor-popup-job">Somewhere</span></p>
         </div>
+        <div id="mentor-about">
+            <h2>About</h2>
+            <p class="mentor-popup-description"></p>
+        </div>
+        <a><img class="close-icon" src="/img/icon-close.svg"></a>
+    </div>
+    <div class="container">
+        {{ range $mentor := .Site.Data.mentors }}
+        <div class="mentor">
+            <img src="{{ safeHTMLAttr $mentor.Photo }}">
+            <h2 class="mentor-name">{{ $mentor.Name }}</h2>
+            <p class="mentor-role">{{ $mentor.Role }}</p>
+            <p class="mentor-description">{{ $mentor.Description}}</p>
+            <p class="mentor-job">{{ $mentor.Job }}</p>
+        </div>
+        {{ end }}
     </div>
 </div>
