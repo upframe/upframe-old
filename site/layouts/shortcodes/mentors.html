@@ -3,15 +3,15 @@
     <div class="mentor-popup">
         <div>
             <img src="/img/mentors/gustavopimenta.jpg">
-            <p class="mentor-popup-name">Gustavo Pimenta</p>
-            <p class="mentor-popup-role">User Experience</p>
+            <p class="name">Gustavo Pimenta</p>
+            <p class="role">User Experience</p>
 
             <p class="worksat">Works at:<br>
-            <span class="mentor-popup-job">Somewhere</span></p>
+            <span class="job">Somewhere</span></p>
         </div>
         <div id="mentor-about">
             <h2>About</h2>
-            <p class="mentor-popup-description"></p>
+            <p class="description"></p>
         </div>
         <a><img class="close-icon" src="/img/icon-close.svg"></a>
     </div>
@@ -19,10 +19,10 @@
         {{ range $mentor := .Site.Data.mentors }}
         <div class="mentor">
             <img src="{{ safeHTMLAttr $mentor.Photo }}">
-            <h2 class="mentor-name">{{ $mentor.Name }}</h2>
-            <p class="mentor-role">{{ $mentor.Role }}</p>
-            <p class="mentor-description">{{ $mentor.Description}}</p>
-            <p class="mentor-job">{{ $mentor.Job }}</p>
+            <h2 class="name">{{ $mentor.Name }}</h2>
+            <p class="role">{{ $mentor.Role }}</p>
+            <p class="description">{{ $mentor.Description}}</p>
+            <p class="job">{{ $mentor.Job }}</p>
         </div>
         {{ end }}
     </div>

@@ -33,13 +33,13 @@ function openMentorPopup() {
         closeIcon = popup.querySelector(".close-icon");
     closeIcon.addEventListener("click", closeMentorPopup);
     popup.querySelector("img").src = mentor.querySelector("img").src;
-    popup.querySelector(".mentor-popup-name").innerHTML = mentor.querySelector(".mentor-name").innerHTML;
-    popup.querySelector(".mentor-popup-role").innerHTML = mentor.querySelector(".mentor-role").innerHTML;
-    popup.querySelector(".mentor-popup-job").innerHTML = mentor.querySelector(".mentor-job").innerHTML;
-    popup.querySelector(".mentor-popup-description").innerHTML = mentor.querySelector(".mentor-description").innerHTML;
+    popup.querySelector(".name").innerHTML = mentor.querySelector(".name").innerHTML;
+    popup.querySelector(".role").innerHTML = mentor.querySelector(".role").innerHTML;
+    popup.querySelector(".job").innerHTML = mentor.querySelector(".job").innerHTML;
+    popup.querySelector(".description").innerHTML = mentor.querySelector(".description").innerHTML;
 
-    overlay.style.display = "block";
-    popup.style.display = "block";
+    overlay.classList.add("active");
+    popup.classList.add("active");
     window.addEventListener("click", closeMentorPopup);
 }
 
@@ -47,7 +47,7 @@ function closeMentorPopup(event) {
     let overlay = document.querySelector("#mentors .overlay"),
         popup = document.querySelector("#mentors .mentor-popup");
     if(event.target.className == "overlay" || event.target.className == "close-icon") {
-        document.querySelector(".overlay").style.display = "none";
-        document.querySelector(".mentor-popup").style.display = "none";
+        document.querySelector(".overlay").classList.remove("active");
+        document.querySelector(".mentor-popup").classList.remove("active");
     }
 }
