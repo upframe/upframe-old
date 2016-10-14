@@ -478,7 +478,7 @@ nav ul li:last-child a {
     left: 0;
     z-index: -1000;
     opacity: 0;
-    transition: .5s ease opacity;
+    transition: .2s ease-in-out opacity;
 }
 
 #mentors .overlay.active {
@@ -487,7 +487,7 @@ nav ul li:last-child a {
 }
 
 .mentor-popup {
-    transition: .2s ease all;
+    transition: .2s ease-in-out all;
     position: fixed;
     display: flex;
     transform: translate(-50%, -50%) scale(0);
