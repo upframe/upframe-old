@@ -5,10 +5,8 @@ if (typeof smoothScroll != 'undefined') {
     });
 }
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-    if(window.location.pathname == "/mentors") {
+    if (window.location.pathname == "/mentors") {
         initMentorsPage();
     }
 });
@@ -50,7 +48,7 @@ function openMentorPopup() {
 function closeMentorPopup(event) {
     let overlay = document.querySelector("#mentors .overlay"),
         popup = document.querySelector("#mentors .mentor-popup");
-    if(event.target.className == "overlay" || event.target.className == "close-icon") {
+    if (event.target.className == "overlay" || event.target.className == "close-icon") {
         document.querySelector(".overlay").classList.remove("active");
         document.querySelector(".mentor-popup").classList.remove("active");
     }
