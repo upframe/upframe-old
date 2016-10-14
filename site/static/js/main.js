@@ -1,7 +1,11 @@
-smoothScroll.init({
-    offset: 150,
-    speed: 1000,
-});
+if (typeof smoothScroll != 'undefined') {
+    smoothScroll.init({
+        offset: 150,
+        speed: 1000,
+    });
+}
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     if(window.location.pathname == "/mentors/") {

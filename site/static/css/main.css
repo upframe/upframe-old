@@ -34,6 +34,10 @@ h2 {
     color: #ff3855;
 }
 
+img {
+    max-width: 100%;
+}
+
 p {
     font-size: 1.125em;
     line-height: 1.67;
@@ -490,12 +494,14 @@ nav ul li:last-child a {
     top: 50%;
     left: 50%;
     max-width: 50em;
+    overflow: auto;
     width: 95%;
-    height: 36em;
+    max-height: 95%;
     z-index: -1000;
     background-color: #fff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     padding: 2.5em;
+    /* flex-direction: column; */
 }
 
 .mentor-popup.active {
@@ -503,9 +509,12 @@ nav ul li:last-child a {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.mentor-popup div:nth-child(1) {
+.mentor-popup>div:nth-child(1) {
     width: 40%;
     color: rgba(18, 25, 82, 0.6);
+    flex-direction: column;
+    display: flex;
+    margin-right: 2em;
 }
 
 .mentor-popup div:nth-child(2) {
@@ -540,8 +549,7 @@ nav ul li:last-child a {
 }
 
 .mentor-popup .worksat {
-    position: absolute;
-    bottom: 2.5em;
+    margin-top: auto;
 }
 
 .mentor-popup div:nth-child(2) h2 {

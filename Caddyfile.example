@@ -1,6 +1,8 @@
-http://localhost {
+localhost:80 {
     gzip
     root ./site/public
+    startup cmd.exe /c start hugo --source site --baseURL "http://localhost/" --watch
+    shutdown taskkill /IM hugo.exe /F
     ext .html
     errors {
         404 404.html
