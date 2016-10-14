@@ -8,7 +8,7 @@ if (typeof smoothScroll != 'undefined') {
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    if(window.location.pathname == "/mentors/") {
+    if(window.location.pathname == "/mentors") {
         initMentorsPage();
     }
 });
