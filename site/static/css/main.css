@@ -66,7 +66,7 @@ input[type="submit"] {
 }
 
 main .container {
-    padding: 6em 0;
+    padding: 8em 0;
 }
 
 
@@ -270,7 +270,38 @@ nav ul li:last-child a {
 
 #partners .container {
     max-width: 80em;
-    padding: 6em 0;
+    text-align: center;
+}
+
+#partners img {
+    max-height: 100px;
+    opacity: .6;
+    transition: .2s ease-in-out all;
+}
+
+#partners img:hover {
+    opacity: 1;
+}
+
+#partners div:first-of-type>img:nth-child(2) {
+    width: 371px;
+    margin-left: 5em;
+}
+
+#partners .container div {
+    margin-top: 4em;
+}
+
+#partners .container div:last-child img {
+    margin: 0 2em;
+}
+
+#partners div:last-child>img:nth-child(1) {
+    width: 180px;
+}
+
+#partners div:last-child>img:nth-child(2) {
+    width: 330px;
 }
 
 
