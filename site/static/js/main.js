@@ -43,13 +43,14 @@ function openMentorPopup() {
     overlay.classList.add("active");
     popup.classList.add("active");
     window.addEventListener("click", closeMentorPopup);
+    window.addEventListener("keydown", closeMentorPopup);
 }
 
 function closeMentorPopup(event) {
     let overlay = document.querySelector("#mentors .overlay"),
         popup = document.querySelector("#mentors .mentor-popup");
-    if (event.target.className == "overlay" || event.target.className == "close-icon") {
-        document.querySelector(".overlay").classList.remove("active");
+    if (event.target.className == "overlay active" || event.target.className == "close-icon" || event.key == "Escape") {
+        document.querySelector("#mentors.overlay").classList.remove("active");
         document.querySelector(".mentor-popup").classList.remove("active");
     }
 }
