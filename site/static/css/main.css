@@ -429,12 +429,24 @@ nav ul li:last-child a {
     max-width: 60em;
     text-align: center;
     padding: 0;
+    justify-content: space-between;
 }
 
 #mentors .container .mentor {
-    flex: 1;
-    flex-basis: 33%;
+    flex-basis: 31%;
     margin-bottom: 4em;
+}
+
+@media (max-width: 700px) {
+    #mentors .container .mentor {
+        flex-basis: 48%;
+    }
+}
+
+@media (max-width: 400px) {
+    #mentors .container .mentor {
+        flex-basis: 100%;
+    }
 }
 
 #mentors .container .mentor img {
@@ -532,7 +544,7 @@ nav ul li:last-child a {
     background-color: #fff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
     padding: 2.5em;
-    /* flex-direction: column; */
+    justify-content: space-around;
 }
 
 .mentor-popup.active {
