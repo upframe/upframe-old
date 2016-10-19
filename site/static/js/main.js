@@ -51,6 +51,6 @@ function closeMentorPopup(event) {
         popup = document.querySelector("#mentors .mentor-popup");
     if (event.target.className == "overlay active" || event.target.className == "close-icon" || event.key == "Escape") {
         overlay.classList.remove("active");
-        popup.querySelector(".mentor-popup").classList.remove("active");
+        popup.classList.remove("active");
     }
 }
