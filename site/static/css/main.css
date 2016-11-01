@@ -222,11 +222,11 @@ nav ul li:last-child a {
 
 #home header a {
     display: block;
-    margin-top: 6em;
+    margin-top: 8em;
 }
 
 #home header div>img {
-    width: 6.6em;
+    width: 11.6em;
     margin-bottom: 1.9em;
 }
 
@@ -244,7 +244,7 @@ nav ul li:last-child a {
 }
 
 #home header h1.intro {
-    font-size: 3.750em;
+    font-size: 4.75em;
     font-weight: 600;
     line-height: 1.08;
     letter-spacing: 1.5px;
