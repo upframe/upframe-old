@@ -8,6 +8,7 @@ if (typeof smoothScroll != 'undefined') {
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname == "/mentors") {
         initMentorsPage();
+        randomMentorPosition();
     }
 });
 
@@ -22,10 +23,24 @@ window.addEventListener('scroll', function(e) {
 });
 
 function initMentorsPage() {
+
     let images = document.querySelectorAll("#mentors .container .mentor img");
     [].forEach.call(images, function(img) {
-        img.addEventListener("click", openMentorPopup)
+        img.addEventListener("click", openMentorPopup);
     });
+}
+
+function randomMentorPosition() {
+    let mentorslist = [];
+    for(let i of document.querySelector("div#mentors .container").children) {
+        mentorslist.push(i);
+    }
+
+    let newlist = []; //shuffle
+
+    for(let i in newlist) {
+        mentorslist[i].innerHTML = newlist[i].innerHTML;
+    }
 }
 
 function openMentorPopup() {
