@@ -23,7 +23,6 @@ window.addEventListener('scroll', function(e) {
 });
 
 function initMentorsPage() {
-
     let images = document.querySelectorAll("#mentors .container .mentor img");
     [].forEach.call(images, function(img) {
         img.addEventListener("click", openMentorPopup);
@@ -31,15 +30,19 @@ function initMentorsPage() {
 }
 
 function randomMentorPosition() {
-    let mentorslist = [];
-    for(let i of document.querySelector("div#mentors .container").children) {
-        mentorslist.push(i);
+    let mentorslist = [],
+        children = document.querySelector("div#mentors .container").children;
+
+    for (let i of children) {
+        mentorslist.push(i.cloneNode(true));
     }
 
-    let newlist = []; //shuffle
+    mentorslist.sort(function() {
+        return .5 - Math.random();
+    });
 
-    for(let i in newlist) {
-        mentorslist[i].innerHTML = newlist[i].innerHTML;
+    for (let i = 0; i < children.length; i++) {
+        children[i].parentNode.replaceChild(mentorslist[i], children[i]);
     }
 }
 
