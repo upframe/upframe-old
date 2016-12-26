@@ -210,7 +210,7 @@ nav ul li:last-child a {
     text-align: center;
     color: #fff;
     position: relative;
-    background-color: #121952;
+    background: url(/img/home.jpg) no-repeat 100% / cover;
 }
 
 #home header>div {
