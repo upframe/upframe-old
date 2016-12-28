@@ -1,0 +1,7 @@
+User-agent: *
+
+{{ if not (eq .Site.BaseURL "https://upframe.xyz") }}
+Disallow: /
+{{ else }}
+Disallow:
+{{ end }}
