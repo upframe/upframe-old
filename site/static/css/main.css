@@ -560,7 +560,7 @@ nav ul li:last-child a {
     margin-right: 2em;
 }
 
-.mentor-popup div:nth-child(2) {
+.mentor-popup>div:nth-child(2) {
     width: 60%;
 }
 
@@ -614,11 +614,12 @@ nav ul li:last-child a {
     margin-bottom: 5em;
 }
 
-.mentor-popup .description {
+.mentor-popup .description p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     line-height: 1.63;
     letter-spacing: 0.4px;
+    margin-bottom: 1em;
 }
 
 

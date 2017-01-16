@@ -1,44 +1,22 @@
-[
-  {
-    "Name": "Gustavo Pimenta",
-    "Role": "User Experience",
-    "Description": "Test. Just a test.",
-    "Photo":"\/img\/mentors\/gustavopimenta.jpg",
-    "Job": ""
-  },
-  {
-    "Name": "Paulo Gon\u00e7alves",
-    "Role": "Digital Design",
-    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed varius sapien. Fusce vitae magna nec nisi bibendum ultricies. Praesent viverra tempus lacus, ac iaculis justo faucibus sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec metus at felis lacinia rhoncus. Integer accumsan sagittis ligula, vitae fringilla enim aliquet et. Nulla sit amet libero blandit, bibendum quam ut, pharetra ex. Vestibulum et pharetra metus. In pretium dolor sem, quis suscipit erat eleifend et. Fusce vitae magna nec nisi bibendum ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Photo": "\/img\/mentors\/paulogoncalves.jpg",
-    "Job": "Spotify"
-  },
-  {
-    "Name": "M\u00e1rio Mouraz",
-    "Role": "Sales",
-    "Description": "",
-    "Photo": "\/img\/mentors\/mariomouraz.jpg",
-    "Job": ""
-  },
-  {
-    "Name": "Leihla Pinho",
-    "Role": "User Experience",
-    "Description": "",
-    "Photo": "\/img\/mentors\/leihlapinho.jpg",
-    "Job": ""
-  },
-  {
-    "Name": "Daniel Caeiro",
-    "Role": "Marketing & Communication",
-    "Description": "",
-    "Photo": "\/img\/mentors\/danielcaeiro.jpg",
-    "Job": ""
-  },
-  {
-    "Name": "Tiago Moreiras",
-    "Role": "Product Management",
-    "Description": "",
-    "Photo": "\/img\/mentors\/tiagomoreiras.jpg",
-    "Job": ""
-  }
+[{
+        "Name": "Inês Santos Silva",
+        "Role": "unknown",
+        "Description": "ines.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown"
+    },
+    {
+        "Name": "Gustavo Pimenta",
+        "Role": "unknown",
+        "Description": "gustavo.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown"
+    },
+    {
+        "Name": "Mariano Kostelec",
+        "Role": "unknown",
+        "Description": "mariano.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown"
+    }
 ]

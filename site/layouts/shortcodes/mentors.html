@@ -11,7 +11,7 @@
         </div>
         <div id="mentor-about">
             <h2>Mentor</h2>
-            <p class="description"></p>
+            <div class="description"></div>
         </div>
         <a><img class="close-icon" src="/img/icon-close.svg"></a>
     </div>
@@ -21,7 +21,9 @@
             <img src="{{ safeHTMLAttr $mentor.Photo }}">
             <h2 class="name">{{ $mentor.Name }}</h2>
             <p class="role">{{ $mentor.Role }}</p>
-            <p class="description">{{ $mentor.Description}}</p>
+            <div class="description"><p>
+                {{- (partial (printf "mentors/%s" $mentor.Description)) | markdownify -}}</p>
+            </div>
             <p class="job">{{ $mentor.Job }}</p>
         </div>
         {{ end }}
