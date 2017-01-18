@@ -3,20 +3,63 @@
         "Role": "unknown",
         "Description": "ines.markdown",
         "Photo": "\/img\/mentors\/placeholder.jpg",
-        "Job": "Unknown"
+        "Job": "Unknown",
+        "LinkedIn": "https://pt.linkedin.com/in/inessantossilva"
     },
     {
         "Name": "Gustavo Pimenta",
         "Role": "unknown",
         "Description": "gustavo.markdown",
         "Photo": "\/img\/mentors\/placeholder.jpg",
-        "Job": "Unknown"
+        "Job": "Unknown",
+        "LinkedIn": "https://pt.linkedin.com/in/gustavocpimenta"
     },
     {
         "Name": "Mariano Kostelec",
         "Role": "unknown",
         "Description": "mariano.markdown",
         "Photo": "\/img\/mentors\/placeholder.jpg",
-        "Job": "Unknown"
+        "Job": "Unknown",
+        "LinkedIn": "https://es.linkedin.com/in/marianokostelec"
+    },
+    {
+        "Name": "David Dias",
+        "Role": "unknown",
+        "Description": "david.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown",
+        "LinkedIn": "https://pt.linkedin.com/in/diasdavid/en"
+    },
+    {
+        "Name": "Davis Gouveia",
+        "Role": "unknown",
+        "Description": "davis.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown",
+        "LinkedIn": "https://pt.linkedin.com/in/davisgouveia"
+    },
+    {
+        "Name": "Paulo Gonçalves",
+        "Role": "unknown",
+        "Description": "paulogoncalves.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown",
+        "LinkedIn": "https://se.linkedin.com/in/paulomcg/en"
+    },
+    {
+        "Name": "Mário Mouraz",
+        "Role": "unknown",
+        "Description": "mario.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown",
+        "LinkedIn": "https://uk.linkedin.com/in/mariomouraz"
+    },
+    {
+        "Name": "Paulo Fonseca",
+        "Role": "unknown",
+        "Description": "paulofonseca.markdown",
+        "Photo": "\/img\/mentors\/placeholder.jpg",
+        "Job": "Unknown",
+        "LinkedIn": "https://pt.linkedin.com/in/paulofonsecame"
     }
 ]

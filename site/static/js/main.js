@@ -52,6 +52,7 @@ function openMentorPopup() {
         overlay = document.querySelector(".overlay"),
         closeIcon = popup.querySelector(".close-icon");
     closeIcon.addEventListener("click", closeMentorPopup);
+
     popup.querySelector("img").src = mentor.querySelector("img").src;
     popup.querySelector(".name").innerHTML = mentor.querySelector(".name").innerHTML;
     popup.querySelector(".role").innerHTML = mentor.querySelector(".role").innerHTML;

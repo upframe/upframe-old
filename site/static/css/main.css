@@ -441,6 +441,11 @@ nav ul li:last-child a {
     margin-bottom: 4em;
 }
 
+#mentors .container .mentor:last-child {
+    margin-right: auto;
+    margin-left: 3.5%;
+}
+
 @media (max-width: 700px) {
     #mentors .container .mentor {
         flex-basis: 48%;
