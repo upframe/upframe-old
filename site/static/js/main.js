@@ -6,6 +6,15 @@ if (typeof smoothScroll != 'undefined') {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.pathname == "/") {
+        window.addEventListener('scroll', function(e) {
+            let num = (1 - (window.scrollY / window.innerHeight)).toFixed(1);
+
+            document.getElementById("back-blur").style.opacity = num;
+            document.querySelector("#home header>div").style.opacity = num;
+        });
+    }
+
     if (window.location.pathname == "/mentors") {
         randomMentorPosition();
         initMentorsPage();

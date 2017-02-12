@@ -90,7 +90,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 999999;
     width: 100%;
     transition: .2s ease-in-out all;
     font-family: 'Source Sans Pro', sans-serif;
@@ -195,17 +195,58 @@ nav ul li:last-child a {
 }
 
 
+/* ORGANISE THIS PIECE */
+
+#home main {
+    background-color: #fff;
+    z-index: 999;
+    position: relative;
+}
+
+#back, #back-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+    transform: scale(1);
+    object-fit: cover;
+}
+
+#back-blur {
+    z-index: 2;
+    transition: .2s ease all;
+}
+
+#back {
+    z-index: 1;
+}
+
+
 /* HOME */
 
 #home nav {
-    background-color: #121952;
     color: #fff;
     border-bottom: 0;
     box-shadow: 0 0 0;
+    background: transparent;
+}
+
+#home nav.scroll {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: inherit;
 }
 
 #home nav path {
     fill: #fff;
+}
+
+#home nav.scroll path {
+    fill: #121952;
 }
 
 #home header {
@@ -214,7 +255,7 @@ nav ul li:last-child a {
     text-align: center;
     color: #fff;
     position: relative;
-    background: url(/img/home.jpg) no-repeat 100% / cover;
+    margin-bottom: 100vh;
 }
 
 #home header>div {
@@ -222,6 +263,7 @@ nav ul li:last-child a {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    z-index: 3;
 }
 
 #home header a {
