@@ -38,7 +38,7 @@ window.addEventListener('scroll', function(e) {
     if (window.scrollY == 0) {
         nav.classList.remove("scroll");
     } else {
-        //nav.classList.add("scroll");
+        nav.classList.add("scroll");
     }
 });
 
