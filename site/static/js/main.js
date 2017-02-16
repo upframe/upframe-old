@@ -7,23 +7,7 @@ if (typeof smoothScroll != 'undefined') {
 
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname == "/") {
-        window.addEventListener('scroll', function(e) {
-            if (window.scrollY > window.innerHeight) {
-                console.log(window.scrollY);
-                console.log(window.innerHeight)
-
-                document.getElementById("back").style.position = "absolute";
-                document.getElementById("back").style.marginTop = window.innerHeight + "px";
-            } else {
-                document.getElementById("back").style.position = "fixed";
-                document.getElementById("back").style.marginTop = "0";
-            }
-
-            let num = (1 - (window.scrollY / window.innerHeight)).toFixed(1);
-
-            document.getElementById("back-blur").style.opacity = num;
-            document.querySelector("#home header>div").style.opacity = num;
-        });
+        addHomePageScroll()
     }
 
     if (window.location.pathname == "/mentors") {
@@ -31,6 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
         initMentorsPage();
     }
 });
+
+function addHomePageScroll() {
+    let back = document.getElementById("back"),
+        backBlurred = document.getElementById("back-blur"),
+        headerContainer = document.querySelector("#home header>div");
+
+    window.addEventListener('scroll', function(e) {
+        if (window.scrollY > window.innerHeight) {
+            back.style.position = "absolute";
+            back.style.marginTop = window.innerHeight + "px";
+        } else {
+            back.style.position = "fixed";
+            back.style.marginTop = "0";
+        }
+
+        let num = (1 - (window.scrollY / window.innerHeight)).toFixed(1);
+
+        if (num < 0) return;
+
+        backBlurred.style.opacity = num;
+        headerContainer.style.opacity = num;
+    });
+}
 
 window.addEventListener('scroll', function(e) {
     let nav = document.querySelector("nav");
