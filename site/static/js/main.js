@@ -25,17 +25,19 @@ function addHomePageScroll() {
         if (window.scrollY > window.innerHeight) {
             back.style.position = "absolute";
             back.style.marginTop = window.innerHeight + "px";
+            backBlurred.style.visibility = "hidden";
         } else {
+            let num = (1 - (window.scrollY / window.innerHeight)).toFixed(2);
+            if (num < 0) return;
+
+            backBlurred.style.opacity = num;
+            headerContainer.style.opacity = num;
+
             back.style.position = "fixed";
             back.style.marginTop = "0";
+
+            backBlurred.style.visibility = "visible";
         }
-
-        let num = (1 - (window.scrollY / window.innerHeight)).toFixed(1);
-
-        if (num < 0) return;
-
-        backBlurred.style.opacity = num;
-        headerContainer.style.opacity = num;
     });
 }
 
