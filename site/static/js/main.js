@@ -8,6 +8,17 @@ if (typeof smoothScroll != 'undefined') {
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname == "/") {
         window.addEventListener('scroll', function(e) {
+            if (window.scrollY > window.innerHeight) {
+                console.log(window.scrollY);
+                console.log(window.innerHeight)
+
+                document.getElementById("back").style.position = "absolute";
+                document.getElementById("back").style.marginTop = window.innerHeight + "px";
+            } else {
+                document.getElementById("back").style.position = "fixed";
+                document.getElementById("back").style.marginTop = "0";
+            }
+
             let num = (1 - (window.scrollY / window.innerHeight)).toFixed(1);
 
             document.getElementById("back-blur").style.opacity = num;
@@ -27,7 +38,7 @@ window.addEventListener('scroll', function(e) {
     if (window.scrollY == 0) {
         nav.classList.remove("scroll");
     } else {
-        nav.classList.add("scroll");
+        //nav.classList.add("scroll");
     }
 });
 

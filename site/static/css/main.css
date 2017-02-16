@@ -196,6 +196,9 @@ nav ul li:last-child a {
 
 
 /* ORGANISE THIS PIECE */
+#home {
+    padding: 0;
+}
 
 #home main {
     background-color: #fff;
@@ -251,16 +254,16 @@ nav ul li:last-child a {
 
 #home header {
     width: 100%;
-    height: calc(100vh - 4.2em);
+    height: 200vh;
     text-align: center;
     color: #fff;
     position: relative;
-    margin-bottom: 100vh;
 }
 
 #home header>div {
     position: absolute;
-    top: 50%;
+    /* 25% minus half the top bar */
+    top: calc(25% + 2.1em);
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 3;
