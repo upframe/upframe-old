@@ -473,22 +473,22 @@ nav ul li:last-child a {
 }
 
 
-/* PLAYGROUND */
+/* PROGRAMME */
 
-#playground header {
+#programme header {
     background: url('/img/playground/cover.png') center center / cover;
 }
 
-#playground header p {
+#programme header p {
     text-align: center;
     color: #ffffff;
 }
 
-#playground header .container {
+#programme header .container {
     padding: 8em 0;
 }
 
-#playground h1 {
+#programme h1 {
     font-size: 50px;
     font-weight: 600;
     line-height: 0.8;
@@ -498,7 +498,7 @@ nav ul li:last-child a {
     color: #ffffff;
 }
 
-#playground h2 {
+#programme h2 {
     color: #00e5d4;
     font-weight: 300;
 }
