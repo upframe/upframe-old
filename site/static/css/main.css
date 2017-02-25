@@ -48,7 +48,7 @@ p {
     letter-spacing: 0.5px;
 }
 
-input {
+input, textarea, select {
     transition: .2s ease-in-out all;
 }
 
@@ -708,6 +708,47 @@ nav ul li:last-child a {
     line-height: 1.63;
     letter-spacing: 0.4px;
     margin-bottom: 1em;
+}
+
+/* APPLY */
+
+#apply main .container {
+    display: flex;
+    max-width: 70em;
+}
+
+#apply #venus {
+    flex-basis: 40%;
+}
+
+#apply form {
+    flex-basis: 60%;
+}
+
+#apply #venus img {
+    border-radius: 50%;
+    border: 1px solid #121952;
+    height: 10em;
+    width: 10em;
+}
+
+#apply input:not([type="submit"]), #apply textarea {
+    width: 100%;
+    height: 5em;
+    margin: 1em 0px;
+    background: #dedede;
+    border: 1px solid #dedede;
+    padding: 1em;
+}
+
+#apply input:not([type="submit"]):focus, #apply textarea:focus {
+    outline: none;
+    border: 1px solid #121952;
+}
+
+#apply textarea {
+    resize: none;
+    height: auto;
 }
 
 
