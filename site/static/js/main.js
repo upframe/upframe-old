@@ -7,7 +7,8 @@ if (typeof smoothScroll != 'undefined') {
 
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname == "/") {
-        addHomePageScroll()
+        addHomePageScroll();
+        initNewsletter();
     }
 
     if (window.location.pathname == "/mentors") {
@@ -54,6 +55,24 @@ window.addEventListener('scroll', function(e) {
         nav.classList.add("scroll");
     }
 });
+
+function initNewsletter() {
+    document.querySelector('#newsletter form').addEventListener("submit", function() {
+        event.preventDefault();
+        let req = new XMLHttpRequest(),
+            data = new FormData(document.querySelector("#newsletter form"));
+        req.open("POST", "https://upframe.xyz:2096/newsletter")
+        req.send(data);
+        req.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                switch(this.status) {
+                    case 500: console.log("Error: " + this.responseText);
+                    case 200: location.reload();
+                }
+            }
+        }
+    });
+}
 
 function initMentorsPage() {
     let images = document.querySelectorAll("#mentors .container .mentor img");
@@ -108,10 +127,10 @@ function closeMentorPopup(event) {
 }
 
 function initApplyPage() {
-    document.querySelector('form input[type="submit"]').addEventListener("click", function() {
+    document.querySelector('form').addEventListener("submit", function() {
         event.preventDefault();
-        let req = new XMLHttpRequest();
-        let data = new FormData(document.querySelector("form"));
+        let req = new XMLHttpRequest(),
+            data = new FormData(document.querySelector("form"));
         req.open("POST", "https://upframe.xyz:2096/apply");
         req.send(data);
         req.onreadystatechange = function() {
