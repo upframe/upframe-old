@@ -727,6 +727,12 @@ nav ul li:last-child a {
 
 #apply #venus {
     flex-basis: 40%;
+    padding-right: 2em;
+}
+
+#venus p {
+    font-size: 1em;
+    font-style: italic;
 }
 
 #apply form {
@@ -736,8 +742,11 @@ nav ul li:last-child a {
 #apply #venus img {
     border-radius: 50%;
     border: 1px solid #121952;
-    height: 10em;
-    width: 10em;
+    height: 8em;
+    width: 8em;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 1em;
 }
 
 #apply input:not([type="submit"]),
