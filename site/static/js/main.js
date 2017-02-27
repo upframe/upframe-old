@@ -114,7 +114,6 @@ function initApplyPage() {
         let data = new FormData(document.querySelector("form"));
         console.log(data);
         req.open("POST", "https://upframe.xyz:2096/apply");
-        req.setRequestHeader("Access-Control-Allow-Origin", "")
         req.send(data);
         req.onreadystatechange = function() {
             if (this.readyState == 4) {
