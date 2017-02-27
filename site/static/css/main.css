@@ -54,13 +54,6 @@ select {
     transition: .2s ease-in-out all;
 }
 
-input[type="submit"] {
-    background-image: linear-gradient(to left, #ff698e, #ff3855);
-    border-style: none;
-    padding: 0.8em;
-    cursor: pointer;
-}
-
 .container {
     max-width: 40em;
     width: 85%;
@@ -472,14 +465,18 @@ nav ul li:last-child a {
 #newsletter input[type="submit"] {
     width: 20%;
     color: white;
+    background-image: linear-gradient(to left, #ff698e, #ff3855);
 }
 
 
 /* PROGRAMME */
 
-#programme header,
+#programme header {
+    background: url('/img/factory-blue.jpg') center center / cover;
+}
+
 #apply header {
-    background: url('/img/playground/cover.png') center center / cover;
+    background: url('/img/factory-red.jpg') center center / cover;
 }
 
 #programme header p,
@@ -506,8 +503,16 @@ nav ul li:last-child a {
 
 #apply h2,
 #programme h2 {
-    color: #00e5d4;
     font-weight: 300;
+}
+
+#programme h2 {
+    color: #00e5d4;
+}
+
+#apply input[type="submit"] {
+    background-image: linear-gradient(to left, #ff698e, #ff3855);
+    color: #fff;
 }
 
 
@@ -770,18 +775,38 @@ nav ul li:last-child a {
     height: auto;
 }
 
+@media screen and (max-width: 850px) {
+    #apply main .container {
+        flex-direction: column;
+    }
+    #venus {
+        margin-bottom: 2em;
+    }
+    #apply #venus img {
+        width: 6em;
+        height: 6em;
+    }
+}
+
 
 /* BANNER */
 
-a button {
+input[type="submit"],
+button {
     background-image: linear-gradient(to left, #3ffff1, #00e5d4);
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1);
     letter-spacing: 2px;
     color: #121952;
     border: 0;
+    outline: 0;
     font-weight: 600;
     padding: 0.7em 1.3em;
     cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.2)
 }
 
 a img {
@@ -791,6 +816,10 @@ a img {
 .banner {
     background-color: #121952;
     text-align: center;
+}
+
+.banner button {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 .banner .container {

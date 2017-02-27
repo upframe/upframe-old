@@ -7,7 +7,7 @@ enableRobotsTXT = true
 
 [params]
   Description = "Upframe connects students and recent graduates to the entrepreneurial scene, empowering them to build their own projects and startups."
-  Image = "img/social.jpg"
+  Image = "img/home.jpg"
   [params.Webmaster]
     Bing = ""
     Google = ""
