@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
         randomMentorPosition();
         initMentorsPage();
     }
+
+    if (window.location.pathname == "/apply") {
+        initApplyPage();
+    }
 });
 
 function addHomePageScroll() {
@@ -101,4 +105,24 @@ function closeMentorPopup(event) {
         overlay.classList.remove("active");
         popup.classList.remove("active");
     }
+}
+
+function initApplyPage() {
+    document.querySelector('form input[type="submit"]').addEventListener("click", function() {
+        event.preventDefault();
+        let req = new XMLHttpRequest();
+        let data = new FormData(document.querySelector("form"));
+        console.log(data);
+        req.open("POST", "https://upframe.xyz:2096/apply");
+        req.setRequestHeader("Access-Control-Allow-Origin", "")
+        req.send(data);
+        req.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                switch(this.status) {
+                    case 500: console.log("Error: " + this.responseText); break;
+                    case 200: location.reload();
+                }
+            }
+        }
+    });
 }
