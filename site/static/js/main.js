@@ -112,7 +112,6 @@ function initApplyPage() {
         event.preventDefault();
         let req = new XMLHttpRequest();
         let data = new FormData(document.querySelector("form"));
-        console.log(data);
         req.open("POST", "https://upframe.xyz:2096/apply");
         req.send(data);
         req.onreadystatechange = function() {
