@@ -55,6 +55,7 @@ function initMentorsPage() {
     let images = document.querySelectorAll("#mentors .container .mentor img");
     [].forEach.call(images, function(img) {
         img.addEventListener("click", openMentorPopup);
+        img.addEventListener('touchstart', openMentorPopup);
     });
 }
 
@@ -75,8 +76,8 @@ function randomMentorPosition() {
     }
 }
 
-function openMentorPopup() {
-    let mentor = this.parentElement,
+function openMentorPopup(event) {
+    let mentor = event.currentTarget.parentElement,
         popup = document.querySelector(".mentor-popup"),
         overlay = document.querySelector(".overlay"),
         closeIcon = popup.querySelector(".close-icon");
