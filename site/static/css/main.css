@@ -185,6 +185,7 @@ nav ul li:last-child a {
     font-size: 2.875em;
     max-width: 17em;
     margin: 1em 0 0;
+    font-weight: bold;
 }
 
 #home header .btn {
