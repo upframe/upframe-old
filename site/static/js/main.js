@@ -7,7 +7,6 @@ if (typeof smoothScroll != 'undefined') {
 
 document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname == "/") {
-        addHomePageScroll();
         initNewsletter();
     }
 
@@ -20,31 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
         initApplyPage();
     }
 });
-
-function addHomePageScroll() {
-    let back = document.getElementById("back"),
-        backBlurred = document.getElementById("back-blur"),
-        headerContainer = document.querySelector("#home header>div");
-
-    window.addEventListener('scroll', function(e) {
-        if (window.scrollY > window.innerHeight) {
-            back.style.position = "absolute";
-            back.style.marginTop = window.innerHeight + "px";
-            backBlurred.style.visibility = "hidden";
-        } else {
-            let num = (1 - (window.scrollY / window.innerHeight)).toFixed(2);
-            if (num < 0) return;
-
-            backBlurred.style.opacity = num;
-            headerContainer.style.opacity = num;
-
-            back.style.position = "fixed";
-            back.style.marginTop = "0";
-
-            backBlurred.style.visibility = "visible";
-        }
-    });
-}
 
 window.addEventListener('scroll', function(e) {
     let nav = document.querySelector("nav");
