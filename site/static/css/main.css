@@ -8,6 +8,7 @@ body {
     color: rgb(75, 83, 144);
     background: #fff;
     letter-spacing: 0.03em;
+    padding-top: 4.3em;
 }
 
 a {
@@ -39,7 +40,7 @@ nav {
 }
 
 nav.scroll {
-    background: #fff;
+    background: #fff !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -66,14 +67,10 @@ nav a {
     margin: 1em;
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: #121952;
     transition: .2s ease-in all;
     text-transform: uppercase;
     line-height: 1;
-}
-
-nav.scroll a {
-    color: #121952;
 }
 
 nav ul li:first-child a {
@@ -110,10 +107,6 @@ nav a.active {
 
 nav svg path {
     transition: .2s ease all;
-    fill: rgba(231, 231, 232, 1);
-}
-
-nav.scroll svg path {
     fill: #121952;
 }
 
@@ -161,12 +154,32 @@ nav.scroll svg path {
 
 /** HOME **/
 
+#home nav {
+    background: #121952;
+}
+
+#home nav svg path {
+    fill: rgba(231, 231, 232, 1);
+}
+
+#home nav.scroll svg path {
+    fill: #121952;
+}
+
+#home nav a {
+    color: #fff;
+}
+
+#home nav.scroll a {
+    color: inherit;
+}
+
 #home header {
     background: rgba(18, 25, 82, 1);
-    height: 100vh;
+    height: calc(100vh - 4.3em);
     color: #fff;
-    padding-top: 4.3em;
     text-align: center;
+    padding-top: 4em;
 }
 
 #home header>p {
@@ -176,7 +189,7 @@ nav.scroll svg path {
 
 #home header div:first-of-type {
     display: flex;
-    margin: 4em auto 0;
+    margin: 0 auto;
     max-width: 69em;
 }
 
