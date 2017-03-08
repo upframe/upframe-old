@@ -143,12 +143,41 @@ nav svg path {
     border-left: .25em solid rgba(231, 231, 232, 1);
     border-bottom: .25em solid rgba(231, 231, 232, 1);
     text-align: center;
+    position: relative;
 }
 
-.btn:hover {
-    padding: .4em 1.5em;
-    border-top: .25em solid rgba(231, 231, 232, 1);
-    border-right: .25em solid rgba(231, 231, 232, 1);
+.btn:before,
+.btn:after {
+    content: '';
+    display: block;
+    position: absolute;
+    transition: -webkit-transform 250ms 250ms;
+    transition: transform 250ms 250ms;
+    transition: transform 250ms 250ms, -webkit-transform 250ms 250ms;
+}
+
+.btn:before {
+    top: 0;
+    height: .25em;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.btn:hover:before {
+    transform: scaleX(1);
+}
+
+.btn:after {
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0.6);
+    transform-origin: 0;
+    width: .25em;
+    background: #fff;
 }
 
 .btn-red {
