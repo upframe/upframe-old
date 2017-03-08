@@ -139,11 +139,17 @@ nav svg path {
 .btn {
     color: rgba(231, 231, 232, 1);
     padding: .65em 1.75em .4em 1.5em;
-    transition: none;
+    transition: .2s ease all;
+    transition-delay: 500ms;
     border-left: .25em solid rgba(231, 231, 232, 1);
     border-bottom: .25em solid rgba(231, 231, 232, 1);
     text-align: center;
     position: relative;
+}
+
+.btn:hover {
+    background: #e7e7e8;
+    color: #121952;
 }
 
 .btn:before,
@@ -152,7 +158,7 @@ nav svg path {
     display: block;
     position: absolute;
     transition: transform 250ms 250ms;
-    background: #fff;
+    background: #e7e7e8;
 }
 
 .btn:before {
@@ -190,6 +196,11 @@ nav svg path {
 .btn-red:before,
 .btn-red:after {
     background: rgb(255, 56, 85);
+}
+
+.btn-red:hover {
+    background: rgb(255, 56, 85);
+    color: #fff !important;
 }
 
 
