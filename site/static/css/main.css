@@ -50,7 +50,7 @@ nav ul {
     text-align: right;
     display: flex;
     align-items: center;
-    width: calc(100% - 3em);
+    width: 90%;
     max-width: 55em;
     margin: 0 auto;
 }
@@ -242,6 +242,7 @@ nav svg path {
     display: flex;
     margin: 0 auto;
     max-width: 69em;
+    width: 95%;
 }
 
 #home header div:first-of-type img {
