@@ -151,9 +151,8 @@ nav svg path {
     content: '';
     display: block;
     position: absolute;
-    transition: -webkit-transform 250ms 250ms;
     transition: transform 250ms 250ms;
-    transition: transform 250ms 250ms, -webkit-transform 250ms 250ms;
+    background: #fff;
 }
 
 .btn:before {
@@ -163,7 +162,6 @@ nav svg path {
     transform: scaleX(0);
     transform-origin: 0;
     width: 100%;
-    background: #fff;
 }
 
 .btn:hover:before {
@@ -174,16 +172,24 @@ nav svg path {
     height: 100%;
     right: 0;
     bottom: 0;
-    transform: scaleY(0.6);
-    transform-origin: 0;
+    transform: scaleY(0);
+    transform-origin: 0 100%;
     width: .25em;
-    background: #fff;
+}
+
+.btn:hover:after {
+    transform: scaleY(1);
 }
 
 .btn-red {
     color: rgb(255, 56, 85) !important;
     border-left-color: rgb(255, 56, 85);
     border-bottom-color: rgb(255, 56, 85);
+}
+
+.btn-red:before,
+.btn-red:after {
+    background: rgb(255, 56, 85);
 }
 
 
