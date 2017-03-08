@@ -139,7 +139,7 @@ nav svg path {
 .btn {
     color: rgba(231, 231, 232, 1);
     padding: .65em 1.75em .4em 1.5em;
-    transition: .2s ease all;
+    transition: .2s ease color, background;
     transition-delay: 500ms;
     border-left: .25em solid rgba(231, 231, 232, 1);
     border-bottom: .25em solid rgba(231, 231, 232, 1);
