@@ -7,6 +7,7 @@ body {
     font: 1em/1.6 'Roboto', sans-serif;
     color: rgb(75, 83, 144);
     background: #fff;
+    letter-spacing: 0.03em;
 }
 
 a {
@@ -34,8 +35,9 @@ nav {
     z-index: 999;
     width: 100%;
     transition: .2s ease-in-out all;
-    background: rgba(18, 25, 82, 1);
+    background: transparent;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    height: 4em;
 }
 
 nav ul {
@@ -45,7 +47,7 @@ nav ul {
     display: flex;
     align-items: center;
     width: calc(100% - 3em);
-    max-width: 70em;
+    max-width: 55em;
     margin: 0 auto;
 }
 
@@ -53,19 +55,26 @@ nav ul li {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
-    font-size: 1.05em;
+    font-size: 1em;
     letter-spacing: 0.03em;
-    margin: 0em 2em;
 }
 
 nav a {
+    margin: 1em;
     display: block;
     text-decoration: none;
     color: #fff;
-    margin: 1.5em .5em;
     transition: .2s ease-in all;
     text-transform: uppercase;
     line-height: 1;
+}
+
+nav ul li:first-child a {
+    margin-left: 0;
+}
+
+nav ul li:last-child a {
+    margin-right: 0;
 }
 
 nav ul li:first-of-type {
@@ -96,6 +105,7 @@ nav svg path {
     transition: .2s ease all;
     fill: rgba(231, 231, 232, 1);
 }
+
 
 /*
 nav ul li:last-child a {
@@ -132,29 +142,55 @@ nav ul li:last-child a {
 
 .btn {
     color: rgba(231, 231, 232, 1);
-    border: .25em solid rgba(231, 231, 232, 1);
-    border-top-color: transparent;
-    border-right-color: transparent;
+    padding: .65em 1.75em .4em 1.5em;
+    transition: none;
+    border-left: .25em solid rgba(231, 231, 232, 1);
+    border-bottom: .25em solid rgba(231, 231, 232, 1);
+    text-align: center;
 }
 
 .btn-red {
-    color: rgba(255, 56, 85, 1);
-    border-color: transparent transparent rgba(255, 56, 85, 1) rgba(255, 56, 85, 1)
+    color: rgb(255, 56, 85);
+    border-left-color: rgb(255, 56, 85);
+    border-bottom-color: rgb(255, 56, 85);
 }
 
-a.btn {
-    padding: 0.4em 1em;
-}
 
 /** HOME **/
+
 #home header {
     background: rgba(18, 25, 82, 1);
     height: 100vh;
     color: #fff;
-    padding-top: 4.2em;
+    padding-top: 4em;
+    text-align: center;
 }
 
-#home header p {
-    max-width: 70em;
-    margin: auto;
+#home header>p {
+    max-width: 45em;
+    margin: 3em auto;
+}
+
+#home header div:first-of-type {
+    display: flex;
+    margin: 4em auto 0;
+    max-width: 65em;
+}
+
+#home header div:first-of-type img {
+    max-height: 10em;
+}
+
+#home header div:first-of-type p {
+    font-size: 2.875em;
+    max-width: 17em;
+    margin: 1em 0 0;
+}
+
+#home header .btn {
+    font-size: 1.125em;
+}
+
+#home header .btn:first-of-type {
+    margin-right: 2em;
 }
