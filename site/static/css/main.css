@@ -34,7 +34,7 @@ nav {
     z-index: 999;
     width: 100%;
     transition: .2s ease-in-out all;
-    background: #fff;
+    background: rgba(18, 25, 82, 1);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -45,6 +45,7 @@ nav ul {
     display: flex;
     align-items: center;
     width: calc(100% - 3em);
+    max-width: 70em;
     margin: 0 auto;
 }
 
@@ -53,17 +54,18 @@ nav ul li {
     vertical-align: middle;
     padding: 0;
     font-size: 1.05em;
+    letter-spacing: 0.03em;
+    margin: 0em 2em;
 }
 
 nav a {
     display: block;
     text-decoration: none;
-    color: inherit;
+    color: #fff;
     margin: 1.5em .5em;
     transition: .2s ease-in all;
     text-transform: uppercase;
     line-height: 1;
-    letter-spacing: .08em;
 }
 
 nav ul li:first-of-type {
@@ -92,13 +94,15 @@ nav a.active {
 
 nav svg path {
     transition: .2s ease all;
-    fill: #121952;
+    fill: rgba(231, 231, 232, 1);
 }
 
+/*
 nav ul li:last-child a {
     padding-right: 0;
     margin-right: 0;
 }
+*/
 
 @media (max-width: 720px) {
     nav {
@@ -124,4 +128,33 @@ nav ul li:last-child a {
         margin: 0;
         padding: 0;
     }
+}
+
+.btn {
+    color: rgba(231, 231, 232, 1);
+    border: .25em solid rgba(231, 231, 232, 1);
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.btn-red {
+    color: rgba(255, 56, 85, 1);
+    border-color: transparent transparent rgba(255, 56, 85, 1) rgba(255, 56, 85, 1)
+}
+
+a.btn {
+    padding: 0.4em 1em;
+}
+
+/** HOME **/
+#home header {
+    background: rgba(18, 25, 82, 1);
+    height: 100vh;
+    color: #fff;
+    padding-top: 4.2em;
+}
+
+#home header p {
+    max-width: 70em;
+    margin: auto;
 }

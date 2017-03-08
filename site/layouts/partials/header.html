@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js" lang="{{ .Site.LanguageCode }}">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-{{ partial "head/base" . }}
-{{ partial "head/open_graph" . }}
-{{ partial "head/twitter" .}}
-{{ partial "head/webmaster" .}}
-{{ partial "head/icons" .}}
-{{ partial "head/includes" .}}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ partial "head/base" . }}
+    {{ partial "head/open_graph" . }}
+    {{ partial "head/twitter" .}}
+    {{ partial "head/webmaster" .}}
+    {{ partial "head/icons" .}}
+    {{ partial "head/includes" .}}
 </head>
 
 <body id="{{ if .IsHome }}home{{ else }}{{ .Slug }}{{ end }}">
@@ -21,6 +21,6 @@
             <li><a {{ if eq .Slug "about" }}class="active"{{ end }} href="/about">About</a></li>
             <li><a {{ if eq .Slug "programme" }}class="active"{{ end }} href="/programme">Our Programme</a></li>
             <li><a {{ if eq .Slug "mentors" }}class="active"{{ end }} href="/mentors">Our Mentors</a></li>
-            <li><a {{ if eq .Slug "apply" }}class="active"{{ end }} href="/apply">Apply</a></li>
+            <li><a class="{{ if eq .Slug "apply" }}active{{ else }}btn btn-red{{ end }}" href="/apply">Apply</a></li>
         </ul>
     </nav>
