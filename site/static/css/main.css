@@ -35,9 +35,12 @@ nav {
     z-index: 999;
     width: 100%;
     transition: .2s ease-in-out all;
-    background: transparent;
+    height: 4.3em;
+}
+
+nav.scroll {
+    background: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    height: 4em;
 }
 
 nav ul {
@@ -67,6 +70,10 @@ nav a {
     transition: .2s ease-in all;
     text-transform: uppercase;
     line-height: 1;
+}
+
+nav.scroll a {
+    color: #121952;
 }
 
 nav ul li:first-child a {
@@ -106,13 +113,9 @@ nav svg path {
     fill: rgba(231, 231, 232, 1);
 }
 
-
-/*
-nav ul li:last-child a {
-    padding-right: 0;
-    margin-right: 0;
+nav.scroll svg path {
+    fill: #121952;
 }
-*/
 
 @media (max-width: 720px) {
     nav {
@@ -150,7 +153,7 @@ nav ul li:last-child a {
 }
 
 .btn-red {
-    color: rgb(255, 56, 85);
+    color: rgb(255, 56, 85) !important;
     border-left-color: rgb(255, 56, 85);
     border-bottom-color: rgb(255, 56, 85);
 }
@@ -162,19 +165,19 @@ nav ul li:last-child a {
     background: rgba(18, 25, 82, 1);
     height: 100vh;
     color: #fff;
-    padding-top: 4em;
+    padding-top: 4.3em;
     text-align: center;
 }
 
 #home header>p {
     max-width: 45em;
-    margin: 3em auto;
+    margin: 4em auto;
 }
 
 #home header div:first-of-type {
     display: flex;
     margin: 4em auto 0;
-    max-width: 65em;
+    max-width: 69em;
 }
 
 #home header div:first-of-type img {
@@ -184,7 +187,7 @@ nav ul li:last-child a {
 #home header div:first-of-type p {
     font-size: 2.875em;
     max-width: 17em;
-    margin: 1em 0 0;
+    margin: 1em .5em 0;
     font-weight: bold;
 }
 
