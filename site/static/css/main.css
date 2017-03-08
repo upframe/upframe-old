@@ -139,8 +139,7 @@ nav svg path {
 .btn {
     color: rgba(231, 231, 232, 1);
     padding: .65em 1.75em .4em 1.5em;
-    transition: .2s ease all;
-    transition-delay: 500ms;
+    transition: background .25s ease 250ms, color .25s ease 250ms;
     border-left: .25em solid rgba(231, 231, 232, 1);
     border-bottom: .25em solid rgba(231, 231, 232, 1);
     text-align: center;
@@ -157,7 +156,7 @@ nav svg path {
     content: '';
     display: block;
     position: absolute;
-    transition: transform 250ms 250ms;
+    transition: transform 250ms;
     background: #e7e7e8;
 }
 
