@@ -145,6 +145,12 @@ nav svg path {
     text-align: center;
 }
 
+.btn:hover {
+    padding: .4em 1.5em;
+    border-top: .25em solid rgba(231, 231, 232, 1);
+    border-right: .25em solid rgba(231, 231, 232, 1);
+}
+
 .btn-red {
     color: rgb(255, 56, 85) !important;
     border-left-color: rgb(255, 56, 85);
