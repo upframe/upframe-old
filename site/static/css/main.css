@@ -883,3 +883,12 @@ nav svg path {
 #copyright {
     text-align: center;
 }
+
+@media (max-width: 750px) {
+    #right-here>div {
+        flex-direction: column;
+    }
+    #right-here>div div {
+        margin: 2em 0 0;
+    }
+}
