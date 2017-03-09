@@ -177,6 +177,7 @@ nav ul li:first-child a {
 
 nav ul li:last-child a {
     margin-right: 0;
+    font-size: 1em;
 }
 
 nav ul li:first-of-type {
