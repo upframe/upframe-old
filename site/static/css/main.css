@@ -27,10 +27,12 @@ h4,
 h5,
 h6 {
     color: #121952;
+    letter-spacing: 0.03em;
 }
 
 h2 {
     color: rgba(75, 83, 144, 1);
+    letter-spacing: 0.03em;
 }
 
 
@@ -52,6 +54,9 @@ h2 {
     position: relative;
     margin: 0;
     font-weight: 500;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -88,6 +93,16 @@ h2 {
     color: #fff !important;
 }
 
+.btn-dark-blue {
+    color: rgba(18, 25, 82, 1) !important;
+    border-color: rgba(18, 25, 82, 1);
+}
+
+.btn-dark-blue:hover {
+    background: rgba(18, 25, 82, 1);
+    color: #fff !important;
+}
+
 
 /* * * * * * * * * *
  *                 *
@@ -114,6 +129,7 @@ nav {
     transition: background .2s ease-in-out;
     height: 4.3em;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: #fff;
 }
 
 nav.scroll {
@@ -730,9 +746,119 @@ nav svg path {
 }
 
 
-/* footer */
+/* Newsletter */
 
-footer {
+#newsletter {
+    background: rgba(227, 253, 49, 1);
+    text-align: center;
+    padding: 7.8em 0;
+}
+
+#newsletter h2 {
+    font-size: 3.125em;
+    font-weight: bold;
+    color: rgba(18, 25, 82, 1);
+    line-height: 1;
+    margin: 0 0 0.520em;
+}
+
+#newsletter p {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: rgba(255, 56, 85, 1);
+    margin: 0 0 2.444em;
+}
+
+#newsletter form {
+    max-width: 32em;
+    width: 92%;
+    margin: 0 auto;
+}
+
+#newsletter form * {
+    display: block;
+}
+
+#newsletter form input[type="email"] {
     width: 100%;
+    border: .188em solid rgba(196, 196, 196, 1);
+    background: transparent;
+    padding: .4em 1.5em;
+    margin-bottom: 1em;
+}
+
+
+/*Footer */
+
+#right-here {
+    background: rgba(18, 25, 82, 1);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 7.8em 0;
+}
+
+#right-here h2 {
+    font-size: 3.125em;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+}
+
+#right-here>p {
+    margin: 1.6em 0 2.7em;
+}
+
+#right-here>p,
+#right-here a {
+    color: rgba(0, 229, 212, 1);
+    font-weight: bold;
+}
+
+#right-here p {
+    font-size: 1.125em;
+}
+
+#right-here>div {
+    display: flex;
+    max-width: 70em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#right-here>div>* {
+    flex-basis: 50%;
+}
+
+#right-here>div>div {
+    margin-left: 3em;
+}
+
+#right-here>div p {
+    text-align: left;
+    margin-top: 0;
+}
+
+#right-here>div p:nth-child(2) {
+    font-size: 1em;
+}
+
+#social {
+    font-size: 1em !important;
+}
+
+#social img {
+    height: 1.7em;
+    margin-right: 2em;
+    transition: .2s ease all;
+}
+
+#social img:hover path {
+    fill: rgba(0, 229, 212, 1);
+}
+
+#copyright {
     text-align: center;
 }

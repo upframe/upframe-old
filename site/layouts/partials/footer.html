@@ -1,5 +1,37 @@
+<div id="newsletter">
+  <h2>Check 1,2 - can you hear us?</h2>
+  <p>Not yet ready to come onboard? Let us give you a tour inside the spaceship</p>
+  <form>
+      <input type="email" name="email" placeholder="Your e-mail">
+      <input class="btn btn-dark-blue" type="submit" value="Send me updates">
+  </form>
+</div>
+
 <footer>
-    <p>&copy; {{ .Now.Year }} Upframe. All right reserved.</p>
+    <div id="right-here">
+        <h2>We’re right here</h2>
+        <p>Hit us for a coffee - let’s talk about changing the world</p>
+
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.342190106735!2d-9.138654684751666!3d38.70995197960006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193479bc892333%3A0xfa10ecba359955aa!2sRua+da+Prata+80%2C+1100-415+Lisboa!5e0!3m2!1spt-PT!2spt!4v1489092191358" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div>
+                <p>Say <a href="mailto:hi@upframe.xyz">hi@upframe.xyz</a> or connect with us on</p>
+
+                <p>Rua da Prata 80,<br>
+                    1100-415<br>
+                    Lisbon</p>
+
+                <p id="social">
+                    <a href=""><img src="/img/symbols/facebook.svg"></a>
+                    <a href=""><img src="/img/symbols/twitter.svg"></a>
+                    <a href=""><img src="/img/symbols/insta.svg"></a>
+                    <a href=""><img src="/img/symbols/linkedin.svg"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <p id="copyright">&copy; {{ .Now.Year }} Upframe. All right reserved.</p>
 </footer>
 
 <script src="{{ .Site.BaseURL }}js/smooth-scroll.js"></script>
