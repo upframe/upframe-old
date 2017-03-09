@@ -814,10 +814,18 @@ nav svg path {
 
 #newsletter form input[type="email"] {
     width: 100%;
-    border: .188em solid rgba(196, 196, 196, 1);
+    border: .188em solid #121952;
+    color: #121952;
     background: transparent;
     padding: .6em 1.5em;
     margin-bottom: 1em;
+    transition: .2s ease border-color, .2s ease color;
+}
+
+#newsletter form input[type="email"]:hover,
+#newsletter form input[type="email"]:active {
+    border-color: #ff3855;
+    color: #ff3855;
 }
 
 
