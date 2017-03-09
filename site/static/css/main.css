@@ -265,6 +265,19 @@ nav svg path {
     position: relative;
 }
 
+#home header>div>* {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    #home .btn {
+        width: 100%;
+        margin: 0 0 1em 0;
+        display: block;
+    }
+}
+
 #home header>div {
     position: absolute;
     top: 50%;
@@ -285,15 +298,6 @@ nav svg path {
     margin: 0 auto;
     max-width: 72em;
     width: 95%;
-}
-
-@media (max-width: 750px) {
-    #home header>div div:first-of-type {
-        flex-direction: column;
-    }
-    #home header>div div:first-of-type img {
-        display: none;
-    }
 }
 
 #home header>divdiv:first-of-type img:first-of-type {
@@ -354,6 +358,18 @@ nav svg path {
 #home header>div div:last-of-type {
     margin-top: 8em;
     font-size: 0.625em;
+}
+
+@media (max-width: 750px) {
+    #home header>div div:first-of-type {
+        flex-direction: column;
+    }
+    #home header>div div:first-of-type img {
+        display: none;
+    }
+    #home header>div div:last-of-type {
+        margin-top: 0em;
+    }
 }
 
 
