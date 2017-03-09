@@ -775,7 +775,7 @@ nav svg path {
 #newsletter p {
     font-size: 1.125em;
     font-weight: bold;
-    color: rgba(255, 56, 85, 1);
+    color: #4b5390;
     margin: 0 0 2.444em;
 }
 
@@ -793,7 +793,7 @@ nav svg path {
     width: 100%;
     border: .188em solid rgba(196, 196, 196, 1);
     background: transparent;
-    padding: .4em 1.5em;
+    padding: .6em 1.5em;
     margin-bottom: 1em;
 }
 
