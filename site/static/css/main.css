@@ -237,34 +237,41 @@ nav svg path {
     height: calc(100vh - 4.3em);
     color: #fff;
     text-align: center;
-    padding-top: 4em;
-    align-items: flex-start;
+    position: relative;
 }
 
-#home header>p {
+#home header > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#home header>div>p {
     max-width: 45em;
     margin: 2em auto;
     font-size: 1.125em;
 }
 
-#home header div:first-of-type {
+#home header>div div:first-of-type {
     display: flex;
     margin: 0 auto;
     max-width: 72em;
     width: 95%;
 }
 
-#home header div:first-of-type img:first-of-type {
+#home header >divdiv:first-of-type img:first-of-type {
     max-height: 13em;
 }
 
-#home header div:first-of-type img:last-of-type {
+#home header >divdiv:first-of-type img:last-of-type {
     max-height: 11em;
 }
 
 #big-phrase {
-    font-size: 2.875em;
-    max-width: 17em;
+    font-size: 2.7em;
+    max-width: 18em;
     margin: 1em .4em 0 1em;
     font-weight: bold;
     border-top: .35em solid #e7e7e8;
@@ -307,7 +314,7 @@ nav svg path {
     margin-right: 2em;
 }
 
-#home header div:last-of-type {
+#home header >div div:last-of-type {
     margin-top: 4em;
     font-size: 0.625em;
 }
