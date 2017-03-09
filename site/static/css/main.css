@@ -99,12 +99,12 @@ h2 {
 }
 
 .btn-dark-blue {
-    color: rgba(18, 25, 82, 1) !important;
-    border-color: rgba(18, 25, 82, 1);
+    color: #121952 !important;
+    border-color: #121952;
 }
 
 .btn-dark-blue:hover {
-    background: rgba(18, 25, 82, 1);
+    background: #121952;
     color: #fff !important;
 }
 
