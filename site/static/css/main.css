@@ -280,16 +280,12 @@ nav svg path {
 }
 
 #home header>div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+   padding-top: 5em;
 }
 
 #home header>div>p {
     max-width: 30em;
-    margin: 4em auto;
+    margin: 3.5em auto;
     font-size: 1.125em;
     width: 95%;
 }
