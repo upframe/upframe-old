@@ -823,9 +823,10 @@ nav svg path {
 }
 
 #newsletter form input[type="email"]:hover,
-#newsletter form input[type="email"]:active {
+#newsletter form input[type="email"]:focus {
     border-color: #ff3855;
     color: #ff3855;
+    outline: 0;
 }
 
 
