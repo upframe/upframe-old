@@ -61,6 +61,7 @@ h2 {
     background: transparent;
     outline: 0;
     cursor: pointer;
+    font-size: 1.125em;
 }
 
 .btn:hover {
@@ -341,7 +342,7 @@ nav svg path {
     width: .35em;
 }
 
-#home header .btn {
+#home header #home header .btn {
     font-size: 1.125em;
 }
 
