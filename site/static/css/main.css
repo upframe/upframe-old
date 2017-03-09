@@ -130,7 +130,7 @@ nav {
     left: 0;
     z-index: 999;
     width: 100%;
-    transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out, transform .2s ease-in-out;
     height: 4.3em;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     background: #fff;
