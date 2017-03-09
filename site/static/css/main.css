@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
 }
 
+input {
+    font-family: 'Roboto', sans-serif;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -494,6 +498,7 @@ nav svg path {
     width: calc(50% - .5em);
     object-fit: contain;
     margin-bottom: 1em;
+    display: inline-block;
 }
 
 #our-mentors img,
