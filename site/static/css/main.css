@@ -17,7 +17,6 @@ a {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -25,8 +24,57 @@ h6 {
     color: #121952;
 }
 
+h2 {
+    color: rgba(75, 83, 144, 1);
+}
 
-/* NAVIGATION BAR */
+/* * * * * * * * * *
+ *                 *
+ *  USER INTERFACE *
+ *                 *
+ * * * * * * * * * */
+
+/* BUTTONS */
+.btn {
+    color: rgba(231, 231, 232, 1);
+    padding: .65em 1.75em .4em 1.5em;
+    transition: background .25s ease 250ms, color .25s ease 250ms;
+    border: .25em solid rgba(231, 231, 232, 1);
+    text-align: center;
+    position: relative;
+    margin: 0;
+}
+
+.btn:hover {
+    background: #e7e7e8;
+    color: #121952;
+}
+
+.btn-red {
+    color: rgb(255, 56, 85) !important;
+    border-color: rgb(255, 56, 85);
+}
+
+.btn-red:hover {
+    background: rgb(255, 56, 85);
+    color: #fff !important;
+}
+
+.btn-blue {
+    color: rgba(75, 83, 144, 1) !important;
+    border-color: rgba(75, 83, 144, 1);
+}
+
+.btn-blue:hover {
+    background: rgba(75, 83, 144, 1);
+    color: #fff !important;
+}
+
+/* * * * * * * * * *
+ *                 *
+ *     NAVBAR      *
+ *                 *
+ * * * * * * * * * */
 
 #expand,
 #expand-button {
@@ -147,33 +195,6 @@ nav svg path {
     }
 }
 
-/* INTERFACE */
-
-/* BUTTONS */
-.btn {
-    color: rgba(231, 231, 232, 1);
-    padding: .65em 1.75em .4em 1.5em;
-    transition: background .25s ease 250ms, color .25s ease 250ms;
-    border: .25em solid rgba(231, 231, 232, 1);
-    text-align: center;
-    position: relative;
-    margin: 0;
-}
-
-.btn:hover {
-    background: #e7e7e8;
-    color: #121952;
-}
-
-.btn-red {
-    color: rgb(255, 56, 85) !important;
-    border-color: rgb(255, 56, 85);
-}
-
-.btn-red:hover {
-    background: rgb(255, 56, 85);
-    color: #fff !important;
-}
 
 /* * * * * * * * * *
  *                 *
@@ -311,7 +332,7 @@ nav svg path {
     max-width: 70em;
     width: 65em;
     height: 20em;
-    margin: 0 auto 12.625em auto;
+    margin: 0 auto 6.3125em auto
 }
 
 #home main #hwdi div {
@@ -334,4 +355,49 @@ nav svg path {
 #home main #hwdi p {
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+/* * * * * * * * * *
+ *                 *
+ *  Page: HOME     *
+ *  Section: 3     *
+ *                 *
+ * * * * * * * * * */
+
+#home main #op {
+    max-width: 80em;
+    width: 60%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+}
+
+#home main #op div {
+    flex-grow: 1;
+}
+
+#home main #op div:first-of-type {
+    flex-basis: 80%;
+}
+
+#home main #op h1 {
+    font-size: 3em;
+    margin: 0 auto 1em auto;
+    position: relative;
+}
+
+#home main #op h1::after {
+    content: "";
+    width: 1.5em;
+    height: 0.125em;
+    background: rgba(0, 229, 212, 1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#home main #op p {
+    margin: 0 auto 3em auto;
+    padding-right: 1em;
+    text-align: left;
 }
