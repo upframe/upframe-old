@@ -271,6 +271,7 @@ nav svg path {
     max-width: 45em;
     margin: 2em auto;
     font-size: 1.125em;
+    width: 95%;
 }
 
 #home header>div div:first-of-type {
@@ -278,6 +279,15 @@ nav svg path {
     margin: 0 auto;
     max-width: 72em;
     width: 95%;
+}
+
+@media (max-width: 750px) {
+    #home header>div div:first-of-type {
+        flex-direction: column;
+    }
+    #home header>div div:first-of-type img {
+        display: none;
+    }
 }
 
 #home header>divdiv:first-of-type img:first-of-type {
