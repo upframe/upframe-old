@@ -21,6 +21,6 @@
             <li><a {{ if eq .Slug "about" }}class="active"{{ end }} href="/about">About</a></li>
             <li><a {{ if eq .Slug "programme" }}class="active"{{ end }} href="/programme">Our Programme</a></li>
             <li><a {{ if eq .Slug "mentors" }}class="active"{{ end }} href="/mentors">Our Mentors</a></li>
-            <li><a class="{{ if eq .Slug "apply" }}active{{ else }}btn btn-red{{ end }}" href="/apply">Apply</a></li>
+            <li><a class="btn btn-red btn-red-full {{ if eq .Slug "apply" }}active{{ end }}" href="/apply">Apply</a></li>
         </ul>
     </nav>

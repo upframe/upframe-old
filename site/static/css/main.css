@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1,
 h3,
 h4,
@@ -28,21 +32,25 @@ h2 {
     color: rgba(75, 83, 144, 1);
 }
 
+
 /* * * * * * * * * *
  *                 *
  *  USER INTERFACE *
  *                 *
  * * * * * * * * * */
 
+
 /* BUTTONS */
+
 .btn {
     color: rgba(231, 231, 232, 1);
     padding: .4em 1.5em;
-    transition: background .25s ease 250ms, color .25s ease 250ms;
+    transition: background .25s ease, color .25s ease;
     border: .25em solid rgba(231, 231, 232, 1);
     text-align: center;
     position: relative;
     margin: 0;
+    font-weight: 500;
 }
 
 .btn:hover {
@@ -60,6 +68,15 @@ h2 {
     color: #fff !important;
 }
 
+.btn-red-full {
+    background: rgb(255, 56, 85);
+    color: #fff !important;
+}
+
+.btn-red-full:hover {
+    background: rgb(215, 29, 56);
+}
+
 .btn-blue {
     color: rgba(75, 83, 144, 1) !important;
     border-color: rgba(75, 83, 144, 1);
@@ -69,6 +86,7 @@ h2 {
     background: rgba(75, 83, 144, 1);
     color: #fff !important;
 }
+
 
 /* * * * * * * * * *
  *                 *
@@ -224,7 +242,7 @@ nav svg path {
     position: relative;
 }
 
-#home header > div {
+#home header>div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -245,11 +263,11 @@ nav svg path {
     width: 95%;
 }
 
-#home header >divdiv:first-of-type img:first-of-type {
+#home header>divdiv:first-of-type img:first-of-type {
     max-height: 13em;
 }
 
-#home header >divdiv:first-of-type img:last-of-type {
+#home header>divdiv:first-of-type img:last-of-type {
     max-height: 11em;
 }
 
@@ -300,10 +318,11 @@ nav svg path {
     margin-right: 2em;
 }
 
-#home header >div div:last-of-type {
+#home header>div div:last-of-type {
     margin-top: 8em;
     font-size: 0.625em;
 }
+
 
 /* * * * * * * * * *
  *                 *
@@ -312,9 +331,7 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
-#home main {
-    height: 200vh;
-}
+#home main {}
 
 #home main>h1 {
     margin: 3.5em auto 0 auto;
@@ -360,6 +377,7 @@ nav svg path {
     letter-spacing: 0.03em;
 }
 
+
 /* * * * * * * * * *
  *                 *
  *  Page: HOME     *
@@ -367,29 +385,48 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
-#home main #op {
-    max-width: 80em;
-    width: 60%;
-    height: 90vh;
-    margin: auto;
+#our-mentors,
+#our-programme {
+    max-width: 60em;
+    width: 90%;
+    /* height: 90vh; */
+    margin: 0 auto 10em;
     display: flex;
 }
 
-#home main #op div {
+#our-mentors div,
+#our-programme div {
     flex-grow: 1;
 }
 
-#home main #op div:first-of-type {
+#our-mentors h3,
+#our-programme h3 {
+    color: #4b5390;
+    font-size: 1.375em;
+}
+
+#our-mentors>div:last-of-type,
+#our-programme>div:first-of-type {
     flex-basis: 80%;
 }
 
-#home main #op h1 {
+#our-programme>div:first-of-type {
+    margin-right: 4em;
+}
+
+#our-mentors>div:last-of-type {
+    margin-left: 4em;
+}
+
+#our-mentors h1,
+#our-programme h1 {
     font-size: 3em;
     margin: 0 auto 1em auto;
     position: relative;
 }
 
-#home main #op h1::after {
+#our-mentors h1::after,
+#our-programme h1::after {
     content: "";
     width: 1.5em;
     height: 0.125em;
@@ -399,8 +436,36 @@ nav svg path {
     left: 0;
 }
 
-#home main #op p {
+#our-mentors h1 {
+    margin: 0 0 1em auto;
+    width: 6em;
+}
+
+#our-mentors p,
+#our-programme p {
     margin: 0 auto 3em auto;
     padding-right: 1em;
     text-align: left;
+}
+
+#our-mentors div:first-of-type {
+    max-width: 50em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#our-mentors img {
+    width: calc(50% - .5em);
+    object-fit: contain;
+    margin-bottom: 1em;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
 }
