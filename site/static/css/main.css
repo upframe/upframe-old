@@ -136,6 +136,9 @@ nav svg path {
     }
 }
 
+/* INTERFACE */
+
+/* BUTTONS */
 .btn {
     color: rgba(231, 231, 232, 1);
     padding: .65em 1.75em .4em 1.5em;
@@ -202,6 +205,16 @@ nav svg path {
     color: #fff !important;
 }
 
+/* HEADERS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgba(18, 25, 82, 1);
+}
 
 /** HOME **/
 
@@ -236,7 +249,7 @@ nav svg path {
 
 #home header>p {
     max-width: 45em;
-    margin: 4em auto;
+    margin: 2em auto;
     font-size: 1.125em;
 }
 
@@ -298,4 +311,38 @@ nav svg path {
 
 #home header .btn:first-of-type {
     margin-right: 2em;
+}
+
+#home header div:last-of-type {
+    margin-top: 4em;
+    font-size: 0.625em;
+}
+
+#home main {
+    height: 200vh;
+}
+
+#home main>h1 {
+    margin: 3.5em auto 0 auto;
+    font-size: 3em;
+    text-align: center;
+}
+
+#home main>p {
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto 0.5em auto;
+}
+
+#home main>div {
+    display: flex;
+    max-width: 70em;
+    width: 65em;
+    height: 20em;
+    margin: auto;
+}
+
+#home main>div div {
+    flex-grow: 1;
 }
