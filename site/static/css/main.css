@@ -37,7 +37,7 @@ h2 {
 /* BUTTONS */
 .btn {
     color: rgba(231, 231, 232, 1);
-    padding: .65em 1.75em .4em 1.5em;
+    padding: .4em 1.5em;
     transition: background .25s ease 250ms, color .25s ease 250ms;
     border: .25em solid rgba(231, 231, 232, 1);
     text-align: center;
@@ -255,6 +255,7 @@ nav svg path {
 
 #big-phrase {
     font-size: 2.7em;
+    line-height: 2.7em;
     max-width: 18em;
     margin: 1em .4em 0 1em;
     font-weight: bold;
@@ -262,6 +263,7 @@ nav svg path {
     border-bottom: .35em solid #e7e7e8;
     padding: .16em 0;
     position: relative;
+    flex-grow: 1;
 }
 
 #big-phrase::before,
