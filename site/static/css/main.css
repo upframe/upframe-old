@@ -112,7 +112,8 @@ nav svg path {
 
 @media (max-width: 720px) {
     nav {
-        transform: translateY(calc(-100% + 4.2em));
+        transform: translateY(calc(-100% + 4.3em));
+        height: auto;
     }
     #expand:checked~nav {
         transform: translateY(0);
