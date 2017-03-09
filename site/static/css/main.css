@@ -37,10 +37,11 @@ nav {
     width: 100%;
     transition: .2s ease-in-out all;
     height: 4.3em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 nav.scroll {
-    background: #fff !important;
+    background: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -219,24 +220,17 @@ h6 {
 
 /** HOME **/
 
-#home nav {
+#home nav:not(.scroll) {
     background: #121952;
+    box-shadow: 0 0 0 0;
 }
 
-#home nav svg path {
+#home nav:not(.scroll) svg path {
     fill: rgba(231, 231, 232, 1);
 }
 
-#home nav.scroll svg path {
-    fill: #121952;
-}
-
-#home nav a {
+#home nav:not(.scroll) a {
     color: #fff;
-}
-
-#home nav.scroll a {
-    color: inherit;
 }
 
 #home header {
