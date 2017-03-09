@@ -331,22 +331,26 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
-#home main {}
+#how-we-do-it,
+#our-mentors,
+#our-programme {
+    margin: 12.5em auto;
+}
 
-#home main>h1 {
-    margin: 3.5em auto 0 auto;
+#how-we-do-it h1 {
+    margin: 0 auto;
     font-size: 3em;
     text-align: center;
 }
 
-#home main>p {
+#how-we-do-it>p {
     font-weight: 700;
     font-size: 1.2em;
     text-align: center;
     margin: 0 auto 5em auto;
 }
 
-#home main #hwdi {
+#how-we-do-it>div {
     display: flex;
     max-width: 70em;
     width: 65em;
@@ -355,24 +359,24 @@ nav svg path {
     justify-content: space-between;
 }
 
-#home main #hwdi div {
+#how-we-do-it>div div {
     flex-grow: 0;
     flex-basis: 30%;
 }
 
-#home main #hwdi img {
+#how-we-do-it img {
     height: 1.875em;
     width: 1.875em;
     margin: auto;
     display: block;
 }
 
-#home main #hwdi div h2 {
+#how-we-do-it h2 {
     margin: 1em auto;
     text-align: center;
 }
 
-#home main #hwdi p {
+#how-we-do-it>div p {
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -387,10 +391,8 @@ nav svg path {
 
 #our-mentors,
 #our-programme {
-    max-width: 60em;
+    max-width: 62em;
     width: 90%;
-    /* height: 90vh; */
-    margin: 0 auto 10em;
     display: flex;
 }
 
@@ -449,7 +451,7 @@ nav svg path {
 }
 
 #our-mentors div:first-of-type {
-    max-width: 50em;
+    max-width: 60em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
