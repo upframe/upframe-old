@@ -28,16 +28,13 @@ h2 {
     color: rgba(75, 83, 144, 1);
 }
 
-
 /* * * * * * * * * *
  *                 *
  *  USER INTERFACE *
  *                 *
  * * * * * * * * * */
 
-
 /* BUTTONS */
-
 .btn {
     color: rgba(231, 231, 232, 1);
     padding: .4em 1.5em;
@@ -72,7 +69,6 @@ h2 {
     background: rgba(75, 83, 144, 1);
     color: #fff !important;
 }
-
 
 /* * * * * * * * * *
  *                 *
@@ -228,7 +224,7 @@ nav svg path {
     position: relative;
 }
 
-#home header>div {
+#home header > div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -249,11 +245,11 @@ nav svg path {
     width: 95%;
 }
 
-#home header>divdiv:first-of-type img:first-of-type {
+#home header >divdiv:first-of-type img:first-of-type {
     max-height: 13em;
 }
 
-#home header>divdiv:first-of-type img:last-of-type {
+#home header >divdiv:first-of-type img:last-of-type {
     max-height: 11em;
 }
 
@@ -263,8 +259,8 @@ nav svg path {
     max-width: 18em;
     margin: 1em .4em 0 1em;
     font-weight: bold;
-    border-top: .35em solid #e7e7e8;
-    border-bottom: .35em solid #e7e7e8;
+    border-top: .35em solid #fff;
+    border-bottom: .35em solid #fff;
     padding: .16em 0;
     position: relative;
     flex-grow: 1;
@@ -275,7 +271,7 @@ nav svg path {
     content: '';
     display: block;
     position: absolute;
-    background: #e7e7e8;
+    background: #fff;
 }
 
 #big-phrase::before {
@@ -304,11 +300,10 @@ nav svg path {
     margin-right: 2em;
 }
 
-#home header>div div:last-of-type {
+#home header >div div:last-of-type {
     margin-top: 8em;
     font-size: 0.625em;
 }
-
 
 /* * * * * * * * * *
  *                 *
@@ -364,7 +359,6 @@ nav svg path {
     text-align: center;
     letter-spacing: 0.03em;
 }
-
 
 /* * * * * * * * * *
  *                 *
