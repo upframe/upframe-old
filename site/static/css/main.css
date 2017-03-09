@@ -553,7 +553,7 @@ nav svg path {
 
 /* MENTORS PAGE */
 
-#mentors>.container {
+#mentors-container {
     display: flex;
     flex-flow: row wrap;
     max-width: 60em;
@@ -561,58 +561,60 @@ nav svg path {
     padding: 0;
     justify-content: space-between;
     margin: 0 auto;
+    width: 90%;
 }
 
-#mentors .container .mentor {
+#mentors-container .mentor {
     flex-basis: 31%;
     margin-bottom: 4em;
 }
 
-#mentors .container .mentor:last-child {
+#mentors-container .mentor:last-child {
     margin-right: auto;
     margin-left: 3.5%;
 }
 
 @media (max-width: 700px) {
-    #mentors .container .mentor {
+    #mentors-container .mentor {
         flex-basis: 48%;
     }
 }
 
 @media (max-width: 400px) {
-    #mentors .container .mentor {
+    #mentors-container .mentor {
         flex-basis: 100%;
     }
 }
 
-#mentors .container .mentor img {
+#mentors-container .mentor img {
     transition: all .5s ease;
     margin-bottom: 0.8em;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-#mentors .container .mentor img:hover {
+#mentors-container .mentor img:hover {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
 
-#mentors .container .mentor img:hover p {
+#mentors-container .mentor img:hover p {
     text-decoration: underline;
 }
 
-#mentors .container .mentor .name {
+#mentors-container .mentor .name {
     font-size: 1.25em;
     color: #121952;
 }
 
-#mentors .container .mentor .role {
+#mentors-container .mentor .role {
     margin: 0;
     color: rgba(18, 25, 82, 0.6);
     text-transform: uppercase;
     font-size: 0.8em;
 }
 
-#mentors .container .mentor .description,
-#mentors .container .mentor .job {
+#mentors-container .mentor .description,
+#mentors-container .mentor .job {
     display: none;
 }
 

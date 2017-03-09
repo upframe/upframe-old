@@ -49,7 +49,7 @@ function initNewsletter() {
 }
 
 function initMentorsPage() {
-    let images = document.querySelectorAll("#mentors .container .mentor img");
+    let images = document.querySelectorAll("#mentors-container .mentor img");
     [].forEach.call(images, function(img) {
         img.addEventListener("click", openMentorPopup);
         img.addEventListener('touchstart', openMentorPopup);
@@ -58,7 +58,7 @@ function initMentorsPage() {
 
 function randomMentorPosition() {
     let mentorslist = [],
-        children = document.querySelector("div#mentors .container").children;
+        children = document.querySelector("#mentors-container").children;
 
     for (let i of children) {
         mentorslist.push(i.cloneNode(true));
