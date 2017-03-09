@@ -154,8 +154,8 @@ nav svg path {
     color: #121952;
 }
 
-.btn:before,
-.btn:after {
+.btn::before,
+.btn::after {
     content: '';
     display: block;
     position: absolute;
@@ -163,7 +163,7 @@ nav svg path {
     background: #e7e7e8;
 }
 
-.btn:before {
+.btn::before {
     top: 0;
     height: .25em;
     left: 0;
@@ -172,11 +172,11 @@ nav svg path {
     width: 100%;
 }
 
-.btn:hover:before {
+.btn:hover::before {
     transform: scaleX(1);
 }
 
-.btn:after {
+.btn::after {
     height: 100%;
     right: 0;
     bottom: 0;
@@ -185,7 +185,7 @@ nav svg path {
     width: .25em;
 }
 
-.btn:hover:after {
+.btn:hover::after {
     transform: scaleY(1);
 }
 
@@ -195,8 +195,8 @@ nav svg path {
     border-bottom-color: rgb(255, 56, 85);
 }
 
-.btn-red:before,
-.btn-red:after {
+.btn-red::before,
+.btn-red::after {
     background: rgb(255, 56, 85);
 }
 
