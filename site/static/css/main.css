@@ -807,6 +807,10 @@ nav svg path {
     line-height: 1;
 }
 
+#right-here iframe {
+    height: 15em;
+}
+
 #right-here>p {
     margin: 1.6em 0 2.7em;
 }
@@ -849,13 +853,20 @@ nav svg path {
     font-size: 1em !important;
 }
 
-#social img {
-    height: 1.7em;
+#social a {
     margin-right: 2em;
-    transition: .2s ease all;
 }
 
-#social img:hover path {
+#social svg {
+    height: 1.7em;
+    width: 1.7em;
+}
+
+#social a path {
+    transition: .2s ease fill;
+}
+
+#social a:hover path {
     fill: rgba(0, 229, 212, 1);
 }
 
