@@ -266,11 +266,6 @@ nav svg path {
     position: relative;
 }
 
-#home header>div>* {
-    width: 90%;
-    margin: 0 auto;
-}
-
 @media (max-width: 400px) {
     #home .btn {
         width: 100%;
@@ -279,13 +274,17 @@ nav svg path {
     }
 }
 
-#home header>div {
-   padding-top: 5em;
+#home header>div:first-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
 }
 
-#home header>div>p {
+#home header>div:first-child>p {
     max-width: 30em;
-    margin: 2.5em auto;
+    margin: 13vh auto;
     font-size: 1.125em;
     width: 95%;
 }
@@ -353,15 +352,14 @@ nav svg path {
     margin-right: 2em;
 }
 
-#home header>div div:last-of-type {
-    margin-top: 8em;
+#scroll {
     font-size: 0.625em;
     position: absolute;
     bottom: 2em;
     width: 100%;
 }
 
-#home header>div div:last-of-type p {
+#scroll p {
     margin: .1em 0 .8em;
 }
 
