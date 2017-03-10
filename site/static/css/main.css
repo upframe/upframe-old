@@ -571,8 +571,35 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
+#our-partners {
+    background-color: rgba(242, 242, 242, 1);
+}
 
+#our-partners div {
+    max-width: 90vw;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
 
+#our-partners div p {
+    padding-top: 4em;
+}
+
+#our-partners div p img {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+}
+
+#our-partners div > img {
+    margin: 1.5em 0.75em 5em;
+    display: inline-block;
+    height: 50px;
+    filter: invert(20%);
+}
+
+#our-partners
 
 /* MENTORS PAGE */
 
