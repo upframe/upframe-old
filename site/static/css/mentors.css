@@ -1,0 +1,27 @@
+#learn-from-experts {
+    max-width: 37em;
+    width: 90%;
+    margin: 8em auto;
+    text-align: center;
+}
+
+#learn-from-experts h2 {
+    font-size: 3.125em;
+    font-weight: bold;
+    color: rgba(18, 25, 82, 1);
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+}
+
+#learn-from-experts p {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: rgba(75, 83, 144, 1);
+    margin: 1.278em auto 2.111em;
+    text-align: center;
+}
+
+#learn-from-experts .btn:first-of-type {
+    margin-right: 1em;
+}
