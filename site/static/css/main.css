@@ -238,11 +238,15 @@ nav svg path {
 }
 
 
-/* SCROLLBARS */
+/* NAVBARS */
 
 #home nav:not(.scroll),
 #mentors nav:not(.scroll) {
     box-shadow: 0 0 0 0;
+}
+
+#home nav:not(.scroll) {
+    background: rgba(18, 25, 82, 1);
 }
 
 #mentors nav:not(.scroll) {
@@ -254,16 +258,22 @@ nav svg path {
     fill: #fff;
 }
 
+#home nav:not(.scroll) a,
+#mentors nav:not(.scroll) a {
+    color: #fff;
+}
+
+#mentors nav .active {
+    color: rgb(18, 25, 82) !important;
+}
+
+
 /* * * * * * * * * *
  *                 *
  *  Page: HOME     *
  *  Section: 1     *
  *                 *
  * * * * * * * * * */
-
-#home nav:not(.scroll) a {
-    color: #fff;
-}
 
 #home header {
     background: rgba(18, 25, 82, 1);
@@ -611,7 +621,84 @@ nav svg path {
     height: 50px;
     filter: invert(20%);
 }
+
+
 /* MENTORS PAGE */
+
+#mentors header>div:first-of-type {
+    padding: 8em 0;
+    background: rgb(49, 133, 252);
+}
+
+#mentors header>div:first-of-type p {
+    color: #fff;
+    max-width: 12em;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 500;
+}
+
+#mentors header>div:last-of-type {
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    padding: 9em 0 3.688em;
+}
+
+#mentors header h1 {
+    font-size: 3.125em;
+    margin: 0;
+}
+
+#mentors-container .mentor:last-child {
+    margin-left: 5%;
+}
+
+#mentors header>div:last-of-type p {
+    font-size: 1.375em;
+    color: rgba(75, 83, 144, 1);
+    margin: 1.389em auto 0;
+    width: 90%;
+}
+
+#learn-from-experts {
+    max-width: 37em;
+    width: 90%;
+    margin: 8em auto;
+    text-align: center;
+}
+
+#learn-from-experts h2 {
+    font-size: 3.125em;
+    font-weight: bold;
+    color: rgba(18, 25, 82, 1);
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+}
+
+#learn-from-experts p {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: rgba(75, 83, 144, 1);
+    margin: 1.278em auto 2.111em;
+    text-align: center;
+}
+
+#learn-from-experts .btn:first-of-type {
+    margin-right: 1em;
+}
+
+@media (max-width: 500px) {
+    #learn-from-experts .btn {
+        display: block;
+    }
+    #learn-from-experts .btn:first-of-type {
+        margin: 0 0 1em;
+    }
+}
 
 #mentors-container {
     display: flex;

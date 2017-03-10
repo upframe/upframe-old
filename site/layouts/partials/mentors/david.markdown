@@ -1,3 +1,3 @@
-Never stuck in one place, David is literally changing the way we use the web every day at Protocol Labs. David was also the main organiser of the [LXJS - Lisbon JavaScript Conference](http://2014.lxjs.org/), a former student ambassador of Google in Europe and a Peer-to-Peer Software Engineer and Lecturer at IST University.
+Never stuck in one place, David is literally changing the way we use the web every day at Protocol Labs as a Peer-to-Peer Software Engineer. He also lectures at Instituto Superior Técnico and organises [LXJS - Lisbon JavaScript Conference](http://2014.lxjs.org/). Besides that, David used to be the Google Student Ambassador for Europe.
 
-If you need advice on how to learn node.js or how to ride a longboard? Even miles away, David will be always eager to help.
+Need advice on how to get started with web development or on how to ride a longboard? Even miles away, David will be always eager to help.
