@@ -1,11 +1,6 @@
-#mentors nav:not(.scroll) {
-    box-shadow: 0 0 0 0;
-    background: rgb(49, 133, 252);
-}
 
-#mentors nav:not(.scroll) svg path {
-    fill: rgba(231, 231, 232, 1);
-}
+
+
 
 #mentors nav:not(.scroll) a {
     color: #fff;

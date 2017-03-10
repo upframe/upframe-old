@@ -237,21 +237,29 @@ nav svg path {
     }
 }
 
+
+/* SCROLLBARS */
+
+#home nav:not(.scroll),
+#mentors nav:not(.scroll) {
+    box-shadow: 0 0 0 0;
+}
+
+#mentors nav:not(.scroll) {
+    background: rgb(49, 133, 252);
+}
+
+#home nav:not(.scroll) svg path,
+#mentors nav:not(.scroll) svg path {
+    fill: #fff;
+}
+
 /* * * * * * * * * *
  *                 *
  *  Page: HOME     *
  *  Section: 1     *
  *                 *
  * * * * * * * * * */
-
-#home nav:not(.scroll) {
-    background: #121952;
-    box-shadow: 0 0 0 0;
-}
-
-#home nav:not(.scroll) svg path {
-    fill: rgba(231, 231, 232, 1);
-}
 
 #home nav:not(.scroll) a {
     color: #fff;
@@ -556,6 +564,7 @@ nav svg path {
     }
 }
 
+
 /* * * * * * * * * *
  *                 *
  *  Page: HOME     *
@@ -580,10 +589,14 @@ nav svg path {
     width: 80%;
     margin: auto;
     text-align: center;
+    padding: 4em 0;
 }
 
 #our-partners div p {
-    padding-top: 4em;
+    padding: 0;
+    color: rgba(192, 192, 192, 1);
+    margin: 0 0 1.5em;
+    font-weight: bold;
 }
 
 #our-partners div p img {
@@ -592,15 +605,12 @@ nav svg path {
     vertical-align: middle;
 }
 
-#our-partners div > img {
-    margin: 1.5em 0.75em 5em;
+#our-partners div>img {
+    margin: 0 .75em;
     display: inline-block;
     height: 50px;
     filter: invert(20%);
 }
-
-#our-partners
-
 /* MENTORS PAGE */
 
 #mentors-container {
@@ -677,6 +687,7 @@ nav svg path {
 .mentor .role {
     display: none;
 }
+
 
 /* MENTORS POPUP */
 
