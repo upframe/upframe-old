@@ -356,6 +356,13 @@ nav svg path {
 #home header>div div:last-of-type {
     margin-top: 8em;
     font-size: 0.625em;
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+}
+
+#home header>div div:last-of-type p {
+    margin: .1em 0 .8em;
 }
 
 @media (max-width: 750px) {
