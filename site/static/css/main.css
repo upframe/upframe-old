@@ -1,27 +1,26 @@
 * {
     box-sizing: border-box;
-    word-wrap: break-word;
+    word-wrap: break-word
 }
 
 body {
     font: 1em/1.6 'Roboto', sans-serif;
-    color: #4b5390;
     background: #fff;
-    letter-spacing: 0.03em;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 input {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif
 }
 
-a {
+a,
+nav a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%
 }
 
 h1,
@@ -29,100 +28,88 @@ h3,
 h4,
 h5,
 h6 {
-    color: #121952;
-    letter-spacing: 0.03em;
+    color: #121952
 }
 
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav ul li {
+    letter-spacing: .03em
+}
+
+body,
 h2 {
-    color: rgba(75, 83, 144, 1);
-    letter-spacing: 0.03em;
+    color: #4b5390
 }
-
-
-/* * * * * * * * * *
- *                 *
- *  USER INTERFACE *
- *                 *
- * * * * * * * * * */
-
-
-/* BUTTONS */
 
 .btn {
-    /* color: rgba(231, 231, 232, 1); */
     padding: .4em 1.5em;
     transition: background .25s ease, color .25s ease;
-    border: .375em solid rgba(231, 231, 232, 1);
+    border: .375em solid #e7e7e8;
     text-align: center;
     position: relative;
     margin: 0;
     font-weight: 500;
-    background: transparent;
+    background: 0 0;
     outline: 0;
     cursor: pointer;
     font-size: 1.125em;
-    display: inline-block;
+    display: inline-block
 }
 
 .btn:hover {
     background: #e7e7e8;
-    color: #121952;
+    color: #121952
 }
 
 .btn-red {
-    color: rgb(255, 56, 85) !important;
-    border-color: rgb(255, 56, 85);
+    color: #ff3855!important;
+    border-color: #ff3855
 }
 
+.btn-red-full,
 .btn-red:hover {
-    background: rgb(255, 56, 85);
-    color: #fff !important;
-}
-
-.btn-red-full {
-    background: rgb(255, 56, 85);
-    color: #fff !important;
+    background: #ff3855;
+    color: #fff!important
 }
 
 .btn-red-full:hover {
-    background: rgb(215, 29, 56);
+    background: #d71d38
 }
 
 .btn-blue {
-    color: rgba(75, 83, 144, 1) !important;
-    border-color: rgba(75, 83, 144, 1);
+    color: #4b5390!important;
+    border-color: #4b5390
 }
 
 .btn-blue:hover {
-    background: rgba(75, 83, 144, 1);
-    color: #fff !important;
+    background: #4b5390;
+    color: #fff!important
 }
 
 .btn-dark-blue {
-    color: #121952 !important;
-    border-color: #121952;
+    color: #121952!important;
+    border-color: #121952
 }
 
 .btn-dark-blue:hover {
     background: #121952;
-    color: #fff !important;
+    color: #fff!important
 }
-
-
-/* * * * * * * * * *
- *                 *
- *     NAVBAR      *
- *                 *
- * * * * * * * * * */
 
 #expand,
 #expand-button {
-    display: none;
+    display: none
 }
 
 #expand-button {
     margin-right: 1em;
-    cursor: pointer;
+    cursor: pointer
 }
 
 nav {
@@ -132,14 +119,13 @@ nav {
     z-index: 999;
     width: 100%;
     transition: background .2s ease-in-out, transform .2s ease-in-out;
-    height: 4.3em;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    height: 4.3em
 }
 
+nav,
 nav.scroll {
     background: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1)
 }
 
 nav ul {
@@ -150,145 +136,129 @@ nav ul {
     align-items: center;
     width: 90%;
     max-width: 55em;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 nav ul li {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
-    font-size: 1em;
-    letter-spacing: 0.03em;
+    font-size: 1em
 }
 
 nav a {
     margin: 1.65em 1em;
     display: block;
-    text-decoration: none;
     color: #121952;
     transition: .2s ease-in all;
     text-transform: uppercase;
-    line-height: 1;
+    line-height: 1
 }
 
 nav ul li:first-child a {
-    margin-left: 0;
+    margin-left: 0
 }
 
 nav ul li:last-child a {
     margin-right: 0;
     font-size: 1em;
-    margin-left: 1em;
+    margin-left: 1em
 }
 
 nav ul li:first-of-type {
-    margin-right: auto;
+    margin-right: auto
 }
 
 nav ul li:first-of-type a {
     margin: 0;
-    border: 0 !important;
-    font-weight: normal;
+    border: 0!important;
+    font-weight: 400;
     display: inherit;
-    transition: none;
+    transition: none
 }
 
 nav ul a:hover svg path {
-    fill: #ff3855;
+    fill: #ff3855
 }
 
+nav a.active,
 nav a:hover {
-    color: #ff3855;
-}
-
-nav a.active {
-    color: #ff3855;
+    color: #ff3855
 }
 
 nav svg path {
     transition: .2s ease all;
-    fill: #121952;
+    fill: #121952
 }
 
-@media (max-width: 720px) {
+@media (max-width:720px) {
     nav {
         transform: translateY(calc(-100% + 4.3em));
-        height: auto;
+        height: auto
     }
     #expand:checked~nav {
-        transform: translateY(0);
+        transform: translateY(0)
     }
     nav ul {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
     #expand-button,
     nav li:first-of-type a {
-        display: inline-block !important;
-        vertical-align: middle;
+        display: inline-block!important;
+        vertical-align: middle
     }
     nav li {
         width: 100%;
         text-align: left;
-        padding: 1em 0 !important;
+        padding: 1em 0!important
     }
     nav li a {
         margin: 0;
-        padding: 0;
+        padding: 0
     }
 }
 
-
-/* NAVBARS */
-
 #home nav:not(.scroll),
 #mentors nav:not(.scroll) {
-    box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0
 }
 
 #home nav:not(.scroll) {
-    background: rgba(18, 25, 82, 1);
+    background: #121952
 }
 
 #mentors nav:not(.scroll) {
-    background: rgb(49, 133, 252);
+    background: #3185fc
 }
 
 #home nav:not(.scroll) svg path,
 #mentors nav:not(.scroll) svg path {
-    fill: #fff;
+    fill: #fff
 }
 
 #home nav:not(.scroll) a,
 #mentors nav:not(.scroll) a {
-    color: #fff;
+    color: #fff
 }
 
 #mentors nav .active {
-    color: rgb(18, 25, 82) !important;
+    color: #121952!important
 }
 
-
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 1     *
- *                 *
- * * * * * * * * * */
-
 #home header {
-    background: rgba(18, 25, 82, 1);
+    background: #121952;
     height: 100vh;
     padding-top: 4.3em;
     color: #fff;
     text-align: center;
-    position: relative;
+    position: relative
 }
 
-@media (max-width: 400px) {
+@media (max-width:400px) {
     #home .btn {
         width: 100%;
-        margin: 0 0 1em 0;
-        display: block;
+        margin: 0 0 1em;
+        display: block
     }
 }
 
@@ -297,14 +267,14 @@ nav svg path {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95%;
+    width: 95%
 }
 
 #home header>div:first-child>p {
     max-width: 30em;
     margin: 13vh auto;
     font-size: 1.125em;
-    width: 95%;
+    width: 95%
 }
 
 #home header>div div:first-of-type {
@@ -312,15 +282,15 @@ nav svg path {
     margin: 0 auto;
     max-width: 65em;
     width: 95%;
-    align-items: center;
+    align-items: center
 }
 
 #home header>divdiv:first-of-type img:first-of-type {
-    max-height: 13em;
+    max-height: 13em
 }
 
 #home header>divdiv:first-of-type img:last-of-type {
-    max-height: 11em;
+    max-height: 11em
 }
 
 #big-phrase {
@@ -328,201 +298,176 @@ nav svg path {
     line-height: 1;
     max-width: 8em;
     margin: 0;
-    font-weight: bold;
-    /* border-top: .2em solid #fff; */
-    /* border-bottom: .2em solid #fff; */
-    /* padding: .16em 0; */
+    font-weight: 700;
     position: relative;
-    flex-grow: 1;
+    flex-grow: 1
 }
 
-#big-phrase::before,
-#big-phrase::after {
-    /* content: ''; */
+#big-phrase::after,
+#big-phrase::before {
     display: block;
     position: absolute;
     background: #fff;
+    height: 100%;
+    bottom: 0;
+    transform: scaleY(.5);
+    transform-origin: 0 100%;
+    width: .2em
 }
 
 #big-phrase::before {
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    transform: scaleY(.5);
-    transform-origin: 0 100%;
-    width: .2em;
+    left: 0
 }
 
 #big-phrase::after {
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    transform: scaleY(.5);
-    transform-origin: 0 100%;
-    width: .2em;
+    right: 0
 }
 
 #home header #home header .btn {
-    font-size: 1.125em;
+    font-size: 1.125em
 }
 
 #home header .btn:first-of-type {
-    margin-right: 2em;
+    margin-right: 2em
 }
 
 #scroll {
-    font-size: 0.625em;
+    font-size: .625em;
     position: absolute;
     bottom: 2em;
-    width: 100%;
+    width: 100%
 }
 
 #scroll p {
-    margin: .1em 0 .8em;
+    margin: .1em 0 .8em
 }
 
-@media (max-width: 750px) {
+@media (max-width:750px) {
     #home header>div div:first-of-type {
-        flex-direction: column;
+        flex-direction: column
     }
     #home header>div div:first-of-type img {
-        display: none;
+        display: none
     }
     #home header>div div:last-of-type {
-        margin-top: 0em;
+        margin-top: 0
     }
 }
-
-
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 2     *
- *                 *
- * * * * * * * * * */
 
 #how-we-do-it,
 #our-mentors,
 #our-programme {
-    margin: 12.5em auto;
+    margin: 12.5em auto
 }
 
-#how-we-do-it h1 {
+#how-we-do-it h1,
+#how-we-do-it>p {
     margin: 0 auto;
     font-size: 3em;
-    text-align: center;
+    text-align: center
 }
 
 #how-we-do-it>p {
     font-weight: 700;
     font-size: 1.2em;
-    text-align: center;
     margin: 0 auto 5em;
-    max-width: 90%;
+    max-width: 90%
 }
 
 #how-we-do-it>div {
     display: flex;
     max-width: 70em;
     width: 90%;
-    margin: 0 auto 6.3125em auto;
-    justify-content: space-between;
+    margin: 0 auto 6.3125em;
+    justify-content: space-between
 }
 
 #how-we-do-it>div div {
     flex-grow: 0;
-    flex-basis: 30%;
+    flex-basis: 30%
 }
 
 #how-we-do-it img {
     height: 1.875em;
     width: 1.875em;
     margin: auto;
-    display: block;
+    display: block
 }
 
 #how-we-do-it h2 {
     margin: 1em auto;
-    text-align: center;
+    text-align: center
 }
 
 #how-we-do-it>div p {
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: .03em
 }
 
-@media (max-width: 750px) {
+@media (max-width:750px) {
     #how-we-do-it>div {
-        flex-direction: column;
+        flex-direction: column
     }
     #how-we-do-it>div div {
-        margin-top: 3em;
+        margin-top: 3em
     }
 }
-
-
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 3     *
- *                 *
- * * * * * * * * * */
 
 #our-mentors,
 #our-programme {
     max-width: 62em;
     width: 90%;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start
 }
 
 #our-mentors div,
 #our-programme div {
-    flex-grow: 1;
+    flex-grow: 1
 }
 
 #our-mentors h3,
 #our-programme h3 {
     color: #4b5390;
-    font-size: 1.375em;
+    font-size: 1.375em
 }
 
 #our-mentors>div:last-of-type,
 #our-programme>div:first-of-type {
-    flex-basis: 80%;
+    flex-basis: 80%
 }
 
 #our-programme>div:first-of-type {
-    margin-right: 4em;
+    margin-right: 4em
 }
 
 #our-mentors>div:last-of-type {
-    margin-left: 4em;
+    margin-left: 4em
 }
 
 #our-mentors h1,
 #our-programme h1 {
     font-size: 3em;
-    margin: 0 auto 1em auto;
-    position: relative;
+    margin: 0 auto 1em;
+    position: relative
 }
 
 #our-mentors h1::after,
 #our-programme h1::after {
     content: "";
     width: 1.5em;
-    height: 0.125em;
-    background: rgba(0, 229, 212, 1);
+    height: .125em;
+    background: #00e5d4;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0
 }
 
 #our-mentors p,
 #our-programme p {
-    margin: 0 auto 3em auto;
+    margin: 0 auto 3em;
     padding-right: 1em;
-    text-align: left;
+    text-align: left
 }
 
 #our-mentors div:first-of-type {
@@ -530,68 +475,52 @@ nav svg path {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 #our-mentors img {
     width: calc(50% - .5em);
     object-fit: contain;
     margin-bottom: 1em;
-    display: inline-block;
+    display: inline-block
 }
 
 #our-mentors img,
 #our-programme img {
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2)
 }
 
-@media (max-width: 980px) {
+@media (max-width:980px) {
     #our-programme img {
-        max-width: 30vw;
+        max-width: 30vw
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width:750px) {
     #our-programme {
-        flex-direction: column;
+        flex-direction: column
     }
     #our-programme img {
         width: 100%;
-        max-width: 100%;
+        max-width: 100%
     }
     #our-mentors div:first-of-type,
     #our-programme img {
-        margin-top: 2em;
+        margin-top: 2em
     }
     #our-programme>div:first-of-type {
-        margin-right: 0;
+        margin-right: 0
     }
     #our-mentors {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse
     }
     #our-mentors>div:last-of-type {
-        margin-left: 0;
+        margin-left: 0
     }
 }
 
-
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 5     *
- *                 *
- * * * * * * * * * */
-
-
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 6     *
- *                 *
- * * * * * * * * * */
-
 #our-partners {
-    background-color: rgba(242, 242, 242, 1);
+    background-color: #f2f2f2
 }
 
 #our-partners div {
@@ -599,35 +528,32 @@ nav svg path {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 4em 0;
+    padding: 4em 0
 }
 
 #our-partners div p {
     padding: 0;
-    color: rgba(192, 192, 192, 1);
+    color: silver;
     margin: 0 0 1.5em;
-    font-weight: bold;
+    font-weight: 700
 }
 
 #our-partners div p img {
     height: 1em;
     width: 1em;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
 #our-partners div>img {
     margin: 0 .75em;
     display: inline-block;
     height: 50px;
-    filter: invert(20%);
+    filter: invert(20%)
 }
-
-
-/* MENTORS PAGE */
 
 #mentors header>div:first-of-type {
     padding: 8em 0;
-    background: rgb(49, 133, 252);
+    background: #3185fc
 }
 
 #mentors header>div:first-of-type p {
@@ -637,66 +563,62 @@ nav svg path {
     margin: 0 auto;
     text-align: center;
     font-size: 4.5em;
-    font-weight: 500;
+    font-weight: 500
 }
 
 #mentors header>div:last-of-type {
     text-align: center;
     line-height: 1;
-    font-weight: bold;
-    padding: 9em 0 3.688em;
+    font-weight: 700;
+    padding: 9em 0 3.688em
 }
 
 #mentors header h1 {
     font-size: 3.125em;
-    margin: 0;
-}
-
-#mentors-container .mentor:last-child {
-    margin-left: 5%;
+    margin: 0
 }
 
 #mentors header>div:last-of-type p {
     font-size: 1.375em;
-    color: rgba(75, 83, 144, 1);
+    color: #4b5390;
     margin: 1.389em auto 0;
-    width: 90%;
+    width: 90%
 }
 
 #learn-from-experts {
     max-width: 37em;
     width: 90%;
     margin: 8em auto;
-    text-align: center;
+    text-align: center
 }
 
 #learn-from-experts h2 {
     font-size: 3.125em;
-    font-weight: bold;
-    color: rgba(18, 25, 82, 1);
+    font-weight: 700;
+    color: #121952;
     text-align: center;
     line-height: 1;
-    margin: 0;
+    margin: 0
 }
 
 #learn-from-experts p {
     font-size: 1.125em;
-    font-weight: bold;
-    color: rgba(75, 83, 144, 1);
+    font-weight: 700;
+    color: #4b5390;
     margin: 1.278em auto 2.111em;
-    text-align: center;
+    text-align: center
 }
 
 #learn-from-experts .btn:first-of-type {
-    margin-right: 1em;
+    margin-right: 1em
 }
 
-@media (max-width: 500px) {
+@media (max-width:500px) {
     #learn-from-experts .btn {
-        display: block;
+        display: block
     }
     #learn-from-experts .btn:first-of-type {
-        margin: 0 0 1em;
+        margin: 0 0 1em
     }
 }
 
@@ -708,91 +630,88 @@ nav svg path {
     padding: 0;
     justify-content: space-between;
     margin: 0 auto;
-    width: 90%;
+    width: 90%
 }
 
 #mentors-container .mentor {
     flex-basis: 30%;
-    margin-bottom: 4em;
+    margin-bottom: 4em
 }
 
 #mentors-container .mentor:last-child {
     margin-right: auto;
-    margin-left: 3.5%;
+    margin-left: 3.5%
 }
 
-@media (max-width: 700px) {
+@media (max-width:700px) {
     #mentors-container .mentor {
-        flex-basis: 48%;
+        flex-basis: 48%
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width:400px) {
     #mentors-container .mentor {
-        flex-basis: 100%;
+        flex-basis: 100%
     }
 }
 
 #mentors-container .mentor img {
     transition: all .5s ease;
-    margin: 0 0 0.8em;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    margin: 0 0 .8em;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2)
 }
 
 #mentors-container .mentor img:hover {
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .4);
+    cursor: pointer
 }
 
 #mentors-container .mentor img:hover p {
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 #mentors-container .mentor .name {
     font-size: 1.25em;
-    font-weight: bold;
-    color: rgba(75, 83, 144, 1);
+    font-weight: 700;
+    color: #4b5390;
     text-align: center;
     margin: 0;
-    line-height: 1;
+    line-height: 1
 }
 
 .mentor .line {
-    color: rgba(75, 83, 144, 1);
-    margin: .4em 0 0 0;
+    color: #4b5390;
+    margin: .4em 0 0
 }
 
 #mentors-container .mentor .role {
     margin: 0;
-    color: rgba(18, 25, 82, 0.6);
+    color: rgba(18, 25, 82, .6);
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: .8em
 }
 
 #mentors-container .mentor .description,
 #mentors-container .mentor .job,
 .mentor .role {
-    display: none;
+    display: none
 }
-
-
-/* MENTORS POPUP */
 
 #mentors .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, .9);
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1000;
     opacity: 0;
-    transition: .2s ease-in-out opacity;
+    transition: .2s ease-in-out opacity
 }
 
 #mentors .overlay.active {
     z-index: 1000;
-    opacity: 1;
+    opacity: 1
 }
 
 .mentor-popup {
@@ -808,26 +727,26 @@ nav svg path {
     max-height: 95%;
     z-index: -1000;
     background-color: #fff;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
     padding: 2.5em;
-    justify-content: space-around;
+    justify-content: space-around
 }
 
 .mentor-popup.active {
     z-index: 1001;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1)
 }
 
 .mentor-popup>div:nth-child(1) {
     width: 40%;
-    color: rgba(18, 25, 82, 0.6);
+    color: rgba(18, 25, 82, .6);
     flex-direction: column;
     display: flex;
-    margin-right: 2em;
+    margin-right: 2em
 }
 
 .mentor-popup>div:nth-child(2) {
-    width: 60%;
+    width: 60%
 }
 
 .mentor-popup .close-icon {
@@ -835,221 +754,216 @@ nav svg path {
     width: 1.25em;
     top: 1em;
     right: 1em;
-    position: fixed;
+    position: fixed
 }
 
 .mentor-popup .close-icon:hover {
-    cursor: pointer;
+    cursor: pointer
 }
 
-.mentor-popup .name,
-.mentor-popup .job {
+.mentor-popup .job,
+.mentor-popup .name {
     color: #121952;
-    font-weight: 600;
+    font-weight: 600
 }
 
 .mentor-popup .name {
     font-size: 1.25em;
-    line-height: 1.2;
+    line-height: 1.2
 }
 
 .mentor-popup img {
-    margin-bottom: .8em;
+    margin-bottom: .8em
 }
 
 .mentor-popup .worksat {
-    margin-top: auto;
+    margin-top: auto
 }
 
 .mentor-popup div:nth-child(2) h2 {
     margin-top: 0;
     font-size: 3.125em;
     font-weight: 600;
-    color: rgba(18, 25, 82, 0.15);
-    line-height: 1;
+    color: rgba(18, 25, 82, .15);
+    line-height: 1
 }
 
 .mentor-popup p {
-    margin: 0;
+    margin: 0
 }
 
 .mentor-popup .role {
     font-size: .813em;
     letter-spacing: 1.1px;
-    color: rgba(18, 25, 82, 0.6);
+    color: rgba(18, 25, 82, .6);
     text-transform: uppercase;
-    margin-bottom: 5em;
+    margin-bottom: 5em
 }
 
 .mentor-popup .description p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     line-height: 1.63;
-    letter-spacing: 0.4px;
-    margin-bottom: 1em;
+    letter-spacing: .4px;
+    margin-bottom: 1em
 }
 
-@media (max-width: 450px) {
+@media (max-width:450px) {
     .mentor-popup {
-        display: block;
+        display: block
     }
     .mentor-popup>div:nth-child(1),
     .mentor-popup>div:nth-child(2) {
-        width: 100%;
+        width: 100%
     }
     .mentor-popup>div:nth-child(1) {
-        margin-bottom: 1em;
+        margin-bottom: 1em
     }
     .mentor-popup .role {
-        margin-bottom: 1em;
+        margin-bottom: 1em
     }
 }
 
-
-/* Newsletter */
-
 #newsletter {
-    background: rgba(227, 253, 49, 1);
+    background: #e3fd31;
     text-align: center;
-    padding: 7.8em 0;
+    padding: 7.8em 0
 }
 
 #newsletter h2 {
     font-size: 3.125em;
-    font-weight: bold;
-    color: rgba(18, 25, 82, 1);
+    font-weight: 700;
+    color: #121952;
     line-height: 1;
-    margin: 0 0 0.520em;
+    margin: 0 0 .52em
 }
 
 #newsletter p {
     font-size: 1.125em;
-    font-weight: bold;
+    font-weight: 700;
     color: #4b5390;
-    margin: 0 0 2.444em;
+    margin: 0 0 2.444em
 }
 
 #newsletter form {
     max-width: 32em;
     width: 92%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 #newsletter form * {
-    display: block;
+    display: block
 }
 
-#newsletter form input[type="email"] {
+#newsletter form input[type=email] {
     width: 100%;
     border: .188em solid #121952;
     color: #121952;
-    background: transparent;
+    background: 0 0;
     padding: .6em 1.5em;
     margin-bottom: 1em;
-    transition: .2s ease border-color, .2s ease color;
+    transition: .2s ease border-color, .2s ease color
 }
 
-#newsletter form input[type="email"]:hover,
-#newsletter form input[type="email"]:focus {
+#newsletter form input[type=email]:focus,
+#newsletter form input[type=email]:hover {
     border-color: #ff3855;
     color: #ff3855;
-    outline: 0;
+    outline: 0
 }
 
-
-/*Footer */
+#right-here,
+#right-here h2 {
+    color: #fff;
+    text-align: center
+}
 
 #right-here {
-    background: rgba(18, 25, 82, 1);
-    color: #fff;
+    background: #121952;
     width: 100%;
-    text-align: center;
-    padding: 7.8em 0;
+    padding: 7.8em 0
 }
 
 #right-here h2 {
     font-size: 3.125em;
     margin: 0;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
-    line-height: 1;
+    font-weight: 700;
+    line-height: 1
 }
 
 #right-here iframe {
-    height: 15em;
+    height: 15em
 }
 
 #right-here>p {
-    margin: 1.6em 0 2.7em;
+    margin: 1.6em 0 2.7em
 }
 
-#right-here>p,
-#right-here a {
-    color: rgba(0, 229, 212, 1);
-    font-weight: bold;
+#right-here a,
+#right-here>p {
+    color: #00e5d4;
+    font-weight: 700
 }
 
 #right-here p {
-    font-size: 1.125em;
+    font-size: 1.125em
 }
 
 #right-here>div {
     display: flex;
     max-width: 70em;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 #right-here>div>* {
-    flex-basis: 50%;
+    flex-basis: 50%
 }
 
 #right-here>div>div {
-    margin-left: 3em;
+    margin-left: 3em
 }
 
 #right-here>div p {
     text-align: left;
-    margin-top: 0;
-    margin: 0;
+    margin: 0
 }
 
 #right-here>div p:nth-child(2) {
     font-size: 1em;
-    margin: 1.25em 0;
+    margin: 1.25em 0
 }
 
 #social {
-    font-size: 1em !important;
+    font-size: 1em!important
 }
 
 #social a {
-    margin-right: 2em;
+    margin-right: 2em
 }
 
 #social svg {
     height: 1.7em;
-    width: 1.7em;
+    width: 1.7em
 }
 
 #social a path {
-    transition: .2s ease fill;
+    transition: .2s ease fill
 }
 
 #social a:hover path {
-    fill: rgba(0, 229, 212, 1);
+    fill: #00e5d4
 }
 
 #copyright {
-    text-align: center;
+    text-align: center
 }
 
-@media (max-width: 750px) {
+@media (max-width:750px) {
     #right-here>div {
-        flex-direction: column;
+        flex-direction: column
     }
     #right-here>div div {
-        margin: 2em 0 0;
+        margin: 2em 0 0
     }
 }
