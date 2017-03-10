@@ -237,7 +237,6 @@ nav svg path {
     }
 }
 
-
 /* * * * * * * * * *
  *                 *
  *  Page: HOME     *
@@ -557,6 +556,23 @@ nav svg path {
     }
 }
 
+/* * * * * * * * * *
+ *                 *
+ *  Page: HOME     *
+ *  Section: 5     *
+ *                 *
+ * * * * * * * * * */
+
+
+/* * * * * * * * * *
+ *                 *
+ *  Page: HOME     *
+ *  Section: 6     *
+ *                 *
+ * * * * * * * * * */
+
+
+
 
 /* MENTORS PAGE */
 
@@ -634,36 +650,6 @@ nav svg path {
 .mentor .role {
     display: none;
 }
-
-#mentors .banner button {
-    background-image: linear-gradient(to left, #f1ff8f, #e3fd31);
-}
-
-#mentors header {
-    padding: 6.625em 0 5.9em;
-}
-
-#mentors header h1 {
-    font-size: 3.125em;
-    font-weight: 600;
-    line-height: 0.8;
-    letter-spacing: 1.3px;
-    text-align: center;
-    color: #121952;
-    margin: 0;
-}
-
-#mentors header p {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    color: rgba(18, 25, 82, 0.6);
-    margin: .5em 0 0 0;
-}
-
-#mentors header #mentorsgrid {
-    display: inline-grid;
-}
-
 
 /* MENTORS POPUP */
 
