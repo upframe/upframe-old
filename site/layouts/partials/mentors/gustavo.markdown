@@ -1,3 +1,1 @@
-Being Co-Founder of [SensesLab](http://www.senseslab.com/pt/), Gustavo works in the areas of Strategic Design and User Experience, dealing with clients such as L'Oreál, Vodafone and [Seedrs](https://www.seedrs.com/) (he was also Director of UX in this one). His passion for UX also enable him to found REPUX (Portuguese User Experience Network).
-
-Gustavo has a vast experience in Internet Banking Consulting (he worked at Millenium BCP), and he was part of the UX Board at IST University.
+Gustavo is a UX Strategist, Community Builder and Mentor. He runs SensesLab, a Experience Design Collective that works both with startups, like Seedrs and Landing.jobs, and household brands, like Vodafone, L'Oréal, and Randstad. He's a very active promoter of the experience design field, always available to mentor and help newcomers to the craft or advise all kinds of organisations to jump-start their businesses.

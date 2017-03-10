@@ -3,10 +3,11 @@
     <div class="mentor">
         <img src="{{ safeHTMLAttr $mentor.Photo }}">
         <h2 class="name">{{ $mentor.Name }}</h2>
-        <p class="role">{{ $mentor.Role }}</p>
+        <p class="line">{{ $mentor.Role }} @ {{ $mentor.Job }}</p>
         <div class="description"><p>
             {{- (partial (printf "mentors/%s" $mentor.Description)) | markdownify -}}</p>
         </div>
+        <p class="role">{{ $mentor.Role }}</p>
         <p class="job">{{ $mentor.Job }}</p>
     </div>
     {{ end }}
@@ -15,7 +16,7 @@
 <div class="overlay"></div>
 <div class="mentor-popup">
     <div>
-        <div><img src="/img/mentors/gustavopimenta.jpg"></div>
+        <div><img src="/img/mentors/placeholder.jpg"></div>
         <p class="name">Gustavo Pimenta</p>
         <p class="role">User Experience</p>
 

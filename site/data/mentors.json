@@ -1,65 +1,65 @@
 [{
         "Name": "Inês Santos Silva",
-        "Role": "unknown",
+        "Role": "Advisor",
         "Description": "ines.markdown",
-        "Photo": "\/img\/mentors\/placeholder.jpg",
-        "Job": "Unknown",
+        "Photo": "\/img\/mentors\/ines-silva.jpg",
+        "Job": "Upframe",
         "LinkedIn": "https://pt.linkedin.com/in/inessantossilva"
     },
     {
         "Name": "Gustavo Pimenta",
-        "Role": "unknown",
+        "Role": "Managing Partner",
         "Description": "gustavo.markdown",
-        "Photo": "\/img\/mentors\/placeholder.jpg",
-        "Job": "Unknown",
+        "Photo": "\/img\/mentors\/gustavo-pimenta.jpg",
+        "Job": "SensesLab",
         "LinkedIn": "https://pt.linkedin.com/in/gustavocpimenta"
     },
     {
         "Name": "Mariano Kostelec",
-        "Role": "unknown",
+        "Role": "Co-founder",
         "Description": "mariano.markdown",
         "Photo": "\/img\/mentors\/mariano-kostelec.jpg",
-        "Job": "Unknown",
+        "Job": "Uniplaces",
         "LinkedIn": "https://es.linkedin.com/in/marianokostelec"
     },
     {
         "Name": "David Dias",
-        "Role": "unknown",
+        "Role": "Lecturer",
         "Description": "david.markdown",
         "Photo": "\/img\/mentors\/david-dias.jpg",
-        "Job": "Unknown",
+        "Job": "IST",
         "LinkedIn": "https://pt.linkedin.com/in/diasdavid/en"
     },
     {
         "Name": "Davis Gouveia",
-        "Role": "unknown",
+        "Role": "Founder",
         "Description": "davis.markdown",
         "Photo": "\/img\/mentors\/davis-gouveia.png",
-        "Job": "Unknown",
+        "Job": "Uniarea",
         "LinkedIn": "https://pt.linkedin.com/in/davisgouveia"
     },
     {
         "Name": "Paulo Gonçalves",
-        "Role": "unknown",
+        "Role": "User Researcher",
         "Description": "paulogoncalves.markdown",
-        "Photo": "\/img\/mentors\/placeholder.jpg",
-        "Job": "Unknown",
+        "Photo": "\/img\/mentors\/paulo-goncalves.jpg",
+        "Job": "Uniplaces",
         "LinkedIn": "https://se.linkedin.com/in/paulomcg/en"
     },
     {
         "Name": "Mário Mouraz",
-        "Role": "unknown",
+        "Role": "Founder",
         "Description": "mario.markdown",
         "Photo": "\/img\/mentors\/mario-mouraz.jpg",
-        "Job": "Unknown",
+        "Job": "Climber Hotel",
         "LinkedIn": "https://uk.linkedin.com/in/mariomouraz"
     },
     {
         "Name": "Paulo Fonseca",
-        "Role": "unknown",
+        "Role": "Founder",
         "Description": "paulofonseca.markdown",
-        "Photo": "\/img\/mentors\/placeholder.jpg",
-        "Job": "Unknown",
+        "Photo": "\/img\/mentors\/paulo-fonseca.jpg",
+        "Job": "laux",
         "LinkedIn": "https://pt.linkedin.com/in/paulofonsecame"
     }
 ]

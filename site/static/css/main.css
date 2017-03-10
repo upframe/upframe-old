@@ -562,7 +562,7 @@ nav svg path {
 #mentors-container {
     display: flex;
     flex-flow: row wrap;
-    max-width: 60em;
+    max-width: 57.5em;
     text-align: center;
     padding: 0;
     justify-content: space-between;
@@ -571,7 +571,7 @@ nav svg path {
 }
 
 #mentors-container .mentor {
-    flex-basis: 31%;
+    flex-basis: 30%;
     margin-bottom: 4em;
 }
 
@@ -594,7 +594,7 @@ nav svg path {
 
 #mentors-container .mentor img {
     transition: all .5s ease;
-    margin-bottom: 0.8em;
+    margin: 0 0 0.8em;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -609,7 +609,16 @@ nav svg path {
 
 #mentors-container .mentor .name {
     font-size: 1.25em;
-    color: #121952;
+    font-weight: bold;
+    color: rgba(75, 83, 144, 1);
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+
+.mentor .line {
+    color: rgba(75, 83, 144, 1);
+    margin: .4em 0 0 0;
 }
 
 #mentors-container .mentor .role {
@@ -620,7 +629,8 @@ nav svg path {
 }
 
 #mentors-container .mentor .description,
-#mentors-container .mentor .job {
+#mentors-container .mentor .job,
+.mentor .role {
     display: none;
 }
 
@@ -890,10 +900,12 @@ nav svg path {
 #right-here>div p {
     text-align: left;
     margin-top: 0;
+    margin: 0;
 }
 
 #right-here>div p:nth-child(2) {
     font-size: 1em;
+    margin: 1.25em 0;
 }
 
 #social {
