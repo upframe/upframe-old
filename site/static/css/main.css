@@ -293,8 +293,9 @@ nav svg path {
 #home header>div div:first-of-type {
     display: flex;
     margin: 0 auto;
-    max-width: 72em;
+    max-width: 65em;
     width: 95%;
+    align-items: center;
 }
 
 #home header>divdiv:first-of-type img:first-of-type {
@@ -306,21 +307,21 @@ nav svg path {
 }
 
 #big-phrase {
-    font-size: 2.7em;
-    line-height: 2.7em;
-    max-width: 18em;
-    margin: 1em .4em 0 1em;
+    font-size: 5.5em;
+    line-height: 1;
+    max-width: 8em;
+    margin: 0;
     font-weight: bold;
-    border-top: .35em solid #fff;
-    border-bottom: .35em solid #fff;
-    padding: .16em 0;
+    /* border-top: .2em solid #fff; */
+    /* border-bottom: .2em solid #fff; */
+    /* padding: .16em 0; */
     position: relative;
     flex-grow: 1;
 }
 
 #big-phrase::before,
 #big-phrase::after {
-    content: '';
+    /* content: ''; */
     display: block;
     position: absolute;
     background: #fff;
@@ -332,7 +333,7 @@ nav svg path {
     bottom: 0;
     transform: scaleY(.5);
     transform-origin: 0 100%;
-    width: .35em;
+    width: .2em;
 }
 
 #big-phrase::after {
@@ -341,7 +342,7 @@ nav svg path {
     bottom: 0;
     transform: scaleY(.5);
     transform-origin: 0 100%;
-    width: .35em;
+    width: .2em;
 }
 
 #home header #home header .btn {
