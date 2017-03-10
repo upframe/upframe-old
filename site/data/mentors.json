@@ -1,5 +1,6 @@
 [{
         "Name": "Inês Santos Silva",
+        "Slug": "ines-silva",
         "Role": "Advisor",
         "Description": "ines.markdown",
         "Photo": "\/img\/mentors\/ines-silva.jpg",
@@ -8,6 +9,7 @@
     },
     {
         "Name": "Gustavo Pimenta",
+        "Slug": "gustavo-pimenta",
         "Role": "Managing Partner",
         "Description": "gustavo.markdown",
         "Photo": "\/img\/mentors\/gustavo-pimenta.jpg",
@@ -16,6 +18,7 @@
     },
     {
         "Name": "Mariano Kostelec",
+        "Slug": "mariano-kostelec",
         "Role": "Co-founder",
         "Description": "mariano.markdown",
         "Photo": "\/img\/mentors\/mariano-kostelec.jpg",
@@ -24,6 +27,7 @@
     },
     {
         "Name": "David Dias",
+        "Slug": "david-dias",
         "Role": "Lecturer",
         "Description": "david.markdown",
         "Photo": "\/img\/mentors\/david-dias.jpg",
@@ -32,6 +36,7 @@
     },
     {
         "Name": "Davis Gouveia",
+        "Slug": "davis-gouveia",
         "Role": "Founder",
         "Description": "davis.markdown",
         "Photo": "\/img\/mentors\/davis-gouveia.png",
@@ -40,6 +45,7 @@
     },
     {
         "Name": "Paulo Gonçalves",
+        "Slug": "paulo-goncalves",
         "Role": "User Researcher",
         "Description": "paulogoncalves.markdown",
         "Photo": "\/img\/mentors\/paulo-goncalves.jpg",
@@ -48,6 +54,7 @@
     },
     {
         "Name": "Mário Mouraz",
+        "Slug": "mario-mouraz",
         "Role": "Founder",
         "Description": "mario.markdown",
         "Photo": "\/img\/mentors\/mario-mouraz.jpg",
@@ -56,6 +63,7 @@
     },
     {
         "Name": "Paulo Fonseca",
+        "Slug": "paulo-fonseca",
         "Role": "Founder",
         "Description": "paulofonseca.markdown",
         "Photo": "\/img\/mentors\/paulo-fonseca.jpg",

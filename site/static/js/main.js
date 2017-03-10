@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (window.location.pathname == "/mentors") {
-        randomMentorPosition();
         initMentorsPage();
     }
 
@@ -39,9 +38,11 @@ function initNewsletter() {
         req.send(data);
         req.onreadystatechange = function() {
             if (this.readyState == 4) {
-                switch(this.status) {
-                    case 500: console.log("Error: " + this.responseText);
-                    case 200: location.reload();
+                switch (this.status) {
+                    case 500:
+                        console.log("Error: " + this.responseText);
+                    case 200:
+                        location.reload();
                 }
             }
         }
@@ -49,14 +50,7 @@ function initNewsletter() {
 }
 
 function initMentorsPage() {
-    let images = document.querySelectorAll("#mentors-container .mentor img");
-    [].forEach.call(images, function(img) {
-        img.addEventListener("click", openMentorPopup);
-        img.addEventListener('touchstart', openMentorPopup);
-    });
-}
-
-function randomMentorPosition() {
+    // Randomize mentor position
     let mentorslist = [],
         children = document.querySelector("#mentors-container").children;
 
@@ -71,6 +65,21 @@ function randomMentorPosition() {
     for (let i = 0; i < children.length; i++) {
         children[i].parentNode.replaceChild(mentorslist[i], children[i]);
     }
+
+    // Add events
+    let images = document.querySelectorAll("#mentors-container .mentor img");
+    [].forEach.call(images, function(img) {
+        img.addEventListener("click", openMentorPopup);
+        img.addEventListener('touchstart', openMentorPopup);
+    });
+
+    // Check if there is an hash
+    if (window.location.hash != "") {
+        let el = document.getElementById(window.location.hash.substring(1));
+        if (el == null) return;
+
+        el.querySelector('img').click();
+    }
 }
 
 function openMentorPopup(event) {
@@ -79,6 +88,8 @@ function openMentorPopup(event) {
         overlay = document.querySelector(".overlay"),
         closeIcon = popup.querySelector(".close-icon");
     closeIcon.addEventListener("click", closeMentorPopup);
+
+    history.pushState("", document.title, window.location.pathname + '#' + mentor.id);
 
     popup.querySelector("img").src = mentor.querySelector("img").src;
     popup.querySelector(".name").innerHTML = mentor.querySelector(".name").innerHTML;
@@ -97,6 +108,7 @@ function closeMentorPopup(event) {
         popup = document.querySelector("#mentors .mentor-popup");
     if (event.target.className == "overlay active" || event.target.className == "close-icon" || event.key == "Escape") {
         overlay.classList.remove("active");
+        history.pushState("", document.title, window.location.pathname);
         popup.classList.remove("active");
     }
 }
@@ -110,9 +122,12 @@ function initApplyPage() {
         req.send(data);
         req.onreadystatechange = function() {
             if (this.readyState == 4) {
-                switch(this.status) {
-                    case 500: console.log("Error: " + this.responseText); break;
-                    case 200: location.reload();
+                switch (this.status) {
+                    case 500:
+                        console.log("Error: " + this.responseText);
+                        break;
+                    case 200:
+                        location.reload();
                 }
             }
         }

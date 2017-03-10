@@ -1,10 +1,56 @@
-#mentors h2 {
-    font-size: 22px;
-font-weight: bold;
-color: rgba(75, 83, 144, 1);
-text-align: center;
-letter-spacing: 0.03em;
-line-height: 29px;
+#mentors nav:not(.scroll) {
+    box-shadow: 0 0 0 0;
+    background: rgb(49, 133, 252);
+}
+
+#mentors nav:not(.scroll) svg path {
+    fill: rgba(231, 231, 232, 1);
+}
+
+#mentors nav:not(.scroll) a {
+    color: #fff;
+}
+
+#mentors nav .active {
+    color: rgb(18, 25, 82) !important;
+}
+
+#mentors header>div:first-of-type {
+    padding: 8em 0;
+    background: rgb(49, 133, 252);
+}
+
+#mentors header>div:first-of-type p {
+    color: #fff;
+    max-width: 12em;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 500;
+}
+
+#mentors header>div:last-of-type {
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    padding: 9em 0 3.688em;
+}
+
+#mentors header h1 {
+    font-size: 3.125em;
+    margin: 0;
+}
+
+#mentors-container .mentor:last-child {
+    margin-left: 5%;
+}
+
+#mentors header>div:last-of-type p {
+    font-size: 1.375em;
+    color: rgba(75, 83, 144, 1);
+    margin: 1.389em auto 0;
+    width: 90%;
 }
 
 #learn-from-experts {
