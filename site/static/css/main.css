@@ -293,16 +293,15 @@ nav svg path {
 }
 
 #home header>div:first-child {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 95%;
+    margin: 0 auto;
+    height: calc(100vh - 7.5em);
+    padding: 8vh 0 0;
 }
 
 #home header>div:first-child>p {
     max-width: 30em;
-    margin: 13vh auto;
+    margin: 7vh auto;
     font-size: 1.125em;
     width: 95%;
 }
@@ -310,7 +309,7 @@ nav svg path {
 #home header>div div:first-of-type {
     display: flex;
     margin: 0 auto;
-    max-width: 65em;
+    max-width: 63em;
     width: 95%;
     align-items: center;
 }
@@ -326,7 +325,7 @@ nav svg path {
 #big-phrase {
     font-size: 5.5em;
     line-height: 1;
-    max-width: 8em;
+    max-width: 7.5em;
     margin: 0;
     font-weight: bold;
     /* border-top: .2em solid #fff; */
@@ -336,9 +335,18 @@ nav svg path {
     flex-grow: 1;
 }
 
+@media (max-width: 1100px) {
+    #big-phrase {
+        font-size: 15vw;
+        width: 84%;
+    }
+}
+
+
+/*
 #big-phrase::before,
 #big-phrase::after {
-    /* content: ''; */
+    content: '';
     display: block;
     position: absolute;
     background: #fff;
@@ -360,7 +368,7 @@ nav svg path {
     transform: scaleY(.5);
     transform-origin: 0 100%;
     width: .2em;
-}
+} */
 
 #home header #home header .btn {
     font-size: 1.125em;
@@ -372,21 +380,21 @@ nav svg path {
 
 #scroll {
     font-size: 0.625em;
-    position: absolute;
-    bottom: 2em;
     width: 100%;
 }
 
 #scroll p {
-    margin: .1em 0 .8em;
+    margin: .1em 0 0;
 }
 
 @media (max-width: 750px) {
     #home header>div div:first-of-type {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     #home header>div div:first-of-type img {
-        display: none;
+        /* display: none; */
+        max-width: 4em;
+        width: 100%;
     }
     #home header>div div:last-of-type {
         margin-top: 0em;
