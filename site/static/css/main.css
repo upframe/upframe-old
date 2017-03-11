@@ -402,9 +402,10 @@ nav svg path {
  * * * * * * * * * */
 
 #how-we-do-it,
+#our-programme,
 #our-mentors,
-#our-programme {
-    margin: 12.5em auto;
+#are-you-ready {
+    margin: 8em auto;
 }
 
 #how-we-do-it h1 {
@@ -582,6 +583,48 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
+#are-you-ready>div {
+    max-width: 90vw;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#are-you-ready>div div:first-of-type {
+    margin: auto;
+    width: 100%;
+    display: flex;
+}
+
+#are-you-ready>div div:first-of-type img {
+    flex-grow: 1;
+}
+
+#are-you-ready>div div:last-of-type {
+    margin: auto;
+    text-align: center;
+}
+
+#are-you-ready>div div:last-of-type h1 {
+    font-size: 3.125em;
+    margin-bottom: 0.25em;
+}
+
+#are-you-ready>div div:last-of-type a.btn {
+    margin: 1em auto 0.5em auto;
+}
+
+#are-you-ready>div div:last-of-type span {
+    display: block;
+    color: rgba(206, 206, 206, 1);
+}
+
+@media (max-width: 750px) {
+    #are-you-ready>div div:first-of-type img {
+        display: none;
+    }
+}
 
 /* * * * * * * * * *
  *                 *
@@ -616,7 +659,7 @@ nav svg path {
 }
 
 #our-partners div>img {
-    margin: 0 .75em;
+    margin: 1em .75em;
     display: inline-block;
     height: 50px;
     filter: invert(20%);
