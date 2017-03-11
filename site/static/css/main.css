@@ -194,11 +194,11 @@ nav ul li:first-of-type a {
 }
 
 nav ul a:hover svg path {
-    fill: #ff3855;
+    fill: #ff3855 !important;
 }
 
 nav a:hover {
-    color: #ff3855;
+    color: #ff3855 !important;
 }
 
 nav a.active {
