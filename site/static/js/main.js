@@ -53,7 +53,7 @@ function initNewsletter() {
         event.preventDefault();
         let req = new XMLHttpRequest(),
             data = new FormData(document.querySelector("#newsletter form"));
-        req.open("POST", "https://upframe.xyz:2096/newsletter")
+        req.open("POST", "/newsletter")
         req.send(data);
         req.onreadystatechange = function() {
             if (this.readyState == 4) {
@@ -69,7 +69,6 @@ function initNewsletter() {
 }
 
 function initMentorsPage() {
-    // Randomize mentor position
     let mentorslist = [],
         children = document.querySelector("#mentors-container").children;
 
@@ -85,7 +84,6 @@ function initMentorsPage() {
         children[i].parentNode.replaceChild(mentorslist[i], children[i]);
     }
 
-    // Add events
     let images = document.querySelectorAll("#mentors-container .mentor img");
     [].forEach.call(images, function(img) {
         img.addEventListener("click", openMentorPopup);
@@ -137,7 +135,7 @@ function initApplyPage() {
         event.preventDefault();
         let req = new XMLHttpRequest(),
             data = new FormData(document.querySelector("form"));
-        req.open("POST", "https://upframe.xyz:2096/apply");
+        req.open("POST", "/apply");
         req.send(data);
         req.onreadystatechange = function() {
             if (this.readyState == 4) {
