@@ -29,6 +29,25 @@ window.addEventListener('scroll', function(e) {
     }
 });
 
+
+function distributePhotos(mentors) {
+    let max = mentors.length - 1,
+    s = new Set();
+    a = 0;
+    num = 0;
+
+    for(;s.size < 4;) {
+        a = Math.floor(Math.random() * (max + 1));
+        s.add(a);
+    }
+
+    for(i of document.querySelectorAll("#our-mentors div img")) {
+        num = s.keys().next().value;
+        i.src = "/img/mentors/" + mentors[num].Slug + ".jpg";
+        s.delete(num);
+    }
+}
+
 function initNewsletter() {
     document.querySelector('#newsletter form').addEventListener("submit", function() {
         event.preventDefault();

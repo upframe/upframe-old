@@ -3,7 +3,6 @@
         "Slug": "ines-silva",
         "Role": "Advisor",
         "Description": "ines.markdown",
-        "Photo": "\/img\/mentors\/ines-silva.jpg",
         "Job": "Upframe",
         "LinkedIn": "https://pt.linkedin.com/in/inessantossilva"
     },
@@ -12,7 +11,6 @@
         "Slug": "gustavo-pimenta",
         "Role": "Managing Partner",
         "Description": "gustavo.markdown",
-        "Photo": "\/img\/mentors\/gustavo-pimenta.jpg",
         "Job": "SensesLab",
         "LinkedIn": "https://pt.linkedin.com/in/gustavocpimenta"
     },
@@ -21,7 +19,6 @@
         "Slug": "mariano-kostelec",
         "Role": "Co-founder",
         "Description": "mariano.markdown",
-        "Photo": "\/img\/mentors\/mariano-kostelec.jpg",
         "Job": "Uniplaces",
         "LinkedIn": "https://es.linkedin.com/in/marianokostelec"
     },
@@ -30,7 +27,6 @@
         "Slug": "david-dias",
         "Role": "Software Engineer",
         "Description": "david.markdown",
-        "Photo": "\/img\/mentors\/david-dias.jpg",
         "Job": "Protocol Labs",
         "LinkedIn": "https://pt.linkedin.com/in/diasdavid/en"
     },
@@ -39,7 +35,6 @@
         "Slug": "davis-gouveia",
         "Role": "Founder",
         "Description": "davis.markdown",
-        "Photo": "\/img\/mentors\/davis-gouveia.jpg",
         "Job": "Uniarea",
         "LinkedIn": "https://pt.linkedin.com/in/davisgouveia"
     },
@@ -48,7 +43,6 @@
         "Slug": "paulo-goncalves",
         "Role": "User Researcher",
         "Description": "paulogoncalves.markdown",
-        "Photo": "\/img\/mentors\/paulo-goncalves.jpg",
         "Job": "Uniplaces",
         "LinkedIn": "https://se.linkedin.com/in/paulomcg/en"
     },
@@ -57,7 +51,6 @@
         "Slug": "mario-mouraz",
         "Role": "Founder",
         "Description": "mario.markdown",
-        "Photo": "\/img\/mentors\/mario-mouraz.jpg",
         "Job": "Climber Hotel",
         "LinkedIn": "https://uk.linkedin.com/in/mariomouraz"
     },
@@ -66,8 +59,71 @@
         "Slug": "paulo-fonseca",
         "Role": "Founder",
         "Description": "paulofonseca.markdown",
-        "Photo": "\/img\/mentors\/paulo-fonseca.jpg",
         "Job": "laux",
         "LinkedIn": "https://pt.linkedin.com/in/paulofonsecame"
+    },
+    {
+        "Name": "Ana Santiago",
+        "Slug": "ana-santiago",
+        "Role": "Head of Communications",
+        "Description": "empty.markdown",
+        "Job": "Startup Lisboa",
+        "LinkedIn": "https://www.linkedin.com/in/anasantiagolx/"
+    },
+    {
+        "Name": "André Albuquerque",
+        "Slug": "andre-albuquerque",
+        "Role": "Founder",
+        "Description": "empty.markdown",
+        "Job": "Bright Lisbon Agency",
+        "LinkedIn": "https://www.linkedin.com/in/andredalbuq/"
+    },
+    {
+        "Name": "André Costa",
+        "Slug": "andre-costa",
+        "Role": "Full Stack Developer",
+        "Description": "empty.markdown",
+        "Job": "Advicefront",
+        "LinkedIn": "https://www.linkedin.com/in/nogdacosta/"
+    },
+    {
+        "Name": "André Rodrigues Lopes",
+        "Slug": "andre-rodrigues-lopes",
+        "Role": "Co-founder",
+        "Description": "empty.markdown",
+        "Job": "Altar.io",
+        "LinkedIn": "https://www.linkedin.com/in/andrerodrigueslopes/"
+    },
+    {
+        "Name": "Colin Gillingham",
+        "Slug": "colin-gillingham",
+        "Role": "Role",
+        "Description": "empty.markdown",
+        "Job": "Company",
+        "LinkedIn": "https://www.linkedin.com/in/colingillingham/"
+    },
+    {
+        "Name": "Miguel Alpoim Ruas",
+        "Slug": "miguel-alpoim-ruas",
+        "Role": "Chief Nurse",
+        "Description": "empty.markdown",
+        "Job": "Doctor Spin",
+        "LinkedIn": "https://www.linkedin.com/in/miguel-alpoim-ruas-860baa4/"
+    },
+    {
+        "Name": "Miguel Fontes",
+        "Slug": "miguel-fontes",
+        "Role": "CEO",
+        "Description": "empty.markdown",
+        "Job": "Startup Lisboa",
+        "LinkedIn": "https://www.linkedin.com/in/miguel-fontes-544ba467/"
+    },
+    {
+        "Name": "Tiago Tomás",
+        "Slug": "tiago-tomas",
+        "Role": "Lead Experience Design",
+        "Description": "empty.markdown",
+        "Job": "Novabase",
+        "LinkedIn": "https://www.linkedin.com/in/tiagotomas/"
     }
 ]

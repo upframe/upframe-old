@@ -104,15 +104,15 @@
     <div id="are-you-ready">
         <div>
             <div id="symbols">
-                <img src="img/symbols/ready_left.svg">
-                <img src="img/symbols/ready_right.svg">
+                <img src="img/symbols/ready-left.svg">
+                <img src="img/symbols/ready-right.svg">
             </div>
             <div>
                 <h1>Are you ready?</h1>
                 <p>Engines are warm, we’re waiting for you</p>
 
-                <a href="#" class="btn btn-red">Yeah, I'm ready!</a>
-                <span>Nah, not ready yet</span>
+                <a href="/apply" class="btn btn-red">Yeah, I'm ready!</a>
+                <span><a data-scroll href="#newsletter">Nah, not ready yet</a></span>
             </div>
         </div>
     </div>
@@ -139,26 +139,9 @@
     </div>
 </main>
 
-<script>
-    function distributePhotos(mentors) {
-        let max = mentors.length - 1,
-        s = new Set();
-        a = 0;
-        num = 0;
-
-        for(;s.size < 4;) {
-            a = Math.floor(Math.random() * (max + 1));
-            s.add(a);
-        }
-
-        for(i of document.querySelectorAll("#our-mentors div img")) {
-            num = s.keys().next().value;
-            i.src = mentors[num].Photo;
-            s.delete(num);
-        }
-    }
-    distributePhotos(JSON.parse({{ jsonify .Site.Data.mentors }}));
-
-</script>
 
 {{ partial "footer" . }}
+<script>distributePhotos(JSON.parse({{ jsonify .Site.Data.mentors }}));</script>
+
+</body>
+</html>

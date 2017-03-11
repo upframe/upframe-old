@@ -618,6 +618,7 @@ nav svg path {
 #are-you-ready>div div:last-of-type span {
     display: block;
     color: rgba(206, 206, 206, 1);
+    font-size: .8em;
 }
 
 @media (max-width: 750px) {
@@ -626,6 +627,7 @@ nav svg path {
     }
 }
 
+
 /* * * * * * * * * *
  *                 *
  *  Page: HOME     *
@@ -633,18 +635,21 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
+#mentors-companies,
 #our-partners {
     background-color: rgba(242, 242, 242, 1);
+    padding: 1px 0;
 }
 
+#mentors-companies div,
 #our-partners div {
     max-width: 90vw;
     width: 80%;
-    margin: auto;
     text-align: center;
-    padding: 4em 0;
+    margin: 4em auto;
 }
 
+#mentors-companies div p,
 #our-partners div p {
     padding: 0;
     color: rgba(192, 192, 192, 1);
@@ -658,11 +663,15 @@ nav svg path {
     vertical-align: middle;
 }
 
+#mentors-companies img,
 #our-partners div>img {
     margin: 1em .75em;
     display: inline-block;
     height: 50px;
-    filter: invert(20%);
+}
+
+#mentors-companies div {
+    margin: 2.25em auto;
 }
 
 
@@ -693,10 +702,6 @@ nav svg path {
 #mentors header h1 {
     font-size: 3.125em;
     margin: 0;
-}
-
-#mentors-container .mentor:last-child {
-    margin-left: 5%;
 }
 
 #mentors header>div:last-of-type p {
@@ -757,11 +762,6 @@ nav svg path {
 #mentors-container .mentor {
     flex-basis: 30%;
     margin-bottom: 4em;
-}
-
-#mentors-container .mentor:last-child {
-    margin-right: auto;
-    margin-left: 3.5%;
 }
 
 @media (max-width: 700px) {
