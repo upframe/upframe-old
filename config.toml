@@ -2,7 +2,7 @@ baseurl = "https://upframe.co/"
 title = "Upframe"
 languageCode = "en-us"
 uglyurls  = true
-googleAnalytics = "UA-85193104-1"
+googleAnalytics = "UA-93489376-1"
 enableRobotsTXT = true
 
 [params]

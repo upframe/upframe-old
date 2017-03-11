@@ -1,6 +1,6 @@
 <footer>
     <div id="right-here">
-        <h2>We’re right here</h2>
+        <h2>We're right here</h2>
         <p>Hit us for a coffee - let’s talk about changing the world</p>
 
         <div>
@@ -35,6 +35,6 @@
 
 <script src="{{ .Site.BaseURL }}js/smooth-scroll.js"></script>
 <script src="{{ .Site.BaseURL }}js/main.js"></script>
-{{ if eq .Site.BaseURL "https://upframe.co" }}
+{{ if eq (printf "%v" .Site.BaseURL) "https://upframe.co/" }}
     {{ template "_internal/google_analytics.html" . }}
 {{ end }}

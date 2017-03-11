@@ -1,7 +1,7 @@
 User-agent: *
 
-{{ if not (eq .Site.BaseURL "https://upframe.co") }}
+{{- if not (eq (printf "%v" .Site.BaseURL) "https://upframe.co/") }}
 Disallow: /
-{{ else }}
+{{- else }}
 Disallow:
-{{ end }}
+{{- end }}
