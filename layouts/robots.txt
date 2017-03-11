@@ -1,6 +1,6 @@
 User-agent: *
 
-{{ if not (eq .Site.BaseURL "https://upframe.xyz") }}
+{{ if not (eq .Site.BaseURL "https://upframe.co") }}
 Disallow: /
 {{ else }}
 Disallow:
