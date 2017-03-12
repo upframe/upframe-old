@@ -1348,8 +1348,13 @@ nav svg path {
 
 .written textarea,
 .written input {
-    border-color: rgba(244, 244, 244, 1) !important;
+    border-color: transparent !important;
     color: rgba(75, 83, 144, 1);
+}
+
+.written input:hover,
+.written textarea:hover {
+    border-color: rgba(244, 244, 244, 1) !important;
 }
 
 #apply main>form input[type="email"],
