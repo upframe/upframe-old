@@ -1423,6 +1423,28 @@ nav svg path {
     margin-bottom: 0;
 }
 
+@media (max-width: 860px) {
+    #apply main>form {
+        margin-left: 3em;
+    }
+    #apply main>form h2 {
+        font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 650px) {
+    #apply main {
+        flex-direction: column;
+    }
+    #apply main>div {
+        width: 100%;
+    }
+    #apply main>form {
+        margin-top: 2em;
+        margin-left: 0;
+    }
+}
+
 
 /*Footer */
 
