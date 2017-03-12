@@ -326,6 +326,7 @@ nav svg path {
 
 /* NAVBARS */
 
+#about nav:not(.scroll),
 #apply nav:not(.scroll),
 #home nav:not(.scroll),
 #mentors nav:not(.scroll),
@@ -343,11 +344,14 @@ nav svg path {
     background: rgb(49, 133, 252);
 }
 
+#about nav:not(.scroll),
+#about .big-header,
 #apply .big-header,
 #apply nav:not(.scroll) {
     background: rgb(255, 56, 85);
 }
 
+#about nav:not(.scroll) svg path,
 #apply nav:not(.scroll) svg path,
 #programme nav:not(.scroll) svg path,
 #home nav:not(.scroll) svg path,
@@ -355,6 +359,7 @@ nav svg path {
     fill: #fff;
 }
 
+#about nav:not(.scroll) #expand-button span,
 #apply nav:not(.scroll) #expand-button span,
 #programme nav:not(.scroll) #expand-button span,
 #home nav:not(.scroll) #expand-button span,
@@ -362,6 +367,7 @@ nav svg path {
     background-color: #fff;
 }
 
+#about nav:not(.scroll) a,
 #apply nav:not(.scroll) a,
 #programme nav:not(.scroll) a,
 #home nav:not(.scroll) a,
@@ -371,6 +377,10 @@ nav svg path {
 
 #mentors nav .active {
     color: rgb(18, 25, 82) !important;
+}
+
+#about nav:not(.scroll) a:hover svg path {
+    fill: #121952 !important;
 }
 
 
@@ -765,7 +775,7 @@ nav svg path {
 .big-header {
     background: rgba(18, 25, 82, 1);
     position: relative;
-    padding: 8em 0;
+    padding: 11em 0;
 }
 
 .big-header.with-grey-bar {
@@ -781,6 +791,7 @@ nav svg path {
     text-align: center;
     font-size: 4.5em;
     font-weight: 500;
+    line-height: 1.3;
 }
 
 .big-header.with-grey-bar p {
@@ -816,6 +827,7 @@ nav svg path {
     width: 90%;
 }
 
+#curious,
 #shape-your-future,
 #learn-from-experts {
     max-width: 37em;
@@ -824,6 +836,7 @@ nav svg path {
     text-align: center;
 }
 
+#curious h2,
 #talk-applications h2,
 #shape-your-future h2,
 #learn-from-experts h2 {
@@ -831,7 +844,7 @@ nav svg path {
     font-weight: bold;
     color: rgba(18, 25, 82, 1);
     text-align: center;
-    line-height: 1;
+    line-height: 1.2;
     margin: 0;
 }
 
@@ -844,16 +857,23 @@ nav svg path {
     text-align: center;
 }
 
+#curious .btn:first-of-type,
 #shape-your-future .btn:first-of-type,
 #learn-from-experts .btn:first-of-type {
     margin-right: 1em;
 }
 
+#curious h2 {
+    margin-bottom: 1em;
+}
+
 @media (max-width: 500px) {
+    #curious .btn,
     #shape-your-future .btn,
     #learn-from-experts .btn {
         display: block;
     }
+    #curious .btn:first-of-type,
     #shape-your-future .btn:first-of-type,
     #learn-from-experts .btn:first-of-type {
         margin: 0 0 1em;
@@ -1795,6 +1815,19 @@ form p {
         margin-top: 2em;
         margin-left: 0;
     }
+}
+
+
+/* ABOUT */
+
+#about .big-header p {
+    font-weight: normal;
+    color: #121952;
+}
+
+#about nav:not(.scroll) .btn {
+    background: #121952;
+    border-color: #121952;
 }
 
 
