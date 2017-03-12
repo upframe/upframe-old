@@ -94,6 +94,7 @@ h2 {
 
 .btn-red-full:hover {
     background: rgb(215, 29, 56);
+    border-color: rgb(215, 29, 56);
 }
 
 .btn-blue {
@@ -123,6 +124,7 @@ h2 {
 
 .btn-dark-blue-full:hover {
     background-color: #03072e;
+    border-color: #03072e;
 }
 
 
