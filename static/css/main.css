@@ -1088,12 +1088,12 @@ nav svg path {
 }
 
 
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 2     *
- *                 *
- * * * * * * * * * */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: PROGRAMME  *
+ *  Section: 2       *
+ *                   *
+ * * * * * * * * * * */
 
 #programme main>p:first-of-type {
     font-size: 1.375em;
@@ -1133,6 +1133,13 @@ nav svg path {
     font-size: 1.125em;
 }
 
+/* * * * * * * * * * *
+ *                   *
+ *  Page: PROGRAMME  *
+ *  Section: 3       *
+ *                   *
+ * * * * * * * * * * */
+
 #programme main #calendar {
     background: rgba(18, 25, 82, 1);
     width: 100vw;
@@ -1151,16 +1158,142 @@ nav svg path {
     font-size: 3.125em;
 }
 
-
-
-#programme main>div:last-of-type {
-    background-color: rgba(247, 247, 247, 1);
-    padding: 3.375em 0;
+#programme main #calendar #date-sequence {
+    max-width: 80em;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
-#shape-your-future {
-    margin: 0 auto;
+#programme main #calendar #date-sequence span {
+    display: block;
 }
+
+#programme main #calendar #date-sequence div:nth-of-type(odd) {
+    flex-basis: 33%;
+    position: relative;
+}
+
+#programme main #calendar #date-sequence div:nth-of-type(2n) {
+    width: 10%;
+    height: 2px;
+    background: #4b5390;
+    margin-right: 2em;
+}
+
+#programme main #calendar #date-sequence>div span:nth-of-type(1) {
+    font-size: 1em;
+    color: white;
+}
+
+#programme main #calendar #date-sequence>div span:nth-of-type(2) {
+    font-size: 1.125em;
+    color: white;
+}
+
+#programme main #calendar #date-sequence>div span:nth-of-type(3) {
+    font-size: 1em;
+    color: rgba(75, 83, 144, 1);
+}
+
+#programme main #calendar #board {
+    margin: 5em auto;
+}
+
+#programme main #calendar #board>div {
+    display: flex;
+    max-width: 90vw;
+    width: 90%;
+    margin: auto;
+}
+
+#programme main #calendar #board div img {
+    flex-basis: 20%;
+}
+
+#programme main #calendar #board>div>div {
+    flex-basis: 60%;
+    border: .75em solid rgba(255, 56, 85, 1);
+    margin: 1em 5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#programme main #calendar #board>div>div>div {
+    padding: 3.5em;
+    flex-basis: 33%;
+    flex-grow: 1;
+}
+
+#programme main #calendar #board span {
+    display: block;
+}
+
+#programme main #calendar #board span:nth-of-type(1) {
+    color: rgba(255, 56, 85, 1);
+}
+
+#programme main #calendar #board span:nth-of-type(2) {
+    color: #fff;
+}
+
+#programme main #calendar a.btn {
+    display: block;
+    margin: 3em auto;
+    width: 9.375em;
+}
+
+#programme main #calendar #programme-qa {
+    max-width: 80vw;
+    width: 50%;
+    margin: auto;
+    display: flex;
+}
+
+#programme main #calendar #programme-qa>div {
+    flex-basis: 50%;
+}
+
+#programme main #calendar #programme-qa>div:first-of-type {
+    margin-right: 2em;
+}
+
+#programme main #calendar #programme-qa>div p {
+    text-align: left;
+    margin-bottom: 3em;
+}
+
+#programme main #calendar #programme-qa span.question {
+    color: rgba(0, 229, 212, 1);
+}
+
+#programme main #calendar #programme-qa a,
+#programme main #calendar #programme-qa a:active,
+#programme main #calendar #programme-qa a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#programme main #calendar #programme-qa a:hover {
+    color: rgba(0, 229, 212, 1);
+    text-decoration: underline;
+}
+
+/* * * * * * * * * * *
+ *                   *
+ *  Page: PROGRAMME  *
+ *  Section: 4       *
+ *                   *
+ * * * * * * * * * * */
+
+
+ /* * * * * * * * * * *
+  *                   *
+  *  Page: PROGRAMME  *
+  *  Section: 5       *
+  *                   *
+  * * * * * * * * * * */
 
 #talk-applications {
     padding: 8.188em 0 0 0;
@@ -1299,6 +1432,21 @@ nav svg path {
     }
 }
 
+/* * * * * * * * * * *
+ *                   *
+ *  Page: PROGRAMME  *
+ *  Section: 6       *
+ *                   *
+ * * * * * * * * * * */
+
+#programme main>div:last-of-type {
+    background-color: rgba(247, 247, 247, 1);
+    padding: 3.375em 0;
+}
+
+#shape-your-future {
+    margin: 0 auto;
+}
 
 /* * * * * * * * * *
  *                 *
@@ -1350,6 +1498,15 @@ nav svg path {
 #apply form>div {
     position: relative;
     margin: 2.875em 0;
+}
+
+#apply main > div p img {
+    width: auto;
+    border: 0;
+    box-shadow: 0 0 0 0;
+    display: inline;
+    border-radius: 0;
+    height: 1.5em;
 }
 
 #apply form>div label {
