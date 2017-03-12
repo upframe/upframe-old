@@ -1166,6 +1166,8 @@ nav svg path {
         margin: 2em auto;
         width: 90%;
         height: auto;
+        right: 0;
+        top: 0;
     }
 }
 
