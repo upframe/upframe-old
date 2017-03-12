@@ -36,16 +36,37 @@ slug: apply
         <h2>Application Form</h2>
         <div>
             <label>Your name</label>
-            <input required type="text" name="name" placeholder="Your name">
+            <input class="writing-effect" required type="text" name="name">
         </div>
         <div>
             <label>Your email</label>
-            <input required type="email" name="email" placeholder="Your email">
+            <input class="writing-effect" required type="email" name="email">
         </div>
         <div>
             <label>Tell us why you're applying</label>
-            <textarea required name="content" placeholder="Tell us why you're applying" rows="15"></textarea>
+            <textarea class="writing-effect" required name="content" rows="15"></textarea>
         </div>
         <input type="submit" value="Submit Application" class="btn btn-red btn-red-full">
     </form>
 </main>
+
+<script>
+
+Array.from(document.querySelectorAll(".writing-effect")).forEach(input => {
+    input.addEventListener('focus', event => {
+        event.currentTarget.parentElement.classList.remove("written");
+        event.currentTarget.parentElement.classList.add("writing");
+    });
+
+    input.addEventListener('blur', event => {
+        event.currentTarget.parentElement.classList.remove("writing");
+
+        if (event.currentTarget.value != "") {
+            event.currentTarget.parentElement.classList.add("written");
+        } else {
+            event.currentTarget.parentElement.classList.remove("written");
+        }
+    });
+});
+
+</script>

@@ -24,6 +24,14 @@ img {
     max-width: 100%;
 }
 
+input,
+input:active,
+input:focus,
+input:hover,
+textarea {
+    outline: 0;
+}
+
 h1,
 h3,
 h4,
@@ -1307,6 +1315,41 @@ nav svg path {
     color: rgba(18, 25, 82, 1);
     text-align: left;
     margin: 0 0 .5em;
+    line-height: 1;
+}
+
+#apply form>div {
+    position: relative;
+    margin: 2.875em 0;
+}
+
+#apply form>div label {
+    position: absolute;
+    top: .988em;
+    line-height: normal;
+    left: 1.688em;
+    height: 100%;
+    font-weight: 500;
+    transition: .2s ease-in-out font-size, .2s ease-in-out top, .2s ease-in-out left;
+    z-index: 0;
+}
+
+.written label,
+.writing label {
+    left: 2.250em !important;
+    font-size: .75em;
+    top: -1.8em !important;
+}
+
+.writing textarea,
+.writing input {
+    border-color: rgba(75, 83, 144, 1) !important;
+}
+
+.written textarea,
+.written input {
+    border-color: rgba(244, 244, 244, 1) !important;
+    color: rgba(75, 83, 144, 1);
 }
 
 #apply main>form input[type="email"],
@@ -1314,9 +1357,13 @@ nav svg path {
 #apply main>form textarea {
     display: block;
     width: 100%;
-    margin: 2.875em 0;
+    margin: 0;
     border: .188em solid rgba(18, 25, 82, 1);
-    padding: .6em 1.5em;
+    padding: .8em 1.5em;
+    transition: .2s ease-in-out all;
+    background: transparent;
+    position: relative;
+    z-index: 2;
 }
 
 #apply main>form .btn {
@@ -1342,7 +1389,7 @@ nav svg path {
     align-items: center;
     margin-bottom: -0.5em;
     margin-left: 1em;
-    z-index: 99999;
+    z-index: 9;
     position: relative;
 }
 
@@ -1372,7 +1419,7 @@ nav svg path {
     background-color: rgba(247, 247, 247, 1);
     padding: 1em;
     text-align: left;
-    z-index: 12;
+    z-index: 1;
     position: relative;
 }
 
