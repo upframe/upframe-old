@@ -153,7 +153,9 @@ function initApplyPage() {
 
         let req = new XMLHttpRequest(),
             data = new FormData(document.querySelector("form"));
-        req.open("POST", "/apply");
+
+
+        req.open("POST", window.location);
         req.send(data);
         req.onreadystatechange = function() {
             if (this.readyState == 4) {
@@ -162,7 +164,7 @@ function initApplyPage() {
                         console.log("Error: " + this.responseText);
                         break;
                     case 200:
-                        location.reload();
+                        document.querySelector("form").classList.add('success');
                 }
             }
         }
