@@ -1251,10 +1251,11 @@ nav svg path {
     width: 50%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 #programme main #calendar #programme-qa>div {
-    flex-basis: 50%;
+    flex-basis: calc(50% - 3em);
 }
 
 #programme main #calendar #programme-qa>div:first-of-type {
@@ -1278,6 +1279,23 @@ nav svg path {
 }
 
 #programme main #calendar #programme-qa a:hover {
+    color: rgba(0, 229, 212, 1);
+    text-decoration: underline;
+}
+
+#programme main #calendar>p:last-of-type {
+    font-size: 1.125em;
+    margin: 5em auto;
+}
+
+#programme main #calendar p:last-of-type a,
+#programme main #calendar p:last-of-type a:active,
+#programme main #calendar p:last-of-type a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+#programme main #calendar p:last-of-type a:hover {
     color: rgba(0, 229, 212, 1);
     text-decoration: underline;
 }
