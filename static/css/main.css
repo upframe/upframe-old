@@ -752,8 +752,12 @@ nav svg path {
 /* MENTORS PAGE */
 
 .big-header {
-    padding: 8em 0;
     background: rgba(18, 25, 82, 1);
+    position: relative;
+}
+
+.big-header.with-grey-bar {
+    height: calc(100vh - 11.3em);
 }
 
 .big-header p {
@@ -764,6 +768,10 @@ nav svg path {
     text-align: center;
     font-size: 4.5em;
     font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 950px) {
@@ -1110,16 +1118,16 @@ nav svg path {
     text-align: left;
 }
 
-#programme main #value-preposition > div {
+#programme main #value-preposition>div {
     display: flex;
     margin: 5em auto;
 }
 
-#programme main #value-preposition > div:nth-of-type(2n) {
+#programme main #value-preposition>div:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
 
-#programme main #value-preposition > div div {
+#programme main #value-preposition>div div {
     flex-basis: 50%;
 }
 
@@ -1132,6 +1140,7 @@ nav svg path {
     color: rgba(75, 83, 144, 1) !important;
     font-size: 1.125em;
 }
+
 
 /* * * * * * * * * * *
  *                   *
@@ -1300,6 +1309,7 @@ nav svg path {
     text-decoration: underline;
 }
 
+
 /* * * * * * * * * * *
  *                   *
  *  Page: PROGRAMME  *
@@ -1308,7 +1318,7 @@ nav svg path {
  * * * * * * * * * * */
 
 
- /* * * * * * * * * * *
+/* * * * * * * * * * *
   *                   *
   *  Page: PROGRAMME  *
   *  Section: 5       *
@@ -1452,6 +1462,7 @@ nav svg path {
     }
 }
 
+
 /* * * * * * * * * * *
  *                   *
  *  Page: PROGRAMME  *
@@ -1467,6 +1478,7 @@ nav svg path {
 #shape-your-future {
     margin: 0 auto;
 }
+
 
 /* * * * * * * * * *
  *                 *
@@ -1520,7 +1532,7 @@ nav svg path {
     margin: 2.875em 0;
 }
 
-#apply main > div p img {
+#apply main>div p img {
     width: auto;
     border: 0;
     box-shadow: 0 0 0 0;
