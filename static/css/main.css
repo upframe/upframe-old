@@ -59,7 +59,7 @@ h2 {
 .btn {
     color: rgba(231, 231, 232, 1);
     padding: .4em 1.5em;
-    transition: background .25s ease, color .25s ease;
+    transition: background .25s ease, color .25s ease, border-color .25s ease;
     border: .375em solid rgba(231, 231, 232, 1);
     text-align: center;
     position: relative;
