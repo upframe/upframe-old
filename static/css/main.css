@@ -1106,7 +1106,8 @@ nav svg path {
 #programme main #value-preposition {
     max-width: 90em;
     width: 60%;
-    margin: auto;
+    margin: auto auto 10em auto;
+    text-align: left;
 }
 
 #programme main #value-preposition > div {
@@ -1121,6 +1122,36 @@ nav svg path {
 #programme main #value-preposition > div div {
     flex-basis: 50%;
 }
+
+#programme main #value-preposition h1 {
+    color: rgba(75, 83, 144, 1) !important;
+    font-size: 1.875em;
+}
+
+#programme main #value-preposition p {
+    color: rgba(75, 83, 144, 1) !important;
+    font-size: 1.125em;
+}
+
+#programme main #calendar {
+    background: rgba(18, 25, 82, 1);
+    width: 100vw;
+    padding-top: 6em;
+}
+
+#programme main #calendar p {
+    color: white;
+    font-size: 0.875em;
+    text-align: center;
+}
+
+#programme main #calendar h1 {
+    color: white;
+    text-align: center;
+    font-size: 3.125em;
+}
+
+
 
 #programme main>div:last-of-type {
     background-color: rgba(247, 247, 247, 1);
@@ -1358,11 +1389,25 @@ nav svg path {
 .success div input,
 .success div textarea,
 .success .btn {
-    border-color: #7bed4e !important;
+    border-color: #5ddc2b !important;
 }
 
 .success .btn {
-    background: #7bed4e;
+    background: #5ddc2b;
+}
+
+.error div input,
+.error div textarea,
+.error .btn {
+    border-color: rgb(255, 56, 85) !important;
+}
+
+.error .btn {
+    background: rgb(255, 56, 85);
+}
+
+.success p {
+    color: #5ddc2b;
 }
 
 #apply main>form input[type="email"],
@@ -1377,6 +1422,11 @@ nav svg path {
     background: transparent;
     position: relative;
     z-index: 2;
+}
+
+#apply form p {
+    display: none;
+    text-align: right;
 }
 
 #apply main>form .btn {
