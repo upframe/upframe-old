@@ -152,21 +152,26 @@ function initApplyPage() {
         event.preventDefault();
 
         let req = new XMLHttpRequest(),
-            data = new FormData(document.querySelector("form"));
-
+            form = document.querySelector("form"),
+            data = new FormData(form);
 
         req.open("POST", window.location);
         req.send(data);
         req.onreadystatechange = function() {
             if (this.readyState == 4) {
                 switch (this.status) {
-                    case 500:
-                        console.log("Error: " + this.responseText);
-                        break;
                     case 200:
-                        document.querySelector("form").classList.add('success');
+                        form.classList.add('success');
+                        break;
+                    default:
+                        form.classList.add('error');
+                        form.querySelector(".btn").value = "Something went wrong";
                 }
+
+                return;
             }
         }
+
+        return;
     });
 }
