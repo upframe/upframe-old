@@ -49,24 +49,3 @@ slug: apply
         <input type="submit" value="Submit Application" class="btn btn-red btn-red-full">
     </form>
 </main>
-
-<script>
-
-Array.from(document.querySelectorAll(".writing-effect")).forEach(input => {
-    input.addEventListener('focus', event => {
-        event.currentTarget.parentElement.classList.remove("written");
-        event.currentTarget.parentElement.classList.add("writing");
-    });
-
-    input.addEventListener('blur', event => {
-        event.currentTarget.parentElement.classList.remove("writing");
-
-        if (event.currentTarget.value != "") {
-            event.currentTarget.parentElement.classList.add("written");
-        } else {
-            event.currentTarget.parentElement.classList.remove("written");
-        }
-    });
-});
-
-</script>

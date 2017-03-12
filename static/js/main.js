@@ -32,16 +32,16 @@ window.addEventListener('scroll', function(e) {
 
 function distributePhotos(mentors) {
     let max = mentors.length - 1,
-    s = new Set();
+        s = new Set();
     a = 0;
     num = 0;
 
-    for(;s.size < 4;) {
+    for (; s.size < 4;) {
         a = Math.floor(Math.random() * (max + 1));
         s.add(a);
     }
 
-    for(i of document.querySelectorAll("#our-mentors div img")) {
+    for (i of document.querySelectorAll("#our-mentors div img")) {
         num = s.keys().next().value;
         i.src = "/img/mentors/" + mentors[num].Slug + ".jpg";
         s.delete(num);
@@ -131,6 +131,23 @@ function closeMentorPopup(event) {
 }
 
 function initApplyPage() {
+    Array.from(document.querySelectorAll(".writing-effect")).forEach(input => {
+        input.addEventListener('focus', event => {
+            event.currentTarget.parentElement.classList.remove("written");
+            event.currentTarget.parentElement.classList.add("writing");
+        });
+
+        input.addEventListener('blur', event => {
+            event.currentTarget.parentElement.classList.remove("writing");
+
+            if (event.currentTarget.value != "") {
+                event.currentTarget.parentElement.classList.add("written");
+            } else {
+                event.currentTarget.parentElement.classList.remove("written");
+            }
+        });
+    });
+
     document.querySelector('form').addEventListener("submit", function() {
         event.preventDefault();
         let req = new XMLHttpRequest(),

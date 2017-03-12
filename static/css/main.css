@@ -1348,13 +1348,13 @@ nav svg path {
 
 .written textarea,
 .written input {
-    border-color: transparent !important;
+    border-color: rgb(244, 244, 244) !important;
     color: rgba(75, 83, 144, 1);
 }
 
 .written input:hover,
 .written textarea:hover {
-    border-color: rgba(244, 244, 244, 1) !important;
+    border-color: #ebebeb !important;
 }
 
 #apply main>form input[type="email"],
@@ -1396,6 +1396,15 @@ nav svg path {
     margin-left: 1em;
     z-index: 9;
     position: relative;
+}
+
+#apply main>div>div:first-of-type::after {
+    content: ' ';
+    width: 100%;
+    position: absolute;
+    height: 1em;
+    background: #f7f7f7;
+    bottom: -.6em;
 }
 
 #apply main>div>div>div {
