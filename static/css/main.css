@@ -746,6 +746,10 @@ nav svg path {
     height: 50px;
 }
 
+.grey-bar-logos img.empreendedor {
+    margin-bottom: .4em;
+}
+
 #our-partners div p img {
     height: 1em;
     width: 1em;
