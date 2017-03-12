@@ -1,0 +1,102 @@
+[{
+    "Name": "Malik Piarali",
+    "Role": "Founder & CEO",
+    "Email": "malik@upframe.co",
+    "Social": {
+        "Facebook": "https://www.facebook.com/mjpiarali",
+        "LinkedIn": "https://www.linkedin.com/in/malikpiarali",
+        "Twitter": "https://twitter.com/malikpiara"
+    }
+},
+{
+    "Name": "Henrique Fialho",
+    "Role": "Co-Founder & Head of Operations",
+    "Email": "fialho@upframe.co",
+    "Social": {
+        "Facebook": "https://www.facebook.com/henriquemsfialho",
+        "LinkedIn": "https://www.linkedin.com/in/henriquefialho/",
+        "Medium": "https://medium.com/@henriquemsfialho"
+    }
+},
+{
+    "Name": "Gustavo Pimenta",
+    "Role": "Advisor",
+    "Email": "",
+    "Social": {
+        "LinkedIn": "https://www.linkedin.com/in/gustavocpimenta/"
+    }
+},
+{
+    "Name": "Inês Santos Silva",
+    "Role": "Advisor",
+    "Email": "",
+    "Social": {
+        "LinkedIn": "https://www.linkedin.com/in/inessantossilva/"
+    }
+},
+{
+    "Name": "Filipa Fernandes",
+    "Role": "Head of Marketing & Communication",
+    "Email": "filipa@upframe.co",
+    "Social": {
+        "Facebook": "https://www.facebook.com/filipa.fernandes.169",
+        "LinkedIn": "https://www.linkedin.com/in/filipafernandesdasilva"
+    }
+},
+{
+    "Name": "Daniela Miranda",
+    "Role": "Social Media Manager",
+    "Email": "",
+    "Social": {
+        "Facebook": "https://www.facebook.com/daniela.miranda.5872?",
+        "LinkedIn": "https://www.linkedin.com/in/danielacmiranda"
+    }
+},
+{
+    "Name": "André Albuquerque",
+    "Role": "Community Manager",
+    "Email": "",
+    "Social": {
+        "Facebook": "https://www.facebook.com/andredalbuq",
+        "LinkedIn": "https://www.linkedin.com/in/andredalbuq",
+        "Instagram": "https://www.instagram.com/andredalbuq/"
+    }
+},
+{
+    "Name": "Sofia Martins",
+    "Role": "Events & Logistics",
+    "Email": "sofia@upframe.co",
+    "Social": {
+        "Facebook": "https://www.facebook.com/sofia.martins.3576",
+        "LinkedIn": "https://www.linkedin.com/in/sofia-von-hafe-martins-768436128"
+    }
+},
+{
+    "Name": "Henrique Dias",
+    "Role": "Full Stack Developer",
+    "Email": "henrique@upframe.co",
+    "Social": {
+        "Facebook": "https://www.facebook.com/hacdias",
+        "LinkedIn": "https://www.linkedin.com/in/hacdias",
+        "Instagram": "https://www.instagram.com/hacdias"
+    }
+},
+{
+    "Name": "Fábio Ferreira",
+    "Role": "Full Stack Developer",
+    "Email": "fabio@upframe.co",
+    "Social": {
+        "Facebook": "https://www.facebook.com/ffcferreira",
+        "LinkedIn": "https://www.linkedin.com/in/fabiocferreira",
+        "Instagram": "https://www.instagram.com/fabiofcferreira"
+    }
+},
+{
+    "Name": "João Araújo",
+    "Role": "Lead Designer",
+    "Email": "joao@upframe.co",
+    "Social": {
+        "Facebook": "https://www.facebook.com/juauz",
+        "LinkedIn": "https://www.linkedin.com/in/juauz/"
+    }
+}]
