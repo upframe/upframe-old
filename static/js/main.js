@@ -162,6 +162,8 @@ function initApplyPage() {
                 switch (this.status) {
                     case 200:
                         form.classList.add('success');
+                        form.querySelector('p').style.display = "block";
+                        form.querySelector('.btn').style.display = "none";
                         break;
                     default:
                         form.classList.add('error');
