@@ -1104,6 +1104,14 @@ nav svg path {
 
 /* PROGRAMME */
 
+#programme main>p:first-of-type {
+    font-size: 1.375em;
+    text-align: center;
+    max-width: 20em;
+    width: 90%;
+    margin: 4.591em auto 3.636em;
+}
+
 #programme main>div:last-of-type {
     background-color: rgba(247, 247, 247, 1);
     padding: 3.375em 0;
