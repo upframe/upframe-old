@@ -1112,6 +1112,12 @@ nav svg path {
     margin: 4.591em auto 3.636em;
 }
 
+#programme main #value-preposition {
+    max-width: 90em;
+    width: 60%;
+    margin: auto;
+}
+
 #programme main>div:last-of-type {
     background-color: rgba(247, 247, 247, 1);
     padding: 3.375em 0;
