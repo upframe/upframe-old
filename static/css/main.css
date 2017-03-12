@@ -1111,6 +1111,7 @@ nav svg path {
 
 #programme main #value-preposition > div {
     display: flex;
+    margin: 5em auto;
 }
 
 #programme main #value-preposition > div:nth-of-type(2n) {
@@ -1120,7 +1121,6 @@ nav svg path {
 #programme main #value-preposition > div div {
     flex-basis: 50%;
 }
-
 
 #programme main>div:last-of-type {
     background-color: rgba(247, 247, 247, 1);
