@@ -148,8 +148,9 @@ function initApplyPage() {
         });
     });
 
-    document.querySelector('form').addEventListener("submit", function() {
+    document.querySelector('form').addEventListener("submit", function(event) {
         event.preventDefault();
+
         let req = new XMLHttpRequest(),
             data = new FormData(document.querySelector("form"));
         req.open("POST", "/apply");

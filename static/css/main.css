@@ -1332,6 +1332,16 @@ nav svg path {
     border-color: #ebebeb !important;
 }
 
+.success div input,
+.success div textarea,
+.success .btn {
+    border-color: #7bed4e !important;
+}
+
+.success .btn {
+    background: #7bed4e;
+}
+
 #apply main>form input[type="email"],
 #apply main>form input[type="text"],
 #apply main>form textarea {
