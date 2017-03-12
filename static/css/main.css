@@ -763,10 +763,12 @@ nav svg path {
 .big-header {
     background: rgba(18, 25, 82, 1);
     position: relative;
+    padding: 8em 0;
 }
 
 .big-header.with-grey-bar {
     height: calc(100vh - 11.3em);
+    padding: 0;
 }
 
 .big-header p {
@@ -777,6 +779,9 @@ nav svg path {
     text-align: center;
     font-size: 4.5em;
     font-weight: 500;
+}
+
+.big-header.with-grey-bar p {
     position: absolute;
     top: 50%;
     left: 50%;
