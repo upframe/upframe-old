@@ -1298,19 +1298,25 @@ nav svg path {
 }
 
 #apply main>form {
-    margin-left: 3em;
-    flex-basis: 80%;
+    margin-left: 5em;
+    flex-basis: 67%;
 }
 
-#apply main>form h2 {}
+#apply main>form h2 {
+    font-size: 3.125em;
+    color: rgba(18, 25, 82, 1);
+    text-align: left;
+    margin: 0 0 .5em;
+}
 
 #apply main>form input[type="email"],
 #apply main>form input[type="text"],
 #apply main>form textarea {
     display: block;
     width: 100%;
-    margin: 1em 0;
-    border: .375em solid #121952;
+    margin: 2.875em 0;
+    border: .188em solid rgba(18, 25, 82, 1);
+    padding: .6em 1.5em;
 }
 
 #apply main>form .btn {
@@ -1319,7 +1325,7 @@ nav svg path {
 }
 
 #apply main>div {
-    max-width: 22em;
+    width: 22em;
 }
 
 #apply main>div img {
@@ -1331,7 +1337,7 @@ nav svg path {
     vertical-align: middle;
 }
 
-#apply main > div > div:first-of-type {
+#apply main>div>div:first-of-type {
     display: flex;
     align-items: center;
     margin-bottom: -0.5em;
@@ -1340,29 +1346,29 @@ nav svg path {
     position: relative;
 }
 
-#apply main > div > div > div {
-
-margin-left: 1em;
-
-vertical-align: middle;
+#apply main>div>div>div {
+    margin-left: 1em;
+    vertical-align: middle;
 }
-#apply main > div span {
+
+#apply main>div span {
     display: block;
 }
 
-#apply main > div span:first-of-type {
+#apply main>div span:first-of-type {
     font-size: 1.5em;
     font-weight: bold;
     color: rgba(18, 25, 82, 1);
     line-height: 1;
 }
 
-#apply main > div span:last-of-type  {
+#apply main>div span:last-of-type {
     font-weight: 500;
     color: rgba(255, 56, 85, 1);
     line-height: 1.2;
 }
-#apply main > div > div:last-of-type {
+
+#apply main>div>div:last-of-type {
     background-color: rgba(247, 247, 247, 1);
     padding: 1em;
     text-align: left;
@@ -1370,16 +1376,16 @@ vertical-align: middle;
     position: relative;
 }
 
-
-#apply main > div > div:last-of-type,
-#apply main > div img {
+#apply main>div>div:last-of-type,
+#apply main>div img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-#apply main > div p:first-of-type {
+#apply main>div p:first-of-type {
     margin-top: 0;
 }
-#apply main > div p:last-of-type {
+
+#apply main>div p:last-of-type {
     margin-bottom: 0;
 }
 
