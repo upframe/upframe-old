@@ -307,6 +307,7 @@ nav svg path {
 
 /* NAVBARS */
 
+#apply nav:not(.scroll),
 #home nav:not(.scroll),
 #mentors nav:not(.scroll),
 #programme nav:not(.scroll) {
@@ -323,18 +324,26 @@ nav svg path {
     background: rgb(49, 133, 252);
 }
 
+#apply .big-header,
+#apply nav:not(.scroll) {
+    background: rgb(255, 56, 85);
+}
+
+#apply nav:not(.scroll) svg path,
 #programme nav:not(.scroll) svg path,
 #home nav:not(.scroll) svg path,
 #mentors nav:not(.scroll) svg path {
     fill: #fff;
 }
 
+#apply nav:not(.scroll) #expand-button span,
 #programme nav:not(.scroll) #expand-button span,
 #home nav:not(.scroll) #expand-button span,
 #mentors nav:not(.scroll)#expand-button span {
     background-color: #fff;
 }
 
+#apply nav:not(.scroll) a,
 #programme nav:not(.scroll) a,
 #home nav:not(.scroll) a,
 #mentors nav:not(.scroll) a {
@@ -1260,6 +1269,118 @@ nav svg path {
     #sequence>div:nth-child(3)::after {
         width: 50%;
     }
+}
+
+
+/* APPLY */
+
+#apply nav:not(.scroll) .btn,
+#apply nav:not(.scroll) ul li a:hover {
+    color: #121952 !important;
+}
+
+#apply nav .btn {
+    margin: 0;
+    background: transparent;
+    border-color: transparent;
+    color: #ff3855 !important;
+}
+
+#apply nav:not(.scroll) .btn:hover {
+    background: transparent;
+}
+
+#apply main {
+    display: flex;
+    width: 90%;
+    margin: 5em auto;
+    max-width: 60em;
+}
+
+#apply main>form {
+    margin-left: 3em;
+    flex-basis: 80%;
+}
+
+#apply main>form h2 {}
+
+#apply main>form input[type="email"],
+#apply main>form input[type="text"],
+#apply main>form textarea {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+    border: .375em solid #121952;
+}
+
+#apply main>form .btn {
+    margin-left: auto;
+    display: block;
+}
+
+#apply main>div {
+    max-width: 22em;
+}
+
+#apply main>div img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: .4em solid #f7f7f7;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#apply main > div > div:first-of-type {
+    display: flex;
+    align-items: center;
+    margin-bottom: -0.5em;
+    margin-left: 1em;
+    z-index: 99999;
+    position: relative;
+}
+
+#apply main > div > div > div {
+
+margin-left: 1em;
+
+vertical-align: middle;
+}
+#apply main > div span {
+    display: block;
+}
+
+#apply main > div span:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgba(18, 25, 82, 1);
+    line-height: 1;
+}
+
+#apply main > div span:last-of-type  {
+    font-weight: 500;
+    color: rgba(255, 56, 85, 1);
+    line-height: 1.2;
+}
+#apply main > div > div:last-of-type {
+    background-color: rgba(247, 247, 247, 1);
+    padding: 1em;
+    text-align: left;
+    z-index: 12;
+    position: relative;
+}
+
+
+#apply main > div > div:last-of-type,
+#apply main > div img {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#apply main > div p:first-of-type {
+    margin-top: 0;
+}
+#apply main > div p:last-of-type {
+    margin-bottom: 0;
 }
 
 
