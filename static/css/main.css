@@ -1043,7 +1043,6 @@ nav svg path {
 
 #talk-applications p:last-of-type {
     font-size: 1.125em;
-    font-weight: bold;
     color: rgba(18, 25, 82, 1);
     text-align: center;
     margin: 5.5em auto 5em;
@@ -1052,6 +1051,7 @@ nav svg path {
 
 #talk-applications p:last-of-type a {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 #sequence {
