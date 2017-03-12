@@ -17,7 +17,7 @@
     <input type="checkbox" id="expand">
     <nav>
         <ul>
-            <li><label for="expand" id="expand-button"><span>&#9776;</span></label><a href="/">{{ partial "logo.html" }}</a></li>
+            <li><label for="expand" id="expand-button"><div><span></span><span></span><span></span><span></span></div></label><a href="/">{{ partial "logo.html" }}</a></li>
             <li><a {{ if eq .Slug "about" }}class="active"{{ end }} href="/about">About</a></li>
             <li><a {{ if eq .Slug "programme" }}class="active"{{ end }} href="/programme">Programme</a></li>
             <li><a {{ if eq .Slug "mentors" }}class="active"{{ end }} href="/mentors">Mentors</a></li>
