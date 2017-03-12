@@ -423,9 +423,6 @@ nav svg path {
     max-width: 7.5em;
     margin: 0;
     font-weight: bold;
-    /* border-top: .2em solid #fff; */
-    /* border-bottom: .2em solid #fff; */
-    /* padding: .16em 0; */
     position: relative;
     flex-grow: 1;
 }
@@ -436,34 +433,6 @@ nav svg path {
         width: 84%;
     }
 }
-
-
-/*
-#big-phrase::before,
-#big-phrase::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background: #fff;
-}
-
-#big-phrase::before {
-    height: 100%;
-    left: 0;
-    bottom: 0;
-    transform: scaleY(.5);
-    transform-origin: 0 100%;
-    width: .2em;
-}
-
-#big-phrase::after {
-    height: 100%;
-    right: 0;
-    bottom: 0;
-    transform: scaleY(.5);
-    transform-origin: 0 100%;
-    width: .2em;
-} */
 
 #home header #home header .btn {
     font-size: 1.125em;
@@ -1296,6 +1265,10 @@ nav svg path {
 
 #apply nav:not(.scroll) .btn:hover {
     background: transparent;
+}
+
+#apply .big-header p {
+    max-width: 8em;
 }
 
 #apply main {
