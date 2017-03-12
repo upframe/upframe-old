@@ -792,7 +792,7 @@ nav svg path {
     margin: 0;
 }
 
-#talk-applications p:first-of-type,
+#talk-applications>p:first-of-type,
 #mentors header>div:last-of-type p {
     font-size: 1.375em;
     color: rgba(75, 83, 144, 1);
@@ -1112,13 +1112,13 @@ nav svg path {
     position: relative;
 }
 
-#talk-applications p:first-of-type {
+#talk-applications>p:first-of-type {
     max-width: 25em;
     text-align: center;
     margin: 3.45em auto 3.73em;
 }
 
-#talk-applications p:last-of-type {
+#talk-applications>p:last-of-type {
     font-size: 1.125em;
     color: rgba(18, 25, 82, 1);
     text-align: center;
@@ -1129,6 +1129,45 @@ nav svg path {
 #talk-applications p:last-of-type a {
     text-decoration: underline;
     font-weight: bold;
+}
+
+#early-bird {
+    background-color: rgba(18, 25, 82, 1);
+    box-shadow: 2px -1px 4px 0px rgba(0, 0, 0, 0.1), -.6em .6em 0 rgba(255, 56, 85, 1);
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    max-width: 17em;
+    padding: 1em;
+}
+
+#early-bird p {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    letter-spacing: 0.03em;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+#early-bird h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 229, 212, 1);
+    text-align: center;
+    letter-spacing: 0.03em;
+    line-height: 29px;
+    margin: 0;
+}
+
+@media (max-width: 1200px) {
+    #early-bird {
+        position: relative;
+        margin: 2em auto;
+        width: 90%;
+        height: auto;
+    }
 }
 
 #sequence {
