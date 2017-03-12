@@ -116,6 +116,15 @@ h2 {
     color: #fff !important;
 }
 
+.btn-dark-blue-full {
+    color: #fff !important;
+    background-color: #121952;
+}
+
+.btn-dark-blue-full:hover {
+    background-color: #03072e;
+}
+
 
 /* * * * * * * * * *
  *                 *
@@ -1111,34 +1120,40 @@ nav svg path {
     margin: 4.591em auto 3.636em;
 }
 
-#programme main #value-preposition {
-    max-width: 90em;
-    width: 60%;
+#value-preposition {
+    max-width: 60em;
+    width: 90%;
     margin: auto auto 10em auto;
     text-align: left;
 }
 
-#programme main #value-preposition>div {
+#value-preposition>div {
     display: flex;
     margin: 5em auto;
 }
 
-#programme main #value-preposition>div:nth-of-type(2n) {
+#value-preposition>div:nth-of-type(2n) {
     flex-direction: row-reverse;
 }
 
-#programme main #value-preposition>div div {
+#value-preposition>div div {
     flex-basis: 50%;
 }
 
-#programme main #value-preposition h1 {
+#value-preposition h1 {
     color: rgba(75, 83, 144, 1) !important;
     font-size: 1.875em;
 }
 
-#programme main #value-preposition p {
+#value-preposition p {
     color: rgba(75, 83, 144, 1) !important;
     font-size: 1.125em;
+}
+
+@media (max-width: 650px) {
+    #value-preposition>div {
+        flex-direction: column !important;
+    }
 }
 
 
@@ -1149,81 +1164,81 @@ nav svg path {
  *                   *
  * * * * * * * * * * */
 
-#programme main #calendar {
+#calendar {
     background: rgba(18, 25, 82, 1);
     width: 100vw;
-    padding-top: 6em;
+    padding: 6em 0;
 }
 
-#programme main #calendar p {
+#calendar p {
     color: white;
     font-size: 0.875em;
     text-align: center;
+    margin: 1em auto;
+    width: 90%;
 }
 
-#programme main #calendar h1 {
+#calendar h1 {
     color: white;
     text-align: center;
     font-size: 3.125em;
+    margin: .67em auto;
+    width: 90%;
 }
 
-#programme main #calendar #date-sequence {
-    max-width: 80em;
-    width: 40%;
+#date-sequence {
+    max-width: 50em;
+    width: 90%;
     margin: auto;
     display: flex;
     align-items: center;
 }
 
-#programme main #calendar #date-sequence span {
+#date-sequence span {
     display: block;
 }
 
-#programme main #calendar #date-sequence div:nth-of-type(odd) {
+#date-sequence div:nth-of-type(odd) {
     flex-basis: 33%;
     position: relative;
 }
 
-#programme main #calendar #date-sequence div:nth-of-type(2n) {
+#date-sequence div:nth-of-type(2n) {
     width: 10%;
     height: 2px;
     background: #4b5390;
     margin-right: 2em;
 }
 
-#programme main #calendar #date-sequence>div span:nth-of-type(1) {
+#date-sequence>div span:nth-of-type(1) {
     font-size: 1em;
     color: white;
 }
 
-#programme main #calendar #date-sequence>div span:nth-of-type(2) {
+#date-sequence>div span:nth-of-type(2) {
     font-size: 1.125em;
     color: white;
 }
 
-#programme main #calendar #date-sequence>div span:nth-of-type(3) {
+#date-sequence>div span:nth-of-type(3) {
     font-size: 1em;
     color: rgba(75, 83, 144, 1);
 }
 
-#programme main #calendar #board {
+#board {
     margin: 5em auto;
     align-items: center;
     justify-content: space-between;
-}
-
-#programme main #calendar #board>div {
     display: flex;
     max-width: 87em;
     width: 90%;
-    margin: auto;
 }
 
-#programme main #calendar #board div img {
+#board div img {
     flex-basis: 13%;
 }
 
-#programme main #calendar #board>div>div {
+#board>div {
     flex-basis: 74%;
     border: .75em solid rgba(255, 56, 85, 1);
     margin: 1em 2em;
@@ -1231,82 +1246,104 @@ nav svg path {
     flex-wrap: wrap;
 }
 
-#programme main #calendar #board>div>div>div {
+#board>div>div {
     padding: 3.5em;
     flex-basis: 33%;
     flex-grow: 1;
 }
 
-#programme main #calendar #board span {
+#board span {
     display: block;
 }
 
-#programme main #calendar #board span:nth-of-type(1) {
+#board span:nth-of-type(1) {
     color: rgba(255, 56, 85, 1);
 }
 
-#programme main #calendar #board span:nth-of-type(2) {
+#board span:nth-of-type(2) {
     color: #fff;
 }
 
-#programme main #calendar a.btn {
+#calendar a.btn {
     display: block;
     margin: 3em auto;
     width: 9.375em;
 }
 
-#programme main #calendar #programme-qa {
-    max-width: 80vw;
-    width: 50%;
+#calendar #programme-qa {
+    max-width: 50em;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
 
-#programme main #calendar #programme-qa>div {
+#calendar #programme-qa>div {
     flex-basis: calc(50% - 3em);
 }
 
-#programme main #calendar #programme-qa>div:first-of-type {
+#calendar #programme-qa>div:first-of-type {
     margin-right: 2em;
 }
 
-#programme main #calendar #programme-qa>div p {
+#calendar #programme-qa>div p {
     text-align: left;
     margin-bottom: 3em;
+    margin: 1em 0;
+    width: 100%;
 }
 
-#programme main #calendar #programme-qa span.question {
+#calendar #programme-qa span.question {
     color: rgba(0, 229, 212, 1);
 }
 
-#programme main #calendar #programme-qa a,
-#programme main #calendar #programme-qa a:active,
-#programme main #calendar #programme-qa a:visited {
+#calendar #programme-qa a,
+#calendar #programme-qa a:active,
+#calendar #programme-qa a:visited {
     color: white;
     text-decoration: underline;
 }
 
-#programme main #calendar #programme-qa a:hover {
+#calendar #programme-qa a:hover {
     color: rgba(0, 229, 212, 1);
     text-decoration: underline;
 }
 
-#programme main #calendar>p:last-of-type {
+#calendar>p:last-of-type {
     font-size: 1.125em;
     margin: 5em auto;
 }
 
-#programme main #calendar p:last-of-type a,
-#programme main #calendar p:last-of-type a:active,
-#programme main #calendar p:last-of-type a:visited {
+#calendar p:last-of-type a,
+#calendar p:last-of-type a:active,
+#calendar p:last-of-type a:visited {
     color: white;
     text-decoration: underline;
 }
 
-#programme main #calendar p:last-of-type a:hover {
+#calendar p:last-of-type a:hover {
     color: rgba(0, 229, 212, 1);
     text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    #board img {
+        display: none;
+        flex-basis: 0 !important;
+    }
+    #board>div {
+        width: 100%;
+        flex-basis: 100% !important;
+    }
+}
+
+@media (max-width: 650px) {
+    #board>div>div {
+        padding: 1.5em !important;
+    }
+    #programme-qa {
+        flex-direction: column;
+    }
 }
 
 
@@ -1316,6 +1353,39 @@ nav svg path {
  *  Section: 4       *
  *                   *
  * * * * * * * * * * */
+
+#banner-slx {
+    padding: 4.125em 0;
+    background: url(/img/startup-lx.jpg);
+    background-size: cover;
+}
+
+#banner-slx div {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 44em;
+}
+
+#banner-slx h2 {
+    font-size: 3.125em;
+    line-height: 1;
+    margin-top: 0;
+    color: inherit;
+}
+
+#banner-slx p {
+    font-size: 1.125em;
+    max-width: 30em;
+    margin: 1em auto;
+    width: 100%;
+}
+
+#banner-slx .btn {
+    margin-top: 2em;
+}
 
 
 /* * * * * * * * * * *
