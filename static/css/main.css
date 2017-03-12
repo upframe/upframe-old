@@ -241,23 +241,28 @@ nav svg path {
 /* NAVBARS */
 
 #home nav:not(.scroll),
-#mentors nav:not(.scroll) {
+#mentors nav:not(.scroll),
+#programme nav:not(.scroll) {
     box-shadow: 0 0 0 0;
 }
 
+#programme nav:not(.scroll),
 #home nav:not(.scroll) {
     background: rgba(18, 25, 82, 1);
 }
 
+#mentors .big-header,
 #mentors nav:not(.scroll) {
     background: rgb(49, 133, 252);
 }
 
+#programme nav:not(.scroll) svg path,
 #home nav:not(.scroll) svg path,
 #mentors nav:not(.scroll) svg path {
     fill: #fff;
 }
 
+#programme nav:not(.scroll) a,
 #home nav:not(.scroll) a,
 #mentors nav:not(.scroll) a {
     color: #fff;
@@ -643,54 +648,52 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
-#mentors-companies,
-#our-partners {
+.grey-bar-logos {
     background-color: rgba(242, 242, 242, 1);
     padding: 1px 0;
 }
 
-#mentors-companies div,
-#our-partners div {
+.grey-bar-logos div {
     max-width: 90vw;
     width: 80%;
     text-align: center;
     margin: 4em auto;
 }
 
-#mentors-companies div p,
-#our-partners div p {
+.grey-bar-logos div p {
     padding: 0;
     color: rgba(192, 192, 192, 1);
     margin: 0 0 1.5em;
     font-weight: 500;
 }
 
-#our-partners div p img {
-    height: 1em;
-    width: 1em;
-    vertical-align: middle;
-}
-
-#mentors-companies img,
-#our-partners div>img {
-    margin: 1em .75em;
+.grey-bar-logos img {
+    margin: 0 1em 1em;
     display: inline-block;
     height: 50px;
 }
 
+#our-partners div p img {
+    height: 1em;
+    width: 1em;
+    vertical-align: middle;
+    margin: 0;
+}
+
+#featured-on div,
 #mentors-companies div {
-    margin: 2.25em auto;
+    margin: 2.25em auto 1.25em;
 }
 
 
 /* MENTORS PAGE */
 
-#mentors header>div:first-of-type {
+.big-header {
     padding: 8em 0;
-    background: rgb(49, 133, 252);
+    background: rgba(18, 25, 82, 1);
 }
 
-#mentors header>div:first-of-type p {
+.big-header p {
     color: #fff;
     max-width: 12em;
     width: 90%;
@@ -712,6 +715,7 @@ nav svg path {
     margin: 0;
 }
 
+#talk-applications p:first-of-type,
 #mentors header>div:last-of-type p {
     font-size: 1.375em;
     color: rgba(75, 83, 144, 1);
@@ -719,6 +723,7 @@ nav svg path {
     width: 90%;
 }
 
+#shape-your-future,
 #learn-from-experts {
     max-width: 37em;
     width: 90%;
@@ -726,6 +731,8 @@ nav svg path {
     text-align: center;
 }
 
+#talk-applications h2,
+#shape-your-future h2,
 #learn-from-experts h2 {
     font-size: 3.125em;
     font-weight: bold;
@@ -735,6 +742,7 @@ nav svg path {
     margin: 0;
 }
 
+#shape-your-future p,
 #learn-from-experts p {
     font-size: 1.125em;
     font-weight: bold;
@@ -743,14 +751,17 @@ nav svg path {
     text-align: center;
 }
 
+#shape-your-future .btn:first-of-type,
 #learn-from-experts .btn:first-of-type {
     margin-right: 1em;
 }
 
 @media (max-width: 500px) {
+    #shape-your-future .btn,
     #learn-from-experts .btn {
         display: block;
     }
+    #shape-your-future .btn:first-of-type,
     #learn-from-experts .btn:first-of-type {
         margin: 0 0 1em;
     }
@@ -1005,6 +1016,121 @@ nav svg path {
     border-color: #ff3855;
     color: #ff3855;
     outline: 0;
+}
+
+
+/* PROGRAMME */
+
+#programme main>div:last-of-type {
+    background-color: rgba(247, 247, 247, 1);
+    padding: 3.375em 0;
+}
+
+#shape-your-future {
+    margin: 0 auto;
+}
+
+#talk-applications {
+    padding: 8.188em 0 0 0;
+    position: relative;
+}
+
+#talk-applications p:first-of-type {
+    max-width: 25em;
+    text-align: center;
+    margin: 3.45em auto 3.73em;
+}
+
+#talk-applications p:last-of-type {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: rgba(18, 25, 82, 1);
+    text-align: center;
+    margin: 5.5em auto 5em;
+    width: 90%;
+}
+
+#talk-applications p:last-of-type a {
+    text-decoration: underline;
+}
+
+#sequence {
+    display: flex;
+    justify-content: space-between;
+    max-width: 57em;
+    margin: 0 auto;
+    width: 95%;
+}
+
+#sequence>div::after {
+    content: ' ';
+    position: absolute;
+    top: 1em;
+    left: 75%;
+    height: 2px;
+    background: #000;
+    width: 50%;
+}
+
+#sequence>div:last-of-type::after {
+    content: '';
+    width: 0;
+}
+
+#sequence>div {
+    text-align: center;
+    position: relative;
+    flex-basis: 16.666%;
+}
+
+#sequence .number {
+    display: block;
+    font-weight: bold;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 1.2;
+    border: .4em solid rgba(18, 25, 82, 1);
+    color: rgba(18, 25, 82, 1);
+    margin: 0 auto;
+}
+
+#sequence .text {
+    display: block;
+    text-align: center;
+    font-size: 1.125em;
+    max-width: 6.5em;
+    margin: 1.389em auto 0;
+}
+
+@media (max-width: 750px) {
+    #sequence {
+        flex-wrap: wrap;
+    }
+    #sequence>div {
+        flex-basis: 33.3333%;
+    }
+    #sequence>div:first-of-type {
+        margin-bottom: 3em;
+    }
+    #sequence>div:nth-child(3)::after {
+        width: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #sequence>div {
+        flex-basis: 50%;
+    }
+    #sequence>div:nth-child(4) {
+        margin-bottom: 3em;
+    }
+    #sequence>div:nth-child(even)::after {
+        width: 0;
+    }
+    #sequence>div:nth-child(3)::after {
+        width: 50%;
+    }
 }
 
 
