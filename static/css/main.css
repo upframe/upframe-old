@@ -1104,6 +1104,15 @@ nav svg path {
     margin: auto;
 }
 
+#programme main #value-preposition > div {
+    display: flex;
+}
+
+#programme main #value-preposition > div div {
+    flex-basis: 50%;
+}
+
+
 #programme main>div:last-of-type {
     background-color: rgba(247, 247, 247, 1);
     padding: 3.375em 0;
