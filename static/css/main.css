@@ -1088,7 +1088,12 @@ nav svg path {
 }
 
 
-/* PROGRAMME */
+/* * * * * * * * * *
+ *                 *
+ *  Page: HOME     *
+ *  Section: 2     *
+ *                 *
+ * * * * * * * * * */
 
 #programme main>p:first-of-type {
     font-size: 1.375em;
@@ -1106,6 +1111,10 @@ nav svg path {
 
 #programme main #value-preposition > div {
     display: flex;
+}
+
+#programme main #value-preposition > div:nth-of-type(2n) {
+    flex-direction: row-reverse;
 }
 
 #programme main #value-preposition > div div {
@@ -1260,7 +1269,12 @@ nav svg path {
 }
 
 
-/* APPLY */
+/* * * * * * * * * *
+ *                 *
+ *  Page: APPLY    *
+ *  Section: 1     *
+ *                 *
+ * * * * * * * * * */
 
 #apply nav:not(.scroll) .btn,
 #apply nav:not(.scroll) ul li a:hover {
@@ -1468,7 +1482,12 @@ nav svg path {
 }
 
 
-/*Footer */
+/* * * * * * * * * *
+ *                 *
+ *  Page: ALL      *
+ *  Section: Footer*
+ *                 *
+ * * * * * * * * * */
 
 #right-here {
     background: rgba(18, 25, 82, 1);
