@@ -1199,23 +1199,25 @@ nav svg path {
 
 #programme main #calendar #board {
     margin: 5em auto;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #programme main #calendar #board>div {
     display: flex;
-    max-width: 90vw;
+    max-width: 87em;
     width: 90%;
     margin: auto;
 }
 
 #programme main #calendar #board div img {
-    flex-basis: 20%;
+    flex-basis: 13%;
 }
 
 #programme main #calendar #board>div>div {
-    flex-basis: 60%;
+    flex-basis: 74%;
     border: .75em solid rgba(255, 56, 85, 1);
-    margin: 1em 5em;
+    margin: 1em 2em;
     display: flex;
     flex-wrap: wrap;
 }
