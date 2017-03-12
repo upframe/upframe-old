@@ -780,6 +780,12 @@ nav svg path {
     font-weight: 500;
 }
 
+@media (max-width: 950px) {
+    .big-header p {
+        font-size: 9vw;
+    }
+}
+
 #mentors header>div:last-of-type {
     text-align: center;
     line-height: 1;
