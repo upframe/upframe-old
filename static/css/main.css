@@ -1092,19 +1092,19 @@ nav svg path {
     display: block;
 }
 
-#newsletter form input[type="email"] {
-    width: 100%;
-    border: .188em solid #121952;
-    color: #121952;
-    background: transparent;
-    padding: .6em 1.5em;
-    margin-bottom: 1em;
-    transition: .2s ease border-color, .2s ease color;
+#newsletter form>div {
+    margin: 0;
 }
 
+#newsletter form input[type="email"] {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#newsletter .writing input[type="email"],
 #newsletter form input[type="email"]:hover,
 #newsletter form input[type="email"]:focus {
-    border-color: #ff3855;
+    border-color: #ff3855 !important;
     color: #ff3855;
     outline: 0;
 }
@@ -1602,7 +1602,7 @@ nav svg path {
     line-height: 1;
 }
 
-#apply form>div {
+form>div {
     position: relative;
     margin: 2.875em 0;
 }
@@ -1616,7 +1616,7 @@ nav svg path {
     height: 1.5em;
 }
 
-#apply form>div label {
+form>div label {
     position: absolute;
     top: .988em;
     line-height: normal;
@@ -1674,9 +1674,9 @@ nav svg path {
     color: #5ddc2b;
 }
 
-#apply main>form input[type="email"],
-#apply main>form input[type="text"],
-#apply main>form textarea {
+form input[type="email"],
+form input[type="text"],
+form textarea {
     display: block;
     width: 100%;
     margin: 0;
@@ -1688,7 +1688,7 @@ nav svg path {
     z-index: 2;
 }
 
-#apply form p {
+form p {
     display: none;
     text-align: right;
 }

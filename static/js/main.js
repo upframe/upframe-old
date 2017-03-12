@@ -17,6 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.location.pathname == "/apply") {
         initApplyPage();
     }
+
+    Array.from(document.querySelectorAll(".writing-effect")).forEach(input => {
+        input.addEventListener('focus', event => {
+            event.currentTarget.parentElement.classList.remove("written");
+            event.currentTarget.parentElement.classList.add("writing");
+        });
+
+        input.addEventListener('blur', event => {
+            event.currentTarget.parentElement.classList.remove("writing");
+
+            if (event.currentTarget.value != "") {
+                event.currentTarget.parentElement.classList.add("written");
+            } else {
+                event.currentTarget.parentElement.classList.remove("written");
+            }
+        });
+    });
 });
 
 window.addEventListener('scroll', function(e) {
@@ -131,23 +148,6 @@ function closeMentorPopup(event) {
 }
 
 function initApplyPage() {
-    Array.from(document.querySelectorAll(".writing-effect")).forEach(input => {
-        input.addEventListener('focus', event => {
-            event.currentTarget.parentElement.classList.remove("written");
-            event.currentTarget.parentElement.classList.add("writing");
-        });
-
-        input.addEventListener('blur', event => {
-            event.currentTarget.parentElement.classList.remove("writing");
-
-            if (event.currentTarget.value != "") {
-                event.currentTarget.parentElement.classList.add("written");
-            } else {
-                event.currentTarget.parentElement.classList.remove("written");
-            }
-        });
-    });
-
     document.querySelector('form').addEventListener("submit", function(event) {
         event.preventDefault();
 
