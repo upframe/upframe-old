@@ -1350,7 +1350,7 @@ nav svg path {
     margin: 0;
     border: .188em solid rgba(18, 25, 82, 1);
     padding: .8em 1.5em;
-    transition: .2s ease-in-out all;
+    transition: .25s ease-in-out all;
     background: transparent;
     position: relative;
     z-index: 2;
@@ -1359,6 +1359,7 @@ nav svg path {
 #apply main>form .btn {
     margin-left: auto;
     display: block;
+    transition: border-color .25s ease, color .25s ease, background .25s ease;
 }
 
 #apply main>div {
