@@ -434,18 +434,21 @@ nav svg path {
     align-items: center;
 }
 
-#home header>divdiv:first-of-type img:first-of-type {
-    max-height: 13em;
+#home header>div>div:first-of-type img:first-of-type {
+    width: 100%;
+    max-width: 12em;
 }
 
-#home header>divdiv:first-of-type img:last-of-type {
-    max-height: 11em;
+#home header>div>div:first-of-type img:last-of-type {
+    max-width: 16em;
+    width: 100%;
 }
 
 #big-phrase {
     font-size: 5.5em;
-    line-height: 1;
+    line-height: 1.2;
     max-width: 7.5em;
+    width: 100%;
     margin: 0;
     font-weight: bold;
     position: relative;
@@ -680,48 +683,26 @@ nav svg path {
  *                   *
  * * * * * * * * * * */
 
-#are-you-ready>div {
+#are-you-ready {
     max-width: 90vw;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#are-you-ready>div div:first-of-type {
-    margin: auto;
-    width: 100%;
-    display: flex;
-}
-
-#are-you-ready>div div:first-of-type img {
-    flex-grow: 1;
-}
-
-#are-you-ready>div div:last-of-type {
-    margin: auto;
+    width: 90%;
+    margin: 6em auto;
     text-align: center;
 }
 
-#are-you-ready>div div:last-of-type h1 {
+#are-you-ready h1 {
     font-size: 3.125em;
     margin-bottom: 0.25em;
 }
 
-#are-you-ready>div div:last-of-type a.btn {
+#are-you-ready a.btn {
     margin: 1em auto 0.5em auto;
 }
 
-#are-you-ready>div div:last-of-type span {
+#are-you-ready span {
     display: block;
     color: rgba(206, 206, 206, 1);
     font-size: .8em;
-}
-
-@media (max-width: 750px) {
-    #are-you-ready>div div:first-of-type img {
-        display: none;
-    }
 }
 
 

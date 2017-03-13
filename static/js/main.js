@@ -155,6 +155,8 @@ function initApplyPage() {
             form = document.querySelector("form"),
             data = new FormData(form);
 
+        // TODO: JS DATA VALIDITY CHECK
+
         req.open("POST", window.location);
         req.send(data);
         req.onreadystatechange = function() {
