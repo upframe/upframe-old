@@ -1149,7 +1149,7 @@ nav svg path {
  * * * * * * * * * * */
 
 #programme .big-header {
- background: radial-gradient(ellipse at center, #1f2978 0%,#121952 100%);;
+ background: url('/img/symbols/programme-header.svg') no-repeat bottom center / 100%, radial-gradient(ellipse at center, #1f2978 0%,#121952 100%);
 }
 
 #programme main>p:first-of-type {
