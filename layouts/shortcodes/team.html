@@ -10,7 +10,7 @@
         <p class="email">{{ if not (eq $member.Email "") }}<a href="mailto:{{ safeHTMLAttr $member.Email }}">{{ $member.Email }}</a>{{ end }}</p>
         <p class="social">
         {{ range $media, $link := $member.Social }}
-            {{ if eq $media "Facebook" }}{{ partial "social/facebook.svg" }}{{ end }}
+            <a href="{{ safeHTMLAttr $link }}">{{ partial (printf "social/%s.svg" (lower $media)) }}</a>{{ end }}
         {{ end }}
         </p>
     </div>
