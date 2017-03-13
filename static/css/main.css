@@ -385,12 +385,12 @@ nav svg path {
 }
 
 
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 1     *
- *                 *
- * * * * * * * * * */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: HOME       *
+ *  Section: 1       *
+ *                   *
+ * * * * * * * * * * */
 
 #home header {
     background: rgba(18, 25, 82, 1);
@@ -488,12 +488,12 @@ nav svg path {
 }
 
 
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 2     *
- *                 *
- * * * * * * * * * */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: HOME       *
+ *  Section: 2       *
+ *                   *
+ * * * * * * * * * * */
 
 #how-we-do-it,
 #our-programme,
@@ -556,12 +556,12 @@ nav svg path {
 }
 
 
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 3     *
- *                 *
- * * * * * * * * * */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: HOME       *
+ *  Section: 3       *
+ *                   *
+ * * * * * * * * * * */
 
 #our-mentors,
 #our-programme {
@@ -670,12 +670,12 @@ nav svg path {
 }
 
 
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 5     *
- *                 *
- * * * * * * * * * */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: HOME       *
+ *  Section: 5       *
+ *                   *
+ * * * * * * * * * * */
 
 #are-you-ready>div {
     max-width: 90vw;
@@ -722,12 +722,12 @@ nav svg path {
 }
 
 
-/* * * * * * * * * *
- *                 *
- *  Page: HOME     *
- *  Section: 6     *
- *                 *
- * * * * * * * * * */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: HOME       *
+ *  Section: 6       *
+ *                   *
+ * * * * * * * * * * */
 
 .grey-bar-logos {
     background-color: rgba(242, 242, 242, 1);
@@ -771,7 +771,12 @@ nav svg path {
 }
 
 
-/* MENTORS PAGE */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: MENTORS    *
+ *  Section: 1       *
+ *                   *
+ * * * * * * * * * * */
 
 .big-header {
     background: rgba(18, 25, 82, 1);
@@ -1310,10 +1315,6 @@ nav svg path {
     flex-basis: calc(50% - 3em);
 }
 
-#calendar #programme-qa>div:first-of-type {
-    margin-right: 2em;
-}
-
 #calendar #programme-qa>div p {
     text-align: left;
     margin-bottom: 3em;
@@ -1820,7 +1821,12 @@ form p {
 }
 
 
-/* ABOUT */
+/* * * * * * * * * * *
+ *                   *
+ *  Page: ABOUT      *
+ *  Section: 1       *
+ *                   *
+ * * * * * * * * * * */
 
 #about .big-header p {
     font-weight: normal;
@@ -1832,6 +1838,65 @@ form p {
     border-color: #121952;
 }
 
+/* * * * * * * * * * *
+ *                   *
+ *  Page: ABOUT      *
+ *  Section: 2       *
+ *                   *
+ * * * * * * * * * * */
+
+
+#about main #dream-goal {
+    display: flex;
+    max-width: 90em;
+    width: 70%;
+    margin: 5em auto;
+    justify-content: space-between;
+}
+
+#about main #dream-goal h1 {
+    flex-basis: calc(50% - 2em);
+    font-size: 3em;
+    text-align: left;
+    color: rgba(18, 25, 82, 1);
+    margin: 0;
+}
+
+#about main #dream-goal div {
+    flex-basis: calc(60% - 5em);
+}
+
+#about main #dream-goal div p {
+    color: rgba(75, 83, 144, 1);
+    font-weight: 500;
+}
+
+/* * * * * * * * * * *
+ *                   *
+ *  Page: ABOUT      *
+ *  Section: 3       *
+ *                   *
+ * * * * * * * * * * */
+
+#about main #values {
+    background-color: rgba(18, 25, 82, 1);
+    display: flex;
+    padding: 8em;
+    justify-content: space-between;
+}
+
+#about main #values div {
+    flex-basis: 30%;
+}
+
+#about main #values div h3 {
+    color: rgba(0, 229, 212, 1);
+    font-size: 1.125em;
+}
+
+#about main #values div p {
+    color: white;
+}
 
 /* * * * * * * * * *
  *                 *
