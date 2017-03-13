@@ -334,23 +334,23 @@ nav svg path {
     box-shadow: 0 0 0 0;
 }
 
+#mentors nav:not(.scroll),
 #apply nav:not(.scroll),
 #about nav:not(.scroll),
 #programme nav:not(.scroll) {
     background: transparent;
 }
 
+#apply .big-header,
 #home nav:not(.scroll) {
     background: rgba(18, 25, 82, 1);
 }
 
-#mentors .big-header,
-#mentors nav:not(.scroll) {
-    background: rgb(49, 133, 252);
+#mentors .big-header {
+    background: url('/img/symbols/mentors-header.svg') no-repeat bottom center / 100%, #470ff4;
 }
 
-#about .big-header,
-#apply .big-header {
+#about .big-header {
     background: rgb(255, 56, 85);
 }
 
@@ -419,14 +419,15 @@ nav svg path {
     padding: 8vh 0 0;
 }
 
-#home header>div:first-child>p {
+.head p:last-of-type {
+    display: block;
     max-width: 30em;
     margin: 7vh auto;
     font-size: 1.125em;
     width: 95%;
 }
 
-#home header>div div:first-of-type {
+.head {
     display: flex;
     margin: 0 auto;
     max-width: 63em;
@@ -445,8 +446,9 @@ nav svg path {
 }
 
 #big-phrase {
-    font-size: 5.5em;
-    line-height: 1.2;
+    display: block;
+    font-size: 7.5em;
+    line-height: 1.1;
     max-width: 7.5em;
     width: 100%;
     margin: 0;
@@ -1131,7 +1133,7 @@ nav svg path {
  * * * * * * * * * * */
 
 #programme .big-header {
-    background: url('/img/symbols/programme-header.svg') no-repeat bottom center / 100%, radial-gradient(ellipse at center, #1f2978 0%, #121952 100%);
+    background: url('/img/symbols/programme-header.svg') no-repeat bottom center / 95%, radial-gradient(ellipse at center, #1f2978 0%, #121952 100%);
 }
 
 #programme main>p:first-of-type {
@@ -1152,6 +1154,7 @@ nav svg path {
 #value-preposition>div {
     display: flex;
     margin: 5em auto;
+    align-items: center;
 }
 
 #value-preposition>div:nth-of-type(2n) {
@@ -1587,12 +1590,7 @@ nav svg path {
  * * * * * * * * * */
 
 #apply .big-header {
-    background: url('/img/symbols/apply-header.svg') no-repeat center center / 100%, #ff3855;
-}
-
-#apply nav:not(.scroll) .btn,
-#apply nav:not(.scroll) ul li a:hover {
-    color: #121952 !important;
+    background: url('/img/symbols/apply-header.svg') no-repeat center center / 95%, #121952;
 }
 
 #apply nav .btn {
@@ -1843,12 +1841,17 @@ form p {
  * * * * * * * * * * */
 
 #about .big-header {
-    background: url('/img/symbols/about-header.svg') no-repeat center center / 100%, #ff3855;
+    background: url('/img/symbols/about-header.svg') no-repeat center center / 95%, #ff3855;
 }
 
 #about .big-header p {
     font-weight: normal;
     color: #121952;
+    font-size: 4.375em;
+}
+
+#about .big-header p strong {
+    font-size: 1.171em;
 }
 
 #about nav:not(.scroll) .btn {
