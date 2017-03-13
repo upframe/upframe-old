@@ -1849,6 +1849,10 @@ form p {
  *                   *
  * * * * * * * * * * */
 
+#about .big-header {
+ background: url('/img/symbols/about-header.svg') no-repeat center center / 100%, #ff3855;
+}
+
 #about .big-header p {
     font-weight: normal;
     color: #121952;
