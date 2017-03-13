@@ -420,8 +420,10 @@ nav svg path {
 #home header>div:first-child {
     width: 95%;
     margin: 0 auto;
-    height: calc(100vh - 7.5em);
-    padding: 8vh 0 0;
+    position: absolute;
+    top: calc(50% + 2.15em);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .head p:last-of-type {
