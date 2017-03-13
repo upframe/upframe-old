@@ -326,6 +326,7 @@ nav svg path {
 
 /* NAVBARS */
 
+#faq nav:not(.scroll),
 #about nav:not(.scroll),
 #apply nav:not(.scroll),
 #home nav:not(.scroll),
@@ -341,6 +342,7 @@ nav svg path {
     background: transparent;
 }
 
+#faq nav:not(.scroll),
 #apply .big-header,
 #home nav:not(.scroll) {
     background: rgba(18, 25, 82, 1);
@@ -354,6 +356,7 @@ nav svg path {
     background: rgb(255, 56, 85);
 }
 
+#faq nav:not(.scroll) svg path,
 #about nav:not(.scroll) svg path,
 #apply nav:not(.scroll) svg path,
 #programme nav:not(.scroll) svg path,
@@ -362,6 +365,7 @@ nav svg path {
     fill: #fff;
 }
 
+#faq nav:not(.scroll) #extend-button span,
 #about nav:not(.scroll) #expand-button span,
 #apply nav:not(.scroll) #expand-button span,
 #programme nav:not(.scroll) #expand-button span,
@@ -370,6 +374,7 @@ nav svg path {
     background-color: #fff;
 }
 
+#faq nav:not(.scroll) a,
 #about nav:not(.scroll) a,
 #apply nav:not(.scroll) a,
 #programme nav:not(.scroll) a,
