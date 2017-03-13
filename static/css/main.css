@@ -1132,6 +1132,7 @@ nav svg path {
     margin-bottom: 1em;
 }
 
+#newsletter .writing label,
 #newsletter .writing input[type="email"],
 #newsletter form input[type="email"]:hover,
 #newsletter form input[type="email"]:focus {
