@@ -7,9 +7,12 @@
         <img src="{{ safeHTMLAttr $member.Image }}">
         <p class="name">{{ $member.Name }}</p>
         <p class="role">{{ $member.Role }}</p>
-        
         <p class="email">{{ if not (eq $member.Email "") }}<a href="mailto:{{ safeHTMLAttr $member.Email }}">{{ $member.Email }}</a>{{ end }}</p>
-
+        <p class="social">
+        {{ range $media, $link := $member.Social }}
+            {{ if eq $media "Facebook" }}{{ partial "social/facebook.svg" }}{{ end }}
+        {{ end }}
+        </p>
     </div>
     {{ end }}
 </div>
