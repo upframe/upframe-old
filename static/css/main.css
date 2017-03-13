@@ -1604,6 +1604,10 @@ nav svg path {
  *                 *
  * * * * * * * * * */
 
+#apply .big-header {
+ background: url('/img/symbols/apply-header.svg') no-repeat center center / 100%, #ff3855;
+}
+
 #apply nav:not(.scroll) .btn,
 #apply nav:not(.scroll) ul li a:hover {
     color: #121952 !important;
