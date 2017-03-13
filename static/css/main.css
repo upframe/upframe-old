@@ -349,7 +349,6 @@ nav svg path {
     background: rgb(49, 133, 252);
 }
 
-
 #about .big-header,
 #apply .big-header {
     background: rgb(255, 56, 85);
@@ -1151,7 +1150,7 @@ nav svg path {
  * * * * * * * * * * */
 
 #programme .big-header {
- background: url('/img/symbols/programme-header.svg') no-repeat bottom center / 100%, radial-gradient(ellipse at center, #1f2978 0%,#121952 100%);
+    background: url('/img/symbols/programme-header.svg') no-repeat bottom center / 100%, radial-gradient(ellipse at center, #1f2978 0%, #121952 100%);
 }
 
 #programme main>p:first-of-type {
@@ -1182,7 +1181,7 @@ nav svg path {
     flex-basis: 50%;
 }
 
-#value-preposition > div div:last-of-type {
+#value-preposition>div div:last-of-type {
     text-align: center;
 }
 
@@ -1607,7 +1606,7 @@ nav svg path {
  * * * * * * * * * */
 
 #apply .big-header {
- background: url('/img/symbols/apply-header.svg') no-repeat center center / 100%, #ff3855;
+    background: url('/img/symbols/apply-header.svg') no-repeat center center / 100%, #ff3855;
 }
 
 #apply nav:not(.scroll) .btn,
@@ -1653,6 +1652,16 @@ nav svg path {
 form>div {
     position: relative;
     margin: 2.875em 0;
+}
+
+form .checkbox * {
+    vertical-align: middle;
+}
+
+form .checkbox label {
+    top: 0;
+    left: 0;
+    position: static;
 }
 
 #apply main>div p img {
@@ -1853,7 +1862,7 @@ form p {
  * * * * * * * * * * */
 
 #about .big-header {
- background: url('/img/symbols/about-header.svg') no-repeat center center / 100%, #ff3855;
+    background: url('/img/symbols/about-header.svg') no-repeat center center / 100%, #ff3855;
 }
 
 #about .big-header p {
@@ -1866,13 +1875,13 @@ form p {
     border-color: #121952;
 }
 
+
 /* * * * * * * * * * *
  *                   *
  *  Page: ABOUT      *
  *  Section: 2       *
  *                   *
  * * * * * * * * * * */
-
 
 #about main #dream-goal {
     display: flex;
@@ -1904,12 +1913,12 @@ form p {
         flex-wrap: wrap;
         flex-direction: column;
     }
-
     #about main #values {
         flex-wrap: wrap;
         flex-direction: column;
     }
 }
+
 
 /* * * * * * * * * * *
  *                   *
@@ -1937,6 +1946,7 @@ form p {
 #about main #values div p {
     color: white;
 }
+
 
 /* * * * * * * * * *
  *                 *
