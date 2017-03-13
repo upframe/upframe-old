@@ -1722,6 +1722,7 @@ form>div label {
     color: #5ddc2b;
 }
 
+form input[type="tel"],
 form input[type="email"],
 form input[type="text"],
 form textarea {
