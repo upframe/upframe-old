@@ -4,6 +4,9 @@
 
     {{ range $member := .Site.Data.team }}
     <div class="member">
+        <img src="{{ $member.Image }}">
+        <p class="name">{{ $member.Name }}</p>
+        <p class="role">{{ $member.Role }}</p>
 
     </div>
     {{ end }}
