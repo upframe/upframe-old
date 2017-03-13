@@ -375,6 +375,7 @@ nav svg path {
     color: #fff;
 }
 
+#about nav:not(.scroll) a:hover,
 #mentors nav .active {
     color: rgb(18, 25, 82) !important;
 }
@@ -1405,6 +1406,7 @@ nav svg path {
 
 #banner-slx p {
     font-size: 1.125em;
+    font-weight: 500;
     max-width: 30em;
     margin: 1em auto;
     width: 100%;
