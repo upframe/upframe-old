@@ -1449,7 +1449,7 @@ nav svg path {
     box-shadow: 2px -1px 4px 0px rgba(0, 0, 0, 0.1), -.6em .6em 0 rgba(255, 56, 85, 1);
     position: absolute;
     top: 1em;
-    right: 7.5em;
+    right: 1em;
     max-width: 17em;
     padding: 1em;
 }
