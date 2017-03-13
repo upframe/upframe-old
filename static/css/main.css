@@ -1173,6 +1173,14 @@ nav svg path {
     flex-basis: 50%;
 }
 
+#value-preposition > div div:last-of-type {
+    text-align: center;
+}
+
+#value-preposition img {
+    height: 100%;
+}
+
 #value-preposition h1 {
     color: rgba(75, 83, 144, 1) !important;
     font-size: 1.875em;
