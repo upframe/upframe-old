@@ -1260,12 +1260,12 @@ nav svg path {
     width: 90%;
 }
 
-#board div img {
-    flex-basis: 13%;
+#board img {
+    flex-basis: 20%;
 }
 
 #board>div {
-    flex-basis: 74%;
+    flex-basis: 60%;
     border: .75em solid rgba(255, 56, 85, 1);
     margin: 1em 2em;
     display: flex;
@@ -1273,7 +1273,7 @@ nav svg path {
 }
 
 #board>div>div {
-    padding: 3.5em;
+    padding: 2.5em;
     flex-basis: 33%;
     flex-grow: 1;
 }
