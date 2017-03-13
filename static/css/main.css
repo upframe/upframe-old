@@ -455,11 +455,9 @@ nav svg path {
         font-size: 15vw;
         width: 84%;
     }
-
     header div.head img {
         display: none;
     }
-
     header div.head #big-phrase {
         margin: auto;
     }
@@ -1930,6 +1928,58 @@ form p {
 
 #about main #values div p {
     color: white;
+}
+
+
+/* FAQ */
+
+#faq header {
+    margin: 7.2em 0 3em;
+}
+
+#faq header h1 {
+    font-size: 7.5em;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+}
+
+#faq main {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 50em;
+}
+
+#faq main h2 {
+    font-size: 1.250em;
+    color: #ff3855;
+}
+
+#faq main label {
+    font-weight: bold;
+    color: #121952;
+    display: block;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#faq main input[type="checkbox"] {
+    display: none;
+}
+
+#faq main p {
+    color: #4b5390;
+    text-align: left;
+    letter-spacing: 0.03em;
+    line-height: 1.8;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+    max-width: 30em;
+}
+
+#faq main input[type="checkbox"]:checked+p {
+    max-height: 20em;
 }
 
 
