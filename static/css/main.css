@@ -726,7 +726,7 @@ nav svg path {
 
 .grey-bar-logos div {
     max-width: 90vw;
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin: 4em auto;
 }
@@ -1137,7 +1137,7 @@ nav svg path {
  * * * * * * * * * * */
 
 #programme .big-header {
-    background: url('/img/symbols/programme-header.svg') no-repeat bottom center / 95%, radial-gradient(ellipse at center, #1f2978 0%, #121952 100%);
+    background: radial-gradient(ellipse at center, #1f2978 0%, #121952 100%);
 }
 
 #programme main>p:first-of-type {
@@ -1935,6 +1935,7 @@ form p {
     color: white;
 }
 
+
 /* * * * * * * * * * *
  *                   *
  *  Page: ABOUT      *
@@ -1942,7 +1943,8 @@ form p {
  *                   *
  * * * * * * * * * * */
 
- /* * * * * * * * * * *
+
+/* * * * * * * * * * *
   *                   *
   *  Page: ABOUT      *
   *  Section: 5       *
@@ -1978,7 +1980,6 @@ form p {
     width: 12.5em;
     flex-basis: 25%;
 }
-
 
 
 /* FAQ */
