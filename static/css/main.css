@@ -749,7 +749,7 @@ nav svg path {
 }
 
 .grey-bar-logos img {
-    margin: 0 1em 1em;
+    margin: 1em 1em 1em;
     display: inline-block;
     height: 50px;
 }
@@ -1363,6 +1363,8 @@ nav svg path {
     #board>div {
         width: 100%;
         flex-basis: 100% !important;
+        flex-direction: column;
+        text-align: center;
     }
 }
 
@@ -1869,6 +1871,18 @@ form p {
 #about main #dream-goal div p {
     color: rgba(75, 83, 144, 1);
     font-weight: 500;
+}
+
+@media (max-width: 1036px) {
+    #about main #dream-goal {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #about main #values {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 /* * * * * * * * * * *
