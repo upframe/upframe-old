@@ -1915,25 +1915,70 @@ form p {
  *                   *
  * * * * * * * * * * */
 
-#about main #values {
+#about #values {
     background-color: rgba(18, 25, 82, 1);
     display: flex;
     padding: 8em;
     justify-content: space-between;
 }
 
-#about main #values div {
+#about #values div {
     flex-basis: 30%;
 }
 
-#about main #values div h3 {
+#about #values div h3 {
     color: rgba(0, 229, 212, 1);
     font-size: 1.125em;
 }
 
-#about main #values div p {
+#about #values div p {
     color: white;
 }
+
+/* * * * * * * * * * *
+ *                   *
+ *  Page: ABOUT      *
+ *  Section: 4       *
+ *                   *
+ * * * * * * * * * * */
+
+ /* * * * * * * * * * *
+  *                   *
+  *  Page: ABOUT      *
+  *  Section: 5       *
+  *                   *
+  * * * * * * * * * * */
+
+#about #team {
+    max-width: 90em;
+    width: 75%;
+    margin: auto;
+}
+
+#about #team h2 {
+    color: rgba(18, 25, 82, 1);
+    font-size: 3.125em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#about #team p {
+    color: rgba(75, 83, 144, 1);
+    font-size: 1em;
+    text-align: center;
+    margin: 0 auto 2em auto;
+}
+
+#about #team>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about #team div.member {
+    width: 12.5em;
+    flex-basis: 25%;
+}
+
 
 
 /* FAQ */
