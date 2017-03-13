@@ -455,6 +455,14 @@ nav svg path {
         font-size: 15vw;
         width: 84%;
     }
+
+    header div.head img {
+        display: none;
+    }
+
+    header div.head #big-phrase {
+        margin: auto;
+    }
 }
 
 #home header #home header .btn {
