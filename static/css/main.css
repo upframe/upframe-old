@@ -476,15 +476,6 @@ nav svg path {
     margin-right: 2em;
 }
 
-#scroll {
-    font-size: 0.625em;
-    width: 100%;
-}
-
-#scroll p {
-    margin: .1em 0 0;
-}
-
 @media (max-width: 750px) {
     #home header>div div:first-of-type {
         /* flex-direction: column; */
