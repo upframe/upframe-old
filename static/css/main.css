@@ -420,11 +420,8 @@ nav svg path {
 }
 
 .head p:last-of-type {
-    display: block;
-    max-width: 30em;
     margin: 7vh auto;
     font-size: 1.125em;
-    width: 95%;
 }
 
 .head {
@@ -432,7 +429,7 @@ nav svg path {
     margin: 0 auto;
     max-width: 63em;
     width: 95%;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #home header>div>div:first-of-type img:first-of-type {
@@ -449,12 +446,8 @@ nav svg path {
     display: block;
     font-size: 7.5em;
     line-height: 1.1;
-    max-width: 7.5em;
-    width: 100%;
     margin: 0;
     font-weight: bold;
-    position: relative;
-    flex-grow: 1;
 }
 
 @media (max-width: 1100px) {
