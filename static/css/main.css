@@ -334,7 +334,10 @@ nav svg path {
     box-shadow: 0 0 0 0;
 }
 
-#programme nav:not(.scroll),
+#programme nav:not(.scroll) {
+    background: transparent;
+}
+
 #home nav:not(.scroll) {
     background: rgba(18, 25, 82, 1);
 }
@@ -1144,6 +1147,10 @@ nav svg path {
  *  Section: 2       *
  *                   *
  * * * * * * * * * * */
+
+#programme .big-header {
+ background: radial-gradient(ellipse at center, #1f2978 0%,#121952 100%);;
+}
 
 #programme main>p:first-of-type {
     font-size: 1.375em;
