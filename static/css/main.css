@@ -1641,6 +1641,10 @@ form .checkbox label {
     height: 1.5em;
 }
 
+#apply form a {
+    text-decoration: underline;
+}
+
 form>div label {
     position: absolute;
     top: .988em;
