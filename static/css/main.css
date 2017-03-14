@@ -2023,6 +2023,7 @@ form p {
     font-size: 1em;
     font-weight: 500;
     margin: 0 0 2.5em 0;
+    height: 2em;
 }
 
 #about #team div.member p.email {
