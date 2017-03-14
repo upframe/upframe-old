@@ -1641,6 +1641,10 @@ form .checkbox label {
     height: 1.5em;
 }
 
+#apply form a {
+    text-decoration: underline;
+}
+
 form>div label {
     position: absolute;
     top: .988em;
@@ -2073,6 +2077,7 @@ form p {
 #faq main h2 {
     font-size: 1.250em;
     color: #ff3855;
+    margin-top: 2.5em;
 }
 
 #faq main label {
