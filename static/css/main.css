@@ -1999,8 +1999,7 @@ form p {
 }
 
 #about #team div.member {
-    width: 12.5em;
-    height: 35em;
+    margin-bottom: 10em;
     flex-basis: calc(21%);
 }
 
