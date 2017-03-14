@@ -2045,14 +2045,17 @@ form p {
 
 /* FAQ */
 
+#terms-and-conditions nav:not(.scroll),
 #faq nav:not(.scroll) {
     background: rgba(18, 25, 82, 1);
 }
 
+#terms-and-conditions header,
 #faq header {
     margin: 7.2em 0 3em;
 }
 
+#terms-and-conditions h1,
 #faq header h1 {
     font-size: 4em;
     text-align: center;
@@ -2060,12 +2063,14 @@ form p {
     margin: 0;
 }
 
+#terms-and-conditions main,
 #faq main {
     margin: 0 auto;
     width: 90%;
     max-width: 50em;
 }
 
+#terms-and-conditions h2,
 #faq main h2 {
     font-size: 1.250em;
     color: #ff3855;
@@ -2096,6 +2101,15 @@ form p {
 
 #faq main input[type="checkbox"]:checked+p {
     max-height: 20em;
+}
+
+#terms-and-conditions main *:not(h2) {
+    color: #4b5390;
+    line-height: 1.8;
+}
+
+#terms-and-conditions main {
+    margin-bottom: 2.9em;
 }
 
 
