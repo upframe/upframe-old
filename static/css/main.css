@@ -164,13 +164,18 @@ h2 {
     position: absolute;
     height: 4px;
     width: 100%;
-    background: #121952;
+    background-color: #fff;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
+}
+
+#expand:checked~nav span,
+nav.scroll #expand-button span {
+    background-color: #121952;
 }
 
 #expand-button span:nth-child(1) {
@@ -216,13 +221,7 @@ nav {
     width: 100%;
     transition: background .2s ease-in-out, transform .2s ease-in-out;
     height: 4.3em;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background: #fff;
-}
-
-nav.scroll {
-    background: #fff;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background: transparent;
 }
 
 nav ul {
@@ -248,7 +247,7 @@ nav a {
     margin: 1.65em 1em;
     display: block;
     text-decoration: none;
-    color: #121952;
+    color: #fff;
     transition: .2s ease-in all;
     text-transform: uppercase;
     line-height: 1;
@@ -285,11 +284,33 @@ nav a:hover {
 }
 
 nav a.active {
-    color: #ff3855;
+    color: #121952;
 }
 
 nav svg path {
     transition: .2s ease all;
+    fill: #fff;
+}
+
+#expand:checked~nav,
+nav.scroll {
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#expand:checked~nav a,
+nav.scroll a {
+    color: #121952
+}
+
+#expand:checked~nav a.active,
+#programme nav:not(.scroll) a.active,
+nav.scroll a.active {
+    color: #ff3855;
+}
+
+#expand:checked~nav svg path,
+nav.scroll svg path {
     fill: #121952;
 }
 
@@ -326,25 +347,7 @@ nav svg path {
 
 /* NAVBARS */
 
-#faq nav:not(.scroll),
-#about nav:not(.scroll),
-#apply nav:not(.scroll),
-#home nav:not(.scroll),
-#mentors nav:not(.scroll),
-#programme nav:not(.scroll) {
-    box-shadow: 0 0 0 0;
-}
-
-#mentors nav:not(.scroll),
-#apply nav:not(.scroll),
-#about nav:not(.scroll),
-#programme nav:not(.scroll) {
-    background: transparent;
-}
-
-#faq nav:not(.scroll),
-#apply .big-header,
-#home nav:not(.scroll) {
+#faq nav:not(.scroll) {
     background: rgba(18, 25, 82, 1);
 }
 
@@ -354,38 +357,6 @@ nav svg path {
 
 #about .big-header {
     background: rgb(255, 56, 85);
-}
-
-#faq nav:not(.scroll) svg path,
-#about nav:not(.scroll) svg path,
-#apply nav:not(.scroll) svg path,
-#programme nav:not(.scroll) svg path,
-#home nav:not(.scroll) svg path,
-#mentors nav:not(.scroll) svg path {
-    fill: #fff;
-}
-
-#faq nav:not(.scroll) #extend-button span,
-#about nav:not(.scroll) #expand-button span,
-#apply nav:not(.scroll) #expand-button span,
-#programme nav:not(.scroll) #expand-button span,
-#home nav:not(.scroll) #expand-button span,
-#mentors nav:not(.scroll)#expand-button span {
-    background-color: #fff;
-}
-
-#faq nav:not(.scroll) a,
-#about nav:not(.scroll) a,
-#apply nav:not(.scroll) a,
-#programme nav:not(.scroll) a,
-#home nav:not(.scroll) a,
-#mentors nav:not(.scroll) a {
-    color: #fff;
-}
-
-#about nav:not(.scroll) a:hover,
-#mentors nav .active {
-    color: rgb(18, 25, 82) !important;
 }
 
 #about nav:not(.scroll) a:hover svg path {
@@ -1987,6 +1958,7 @@ form p {
 #about #thanks>div p {
     color: #fff;
 }
+
 
 /* * * * * * * * * * *
   *                   *
