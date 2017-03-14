@@ -420,8 +420,10 @@ nav svg path {
 #home header>div:first-child {
     width: 95%;
     margin: 0 auto;
-    height: calc(100vh - 7.5em);
-    padding: 8vh 0 0;
+    position: absolute;
+    top: calc(50% + 2.15em);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .head p:last-of-type {
@@ -474,15 +476,6 @@ nav svg path {
 
 #home header .btn:first-of-type {
     margin-right: 2em;
-}
-
-#scroll {
-    font-size: 0.625em;
-    width: 100%;
-}
-
-#scroll p {
-    margin: .1em 0 0;
 }
 
 @media (max-width: 750px) {
@@ -1149,7 +1142,11 @@ nav svg path {
     max-width: 45.4em;
 }
 
+<<<<<<< HEAD
 #programme .big-header p {
+=======
+#programme .big-header p{
+>>>>>>> 55fcf8177301f48a83db207595b412755b838a4b
     position: static;
     transform: none;
     font-size: 3.5em;
