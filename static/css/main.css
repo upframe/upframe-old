@@ -1957,6 +1957,36 @@ form p {
  *                   *
  * * * * * * * * * * */
 
+#about #thanks {
+    width: 100%;
+    background-image: url("/img/startup-lx.jpg");
+    background-position: center;
+    padding: 5em;
+}
+
+#about #thanks h2 {
+    color: #fff;
+    font-size: 3.125em;
+    font-weight: bolder;
+    width: 40%;
+    margin: 0 auto 3em auto;
+    text-align: center;
+}
+
+#about #thanks>div:last-of-type {
+    margin-top: 7em;
+}
+
+#about #thanks>div>div {
+    background: rgba(18, 25, 82, 1);
+    width: 40%;
+    margin: auto;
+    padding: 1.5em;
+}
+
+#about #thanks>div p {
+    color: #fff;
+}
 
 /* * * * * * * * * * *
   *                   *
