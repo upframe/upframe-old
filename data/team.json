@@ -110,4 +110,13 @@
         "Facebook": "https://www.facebook.com/juauz",
         "LinkedIn": "https://www.linkedin.com/in/juauz/"
     }
+},
+{
+    "Name": "Maria Almada",
+    "Role": "Partners & Sponsorships",
+    "Email": "maria@upframe.co",
+    "Image": "/img/team/maria.jpg",
+    "Social": {
+        "Facebook": "https://www.facebook.com/maria.vazdealmada"
+    }
 }]

@@ -1138,6 +1138,27 @@ nav svg path {
 
 #programme .big-header {
     background: radial-gradient(ellipse at center, #1f2978 0%, #121952 100%);
+    text-align: center;
+    height: auto;
+    padding: 6em 0;
+}
+
+#programme .big-header img {
+    margin-bottom: 2em;
+    width: 90%;
+    max-width: 45.4em;
+}
+
+#programme .big-header p {
+    position: static;
+    transform: none;
+    font-size: 3.5em;
+    max-width: 15em;
+    font-weight: 400;
+}
+
+#programme .big-header p strong {
+    font-size: 1.5em;
 }
 
 #programme main>p:first-of-type {
@@ -1964,7 +1985,7 @@ form p {
     margin-bottom: 0;
 }
 
-#about #team p {
+#about #team>p {
     color: rgba(75, 83, 144, 1);
     font-size: 1em;
     text-align: center;
@@ -1974,11 +1995,51 @@ form p {
 #about #team>div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #about #team div.member {
     width: 12.5em;
-    flex-basis: 25%;
+    height: 35em;
+    flex-basis: calc(25% - 4em);
+}
+
+#about #team div.member p {
+    text-align: left;
+}
+
+#about #team div.member p.name {
+    color: rgba(18, 25, 82, 1);
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0;
+}
+
+#about #team div.member p.role {
+    color: rgba(255, 56, 85, 1);
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 0 2.5em 0;
+}
+
+#about #team div.member p.email {
+    height: 1.188em;
+    color: rgba(75, 83, 144, 1);
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+#about #team div.member p.social a:not(last-of-type) {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+#about #team div.member p.social a svg path {
+    fill: rgba(192, 192, 192, 1);
+}
+
+#about #team div.member p.social a:hover svg path {
+    fill: rgba(255, 56, 85, 1);
 }
 
 
