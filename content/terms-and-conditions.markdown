@@ -5,26 +5,21 @@ description: Terms and Conditions of Upframe Programme.
 slug: terms-and-conditions
 ---
 
-<style type="text/css">
-    ol ol { list-style-type: lower-alpha; }
-</style>
-
-
 Upframe is a pre-acceleration programme for young university students or recent graduates.
 
 ## I - Definitions
 
-1.  ‘Upframe’ is the entity providing the service, this being ‘Upframe Pre-Acceleration Programme’. The ‘Participant’ is the person who applies for ‘Upframe Pre-Acceleration Programme’ and freely agrees with the disposals of this Terms & Conditions document.
-2.  ‘Upframe Pre-Acceleration Programme’, rolling from April 19th (5.30pm) to May 27th (9pm) is constituted by:
-    1.  ‘Welcome Day’ Session, on April 19th, from 5.30pm to 9pm;
-    2.  Six ‘Saturday Sessions’, occurring in April 22th, April 29th, May 6th, May 13th and May 27th. All these sessions are scheduled to happen from 2pm to 7pm, except May 27th (9am to 8pm).
+1.  'Upframe' is the entity providing the service, this being 'Upframe Pre-Acceleration Programme'. The 'Participant' is the person who applies for 'Upframe Pre-Acceleration Programme' and freely agrees with the disposals of this Terms & Conditions document.
+2.  'Upframe Pre-Acceleration Programme', rolling from April 19th (5.30pm) to May 27th (9pm) is constituted by:
+    1.  'Welcome Day' Session, on April 19th, from 5.30pm to 9pm;
+    2.  Six 'Saturday Sessions', occurring in April 22th, April 29th, May 6th, May 13th and May 27th. All these sessions are scheduled to happen from 2pm to 7pm, except May 27th (9am to 8pm).
 
 ## II - Upframe Obligations
 
 To contribute to the project development and, therefore, facilitate its execution and potential success with clients, Upframe commits itself to provide to the Participant, during his/her participation period on the programme (April 19th 2017 to May 27th 2017), the following services:
 
 1.  Training, coaching and mentoring sessions with experienced executives;
-2.  Office hours to monitor the project with the program organisation team, specialists and services’ providers;
+2.  Office hours to monitor the project with the program organisation team, specialists and services' providers;
 3.  Workspace availability with the necessary tools and internet access during the programme Saturday sessions
 4.  Networking opportunities with mentors
 5.  Access to Upframe network of contacts
@@ -47,7 +42,7 @@ The Participant commits to:
 3.  Upframe commits to accept or refuse the application from any participant based on the following criteria:
     1.  Motivation to enter the programme
     2.  Willingness to work in group
-    3.  Willingness to work in other people’s ideas and projects
+    3.  Willingness to work in other people's ideas and projects
 4.  To successfully complete the application, the participant has to fill in two forms: the one on Upframe website and the Typeform Upframe has sent through email. An application is considered finished after the last Typeform submission is successfully registered in Upframe database;
 5.  The application window will be open between March 14th and April 1st 11.59pm;
 6.  Applications received after April 1st 11.59pm will not be considered for this programme nor for future versions;
@@ -60,7 +55,7 @@ The Participant commits to:
 
 ## VI - Payment
 
-1.  After the participant’s acceptance email is sent by Upframe, the participant has 7 days (168 hours) to complete the payment;
+1.  After the participant's acceptance email is sent by Upframe, the participant has 7 days (168 hours) to complete the payment;
 2.  The payment is considered complete when Upframe receives a notification of reception of the money transfer. This notification must be an email, from the applicant to Upframe, with a visual and clear receipt confirmation of the payment to us. It has to contain Upframe identification, the participant identification, the value in Euros, the date and hour and the method of money transfer;
 
 ## VII - Cancellations & Refunds
@@ -74,12 +69,12 @@ The Participant commits to:
 ## VIII - Audiovisual Production & Copyrights
 
 1.  Upframe will record, in audio and video, every programme session. We are free to use quotes, videos, audio recording and photos of any participant or mentor and share on our website, newsletter, promotional email or social media channel;
-2.  Every quote, video, audio recording or photo captured during any of our Saturday sessions, Welcome day, Q&A with mentors and mentor sessions is Upframe’s property and Upframe free to use it;
+2.  Every quote, video, audio recording or photo captured during any of our Saturday sessions, Welcome day, Q&A with mentors and mentor sessions is Upframe's property and Upframe free to use it;
 3.  Upframe, however, commits not to share any quote, video, audio recording or photo of any participant or mentor for any purpose other than promoting or sharing information about Upframe pre-acceleration programme;
-4.  Any written, video or audio material produced by participants with the purpose of promoting our programme is owned by Upframe but, at the participant’s request, this obligation may be withdrawn by Upframe’s choice;
+4.  Any written, video or audio material produced by participants with the purpose of promoting our programme is owned by Upframe but, at the participant's request, this obligation may be withdrawn by Upframe's choice;
 5.  Any written, video or audio material produced by participants during their work on our programme, directly related with his/her project, is not owned by Upframe, but rather the participant or the team.
 
 ## IX - Equity, Intellectual Property and Non-Disclosure
 
 1.  Upframe will not take any equity or be an intellectual property owner of any kind, from any project, no matter if the concept for the programme is created before or during the programme;
-2.  Upframe will not sign a NDA, Non-disclosure agreement, with any intervient of the programme. However, the Upframe team members, advisors and mentors commit not to discuss any details of your project outside the programme to any person who is was not connected with the programme
+2.  Upframe will not sign a NDA, Non-disclosure agreement, with any intervenient of the programme. However, the Upframe team members, advisors and mentors commit not to discuss any details of your project outside the programme to any person who is was not connected with the programme
