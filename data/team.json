@@ -20,24 +20,6 @@
     }
 },
 {
-    "Name": "Gustavo Pimenta",
-    "Role": "Advisor",
-    "Email": "",
-    "Image": "/img/team/gustavo.jpg",
-    "Social": {
-        "LinkedIn": "https://www.linkedin.com/in/gustavocpimenta/"
-    }
-},
-{
-    "Name": "Inês Santos Silva",
-    "Role": "Advisor",
-    "Email": "",
-    "Image": "/img/team/ines.jpg",
-    "Social": {
-        "LinkedIn": "https://www.linkedin.com/in/inessantossilva/"
-    }
-},
-{
     "Name": "Filipa Fernandes",
     "Role": "Head of Marketing & Communication",
     "Email": "filipa@upframe.co",
@@ -118,5 +100,23 @@
     "Social": {
         "Facebook": "https://www.facebook.com/maria.vazdealmada",
         "LinkedIn": "https://www.linkedin.com/in/maria-vaz-de-almada-7bb09ba2/"
+    }
+},
+{
+    "Name": "Gustavo Pimenta",
+    "Role": "Advisor",
+    "Email": "",
+    "Image": "/img/team/gustavo.jpg",
+    "Social": {
+        "LinkedIn": "https://www.linkedin.com/in/gustavocpimenta/"
+    }
+},
+{
+    "Name": "Inês Santos Silva",
+    "Role": "Advisor",
+    "Email": "",
+    "Image": "/img/team/ines.jpg",
+    "Social": {
+        "LinkedIn": "https://www.linkedin.com/in/inessantossilva/"
     }
 }]
