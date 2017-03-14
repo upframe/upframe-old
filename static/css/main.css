@@ -2001,7 +2001,7 @@ form p {
 #about #team div.member {
     width: 12.5em;
     height: 35em;
-    flex-basis: calc(25% - 4em);
+    flex-basis: calc(21%);
 }
 
 #about #team div.member p {
