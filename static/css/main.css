@@ -332,6 +332,7 @@ nav.scroll a {
     color: #121952
 }
 
+#faq nav:not(.scrol) a.active,
 nav a:hover,
 #expand:checked~nav a.active,
 #programme nav:not(.scroll) a.active,
@@ -2053,7 +2054,7 @@ form p {
 }
 
 #faq header h1 {
-    font-size: 7.5em;
+    font-size: 4em;
     text-align: center;
     line-height: 1;
     margin: 0;
