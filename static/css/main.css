@@ -127,6 +127,41 @@ h2 {
     border-color: #03072e;
 }
 
+.big-header {
+    background: rgba(18, 25, 82, 1);
+    position: relative;
+    padding: 11em 0;
+}
+
+.big-header.with-grey-bar {
+    height: calc(100vh - 11.3em);
+    padding: 0;
+}
+
+.big-header p {
+    color: #fff;
+    max-width: 12em;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4.5em;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.big-header.with-grey-bar p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 950px) {
+    .big-header p {
+        font-size: 9vw;
+    }
+}
+
 
 /* * * * * * * * * *
  *                 *
@@ -342,25 +377,6 @@ nav.scroll svg path {
         margin: 0;
         padding: 0;
     }
-}
-
-
-/* NAVBARS */
-
-#faq nav:not(.scroll) {
-    background: rgba(18, 25, 82, 1);
-}
-
-#mentors .big-header {
-    background: url('/img/symbols/mentors-header.svg') no-repeat bottom center / 100%, #470ff4;
-}
-
-#about .big-header {
-    background: rgb(255, 56, 85);
-}
-
-#about nav:not(.scroll) a:hover svg path {
-    fill: #121952 !important;
 }
 
 
@@ -732,39 +748,8 @@ nav.scroll svg path {
  *                   *
  * * * * * * * * * * */
 
-.big-header {
-    background: rgba(18, 25, 82, 1);
-    position: relative;
-    padding: 11em 0;
-}
-
-.big-header.with-grey-bar {
-    height: calc(100vh - 11.3em);
-    padding: 0;
-}
-
-.big-header p {
-    color: #fff;
-    max-width: 12em;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 4.5em;
-    font-weight: 500;
-    line-height: 1.3;
-}
-
-.big-header.with-grey-bar p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-@media (max-width: 950px) {
-    .big-header p {
-        font-size: 9vw;
-    }
+#mentors .big-header {
+    background: url('/img/symbols/mentors-header.svg') no-repeat bottom center / 100%, #470ff4;
 }
 
 #mentors header>div:last-of-type {
@@ -1829,7 +1814,12 @@ form p {
  *                   *
  * * * * * * * * * * */
 
+#about nav:not(.scroll) a:hover svg path {
+    fill: #121952 !important;
+}
+
 #about .big-header {
+    background: rgb(255, 56, 85);
     background: url('/img/symbols/about-header.svg') no-repeat center center / 95%, #ff3855;
 }
 
@@ -2039,6 +2029,10 @@ form p {
 
 
 /* FAQ */
+
+#faq nav:not(.scroll) {
+    background: rgba(18, 25, 82, 1);
+}
 
 #faq header {
     margin: 7.2em 0 3em;
