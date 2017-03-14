@@ -856,6 +856,7 @@ nav.scroll svg path {
     transition: all .5s ease;
     margin: 0 0 0.8em;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #mentors-container .mentor img:hover {

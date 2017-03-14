@@ -89,8 +89,8 @@ function initMentorsPage() {
     let mentorslist = [],
         children = document.querySelector("#mentors-container").children;
 
-    for (let i of children) {
-        mentorslist.push(i.cloneNode(true));
+    for (let i = 0; i < children.length; i++) {
+        mentorslist.push(children[i].cloneNode(true));
     }
 
     mentorslist.sort(function() {
@@ -104,7 +104,6 @@ function initMentorsPage() {
     let images = document.querySelectorAll("#mentors-container .mentor img");
     [].forEach.call(images, function(img) {
         img.addEventListener("click", openMentorPopup);
-        img.addEventListener('touchstart', openMentorPopup);
     });
 
     // Check if there is an hash
@@ -117,6 +116,8 @@ function initMentorsPage() {
 }
 
 function openMentorPopup(event) {
+    event.preventDefault();
+
     let mentor = event.currentTarget.parentElement,
         popup = document.querySelector(".mentor-popup"),
         overlay = document.querySelector(".overlay"),
