@@ -158,7 +158,25 @@ h2 {
 
 @media (max-width: 950px) {
     .big-header p {
-        font-size: 9vw;
+        font-size: 9vw !important;
+    }
+    #programme .big-header p strong {
+        font-size: 1em !important;
+    }
+}
+
+@media (max-height: 700px) {
+    .big-header {
+        height: auto;
+    }
+    .big-header.with-grey-bar {
+        padding: 11em 0;
+    }
+    .big-header.with-grey-bar p {
+        position: static !important;
+        top: 0;
+        left: 0;
+        transform: none;
     }
 }
 
@@ -1596,6 +1614,45 @@ nav.scroll svg path {
 
 #apply .big-header>div>* {
     flex-grow: 1;
+}
+
+@media (max-width: 1200px) {
+    #apply .big-header>div>p {
+        font-size: 5vw;
+    }
+    #apply .big-header>div>img {
+        max-width: 15em;
+    }
+}
+
+@media (max-width: 900px) {
+    #apply .big-header>div>p {
+        font-size: 5vw;
+    }
+    #apply .big-header>div>img {
+        max-width: 10em;
+    }
+}
+
+@media (max-width: 620px) {
+    #apply .big-header {
+        padding: 5em 0;
+        height: 100vh;
+    }
+    #apply .big-header>div>p {
+        font-size: 2.5em;
+        margin: 1em auto;
+    }
+    #apply .big-header>div {
+        display: block;
+        position: absolute;
+        top: calc(50% + 2.15em);
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #apply .big-header>div>img {
+        max-width: 15em;
+    }
 }
 
 #apply main {
