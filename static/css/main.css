@@ -717,8 +717,9 @@ nav.scroll svg path {
     margin: 1em 1em 1em;
     display: inline-block;
     height: 2.5vw;
-    max-height: 50px;
+    max-height: 3.125em;
     vertical-align: middle;
+    min-height: 1.5em;
 }
 
 .grey-bar-logos img.empreendedor {
