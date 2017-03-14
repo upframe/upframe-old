@@ -1970,12 +1970,12 @@ form p {
 #about #values {
     background-color: rgba(18, 25, 82, 1);
     display: flex;
-    padding: 8em;
     justify-content: space-between;
 }
 
 #about #values div {
     flex-basis: 30%;
+    padding: 2em;
 }
 
 #about #values div h3 {
@@ -1999,14 +1999,13 @@ form p {
     width: 100%;
     background-image: url("/img/startup-lx.jpg");
     background-position: center;
-    padding: 5em;
 }
 
 #about #thanks h2 {
     color: #fff;
     font-size: 3.125em;
     font-weight: bolder;
-    width: 40%;
+    width: 70%;
     margin: 0 auto 3em auto;
     text-align: center;
 }
@@ -2058,11 +2057,13 @@ form p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-grow: 0;
 }
 
 #about #team div.member {
-    margin-bottom: 10em;
+    margin-bottom: 7.5em;
     flex-basis: calc(21%);
+    flex-grow: 0;
 }
 
 #about #team div.member p {
@@ -2104,6 +2105,11 @@ form p {
     fill: rgba(255, 56, 85, 1);
 }
 
+@media (max-width: 1100px) {
+    #about #team div.member {
+        flex-basis: initial;
+    }
+}
 
 /* FAQ */
 
