@@ -51,7 +51,7 @@ The Participant commits to:
 
 1.  Upframe Pre-Acceleration programme has two payment options: 90€ for early registrations, and €150 for regular applications;
 2.  To benefit from the early bird price, 90€, the participant must apply between March 20th and April 1st 11.59pm;
-3.  If the application is complete between March 20th and April 7th 11.59, the participant, if accepted, must support the total cost of 150€;
+3.  If the application is completed between April 2nd and April 7th 11.59, the participant, if accepted, must support the total cost of 150€;
 
 ## VI - Payment
 
