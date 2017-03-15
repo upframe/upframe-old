@@ -2020,9 +2020,7 @@ form p {
  * * * * * * * * * * */
 
 #about #thanks {
-    width: 100%;
-    background-image: url("/img/startup-lx.jpg");
-    background-position: center;
+    background: url("/img/startup-lx.jpg") no-repeat center center / cover;
 }
 
 #about #thanks h2 {
