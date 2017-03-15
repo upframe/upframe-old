@@ -44,27 +44,27 @@ The Participant commits to:
     2.  Willingness to work in group
     3.  Willingness to work in other people's ideas and projects
 4.  To successfully complete the application, the participant has to fill in two forms: the one on Upframe website and the Typeform Upframe has sent through email. An application is considered finished after the last Typeform submission is successfully registered in Upframe database;
-5.  The application window will be open between March 14th and April 1st 11.59pm;
-6.  Applications received after April 1st 11.59pm will not be considered for this programme nor for future versions;
+5.  The application window will be open between March 20th and April 7th 11.59pm;
+6.  Applications received after April 7th 11.59pm will not be considered for this programme nor for future versions;
 
 ## V - Price
 
 1.  Upframe Pre-Acceleration programme has two payment options: 90€ for early registrations, and €150 for regular applications;
-2.  To benefit from the early bird price, 90€, the participant must apply between March 14th and March 22nd 11.59pm;
-3.  If the application is complete between March 23rd and April 1st 11.59, the participant, if accepted, must support the total cost of 150€;
+2.  To benefit from the early bird price, 90€, the participant must apply between March 20th and April 1st 11.59pm;
+3.  If the application is complete between March 20th and April 7th 11.59, the participant, if accepted, must support the total cost of 150€;
 
 ## VI - Payment
 
 1.  After the participant's acceptance email is sent by Upframe, the participant has 7 days (168 hours) to complete the payment;
-2.  The payment is considered complete when Upframe receives a notification of reception of the money transfer. This notification must be an email, from the applicant to Upframe, with a visual and clear receipt confirmation of the payment to us. It has to contain Upframe identification, the participant identification, the value in Euros, the date and hour and the method of money transfer;
+2.  The payment is considered complete when Upframe receives a notification of reception of the money transfer. This notification must be an email, from the applicant to Upframe, with a visual and clear receipt confirmation of the payment to us. It has to contain Upframe identification, the participant identification, the value in Euros, the date and hour and the method of money transfer. When this notification is not needed, the Upframe team will inform the participant of that;
 
 ## VII - Cancellations & Refunds
 
-1.  To cancel your application, the participant has to communicate his/her clear intention of withdrawing from the programme, through email to hello@upframe.xyz, at any point in time;
+1.  To cancel your application, the participant has to communicate his/her clear intention of withdrawing from the programme, through email to hello@upframe.co, at any point in time;
 2.  If the participant chooses to cancel the application, he/she may apply again, under the regular registration window and the prices will be applicable as well. There will be no discrimination, nor positive or negative, towards a participant who has once withdrawn from the programme and desires to apply again. The same process is applicable in every case;
-3.  To receive a refund for the total amount paid, the participant has to communicate his/her clear intention of withdrawing from the programme, through email to hello@upframe.xyz, until April 15th 11.59pm;
+3.  To receive a refund for the total amount paid, the participant has to communicate his/her clear intention of withdrawing from the programme, through email to hello@upframe.co, until April 15th 11.59pm;
 4.  If Upframe receives the clear intention of withdrawing from the programme after April 15th 11.59pm, Upframme will not refund the participant;
-5.  The clear intention of withdrawing from the programme is considered received when it reaches Upframe email inbox;
+5.  The clear intention of withdrawing from the programme is considered received when it reaches Upframe'a email inbox;
 
 ## VIII - Audiovisual Production & Copyrights
 
