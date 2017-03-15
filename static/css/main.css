@@ -794,7 +794,7 @@ nav.scroll svg path {
 #learn-from-experts {
     max-width: 37em;
     width: 90%;
-    margin: 8em auto;
+    margin: 2em auto 8em;
     text-align: center;
 }
 
@@ -1986,29 +1986,45 @@ form p {
  *                   *
  * * * * * * * * * * */
 
-#about #values>div {
+#values>div {
     display: flex;
     justify-content: space-between;
     max-width: 71em;
+    width: 90%;
     margin: 0 auto;
 }
 
-#about #values {
+#values {
     background: rgba(18, 25, 82, 1);
     padding: 2em 0;
 }
 
-#about #values>div>div {
+#values>div>div {
     flex-basis: 30%;
 }
 
-#about #values div h3 {
+#values div h3 {
     color: rgba(0, 229, 212, 1);
     font-size: 1.125em;
 }
 
-#about #values div p {
+#values div p {
     color: white;
+}
+
+@media (max-width: 750px) {
+    #values>div {
+        flex-wrap: wrap;
+    }
+    #values>div>div {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 400px) {
+    #values>div>div {
+        flex-basis: 100%;
+    }
 }
 
 
@@ -2056,8 +2072,8 @@ form p {
   * * * * * * * * * * */
 
 #about #team {
-    max-width: 90em;
-    width: 75%;
+    max-width: 70em;
+    width: 90%;
     margin: auto;
 }
 
@@ -2082,14 +2098,9 @@ form p {
 }
 
 #about #team div.member {
-    margin-bottom: 7.5em;
-    flex-basis: calc(21%);
+    margin-bottom: 6em;
+    flex-basis: 21%;
     align-items: center;
-    text-align: center;
-}
-
-#about #team div.member p {
-    /* text-align: center; */
 }
 
 #about #team div.member p.name {
@@ -2103,8 +2114,8 @@ form p {
     color: rgba(255, 56, 85, 1);
     font-size: 1em;
     font-weight: 500;
-    margin: 0 0 2.5em 0;
-    height: 2em;
+    margin: 0;
+    height: 5em;
 }
 
 #about #team div.member p.email {
@@ -2112,6 +2123,12 @@ form p {
     color: rgba(75, 83, 144, 1);
     font-size: 0.75em;
     font-weight: 500;
+    line-height: 1;
+    margin: 0 0 1em;
+}
+
+#team .member p.social {
+    margin: 0;
 }
 
 #about #team div.member p.social a:not(last-of-type) {
@@ -2119,23 +2136,49 @@ form p {
     margin-right: 1em;
 }
 
-#about #team div.member p.social a svg path {
+#about #team div.member p.social a svg {
+    height: 1.125em;
+}
+
+#about #team div.member p.social a svg * {
     fill: rgba(192, 192, 192, 1);
 }
 
-#about #team div.member p.social a:hover svg path {
+#about #team div.member p.social a:hover svg * {
     fill: rgba(255, 56, 85, 1);
 }
 
 @media (max-width: 1100px) {
+    #about #team div.member {
+        flex-basis: 30%;
+    }
+}
+
+@media (max-width: 750px) {
+    #about #team div.member {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 400px) {
     #about #team>div {
+        display: block;
+    }
+    #about #team div.member {
+        width: 100%;
+        margin-bottom: 2em;
+    }
+}
+
+
+/*
+#about #team>div {
         flex-direction: column;
         text-align: center;
     }
     #about #team div.member p {
         text-align: center;
-    }
-}
+    } */
 
 
 /* FAQ */
