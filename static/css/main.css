@@ -1288,10 +1288,9 @@ nav.scroll svg path {
     color: #fff;
 }
 
-#calendar a.btn {
-    display: block;
+#calendar #apply-button {
+    text-align: center;
     margin: 3em auto;
-    width: 9.375em;
 }
 
 #calendar #programme-qa {
@@ -1309,7 +1308,7 @@ nav.scroll svg path {
 #calendar #programme-qa>div p {
     text-align: left;
     margin-bottom: 3em;
-    margin: 1em 0;
+    margin: .5em 0 2em;
     width: 100%;
 }
 
@@ -1680,7 +1679,6 @@ form>div {
     margin: 2.875em 0;
 }
 
-
 form .checkbox * {
     vertical-align: middle;
 }
@@ -1700,27 +1698,25 @@ form .checkbox label {
     height: 1.5em;
 }
 
-#apply form> div:first-of-type {
+#apply form>div:first-of-type {
     margin-right: 3%;
 }
 
-#apply form > div:nth-child(3),
-#apply form> div:first-of-type {
+#apply form>div:nth-child(3),
+#apply form>div:first-of-type {
     width: 48.5%;
     display: inline-block;
     margin-bottom: 0;
 }
 
 @media (max-width: 500px) {
-    #apply form > div:nth-child(3),
-    #apply form> div:first-of-type {
+    #apply form>div:nth-child(3),
+    #apply form>div:first-of-type {
         width: 100%;
         display: block;
         margin-right: 0;
     }
 }
-
-
 
 #apply form a {
     text-decoration: underline;
@@ -1990,15 +1986,20 @@ form p {
  *                   *
  * * * * * * * * * * */
 
-#about #values {
-    background-color: rgba(18, 25, 82, 1);
+#about #values>div {
     display: flex;
     justify-content: space-between;
+    max-width: 71em;
+    margin: 0 auto;
 }
 
-#about #values div {
+#about #values {
+    background: rgba(18, 25, 82, 1);
+    padding: 2em 0;
+}
+
+#about #values>div>div {
     flex-basis: 30%;
-    padding: 2em;
 }
 
 #about #values div h3 {
@@ -2090,7 +2091,7 @@ form p {
 }
 
 #about #team div.member p {
-    text-align: center;
+    /* text-align: center; */
 }
 
 #about #team div.member p.name {
@@ -2133,11 +2134,11 @@ form p {
         flex-direction: column;
         text-align: center;
     }
-
     #about #team div.member p {
         text-align: center;
     }
 }
+
 
 /* FAQ */
 
