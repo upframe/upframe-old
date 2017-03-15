@@ -1680,6 +1680,7 @@ form>div {
     margin: 2.875em 0;
 }
 
+
 form .checkbox * {
     vertical-align: middle;
 }
@@ -1698,6 +1699,28 @@ form .checkbox label {
     border-radius: 0;
     height: 1.5em;
 }
+
+#apply form> div:first-of-type {
+    margin-right: 3%;
+}
+
+#apply form > div:nth-child(3),
+#apply form> div:first-of-type {
+    width: 48.5%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+    #apply form > div:nth-child(3),
+    #apply form> div:first-of-type {
+        width: 100%;
+        display: block;
+        margin-right: 0;
+    }
+}
+
+
 
 #apply form a {
     text-decoration: underline;
