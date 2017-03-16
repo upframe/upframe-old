@@ -2037,6 +2037,7 @@ form p {
 
 #about #thanks {
     background: url("/img/startup-lx.jpg") no-repeat center center / cover;
+    padding-top: 5em;
 }
 
 #about #thanks h2 {
@@ -2064,12 +2065,8 @@ form p {
 }
 
 @media (max-width: 600px) {
-    #about #thanks {
-        padding-top: 3em;
-    }
-
     #about #thanks h2 {
-        font-size: 2.125em;
+        font-size: 2em;
     }
 }
 
