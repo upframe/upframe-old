@@ -2063,6 +2063,16 @@ form p {
     color: #fff;
 }
 
+@media (max-width: 600px) {
+    #about #thanks {
+        padding-top: 3em;
+    }
+
+    #about #thanks h2 {
+        font-size: 2.125em;
+    }
+}
+
 
 /* * * * * * * * * * *
   *                   *
