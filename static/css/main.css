@@ -1944,10 +1944,10 @@ form p {
 
 #about main #dream-goal {
     display: flex;
-    max-width: 90em;
-    width: 70%;
     margin: 5em auto;
     justify-content: space-between;
+    max-width: 70em;
+    width: 90%;
 }
 
 #about main #dream-goal h1 {
@@ -1989,7 +1989,7 @@ form p {
 #values>div {
     display: flex;
     justify-content: space-between;
-    max-width: 71em;
+    max-width: 70em;
     width: 90%;
     margin: 0 auto;
 }
