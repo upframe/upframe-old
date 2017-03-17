@@ -1,9 +1,4 @@
----
-type: tc
-title: Terms and Conditions
-description: Terms and Conditions of Upframe Programme.
-slug: terms-and-conditions
----
+# Terms and Conditions
 
 Upframe is a pre-acceleration programme for young university students or recent graduates.
 

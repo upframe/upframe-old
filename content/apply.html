@@ -53,7 +53,7 @@ slug: apply
 
         <div class="checkbox">
             <input id="tac" type="checkbox" required>
-            <label for="tac">I agree with the <a target="_blank" href="/terms-and-conditions">Terms and Conditions</a>.</label>
+            <label for="tac">I agree with the <a id="tac-link">Terms and Conditions</a>.</label>
         </div>
 
 
@@ -61,3 +61,6 @@ slug: apply
         <input type="submit" value="Submit Application" class="btn btn-red btn-red-full">
     </form>
 </main>
+
+<div id="terms-and-conditions"><a><img id="tac-close" class="close-icon" src="/img/symbols/close.svg"></a>{{< tac >}}</div>
+<div class="overlay"></div>

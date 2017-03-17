@@ -134,6 +134,7 @@ function openMentorPopup(event) {
 
     overlay.classList.add("active");
     popup.classList.add("active");
+    document.querySelector("body").classList.add("no-scroll");
     window.addEventListener("click", closeMentorPopup);
     window.addEventListener("keydown", closeMentorPopup);
 }
@@ -145,10 +146,32 @@ function closeMentorPopup(event) {
         overlay.classList.remove("active");
         history.pushState("", document.title, window.location.pathname);
         popup.classList.remove("active");
+        document.querySelector("body").classList.remove("no-scroll");
     }
 }
 
 function initApplyPage() {
+    let overlay = document.querySelector('.overlay'),
+        body = document.querySelector('body'),
+        tac = document.querySelector('div#terms-and-conditions');
+
+    document.getElementById('tac-link').addEventListener('click', event => {
+        tac.classList.add('active');
+        overlay.classList.add("active");
+        body.classList.add("no-scroll");
+    });
+
+    let closeTermsAndConditions = function(event) {
+        event.preventDefault();
+
+        tac.classList.remove('active');
+        overlay.classList.remove("active");
+        body.classList.remove("no-scroll");
+    }
+
+    document.getElementById('tac-close').addEventListener('click', closeTermsAndConditions);
+    document.querySelector('.overlay').addEventListener('click', closeTermsAndConditions)
+
     document.querySelector('form').addEventListener("submit", function(event) {
         event.preventDefault();
 
