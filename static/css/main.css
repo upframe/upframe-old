@@ -77,6 +77,17 @@ h2 {
     color: #121952;
 }
 
+.btn-white {
+    color:#fff!important;
+    border-color: #fff;
+}
+
+.btn-white:hover {
+    background: #fff;
+    color: #000 !important;
+}
+
+
 .btn-red {
     color: rgb(255, 56, 85) !important;
     border-color: rgb(255, 56, 85);
@@ -411,7 +422,7 @@ nav.scroll svg path {
 }
 
 @media (max-width: 400px) {
-    #home .btn {
+    #home header .btn {
         width: 100%;
         margin: 0 0 1em 0;
         display: block;
@@ -419,7 +430,7 @@ nav.scroll svg path {
 }
 
 #home header>div:first-child {
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     position: absolute;
     top: calc(50% + 2.15em);
@@ -672,6 +683,51 @@ nav.scroll svg path {
     }
     #our-mentors>div:last-of-type {
         margin-left: 0;
+    }
+}
+
+/* * * * * * * * * * *
+ *                   *
+ *  Page: HOME       *
+ *  Section: 4       *
+ *                   *
+ * * * * * * * * * * */
+
+#powered-by {
+    background: url('/img/startup-lx.jpg') no-repeat center center / cover;
+    padding: 5em 0;
+}
+
+#powered-by div {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#powered-by div * {
+    vertical-align: middle;
+}
+
+#powered-by span {
+    font-size: 1.375em;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 0.682em;
+}
+
+#powered-by .btn {
+    margin-left: 5.188em;
+}
+
+#powered-by img  {
+    height: 2.625em;
+}
+
+@media (max-width: 600px) {
+    #powered-by .btn {
+        width: 100%;
+        margin: 1em 0 0 0;
+        display: block;
     }
 }
 
