@@ -109,6 +109,7 @@
     "Email": "",
     "Image": "/img/team/gustavo.jpg",
     "Social": {
+        "Facebook": "https://www.facebook.com/gustavocpimenta",
         "LinkedIn": "https://www.linkedin.com/in/gustavocpimenta/"
     }
 },
@@ -118,6 +119,7 @@
     "Email": "",
     "Image": "/img/team/ines.jpg",
     "Social": {
-        "LinkedIn": "https://www.linkedin.com/in/inessantossilva/"
+        "LinkedIn": "https://www.linkedin.com/in/inessantossilva/",
+        "Twitter": "https://twitter.com/isss111"
     }
 }]
