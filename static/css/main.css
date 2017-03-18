@@ -146,7 +146,7 @@ h2 {
     background: rgba(18, 25, 82, 1);
     position: relative;
     text-align: center;
-    height: calc(100vh - 11.3em);
+    height: calc(100vh - 10.425em);
 }
 
 .big-header.with-grey-bar {
@@ -800,9 +800,9 @@ nav.scroll svg path {
     margin: 1em 1em 1em;
     display: inline-block;
     height: 2.5vw;
-    max-height: 3.125em;
+    max-height: 1.7em;
     vertical-align: middle;
-    min-height: 1.5em;
+    min-height: 1em;
 }
 
 .grey-bar-logos img.empreendedor {
