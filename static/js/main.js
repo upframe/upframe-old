@@ -5,7 +5,7 @@ var apiURL = (() => {
         domain = '';
 
     if (splitted.length > 1) {
-        domain = splitted[splitted.length-1] + '.' + splitted[splitted.length-2];
+        domain = splitted[splitted.length-2] + '.' + splitted[splitted.length-1];
     } else {
         domain = splitted[0];
     }
