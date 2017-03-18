@@ -5,7 +5,7 @@ var apiURL = (() => {
         domain = '';
 
     if (splitted.length > 1) {
-        domain = splitted[splitted.length-2] + '.' + splitted[splitted.length-1];
+        domain = splitted[splitted.length - 2] + '.' + splitted[splitted.length - 1];
     } else {
         domain = splitted[0];
     }
@@ -81,11 +81,19 @@ mentors.open = event => {
 
 mentors.close = event => {
     if (event.target.className == 'overlay active' || event.target.className == 'close-icon' || event.key == 'Escape') {
-        mentors.overlay.classList.remove('active');
-        mentors.popup.classList.remove('active');
+        mentors.overlay.classList.add('disappear');
+        mentors.popup.classList.add('disappear');
 
-        history.pushState('', document.title, window.location.pathname);
+        setTimeout(() => {
+            mentors.overlay.classList.remove('active');
+            mentors.overlay.classList.remove('disappear');
+
+            mentors.popup.classList.remove('active');
+            mentors.popup.classList.remove('disappear');
+        }, 250);
+
         document.querySelector('body').classList.remove('no-scroll');
+        history.pushState('', document.title, window.location.pathname);
     }
 }
 
@@ -111,14 +119,24 @@ apply.openTac = event => {
 
     apply.tac.classList.add('active');
     apply.overlay.classList.add('active');
+
     document.body.classList.add('no-scroll');
 }
 
 apply.closeTac = event => {
     event.preventDefault();
 
-    apply.tac.classList.remove('active');
-    apply.overlay.classList.remove('active');
+    apply.tac.classList.add('disappear');
+    apply.overlay.classList.add('disappear');
+
+    setTimeout(() => {
+        apply.tac.classList.remove('disappear');
+        apply.overlay.classList.remove('disappear');
+
+        apply.tac.classList.remove('active');
+        apply.overlay.classList.remove('active');
+    }, 250)
+
     document.body.classList.remove('no-scroll');
 }
 

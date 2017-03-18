@@ -988,47 +988,108 @@ nav.scroll svg path {
     left: 0;
     z-index: -1000;
     opacity: 0;
-    transition: .2s ease-in-out opacity;
 }
 
 .overlay.active {
-    z-index: 1000;
-    opacity: 1;
+    animation: .25s overlay-appear forwards;
+}
+
+.overlay.disappear {
+    animation: .25s overlay-disappear forwards;
+}
+
+@keyframes overlay-appear {
+    0% {
+        z-index: -1;
+        opacity: 0;
+    }
+    1% {
+        z-index: 1000;
+    }
+    100% {
+        z-index: 999;
+        opacity: 1;
+    }
+}
+
+@keyframes overlay-disappear {
+    0% {
+        z-index: 999;
+        opacity: 1;
+    }
+    99% {
+        z-index: 999;
+    }
+    100% {
+        z-index: -1;
+        opacity: 0;
+    }
 }
 
 .mentor-popup {
-    transition: .2s ease-in-out all;
+    transition: .25s ease-in-out all;
     position: fixed;
     display: flex;
     transform: translate(-50%, -50%) scale(0);
     top: 50%;
     left: 50%;
-    max-width: 50em;
+    max-width: 62.5em;
     overflow: auto;
     width: 95%;
     max-height: 95%;
     z-index: -1000;
     background-color: #fff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-    padding: 2.5em;
-    justify-content: space-around;
+    padding: 3.125em;
 }
 
 .mentor-popup.active {
-    z-index: 1001;
-    transform: translate(-50%, -50%) scale(1);
+    animation: .25s popup-appear forwards;
+}
+
+.mentor-popup.disappear {
+    animation: .25s popup-disappear forwards;
 }
 
 .mentor-popup>div:nth-child(1) {
-    width: 40%;
-    color: rgba(18, 25, 82, 0.6);
-    flex-direction: column;
-    display: flex;
+    width: 35%;
     margin-right: 2em;
 }
 
 .mentor-popup>div:nth-child(2) {
-    width: 60%;
+    width: 65%;
+}
+
+@keyframes popup-appear {
+    0% {
+        z-index: -1;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    1% {
+        z-index: 1000;
+    }
+    100% {
+        z-index: 1000;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes popup-disappear {
+    0% {
+        z-index: 1000;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    99% {
+        z-index: 1000;
+    }
+    100% {
+        z-index: -1;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
 }
 
 #terms-and-conditions .close-icon,
@@ -1041,30 +1102,15 @@ nav.scroll svg path {
     cursor: pointer;
 }
 
-.mentor-popup .name,
 .mentor-popup .job {
-    color: #121952;
-    font-weight: 600;
+    font-weight: bold;
+    margin: 0;
 }
 
 .mentor-popup .name {
-    font-size: 1.25em;
-    line-height: 1.2;
-}
-
-.mentor-popup img {
-    margin-bottom: .8em;
-}
-
-.mentor-popup .worksat {
-    margin-top: auto;
-}
-
-.mentor-popup div:nth-child(2) h2 {
-    margin-top: 0;
     font-size: 3.125em;
-    font-weight: 600;
-    color: rgba(18, 25, 82, 0.15);
+    font-weight: bold;
+    color: #ff3855;
     line-height: 1;
 }
 
@@ -1073,18 +1119,14 @@ nav.scroll svg path {
 }
 
 .mentor-popup .role {
-    font-size: .813em;
-    letter-spacing: 1.1px;
-    color: rgba(18, 25, 82, 0.6);
-    text-transform: uppercase;
-    margin-bottom: 5em;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #4b5390;
+    line-height: 1;
+    margin: 0.7em 0 1.35em;
 }
 
 .mentor-popup .description p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    line-height: 1.63;
-    letter-spacing: 0.4px;
     margin-bottom: 1em;
 }
 
@@ -2314,8 +2356,11 @@ div#terms-and-conditions {
 }
 
 div#terms-and-conditions.active {
-    z-index: 99999;
-    opacity: 1;
+    animation: .25s popup-appear forwards;
+}
+
+div#terms-and-conditions.disappear {
+    animation: .25s popup-disappear forwards;
 }
 
 #terms-and-conditions h1 {
