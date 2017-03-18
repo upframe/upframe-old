@@ -183,18 +183,18 @@ h2 {
 @media (max-height: 700px) {
     .big-header {
         height: auto;
+        padding: 11em 0;
+    }
+    .big-header > * {
+        position: static;
+        top:  top: 0;
+        left: 0;
+        transform: none;
     }
     .big-header.with-grey-bar {
         padding: 11em 0;
     }
-    .big-header.with-grey-bar p {
-        position: static !important;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
 }
-
 
 /* * * * * * * * * *
  *                 *
@@ -1976,7 +1976,7 @@ form p {
 
 #about .big-header {
     background: rgb(255, 56, 85);
-    background: url('/img/symbols/about-header.svg') no-repeat center center / 95%, #ff3855;
+    background: url('/img/symbols/about-header.svg') no-repeat center center / cover, #ff3855;
 }
 
 #about .big-header p {
