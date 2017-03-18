@@ -138,7 +138,7 @@
 
 
 {{ partial "footer" . }}
-<script>distributePhotos(JSON.parse({{ jsonify .Site.Data.mentors }}));</script>
+<script>home.randomizePhotos(JSON.parse({{ jsonify .Site.Data.mentors }}));</script>
 
 </body>
 </html>
