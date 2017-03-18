@@ -366,6 +366,7 @@ nav.scroll a {
     color: #121952
 }
 
+#mentors nav:not(.scroll) a.active,
 #faq nav:not(.scrol) a.active,
 nav a:hover,
 #expand:checked~nav a.active,
@@ -829,7 +830,7 @@ nav.scroll svg path {
  * * * * * * * * * * */
 
 #mentors .big-header {
-    background: url('/img/symbols/mentors-header.svg') no-repeat bottom center / 100%, #470ff4;
+    background: url('/img/symbols/mentors-header.svg') no-repeat bottom center / 100%, #121952;
 }
 
 #mentors header>div:last-of-type {
