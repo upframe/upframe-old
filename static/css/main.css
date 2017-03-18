@@ -700,6 +700,7 @@ nav.scroll svg path {
 
 #powered-by {
     background: url('/img/startup-lx.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
     padding: 5em 0;
 }
 
