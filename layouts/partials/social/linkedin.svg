@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 23"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M5,2.5A2.48,2.48,0,1,1,2.5,0,2.49,2.49,0,0,1,5,2.5ZM5,7H0V23H5Zm8,0H8V23h5V14.6c0-4.67,6-5.05,6,0V23h5V12.87C24,5,15.08,5.28,13,9.16Z"/></g></g></svg>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 29.6 28.3" style="enable-background:new 0 0 29.6 28.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C0C0C0;}
+</style>
+<path class="st0" d="M6.2,3.1c0,1.7-1.4,3-3.1,3C1.4,6.1,0,4.7,0,3c0-1.7,1.4-3,3-3C4.8,0,6.2,1.4,6.2,3.1C6.2,3.1,6.2,3.1,6.2,3.1z
+	 M6.2,8.6H0v19.7h6.2V8.6z M16,8.6H9.9v19.7H16V18c0-5.8,7.4-6.2,7.4,0v10.4h6.2V15.9c0-9.7-11-9.4-13.6-4.6V8.6z"/>
+</svg>

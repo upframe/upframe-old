@@ -2207,7 +2207,7 @@ form p {
 }
 
 #about #team div.member p.social a svg * {
-    fill: rgba(192, 192, 192, 1);
+    fill: #c0c0c0;
 }
 
 #about #team div.member p.social a:hover svg * {
