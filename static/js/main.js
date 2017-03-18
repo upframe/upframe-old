@@ -1,6 +1,6 @@
 'use strict';
 
-var apiURL = 'http://api.localhost/'
+var apiURL = window.location.protocol + '//api.' + window.location.host + '/';
 
 /* MENTORS PAGE */
 
