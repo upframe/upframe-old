@@ -1,6 +1,17 @@
 'use strict';
 
-var apiURL = window.location.protocol + '//api.' + window.location.host + '/';
+var apiURL = (() => {
+    let splitted = window.location.host.split('.'),
+        domain = '';
+
+    if (splitted.length > 1) {
+        domain = splitted[splitted.length-1] + '.' + splitted[splitted.length-2];
+    } else {
+        domain = splitted[0];
+    }
+
+    return window.location.protocol + '//api.' + domain;
+})();
 
 /* MENTORS PAGE */
 
