@@ -210,6 +210,22 @@ home.newsletter = event => {
     }
 }
 
+/* PAY PAGE */
+
+let pay = {};
+
+pay.Pay = () => {
+
+}
+
+pay.Cancel = () => {
+
+}
+
+pay.Confirm = () => {
+
+}
+
 /* GENERAL AND BASE FUNCTIONS */
 
 function scrollEvent(event) {
