@@ -1099,7 +1099,7 @@ nav.scroll svg path {
     width: 1.25em;
     top: 1em;
     right: 1em;
-    position: fixed;
+    position: absolute;
     cursor: pointer;
 }
 
