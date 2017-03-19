@@ -2141,6 +2141,7 @@ form p {
 
 #about #thanks {
     background: url("/img/startup-lx.jpg") no-repeat center center / cover;
+    background-attachment: fixed;
     padding-top: 5em;
 }
 
