@@ -70,7 +70,6 @@ mentors.open = event => {
     mentors.popup.querySelector('img').src = mentor.querySelector('img').src;
     mentors.popup.querySelector('.name').innerHTML = mentor.querySelector('.name').innerHTML;
     mentors.popup.querySelector('.role').innerHTML = mentor.querySelector('.role').innerHTML;
-    mentors.popup.querySelector('.job').innerHTML = mentor.querySelector('.job').innerHTML;
     mentors.popup.querySelector('.description').innerHTML = mentor.querySelector('.description').innerHTML;
 
     mentors.overlay.classList.add('active');
