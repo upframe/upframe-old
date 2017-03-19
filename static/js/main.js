@@ -32,7 +32,7 @@ mentors.init = () => {
     let images = document.querySelectorAll('#mentors-container .mentor img');
     for(let img of images) {
         img.addEventListener('click', mentors.open);
-    });
+    }
 
     // Check if there is an hash
     if (window.location.hash != '') {
