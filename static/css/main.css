@@ -2149,9 +2149,12 @@ form p {
     color: #fff;
     font-size: 3.125em;
     font-weight: bolder;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
+    ,
+    axw: ;
+    max-width: 13.5em;
 }
 
 #about #thanks>div:last-of-type {
@@ -2177,8 +2180,6 @@ form p {
     margin-right: 14.625em;
     float: right;
 }
-
-
 
 @media (max-width: 600px) {
     #about #thanks h2 {
