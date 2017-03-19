@@ -2142,7 +2142,7 @@ form p {
 #about #thanks {
     background: url("/img/startup-lx.jpg") no-repeat center center / cover;
     background-attachment: fixed;
-    padding-top: 5em;
+    padding: 5em 0;
 }
 
 #about #thanks h2 {
@@ -2158,16 +2158,25 @@ form p {
     margin-top: 8em;
 }
 
-#about #thanks>div>div {
-    background: rgba(18, 25, 82, 1);
-    width: 40%;
-    margin: auto;
-    padding: 1.5em;
-}
-
 #about #thanks>div p {
     color: #fff;
 }
+
+#about #thanks>div>div {
+    background: rgba(18, 25, 82, 1);
+    width: 40%;
+    padding: 1.5em;
+}
+
+#about #thanks>div>div:first-of-type {
+    margin-left: 16.5em;
+}
+
+#about #thanks>div>div:last-of-type {
+    margin-right: 16.5em;
+}
+
+
 
 @media (max-width: 600px) {
     #about #thanks h2 {
