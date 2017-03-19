@@ -30,7 +30,7 @@ mentors.init = () => {
     mentors.randomize();
 
     let images = document.querySelectorAll('#mentors-container .mentor img');
-    images.forEach(img => {
+    for(let img of images) {
         img.addEventListener('click', mentors.open);
     });
 
