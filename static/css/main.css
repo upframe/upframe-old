@@ -2156,6 +2156,7 @@ form p {
 
 #about #thanks>div:last-of-type {
     margin-top: 8em;
+    overflow: auto;
 }
 
 #about #thanks>div p {
@@ -2173,7 +2174,8 @@ form p {
 }
 
 #about #thanks>div>div:last-of-type {
-    margin-left: 39em;
+    margin-right: 14.625em;
+    float: right;
 }
 
 
