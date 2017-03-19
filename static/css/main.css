@@ -799,8 +799,8 @@ nav.scroll svg path {
 .grey-bar-logos img {
     margin: 1em 1em 1em;
     display: inline-block;
-    height: 2.5vw;
-    max-height: 1.7em;
+    height: 3vw;
+    max-height: 3em;
     vertical-align: middle;
     min-height: 1em;
 }
