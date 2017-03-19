@@ -15,7 +15,7 @@ var apiURL = (() => {
 
 /* MENTORS PAGE */
 
-let mentors = {
+var mentors = {
     overlay: null
 };
 
@@ -98,7 +98,7 @@ mentors.close = event => {
 
 /* APPLY PAGE */
 
-let apply = {
+var apply = {
     overlay: null,
     tac: null
 }
@@ -167,7 +167,7 @@ apply.submit = event => {
 }
 
 /* HOME PAGE */
-let home = {};
+var home = {};
 
 home.randomizePhotos = mentors => {
     let max = mentors.length - 1,
@@ -238,6 +238,8 @@ function scrollEvent(event) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+
+
     if (typeof smoothScroll != 'undefined') {
         smoothScroll.init({
             offset: 150,
