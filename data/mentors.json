@@ -1,17 +1,15 @@
 [{
         "Name": "Inês Santos Silva",
         "Slug": "ines-silva",
-        "Role": "Former Head of Operations",
+        "Role": "Former Head of Operations @ PLETFORM International",
         "Description": "ines.markdown",
-        "Job": "PLETFORM International",
         "LinkedIn": "https://pt.linkedin.com/in/inessantossilva"
     },
     {
         "Name": "Gustavo Pimenta",
         "Slug": "gustavo-pimenta",
-        "Role": "Managing Partner",
+        "Role": "Managing Partner @ SensesLab",
         "Description": "gustavo.markdown",
-        "Job": "SensesLab",
         "LinkedIn": "https://pt.linkedin.com/in/gustavocpimenta"
     },
     {
@@ -19,15 +17,13 @@
         "Slug": "mariano-kostelec",
         "Role": "Co-founder @ Uniplaces",
         "Description": "mariano.markdown",
-        "Job": "Uniplaces",
         "LinkedIn": "https://es.linkedin.com/in/marianokostelec"
     },
     {
         "Name": "David Dias",
         "Slug": "david-dias",
-        "Role": "Software Engineer",
+        "Role": "Software Engineer @ Protocol Labs",
         "Description": "david.markdown",
-        "Job": "Protocol Labs",
         "LinkedIn": "https://pt.linkedin.com/in/diasdavid/en"
     },
     {
@@ -35,15 +31,13 @@
         "Slug": "davis-gouveia",
         "Role": "Founder @ Uniarea",
         "Description": "davis.markdown",
-        "Job": "Uniarea",
         "LinkedIn": "https://pt.linkedin.com/in/davisgouveia"
     },
     {
         "Name": "Paulo Gonçalves",
         "Slug": "paulo-goncalves",
-        "Role": "User Researcher",
+        "Role": "User Researcher @ Uniplaces",
         "Description": "paulo-goncalves.markdown",
-        "Job": "Uniplaces",
         "LinkedIn": "https://se.linkedin.com/in/paulomcg/en"
     },
     {
@@ -51,7 +45,6 @@
         "Slug": "mario-mouraz",
         "Role": "Founder @ Climber Hotel",
         "Description": "mario.markdown",
-        "Job": "Climber Hotel",
         "LinkedIn": "https://uk.linkedin.com/in/mariomouraz"
     },
     {
@@ -59,31 +52,27 @@
         "Slug": "paulo-fonseca",
         "Role": "Founder @ laux",
         "Description": "paulo-fonseca.markdown",
-        "Job": "laux",
         "LinkedIn": "https://pt.linkedin.com/in/paulofonsecame"
     },
     {
         "Name": "Ana Santiago",
         "Slug": "ana-santiago",
-        "Role": "Head of Communications",
+        "Role": "Head of Communications @ Startup Lisboa",
         "Description": "ana-santiago.markdown",
-        "Job": "Startup Lisboa",
         "LinkedIn": "https://www.linkedin.com/in/anasantiagolx/"
     },
     {
         "Name": "André Albuquerque",
         "Slug": "andre-albuquerque",
-        "Role": "Head of Growth",
+        "Role": "Head of Growth @ Uniplaces",
         "Description": "andre-albuquerque.markdown",
-        "Job": "Uniplaces",
         "LinkedIn": "https://www.linkedin.com/in/andredalbuq/"
     },
     {
         "Name": "André Costa",
         "Slug": "andre-costa",
-        "Role": "Country Manager",
+        "Role": "Country Manager @ Waynabox",
         "Description": "andre-costa.markdown",
-        "Job": "Waynabox",
         "LinkedIn": "https://www.linkedin.com/in/nogdacosta/"
     },
     {
@@ -91,39 +80,34 @@
         "Slug": "andre-rodrigues-lopes",
         "Role": "Co-founder @ Altar.io",
         "Description": "andre-rodrigues-lopes.markdown",
-        "Job": "Altar.io",
         "LinkedIn": "https://www.linkedin.com/in/andrerodrigueslopes/"
     },
     {
         "Name": "Colin Gillingham",
         "Slug": "colin-gillingham",
-        "Role": "Former Product Manager",
+        "Role": "Former Product Manager @ WIREWAX",
         "Description": "colin.markdown",
-        "Job": "WIREWAX",
         "LinkedIn": "https://www.linkedin.com/in/colingillingham/"
     },
     {
         "Name": "Miguel Alpoim Ruas",
         "Slug": "miguel-alpoim-ruas",
-        "Role": "Chief Nurse",
+        "Role": "Chief Nurse @ Doctor Spin",
         "Description": "miguel-alpoim-ruas.markdown",
-        "Job": "Doctor Spin",
         "LinkedIn": "https://www.linkedin.com/in/miguel-alpoim-ruas-860baa4/"
     },
     {
         "Name": "Miguel Fontes",
         "Slug": "miguel-fontes",
-        "Role": "CEO",
+        "Role": "CEO @ Startup Lisboa",
         "Description": "miguel-fontes.markdown",
-        "Job": "Startup Lisboa",
         "LinkedIn": "https://www.linkedin.com/in/miguel-fontes-544ba467/"
     },
     {
         "Name": "Tiago Tomás",
         "Slug": "tiago-tomas",
-        "Role": "Lead Experience Design",
+        "Role": "Lead Experience Design @ Novabase",
         "Description": "tiago.markdown",
-        "Job": "Novabase",
         "LinkedIn": "https://www.linkedin.com/in/tiagotomas/"
     }
 ]

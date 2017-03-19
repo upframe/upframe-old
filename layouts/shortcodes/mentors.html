@@ -3,12 +3,11 @@
     <div class="mentor" id="{{ $mentor.Slug }}">
         <img src="/img/mentors/{{ safeHTMLAttr $mentor.Slug }}.jpg" srcset="/img/mentors/2x/{{ safeHTMLAttr $mentor.Slug }}.jpg 2x, /img/mentors/3x/{{ safeHTMLAttr $mentor.Slug }}.jpg 3x">
         <h2 class="name">{{ $mentor.Name }}</h2>
-        <p class="line">{{ $mentor.Role }} @ {{ $mentor.Job }}</p>
+        <p class="line">{{ $mentor.Role }}</p>
         <div class="description"><p>
             {{- (partial (printf "mentors/%s" $mentor.Description)) | markdownify -}}</p>
         </div>
         <p class="role">{{ $mentor.Role }}</p>
-        <p class="job">{{ $mentor.Job }}</p>
     </div>
     {{ end }}
 </div>
