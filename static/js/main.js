@@ -238,14 +238,14 @@ function scrollEvent(event) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-
-
     if (typeof smoothScroll != 'undefined') {
         smoothScroll.init({
             offset: 150,
             speed: 1000,
         });
     }
+
+    scrollEvent();
 
     window.addEventListener('scroll', scrollEvent);
 
