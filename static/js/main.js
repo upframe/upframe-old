@@ -214,16 +214,16 @@ home.newsletter = event => {
 
 let pay = {};
 
-pay.Pay = () => {
-
+pay.pay = () => {
+    alert('Pay Page!')
 }
 
-pay.Cancel = () => {
-
+pay.cancel = () => {
+    alert('Payment cancel page!')
 }
 
-pay.Confirm = () => {
-
+pay.confirm = () => {
+    alert('Payment confirm page!')
 }
 
 /* GENERAL AND BASE FUNCTIONS */
@@ -258,6 +258,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (window.location.pathname == '/apply') {
         apply.init();
+    }
+
+    if (window.location.pathname == '/pay') {
+        pay.pay();
+    }
+
+    if (window.location.pathname == '/pay/cancel') {
+        pay.cancel();
+    }
+
+    if (window.location.pathname == '/pay/confirm') {
+        pay.confirm();
     }
 
     Array.from(document.querySelectorAll('.writing-effect')).forEach(input => {
