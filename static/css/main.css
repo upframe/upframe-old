@@ -2176,6 +2176,13 @@ form p {
     margin: auto auto 6em 16.5em;
 }
 
+#about #thanks>div>div:first-of-type::before {
+    background: #fff;
+    width: 40%;
+    height: 200px;
+    display: block;
+}
+
 #about #thanks>div>div:last-of-type {
     margin-right: 14.625em;
     float: right;
