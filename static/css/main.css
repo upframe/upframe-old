@@ -2169,11 +2169,11 @@ form p {
 }
 
 #about #thanks>div>div:first-of-type {
-    margin-left: 16.5em;
+    margin: auto auto 6em 16.5em;
 }
 
 #about #thanks>div>div:last-of-type {
-    margin-right: 16.5em;
+    margin-left: 39em;
 }
 
 
