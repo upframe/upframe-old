@@ -1,0 +1,66 @@
+var overlay = null
+var tac = null
+var apiURL = ''
+
+export function init (url) {
+  apiURL = url
+
+  overlay = document.querySelector('.overlay')
+  tac = document.querySelector('div#terms-and-conditions')
+
+  document.getElementById('tac-link').addEventListener('click', openTac)
+  document.getElementById('tac-close').addEventListener('click', closeTac)
+  document.querySelector('.overlay').addEventListener('click', closeTac)
+  document.querySelector('form').addEventListener('submit', submit)
+}
+
+function openTac (event) {
+  event.preventDefault()
+
+  tac.classList.add('active')
+  overlay.classList.add('active')
+
+  document.body.classList.add('no-scroll')
+}
+
+function closeTac (event) {
+  event.preventDefault()
+
+  tac.classList.add('disappear')
+  overlay.classList.add('disappear')
+
+  setTimeout(() => {
+    tac.classList.remove('disappear')
+    overlay.classList.remove('disappear')
+
+    tac.classList.remove('active')
+    overlay.classList.remove('active')
+  }, 250)
+
+  document.body.classList.remove('no-scroll')
+}
+
+function submit (event) {
+  event.preventDefault()
+
+  let req = new window.XMLHttpRequest()
+  let form = event.currentTarget
+  let data = new window.FormData(form)
+
+  // TODO: JS DATA VALIDITY CHECK
+
+  req.open('POST', `${apiURL}/apply`)
+  req.send(data)
+  req.onload = function () {
+    switch (this.status) {
+      case 200:
+        form.classList.add('success')
+        form.querySelector('p').style.display = 'block'
+        form.querySelector('.btn').style.display = 'none'
+        break
+      default:
+        form.classList.add('error')
+        form.querySelector('.btn').value = 'Something went wrong'
+    }
+  }
+}

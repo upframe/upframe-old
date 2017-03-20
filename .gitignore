@@ -1,3 +1,5 @@
+node_modules/
+dist/
 errors.log
 Caddyfile
 public

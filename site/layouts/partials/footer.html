@@ -34,8 +34,7 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/smooth-scroll.js"></script>
-<script src="{{ .Site.BaseURL }}js/main.js"></script>
+<script src="{{ .Site.BaseURL }}app.js"></script>
 {{ if eq (printf "%v" .Site.BaseURL) "https://upframe.co/" }}
     {{ template "_internal/google_analytics.html" . }}
 {{ end }}
