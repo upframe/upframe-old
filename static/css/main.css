@@ -2211,7 +2211,8 @@ form p {
 }
 
 #about #thanks>div>div:last-of-type::before {
-left: 1em;
+
+left: 1em;
 }
 
 
@@ -2262,10 +2263,6 @@ form p {
 #about #team div.member {
     margin-bottom: 6em;
     flex-basis: 21%;
-}
-
-#about #team div.member:last-of-type {
-    margin-right: 16em;
 }
 
 #about #team div.member p.name {
