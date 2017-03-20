@@ -9,16 +9,7 @@ const apiURL = (() => {
     return `http://${window.location.hostname}:3002`
   }
 
-  let splitted = window.location.host.split('.')
-  let domain = ''
-
-  if (splitted.length > 1) {
-    domain = `${splitted[splitted.length - 2]}.${splitted[splitted.length - 1]}`
-  } else {
-    domain = splitted[0]
-  }
-
-  return `${window.location.protocol}//api.${domain}`
+  return 'https://api.upframe.co'
 })()
 
 function scrollEvent (event) {
