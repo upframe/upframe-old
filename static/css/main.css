@@ -2251,14 +2251,21 @@ form p {
 
 #about #team>div {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 90em;
+    width: 90%;
 }
 
 #about #team div.member {
     margin-bottom: 6em;
     flex-basis: 21%;
-    align-items: center;
+}
+
+#about #team div.member:last-of-type {
+    margin-right: 16em;
 }
 
 #about #team div.member p.name {
