@@ -21,7 +21,7 @@ gulp.task('build-preview', ['css', 'js', 'hugo-preview'])
 gulp.task('css', () => (
 gulp.src('./src/css/*.css')
   .pipe(postcss([cssnext(), cssImport({from: './src/css/main.css'})]))
-  .pipe(gulp.dest('./dist/css'))
+  .pipe(gulp.dest('./site/static/css'))
   .pipe(browserSync.stream())
 ))
 
@@ -49,9 +49,9 @@ gulp.task('server', ['hugo', 'css', 'js'], () => {
       }
     }
   })
-  gulp.watch('./src/js/**/*.js', ['js', 'hugo'])
-  gulp.watch('./src/css/**/*.css', ['css', 'hugo'])
   gulp.watch('./site/**/*', ['hugo'])
+  gulp.watch('./src/js/**/*.js', ['js'])
+  gulp.watch('./src/css/**/*.css', ['css'])
 })
 
 function buildSite (cb, options) {
