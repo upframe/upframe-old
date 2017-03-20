@@ -6,7 +6,7 @@ import * as home from './home.js'
 
 const apiURL = (() => {
   if (window.location.hostname !== 'upframe.co') {
-    return `http://${window.location.hostname}:2402`
+    return `http://${window.location.hostname}:3002`
   }
 
   let splitted = window.location.host.split('.')
