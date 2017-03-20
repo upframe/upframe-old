@@ -46,7 +46,7 @@ The Participant commits to:
 
 1.  Upframe Pre-Acceleration programme has two payment options: 90€ for early registrations, and €150 for regular applications;
 2.  To benefit from the early bird price, 90€, the participant must apply between March 20th and April 1st 11.59pm;
-3.  If the application is completed between April 2nd and April 7th 11.59, the participant, if accepted, must support the total cost of 150€;
+3.  If the application is completed between April 2nd and April 7th 11.59pm, the participant, if accepted, must support the total cost of 150€;
 
 ## VI - Payment
 
@@ -72,4 +72,4 @@ The Participant commits to:
 ## IX - Equity, Intellectual Property and Non-Disclosure
 
 1.  Upframe will not take any equity or be an intellectual property owner of any kind, from any project, no matter if the concept for the programme is created before or during the programme;
-2.  Upframe will not sign a NDA, Non-disclosure agreement, with any intervenient of the programme. However, the Upframe team members, advisors and mentors commit not to discuss any details of your project outside the programme to any person who is was not connected with the programme
+2.  Upframe will not sign a NDA, Non-disclosure agreement, with any intervenient of the programme. However, the Upframe team members, advisors and mentors commit not to discuss any details of your project outside the programme to any person who is not connected with the programme
