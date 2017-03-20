@@ -32,23 +32,12 @@
 },
 {
     "Name": "Daniela Miranda",
-    "Role": "Social Media Manager",
+    "Role": "Honorary Alumni",
     "Email": "",
     "Image": "/img/team/daniela.jpg",
     "Social": {
         "Facebook": "https://www.facebook.com/daniela.miranda.5872?",
         "LinkedIn": "https://www.linkedin.com/in/danielacmiranda"
-    }
-},
-{
-    "Name": "André Albuquerque",
-    "Role": "Community Manager",
-    "Email": "",
-    "Image": "/img/team/andre.jpg",
-    "Social": {
-        "Facebook": "https://www.facebook.com/andredalbuq",
-        "LinkedIn": "https://www.linkedin.com/in/andredalbuq",
-        "Instagram": "https://www.instagram.com/andredalbuq/"
     }
 },
 {
