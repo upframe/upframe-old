@@ -137,7 +137,7 @@
 
 
 {{ partial "footer" . }}
-<script>home.randomizePhotos(JSON.parse({{ jsonify .Site.Data.mentors }}));</script>
+<p id="mentors-data" style="display:none">{{ jsonify .Site.Data.mentors }}</p>
 
 </body>
 </html>
