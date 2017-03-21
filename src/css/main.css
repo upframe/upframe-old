@@ -38,11 +38,19 @@ img {
     max-width: 100%;
 }
 
-input, input:active, input:focus, input:hover, textarea {
+input,
+input:active,
+input:focus,
+input:hover,
+textarea {
     outline: 0;
 }
 
-h1, h3, h4, h5, h6 {
+h1,
+h3,
+h4,
+h5,
+h6 {
     color: var(--oxford-blue);
     letter-spacing: 0.03em;
 }
@@ -205,7 +213,8 @@ h2 {
  *                 *
  * * * * * * * * * */
 
-#expand, #expand-button {
+#expand,
+#expand-button {
     display: none;
 }
 
@@ -243,7 +252,8 @@ h2 {
     transition: .25s ease-in-out;
 }
 
-#expand:checked~nav span, nav.scroll #expand-button span {
+#expand:checked~nav span,
+nav.scroll #expand-button span {
     background-color: var(--oxford-blue);
 }
 
@@ -251,7 +261,8 @@ h2 {
     top: 0px;
 }
 
-#expand-button span:nth-child(2), #expand-button span:nth-child(3) {
+#expand-button span:nth-child(2),
+#expand-button span:nth-child(3) {
     top: 9px;
 }
 
@@ -352,20 +363,30 @@ nav svg path {
     fill: #fff;
 }
 
-#expand:checked~nav, nav.scroll {
+#expand:checked~nav,
+nav.scroll {
     background: #fff !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-#about nav:not(.scroll) a:hover, nav a.active, #expand:checked~nav a, nav.scroll a {
+#about nav:not(.scroll) a:hover,
+nav a.active,
+#expand:checked~nav a,
+nav.scroll a {
     color: var(--oxford-blue)
 }
 
-#mentors nav:not(.scroll) a.active, #faq nav:not(.scrol) a.active, nav a:hover, #expand:checked~nav a.active, #programme nav:not(.scroll) a.active, nav.scroll a.active {
+#mentors nav:not(.scroll) a.active,
+#faq nav:not(.scrol) a.active,
+nav a:hover,
+#expand:checked~nav a.active,
+#programme nav:not(.scroll) a.active,
+nav.scroll a.active {
     color: var(--upframe-pink);
 }
 
-#expand:checked~nav svg path, nav.scroll svg path {
+#expand:checked~nav svg path,
+nav.scroll svg path {
     fill: var(--oxford-blue);
 }
 
@@ -380,7 +401,8 @@ nav svg path {
     nav ul {
         flex-direction: column-reverse;
     }
-    #expand-button, nav li:first-of-type a {
+    #expand-button,
+    nav li:first-of-type a {
         display: inline-block !important;
         vertical-align: middle;
     }
@@ -506,7 +528,10 @@ nav svg path {
  *                   *
  * * * * * * * * * * */
 
-#how-we-do-it, #our-programme, #our-mentors, #are-you-ready {
+#how-we-do-it,
+#our-programme,
+#our-mentors,
+#are-you-ready {
     margin: 8em auto;
 }
 
@@ -571,23 +596,27 @@ nav svg path {
  *                   *
  * * * * * * * * * * */
 
-#our-mentors, #our-programme {
+#our-mentors,
+#our-programme {
     max-width: 62em;
     width: 90%;
     display: flex;
     align-items: flex-start;
 }
 
-#our-mentors div, #our-programme div {
+#our-mentors div,
+#our-programme div {
     flex-grow: 1;
 }
 
-#our-mentors h3, #our-programme h3 {
+#our-mentors h3,
+#our-programme h3 {
     color: var(--dark-slate-blue);
     font-size: 1.375em;
 }
 
-#our-mentors>div:last-of-type, #our-programme>div:first-of-type {
+#our-mentors>div:last-of-type,
+#our-programme>div:first-of-type {
     flex-basis: 80%;
 }
 
@@ -599,13 +628,15 @@ nav svg path {
     margin-left: 4em;
 }
 
-#our-mentors h1, #our-programme h1 {
+#our-mentors h1,
+#our-programme h1 {
     font-size: 3em;
     margin: 0 auto 1em auto;
     position: relative;
 }
 
-#our-mentors h1::after, #our-programme h1::after {
+#our-mentors h1::after,
+#our-programme h1::after {
     content: "";
     width: 1.5em;
     height: 0.125em;
@@ -615,7 +646,8 @@ nav svg path {
     left: 0;
 }
 
-#our-mentors p, #our-programme p {
+#our-mentors p,
+#our-programme p {
     margin: 0 auto 3em auto;
     padding-right: 1em;
     text-align: left;
@@ -636,7 +668,8 @@ nav svg path {
     display: inline-block;
 }
 
-#our-mentors img, #our-programme img {
+#our-mentors img,
+#our-programme img {
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -654,7 +687,8 @@ nav svg path {
         width: 100%;
         max-width: 100%;
     }
-    #our-mentors div:first-of-type, #our-programme img {
+    #our-mentors div:first-of-type,
+    #our-programme img {
         margin-top: 2em;
     }
     #our-programme>div:first-of-type {
@@ -792,7 +826,8 @@ nav svg path {
     margin: 0;
 }
 
-#featured-on div, #mentors-companies div {
+#featured-on div,
+#mentors-companies div {
     margin: 2.25em auto 1.25em;
 }
 
@@ -820,21 +855,27 @@ nav svg path {
     margin: 0;
 }
 
-#talk-applications>p:first-of-type, #mentors header>div:last-of-type p {
+#talk-applications>p:first-of-type,
+#mentors header>div:last-of-type p {
     font-size: 1.375em;
     color: var(--dark-slate-blue);
     margin: 1.389em auto 0;
     width: 90%;
 }
 
-#curious, #shape-your-future, #learn-from-experts {
+#curious,
+#shape-your-future,
+#learn-from-experts {
     max-width: 37em;
     width: 90%;
     margin: 2em auto 8em;
     text-align: center;
 }
 
-#curious h2, #talk-applications h2, #shape-your-future h2, #learn-from-experts h2 {
+#curious h2,
+#talk-applications h2,
+#shape-your-future h2,
+#learn-from-experts h2 {
     font-size: 3.125em;
     font-weight: bold;
     color: var(--oxford-blue);
@@ -843,7 +884,8 @@ nav svg path {
     margin: 0;
 }
 
-#shape-your-future p, #learn-from-experts p {
+#shape-your-future p,
+#learn-from-experts p {
     font-size: 1.125em;
     font-weight: bold;
     color: var(--dark-slate-blue);
@@ -851,7 +893,9 @@ nav svg path {
     text-align: center;
 }
 
-#curious .btn:first-of-type, #shape-your-future .btn:first-of-type, #learn-from-experts .btn:first-of-type {
+#curious .btn:first-of-type,
+#shape-your-future .btn:first-of-type,
+#learn-from-experts .btn:first-of-type {
     margin-right: 1em;
 }
 
@@ -860,10 +904,14 @@ nav svg path {
 }
 
 @media (max-width: 500px) {
-    #curious .btn, #shape-your-future .btn, #learn-from-experts .btn {
+    #curious .btn,
+    #shape-your-future .btn,
+    #learn-from-experts .btn {
         display: block;
     }
-    #curious .btn:first-of-type, #shape-your-future .btn:first-of-type, #learn-from-experts .btn:first-of-type {
+    #curious .btn:first-of-type,
+    #shape-your-future .btn:first-of-type,
+    #learn-from-experts .btn:first-of-type {
         margin: 0 0 1em;
     }
 }
@@ -933,7 +981,9 @@ nav svg path {
     font-size: 0.8em;
 }
 
-#mentors-container .mentor .description, #mentors-container .mentor .job, .mentor .role {
+#mentors-container .mentor .description,
+#mentors-container .mentor .job,
+.mentor .role {
     display: none;
 }
 
@@ -1053,7 +1103,8 @@ nav svg path {
     }
 }
 
-#terms-and-conditions .close-icon, .mentor-popup .close-icon {
+#terms-and-conditions .close-icon,
+.mentor-popup .close-icon {
     height: 1.25em;
     width: 1.25em;
     top: 1em;
@@ -1094,7 +1145,8 @@ nav svg path {
     .mentor-popup {
         display: block;
     }
-    .mentor-popup>div:nth-child(1), .mentor-popup>div:nth-child(2) {
+    .mentor-popup>div:nth-child(1),
+    .mentor-popup>div:nth-child(2) {
         width: 100%;
     }
     .mentor-popup>div:nth-child(1) {
@@ -1148,7 +1200,10 @@ nav svg path {
     margin-bottom: 1em;
 }
 
-#newsletter .writing label, #newsletter .writing input[type="email"], #newsletter form input[type="email"]:hover, #newsletter form input[type="email"]:focus {
+#newsletter .writing label,
+#newsletter .writing input[type="email"],
+#newsletter form input[type="email"]:hover,
+#newsletter form input[type="email"]:focus {
     border-color: var(--upframe-pink) !important;
     color: var(--upframe-pink);
     outline: 0;
@@ -1375,7 +1430,9 @@ nav svg path {
     color: var(--bright-turquoise);
 }
 
-#calendar #programme-qa a, #calendar #programme-qa a:active, #calendar #programme-qa a:visited {
+#calendar #programme-qa a,
+#calendar #programme-qa a:active,
+#calendar #programme-qa a:visited {
     color: white;
     text-decoration: underline;
 }
@@ -1390,7 +1447,9 @@ nav svg path {
     margin: 5em auto;
 }
 
-#calendar p:last-of-type a, #calendar p:last-of-type a:active, #calendar p:last-of-type a:visited {
+#calendar p:last-of-type a,
+#calendar p:last-of-type a:active,
+#calendar p:last-of-type a:visited {
     color: white;
     text-decoration: underline;
 }
@@ -1757,14 +1816,16 @@ form .checkbox label {
     margin-right: 3%;
 }
 
-#apply form>div:nth-child(3), #apply form>div:first-of-type {
+#apply form>div:nth-child(3),
+#apply form>div:first-of-type {
     width: 48.5%;
     display: inline-block;
     margin-bottom: 0;
 }
 
 @media (max-width: 500px) {
-    #apply form>div:nth-child(3), #apply form>div:first-of-type {
+    #apply form>div:nth-child(3),
+    #apply form>div:first-of-type {
         width: 100%;
         display: block;
         margin-right: 0;
@@ -1786,26 +1847,32 @@ form>div label {
     z-index: 0;
 }
 
-.written label, .writing label {
+.written label,
+.writing label {
     left: 2.250em !important;
     font-size: .75em;
     top: -1.8em !important;
 }
 
-.writing textarea, .writing input {
+.writing textarea,
+.writing input {
     border-color: var(--dark-slate-blue) !important;
 }
 
-.written textarea, .written input {
+.written textarea,
+.written input {
     border-color: rgb(244, 244, 244) !important;
     color: var(--dark-slate-blue);
 }
 
-.written input:hover, .written textarea:hover {
+.written input:hover,
+.written textarea:hover {
     border-color: #ebebeb !important;
 }
 
-.success div input, .success div textarea, .success .btn {
+.success div input,
+.success div textarea,
+.success .btn {
     border-color: #5ddc2b !important;
 }
 
@@ -1817,7 +1884,9 @@ form>div label {
     color: #5ddc2b;
 }
 
-.error div input, .error div textarea, .error .btn {
+.error div input,
+.error div textarea,
+.error .btn {
     border-color: var(--upframe-pink) !important;
 }
 
@@ -1825,7 +1894,10 @@ form>div label {
     background: var(--upframe-pink);
 }
 
-form input[type="tel"], form input[type="email"], form input[type="text"], form textarea {
+form input[type="tel"],
+form input[type="email"],
+form input[type="text"],
+form textarea {
     display: block;
     width: 100%;
     margin: 0;
@@ -1910,7 +1982,8 @@ form p {
     position: relative;
 }
 
-#apply main>div>div:last-of-type, #apply main>div img {
+#apply main>div>div:last-of-type,
+#apply main>div img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -2090,7 +2163,8 @@ form p {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    , axw: ;
+    ,
+    axw: ;
     max-width: 13.5em;
 }
 
@@ -2287,7 +2361,8 @@ form p {
     max-width: 50em;
 }
 
-#terms-and-conditions h2, #faq main h2 {
+#terms-and-conditions h2,
+#faq main h2 {
     font-size: 1.250em;
     color: var(--upframe-pink);
     margin-top: 2.5em;
@@ -2394,7 +2469,8 @@ div#terms-and-conditions.disappear {
     margin: 1.6em 0 2.7em;
 }
 
-#right-here>p, #right-here a {
+#right-here>p,
+#right-here a {
     color: var(--bright-turquoise);
     font-weight: bold;
 }
