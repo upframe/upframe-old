@@ -1,5 +1,12 @@
 @import "normalize.css/normalize.css";
 
+:root {
+    --oxford-blue: #121952;
+    --upframe-pink: #ff3855;
+    --bright-turquoise: #00e5d4;
+    --dark-slate-blue: #4b5390;
+}
+
 * {
     box-sizing: border-box;
     word-wrap: break-word;
@@ -7,7 +14,7 @@
 
 body {
     font: 1em/1.6 'Roboto', sans-serif;
-    color: #4b5390;
+    color: var(--dark-slate-blue);
     background: #fff;
     letter-spacing: 0.03em;
     overflow-x: hidden;
@@ -31,25 +38,17 @@ img {
     max-width: 100%;
 }
 
-input,
-input:active,
-input:focus,
-input:hover,
-textarea {
+input, input:active, input:focus, input:hover, textarea {
     outline: 0;
 }
 
-h1,
-h3,
-h4,
-h5,
-h6 {
-    color: #121952;
+h1, h3, h4, h5, h6 {
+    color: var(--oxford-blue);
     letter-spacing: 0.03em;
 }
 
 h2 {
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     letter-spacing: 0.03em;
 }
 
@@ -82,7 +81,7 @@ h2 {
 
 .btn:hover {
     background: #e7e7e8;
-    color: #121952;
+    color: var(--oxford-blue);
 }
 
 .btn-white {
@@ -96,17 +95,17 @@ h2 {
 }
 
 .btn-red {
-    color: rgb(255, 56, 85) !important;
-    border-color: rgb(255, 56, 85);
+    color: var(--upframe-pink) !important;
+    border-color: var(--upframe-pink);
 }
 
 .btn-red:hover {
-    background: rgb(255, 56, 85);
+    background: var(--upframe-pink);
     color: #fff !important;
 }
 
 .btn-red-full {
-    background: rgb(255, 56, 85);
+    background: var(--upframe-pink);
     color: #fff !important;
 }
 
@@ -116,28 +115,28 @@ h2 {
 }
 
 .btn-blue {
-    color: rgba(75, 83, 144, 1) !important;
-    border-color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue) !important;
+    border-color: var(--dark-slate-blue);
 }
 
 .btn-blue:hover {
-    background: rgba(75, 83, 144, 1);
+    background: var(--dark-slate-blue);
     color: #fff !important;
 }
 
 .btn-dark-blue {
-    color: #121952 !important;
-    border-color: #121952;
+    color: var(--oxford-blue) !important;
+    border-color: var(--oxford-blue);
 }
 
 .btn-dark-blue:hover {
-    background: #121952;
+    background: var(--oxford-blue);
     color: #fff !important;
 }
 
 .btn-dark-blue-full {
     color: #fff !important;
-    background-color: #121952;
+    background-color: var(--oxford-blue);
 }
 
 .btn-dark-blue-full:hover {
@@ -146,7 +145,7 @@ h2 {
 }
 
 .big-header {
-    background: rgba(18, 25, 82, 1);
+    background: var(--oxford-blue);
     position: relative;
     text-align: center;
     height: calc(100vh - 10.425em);
@@ -206,8 +205,7 @@ h2 {
  *                 *
  * * * * * * * * * */
 
-#expand,
-#expand-button {
+#expand, #expand-button {
     display: none;
 }
 
@@ -245,17 +243,15 @@ h2 {
     transition: .25s ease-in-out;
 }
 
-#expand:checked~nav span,
-nav.scroll #expand-button span {
-    background-color: #121952;
+#expand:checked~nav span, nav.scroll #expand-button span {
+    background-color: var(--oxford-blue);
 }
 
 #expand-button span:nth-child(1) {
     top: 0px;
 }
 
-#expand-button span:nth-child(2),
-#expand-button span:nth-child(3) {
+#expand-button span:nth-child(2), #expand-button span:nth-child(3) {
     top: 9px;
 }
 
@@ -348,7 +344,7 @@ nav ul li:first-of-type a {
 }
 
 nav ul a:hover svg path {
-    fill: #ff3855 !important;
+    fill: var(--upframe-pink) !important;
 }
 
 nav svg path {
@@ -356,31 +352,21 @@ nav svg path {
     fill: #fff;
 }
 
-#expand:checked~nav,
-nav.scroll {
+#expand:checked~nav, nav.scroll {
     background: #fff !important;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-#about nav:not(.scroll) a:hover,
-nav a.active,
-#expand:checked~nav a,
-nav.scroll a {
-    color: #121952
+#about nav:not(.scroll) a:hover, nav a.active, #expand:checked~nav a, nav.scroll a {
+    color: var(--oxford-blue)
 }
 
-#mentors nav:not(.scroll) a.active,
-#faq nav:not(.scrol) a.active,
-nav a:hover,
-#expand:checked~nav a.active,
-#programme nav:not(.scroll) a.active,
-nav.scroll a.active {
-    color: #ff3855;
+#mentors nav:not(.scroll) a.active, #faq nav:not(.scrol) a.active, nav a:hover, #expand:checked~nav a.active, #programme nav:not(.scroll) a.active, nav.scroll a.active {
+    color: var(--upframe-pink);
 }
 
-#expand:checked~nav svg path,
-nav.scroll svg path {
-    fill: #121952;
+#expand:checked~nav svg path, nav.scroll svg path {
+    fill: var(--oxford-blue);
 }
 
 @media (max-width: 720px) {
@@ -394,8 +380,7 @@ nav.scroll svg path {
     nav ul {
         flex-direction: column-reverse;
     }
-    #expand-button,
-    nav li:first-of-type a {
+    #expand-button, nav li:first-of-type a {
         display: inline-block !important;
         vertical-align: middle;
     }
@@ -422,7 +407,7 @@ nav.scroll svg path {
  * * * * * * * * * * */
 
 #home header {
-    background: rgba(18, 25, 82, 1);
+    background: var(--oxford-blue);
     height: 100vh;
     padding-top: 4.3em;
     color: #fff;
@@ -521,10 +506,7 @@ nav.scroll svg path {
  *                   *
  * * * * * * * * * * */
 
-#how-we-do-it,
-#our-programme,
-#our-mentors,
-#are-you-ready {
+#how-we-do-it, #our-programme, #our-mentors, #are-you-ready {
     margin: 8em auto;
 }
 
@@ -589,27 +571,23 @@ nav.scroll svg path {
  *                   *
  * * * * * * * * * * */
 
-#our-mentors,
-#our-programme {
+#our-mentors, #our-programme {
     max-width: 62em;
     width: 90%;
     display: flex;
     align-items: flex-start;
 }
 
-#our-mentors div,
-#our-programme div {
+#our-mentors div, #our-programme div {
     flex-grow: 1;
 }
 
-#our-mentors h3,
-#our-programme h3 {
-    color: #4b5390;
+#our-mentors h3, #our-programme h3 {
+    color: var(--dark-slate-blue);
     font-size: 1.375em;
 }
 
-#our-mentors>div:last-of-type,
-#our-programme>div:first-of-type {
+#our-mentors>div:last-of-type, #our-programme>div:first-of-type {
     flex-basis: 80%;
 }
 
@@ -621,26 +599,23 @@ nav.scroll svg path {
     margin-left: 4em;
 }
 
-#our-mentors h1,
-#our-programme h1 {
+#our-mentors h1, #our-programme h1 {
     font-size: 3em;
     margin: 0 auto 1em auto;
     position: relative;
 }
 
-#our-mentors h1::after,
-#our-programme h1::after {
+#our-mentors h1::after, #our-programme h1::after {
     content: "";
     width: 1.5em;
     height: 0.125em;
-    background: rgba(0, 229, 212, 1);
+    background: var(--bright-turquoise);
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-#our-mentors p,
-#our-programme p {
+#our-mentors p, #our-programme p {
     margin: 0 auto 3em auto;
     padding-right: 1em;
     text-align: left;
@@ -661,8 +636,7 @@ nav.scroll svg path {
     display: inline-block;
 }
 
-#our-mentors img,
-#our-programme img {
+#our-mentors img, #our-programme img {
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -680,8 +654,7 @@ nav.scroll svg path {
         width: 100%;
         max-width: 100%;
     }
-    #our-mentors div:first-of-type,
-    #our-programme img {
+    #our-mentors div:first-of-type, #our-programme img {
         margin-top: 2em;
     }
     #our-programme>div:first-of-type {
@@ -819,8 +792,7 @@ nav.scroll svg path {
     margin: 0;
 }
 
-#featured-on div,
-#mentors-companies div {
+#featured-on div, #mentors-companies div {
     margin: 2.25em auto 1.25em;
 }
 
@@ -833,7 +805,7 @@ nav.scroll svg path {
  * * * * * * * * * * */
 
 #mentors .big-header {
-    background: url('/img/symbols/mentors-header.svg') no-repeat bottom center / 100%, #121952;
+    background: url('/img/symbols/mentors-header.svg') no-repeat bottom center / 100%, var(--oxford-blue);
 }
 
 #mentors header>div:last-of-type {
@@ -848,47 +820,38 @@ nav.scroll svg path {
     margin: 0;
 }
 
-#talk-applications>p:first-of-type,
-#mentors header>div:last-of-type p {
+#talk-applications>p:first-of-type, #mentors header>div:last-of-type p {
     font-size: 1.375em;
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     margin: 1.389em auto 0;
     width: 90%;
 }
 
-#curious,
-#shape-your-future,
-#learn-from-experts {
+#curious, #shape-your-future, #learn-from-experts {
     max-width: 37em;
     width: 90%;
     margin: 2em auto 8em;
     text-align: center;
 }
 
-#curious h2,
-#talk-applications h2,
-#shape-your-future h2,
-#learn-from-experts h2 {
+#curious h2, #talk-applications h2, #shape-your-future h2, #learn-from-experts h2 {
     font-size: 3.125em;
     font-weight: bold;
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     text-align: center;
     line-height: 1.2;
     margin: 0;
 }
 
-#shape-your-future p,
-#learn-from-experts p {
+#shape-your-future p, #learn-from-experts p {
     font-size: 1.125em;
     font-weight: bold;
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     margin: 1.278em auto 2.111em;
     text-align: center;
 }
 
-#curious .btn:first-of-type,
-#shape-your-future .btn:first-of-type,
-#learn-from-experts .btn:first-of-type {
+#curious .btn:first-of-type, #shape-your-future .btn:first-of-type, #learn-from-experts .btn:first-of-type {
     margin-right: 1em;
 }
 
@@ -897,14 +860,10 @@ nav.scroll svg path {
 }
 
 @media (max-width: 500px) {
-    #curious .btn,
-    #shape-your-future .btn,
-    #learn-from-experts .btn {
+    #curious .btn, #shape-your-future .btn, #learn-from-experts .btn {
         display: block;
     }
-    #curious .btn:first-of-type,
-    #shape-your-future .btn:first-of-type,
-    #learn-from-experts .btn:first-of-type {
+    #curious .btn:first-of-type, #shape-your-future .btn:first-of-type, #learn-from-experts .btn:first-of-type {
         margin: 0 0 1em;
     }
 }
@@ -956,14 +915,14 @@ nav.scroll svg path {
 #mentors-container .mentor .name {
     font-size: 1.25em;
     font-weight: bold;
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     text-align: center;
     margin: 0;
     line-height: 1;
 }
 
 .mentor .line {
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     margin: .4em 0 0 0;
 }
 
@@ -974,9 +933,7 @@ nav.scroll svg path {
     font-size: 0.8em;
 }
 
-#mentors-container .mentor .description,
-#mentors-container .mentor .job,
-.mentor .role {
+#mentors-container .mentor .description, #mentors-container .mentor .job, .mentor .role {
     display: none;
 }
 
@@ -1096,8 +1053,7 @@ nav.scroll svg path {
     }
 }
 
-#terms-and-conditions .close-icon,
-.mentor-popup .close-icon {
+#terms-and-conditions .close-icon, .mentor-popup .close-icon {
     height: 1.25em;
     width: 1.25em;
     top: 1em;
@@ -1114,7 +1070,7 @@ nav.scroll svg path {
 .mentor-popup .name {
     font-size: 3.125em;
     font-weight: bold;
-    color: #ff3855;
+    color: var(--upframe-pink);
     line-height: 1;
 }
 
@@ -1125,7 +1081,7 @@ nav.scroll svg path {
 .mentor-popup .role {
     font-size: 1.25em;
     font-weight: bold;
-    color: #4b5390;
+    color: var(--dark-slate-blue);
     line-height: 1;
     margin: 0.7em 0 1.35em;
 }
@@ -1138,8 +1094,7 @@ nav.scroll svg path {
     .mentor-popup {
         display: block;
     }
-    .mentor-popup>div:nth-child(1),
-    .mentor-popup>div:nth-child(2) {
+    .mentor-popup>div:nth-child(1), .mentor-popup>div:nth-child(2) {
         width: 100%;
     }
     .mentor-popup>div:nth-child(1) {
@@ -1162,7 +1117,7 @@ nav.scroll svg path {
 #newsletter h2 {
     font-size: 3.125em;
     font-weight: bold;
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     line-height: 1;
     margin: 0 0 0.520em;
 }
@@ -1170,7 +1125,7 @@ nav.scroll svg path {
 #newsletter p {
     font-size: 1.125em;
     font-weight: bold;
-    color: #4b5390;
+    color: var(--dark-slate-blue);
     margin: 0 0 2.444em;
 }
 
@@ -1193,12 +1148,9 @@ nav.scroll svg path {
     margin-bottom: 1em;
 }
 
-#newsletter .writing label,
-#newsletter .writing input[type="email"],
-#newsletter form input[type="email"]:hover,
-#newsletter form input[type="email"]:focus {
-    border-color: #ff3855 !important;
-    color: #ff3855;
+#newsletter .writing label, #newsletter .writing input[type="email"], #newsletter form input[type="email"]:hover, #newsletter form input[type="email"]:focus {
+    border-color: var(--upframe-pink) !important;
+    color: var(--upframe-pink);
     outline: 0;
 }
 
@@ -1211,7 +1163,7 @@ nav.scroll svg path {
  * * * * * * * * * * */
 
 #programme .big-header {
-    background: radial-gradient(ellipse at center, #1f2978 0%, #121952 100%);
+    background: radial-gradient(ellipse at center, #1f2978 0%, var(--oxford-blue) 100%);
     text-align: center;
     padding: 6em 0;
 }
@@ -1272,12 +1224,12 @@ nav.scroll svg path {
 }
 
 #value-preposition h1 {
-    color: rgba(75, 83, 144, 1) !important;
+    color: var(--dark-slate-blue) !important;
     font-size: 1.875em;
 }
 
 #value-preposition p {
-    color: rgba(75, 83, 144, 1) !important;
+    color: var(--dark-slate-blue) !important;
     font-size: 1.125em;
 }
 
@@ -1296,7 +1248,7 @@ nav.scroll svg path {
  * * * * * * * * * * */
 
 #calendar {
-    background: rgba(18, 25, 82, 1);
+    background: var(--oxford-blue);
     width: 100vw;
     padding: 6em 0;
 }
@@ -1337,7 +1289,7 @@ nav.scroll svg path {
 #date-sequence div:nth-of-type(2n) {
     width: 10%;
     height: 2px;
-    background: #4b5390;
+    background: var(--dark-slate-blue);
     margin-right: 2em;
 }
 
@@ -1353,7 +1305,7 @@ nav.scroll svg path {
 
 #date-sequence>div span:nth-of-type(3) {
     font-size: 1em;
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
 }
 
 #board {
@@ -1420,18 +1372,16 @@ nav.scroll svg path {
 }
 
 #calendar #programme-qa span.question {
-    color: rgba(0, 229, 212, 1);
+    color: var(--bright-turquoise);
 }
 
-#calendar #programme-qa a,
-#calendar #programme-qa a:active,
-#calendar #programme-qa a:visited {
+#calendar #programme-qa a, #calendar #programme-qa a:active, #calendar #programme-qa a:visited {
     color: white;
     text-decoration: underline;
 }
 
 #calendar #programme-qa a:hover {
-    color: rgba(0, 229, 212, 1);
+    color: var(--bright-turquoise);
     text-decoration: underline;
 }
 
@@ -1440,9 +1390,7 @@ nav.scroll svg path {
     margin: 5em auto;
 }
 
-#calendar p:last-of-type a,
-#calendar p:last-of-type a:active,
-#calendar p:last-of-type a:visited {
+#calendar p:last-of-type a, #calendar p:last-of-type a:active, #calendar p:last-of-type a:visited {
     color: white;
     text-decoration: underline;
 }
@@ -1537,7 +1485,7 @@ nav.scroll svg path {
 
 #talk-applications>p:last-of-type {
     font-size: 1.125em;
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     text-align: center;
     margin: 5.5em auto 5em;
     width: 90%;
@@ -1549,7 +1497,7 @@ nav.scroll svg path {
 }
 
 #early-bird {
-    background-color: rgba(18, 25, 82, 1);
+    background-color: var(--oxford-blue);
     box-shadow: 2px -1px 4px 0px rgba(0, 0, 0, 0.1), -.6em .6em 0 rgba(255, 56, 85, 1);
     position: absolute;
     top: 1em;
@@ -1565,7 +1513,7 @@ nav.scroll svg path {
 
 #early-bird h3 {
     font-size: 1.125em;
-    color: rgba(0, 229, 212, 1);
+    color: var(--bright-turquoise);
     text-align: center;
     line-height: 1.5;
     margin: 0;
@@ -1618,8 +1566,8 @@ nav.scroll svg path {
     height: 2em;
     text-align: center;
     line-height: 1.2;
-    border: .4em solid rgba(18, 25, 82, 1);
-    color: rgba(18, 25, 82, 1);
+    border: .4em solid var(--oxford-blue);
+    color: var(--oxford-blue);
     margin: 0 auto;
 }
 
@@ -1690,7 +1638,7 @@ nav.scroll svg path {
     margin: 0;
     background: transparent;
     border-color: transparent;
-    color: #ff3855 !important;
+    color: var(--upframe-pink) !important;
 }
 
 #apply nav:not(.scroll) .btn:hover {
@@ -1775,7 +1723,7 @@ nav.scroll svg path {
 
 #apply main>form h2 {
     font-size: 3.125em;
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     text-align: left;
     margin: 0 0 .5em;
     line-height: 1;
@@ -1809,16 +1757,14 @@ form .checkbox label {
     margin-right: 3%;
 }
 
-#apply form>div:nth-child(3),
-#apply form>div:first-of-type {
+#apply form>div:nth-child(3), #apply form>div:first-of-type {
     width: 48.5%;
     display: inline-block;
     margin-bottom: 0;
 }
 
 @media (max-width: 500px) {
-    #apply form>div:nth-child(3),
-    #apply form>div:first-of-type {
+    #apply form>div:nth-child(3), #apply form>div:first-of-type {
         width: 100%;
         display: block;
         margin-right: 0;
@@ -1840,32 +1786,26 @@ form>div label {
     z-index: 0;
 }
 
-.written label,
-.writing label {
+.written label, .writing label {
     left: 2.250em !important;
     font-size: .75em;
     top: -1.8em !important;
 }
 
-.writing textarea,
-.writing input {
-    border-color: rgba(75, 83, 144, 1) !important;
+.writing textarea, .writing input {
+    border-color: var(--dark-slate-blue) !important;
 }
 
-.written textarea,
-.written input {
+.written textarea, .written input {
     border-color: rgb(244, 244, 244) !important;
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
 }
 
-.written input:hover,
-.written textarea:hover {
+.written input:hover, .written textarea:hover {
     border-color: #ebebeb !important;
 }
 
-.success div input,
-.success div textarea,
-.success .btn {
+.success div input, .success div textarea, .success .btn {
     border-color: #5ddc2b !important;
 }
 
@@ -1873,28 +1813,23 @@ form>div label {
     background: #5ddc2b;
 }
 
-.error div input,
-.error div textarea,
-.error .btn {
-    border-color: rgb(255, 56, 85) !important;
-}
-
-.error .btn {
-    background: rgb(255, 56, 85);
-}
-
 .success p {
     color: #5ddc2b;
 }
 
-form input[type="tel"],
-form input[type="email"],
-form input[type="text"],
-form textarea {
+.error div input, .error div textarea, .error .btn {
+    border-color: var(--upframe-pink) !important;
+}
+
+.error .btn {
+    background: var(--upframe-pink);
+}
+
+form input[type="tel"], form input[type="email"], form input[type="text"], form textarea {
     display: block;
     width: 100%;
     margin: 0;
-    border: .188em solid rgba(18, 25, 82, 1);
+    border: .188em solid var(--oxford-blue);
     padding: .8em 1.5em;
     transition: .25s ease-in-out all;
     background: transparent;
@@ -1957,7 +1892,7 @@ form p {
 #apply main>div span:first-of-type {
     font-size: 1.5em;
     font-weight: bold;
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     line-height: 1;
 }
 
@@ -1975,8 +1910,7 @@ form p {
     position: relative;
 }
 
-#apply main>div>div:last-of-type,
-#apply main>div img {
+#apply main>div>div:last-of-type, #apply main>div img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -2019,17 +1953,17 @@ form p {
  * * * * * * * * * * */
 
 #about nav:not(.scroll) a:hover svg path {
-    fill: #121952 !important;
+    fill: var(--oxford-blue) !important;
 }
 
 #about .big-header {
-    background: rgb(255, 56, 85);
-    background: url('/img/symbols/about-header.svg') no-repeat center center / cover, #ff3855;
+    background: var(--upframe-pink);
+    background: url('/img/symbols/about-header.svg') no-repeat center center / cover, var(--upframe-pink);
 }
 
 #about .big-header p {
     font-weight: normal;
-    color: #121952;
+    color: var(--oxford-blue);
     font-size: 4.375em;
 }
 
@@ -2038,8 +1972,8 @@ form p {
 }
 
 #about nav:not(.scroll) .btn {
-    background: #121952;
-    border-color: #121952;
+    background: var(--oxford-blue);
+    border-color: var(--oxford-blue);
 }
 
 
@@ -2062,7 +1996,7 @@ form p {
     flex-basis: calc(50% - 2em);
     font-size: 3em;
     text-align: left;
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     margin: 0;
 }
 
@@ -2071,7 +2005,7 @@ form p {
 }
 
 #about main #dream-goal div p {
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     font-weight: 500;
 }
 
@@ -2103,7 +2037,7 @@ form p {
 }
 
 #values {
-    background: rgba(18, 25, 82, 1);
+    background: var(--oxford-blue);
     padding: 2em 0;
 }
 
@@ -2112,7 +2046,7 @@ form p {
 }
 
 #values div h3 {
-    color: rgba(0, 229, 212, 1);
+    color: var(--bright-turquoise);
     font-size: 1.125em;
 }
 
@@ -2156,8 +2090,7 @@ form p {
     width: 90%;
     margin: 0 auto;
     text-align: center;
-    ,
-    axw: ;
+    , axw: ;
     max-width: 13.5em;
 }
 
@@ -2179,7 +2112,7 @@ form p {
 }
 
 #about #thanks>div>div>div {
-    background: rgba(18, 25, 82, 1);
+    background: var(--oxford-blue);
     width: 100%;
     padding: 1.5em;
     z-index: 10;
@@ -2191,8 +2124,6 @@ form p {
     max-width: 35em;
     width: 100%;
 }
-
-
 
 #about #thanks>div>div::before {
     width: 100%;
@@ -2213,10 +2144,8 @@ form p {
 }
 
 #about #thanks>div>div:last-of-type::before {
-
-left: 1em;
+    left: 1em;
 }
-
 
 @media (max-width: 600px) {
     #about #thanks h2 {
@@ -2239,14 +2168,14 @@ left: 1em;
 }
 
 #about #team h2 {
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     font-size: 3.125em;
     text-align: center;
     margin-bottom: 0;
 }
 
 #about #team>p {
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     font-size: 1em;
     text-align: center;
     margin: 0 auto 2em auto;
@@ -2268,7 +2197,7 @@ left: 1em;
 }
 
 #about #team div.member p.name {
-    color: rgba(18, 25, 82, 1);
+    color: var(--oxford-blue);
     font-size: 1.25em;
     font-weight: bold;
     margin: 0;
@@ -2284,7 +2213,7 @@ left: 1em;
 
 #about #team div.member p.email {
     height: 1.188em;
-    color: rgba(75, 83, 144, 1);
+    color: var(--dark-slate-blue);
     font-size: 0.75em;
     font-weight: 500;
     line-height: 1;
@@ -2338,7 +2267,7 @@ left: 1em;
 /* FAQ */
 
 #faq nav:not(.scroll) {
-    background: rgba(18, 25, 82, 1);
+    background: var(--oxford-blue);
 }
 
 #faq header {
@@ -2358,16 +2287,15 @@ left: 1em;
     max-width: 50em;
 }
 
-#terms-and-conditions h2,
-#faq main h2 {
+#terms-and-conditions h2, #faq main h2 {
     font-size: 1.250em;
-    color: #ff3855;
+    color: var(--upframe-pink);
     margin-top: 2.5em;
 }
 
 #faq main label {
     font-weight: bold;
-    color: #121952;
+    color: var(--oxford-blue);
     display: block;
     text-decoration: underline;
     cursor: pointer;
@@ -2378,7 +2306,7 @@ left: 1em;
 }
 
 #faq main p {
-    color: #4b5390;
+    color: var(--dark-slate-blue);
     text-align: left;
     letter-spacing: 0.03em;
     line-height: 1.8;
@@ -2425,7 +2353,7 @@ div#terms-and-conditions.disappear {
 }
 
 #terms-and-conditions main *:not(h2) {
-    color: #4b5390;
+    color: var(--dark-slate-blue);
     line-height: 1.8;
 }
 
@@ -2442,7 +2370,7 @@ div#terms-and-conditions.disappear {
  * * * * * * * * * */
 
 #right-here {
-    background: rgba(18, 25, 82, 1);
+    background: var(--oxford-blue);
     color: #fff;
     width: 100%;
     text-align: center;
@@ -2466,9 +2394,8 @@ div#terms-and-conditions.disappear {
     margin: 1.6em 0 2.7em;
 }
 
-#right-here>p,
-#right-here a {
-    color: rgba(0, 229, 212, 1);
+#right-here>p, #right-here a {
+    color: var(--bright-turquoise);
     font-weight: bold;
 }
 
@@ -2520,7 +2447,7 @@ div#terms-and-conditions.disappear {
 }
 
 #social a:hover path {
-    fill: rgba(0, 229, 212, 1);
+    fill: var(--bright-turquoise);
 }
 
 #copyright {
