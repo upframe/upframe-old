@@ -21,7 +21,7 @@ export default {
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
-      compress: false
+      compress: true
     }),
     new webpack.ProvidePlugin({
       'Promise': 'exports?global.Promise!es6-promise',

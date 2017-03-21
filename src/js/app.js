@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     case '/apply':
       apply.init(apiURL)
       break
-    case '/pay':
+    case '/pay/do':
       pay.pay()
       break
     case '/pay/cancel':

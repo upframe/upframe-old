@@ -1,3 +1,5 @@
+import { handleErrors } from './utils.js'
+
 var overlay = null
 var tac = null
 var apiURL = ''
@@ -43,24 +45,25 @@ function closeTac (event) {
 function submit (event) {
   event.preventDefault()
 
-  let req = new window.XMLHttpRequest()
   let form = event.currentTarget
-  let data = new window.FormData(form)
 
   // TODO: JS DATA VALIDITY CHECK
 
-  req.open('POST', `${apiURL}/apply`)
-  req.send(data)
-  req.onload = function () {
-    switch (this.status) {
-      case 200:
-        form.classList.add('success')
-        form.querySelector('p').style.display = 'block'
-        form.querySelector('.btn').style.display = 'none'
-        break
-      default:
-        form.classList.add('error')
-        form.querySelector('.btn').value = 'Something went wrong'
-    }
-  }
+  window.fetch(`${apiURL}/apply`, {
+    method: 'POST',
+    mode: 'cors',
+    body: new window.FormData(form)
+  }).then(handleErrors)
+    .then(function (response) {
+      console.log(response)
+
+      form.classList.add('success')
+      form.querySelector('p').style.display = 'block'
+      form.querySelector('.btn').style.display = 'none'
+    })
+    .catch(function (err) {
+      form.classList.add('error')
+      form.querySelector('.btn').value = 'Something went wrong'
+      console.log(err)
+    })
 }

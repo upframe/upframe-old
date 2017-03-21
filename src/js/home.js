@@ -1,3 +1,5 @@
+import { handleErrors } from './utils.js'
+
 var apiURL = ''
 
 export function init (api) {
@@ -28,21 +30,15 @@ function randomizePhotos (mentors) {
 function newsletter (event) {
   event.preventDefault()
 
-  let req = new window.XMLHttpRequest()
-  let data = new window.FormData(event.currentTarget)
-
-  req.open('POST', `${apiURL}/newsletter`)
-  req.send(data)
-  req.onerror = () => {
-    console.log('Error: ' + req.responseText)
-  }
-
-  req.onload = function () {
-    if (req.status === 200) {
+  window.fetch(`${apiURL}/newsletter`, {
+    method: 'POST',
+    mode: 'cors',
+    body: new window.FormData(event.currentTarget)
+  }).then(handleErrors)
+    .then(function (response) {
       window.location.reload()
-      return
-    }
-
-    console.log('Error: ' + req.responseText)
-  }
+    })
+    .catch(function (err) {
+      console.log(err)
+    })
 }

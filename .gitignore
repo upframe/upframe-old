@@ -3,3 +3,4 @@ dist/
 errors.log
 Caddyfile
 public
+*.log
