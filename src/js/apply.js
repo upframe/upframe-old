@@ -49,7 +49,7 @@ function submit (event) {
 
   // TODO: JS DATA VALIDITY CHECK
 
-  window.fetch(`${apiURL}/apply`, {
+  fetch(`${apiURL}/apply`, {
     method: 'POST',
     mode: 'cors',
     body: new window.FormData(form)

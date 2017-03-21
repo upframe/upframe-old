@@ -30,7 +30,7 @@ function randomizePhotos (mentors) {
 function newsletter (event) {
   event.preventDefault()
 
-  window.fetch(`${apiURL}/newsletter`, {
+  fetch(`${apiURL}/newsletter`, {
     method: 'POST',
     mode: 'cors',
     body: new window.FormData(event.currentTarget)
