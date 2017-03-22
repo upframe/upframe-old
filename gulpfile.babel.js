@@ -44,6 +44,13 @@ gulp.task('server', ['hugo', 'css', 'js'], () => {
     port: 80,
     server: {
       baseDir: './dist',
+      middleware: function (req, res, next) {
+        if (req.url === '/pay') {
+          req.url = '/pay.html'
+        }
+
+        return next()
+      },
       serveStaticOptions: {
         extensions: ['html']
       }
