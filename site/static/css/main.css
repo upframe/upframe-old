@@ -1723,7 +1723,7 @@ nav.scroll svg path {
 }
 
 .mentor-popup .description p {
-    margin-bottom: 2em;
+    margin-bottom: 0;
 }
 
 @media (max-width: 450px) {
