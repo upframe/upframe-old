@@ -1,4 +1,4 @@
-import { handleErrors } from './utils.js'
+import { handleErrors } from './utils'
 
 var apiURL = ''
 

@@ -1,8 +1,10 @@
+'use strict'
+
 import * as smoothScroll from 'smooth-scroll'
-import * as mentors from './mentors.js'
-import * as apply from './apply.js'
-import * as pay from './pay.js'
-import * as home from './home.js'
+import * as mentors from './mentors'
+import * as apply from './apply'
+import * as pay from './pay'
+import * as home from './home'
 
 const apiURL = (() => {
   if (window.location.hostname !== 'upframe.co') {

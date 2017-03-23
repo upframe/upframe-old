@@ -1,34 +1,36 @@
 import webpack from 'webpack'
 import path from 'path'
-
 export default {
   module: {
-    loaders: [
-      {
-        test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'file?name=/[hash].[ext]'
-      },
-      {test: /\.json$/, loader: 'json-loader'},
-      {
-        loader: 'babel',
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        query: {cacheDirectory: true}
+    rules: [{
+      test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
+      loader: 'file?name=/[hash].[ext]'
+    }, {
+      test: /\.json$/,
+      loader: 'json-loader'
+    }, {
+      loader: 'babel-loader',
+      test: /\.js?$/,
+      exclude: /node_modules/,
+      query: {
+        cacheDirectory: true
       }
-    ]
+    }]
   },
-
+  resolve: {
+    modules: ['node_modules']
+  },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
-      compress: true
+      compress: true,
+      sourceMap: true
     }),
     new webpack.ProvidePlugin({
-      'Promise': 'exports?global.Promise!es6-promise',
-      'fetch': 'exports?self.fetch!whatwg-fetch'
+      'Promise': 'exports-loader?global.Promise!es6-promise',
+      'fetch': 'exports-loader?self.fetch!whatwg-fetch'
     })
   ],
-
   context: path.join(__dirname, 'src'),
   entry: {
     app: ['./js/app']
