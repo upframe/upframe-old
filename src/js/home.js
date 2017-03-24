@@ -20,9 +20,11 @@ function randomizePhotos (mentors) {
     s.add(a)
   }
 
-  for (let i of document.querySelectorAll('#our-mentors div img')) {
+  let imgs = document.querySelectorAll('#our-mentors div img')
+
+  for (let i = 0; i < imgs.length; i++) {
     num = s.keys().next().value
-    i.src = `/img/mentors/${mentors[num].Slug}.jpg`
+    imgs[i].src = `/img/mentors/${mentors[num].Slug}.jpg`
     s.delete(num)
   }
 }

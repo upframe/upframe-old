@@ -941,13 +941,17 @@ nav.scroll svg path {
             align-items: flex-start;
 }
 
-#home header>div>div:first-of-type img:first-of-type {
+#home header>div>div:first-of-type div:first-of-type {
     width: 100%;
     max-width: 12em;
 }
 
-#home header>div>div:first-of-type img:last-of-type {
+#home header>div>div:first-of-type div:last-of-type {
     max-width: 16em;
+    width: 100%;
+}
+
+#home header > div > div div > img {
     width: 100%;
 }
 
@@ -964,7 +968,8 @@ nav.scroll svg path {
         font-size: 15vw;
         width: 84%;
     }
-    header div.head img {
+    #home header>div>div:first-of-type div:first-of-type,
+    #home header>div>div:first-of-type div:last-of-type {
         display: none;
     }
     header div.head #big-phrase {
@@ -981,14 +986,6 @@ nav.scroll svg path {
 }
 
 @media (max-width: 750px) {
-    #home header>div div:first-of-type {
-        /* flex-direction: column; */
-    }
-    #home header>div div:first-of-type img {
-        /* display: none; */
-        max-width: 4em;
-        width: 100%;
-    }
     #home header>div div:last-of-type {
         margin-top: 0em;
     }
