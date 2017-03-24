@@ -477,7 +477,7 @@ nav.scroll svg path {
     width: 100%;
 }
 
-#home header > div > div div > img {
+#home header>div>div div>img {
     width: 100%;
 }
 
@@ -692,7 +692,7 @@ nav.scroll svg path {
         margin-right: 0;
     }
     #our-mentors {
-        flex-direction: column-reverse;
+        display: block;
     }
     #our-mentors>div:last-of-type {
         margin-left: 0;
@@ -809,7 +809,7 @@ nav.scroll svg path {
     height: 3vw;
     max-height: 3em;
     vertical-align: middle;
-    min-height: 1em;
+    min-height: 2em;
 }
 
 .grey-bar-logos img.empreendedor {
@@ -1163,19 +1163,24 @@ nav.scroll svg path {
     padding: 7.8em 0;
 }
 
+#newsletter>* {
+    max-width: 90%;
+    margin: auto;
+}
+
 #newsletter h2 {
     font-size: 3.125em;
     font-weight: bold;
     color: var(--oxford-blue);
     line-height: 1;
-    margin: 0 0 0.520em;
+    margin: 0 auto 0.520em;
 }
 
 #newsletter p {
     font-size: 1.125em;
     font-weight: bold;
     color: var(--dark-slate-blue);
-    margin: 0 0 2.444em;
+    margin: 0 auto 2.444em;
 }
 
 #newsletter form {
