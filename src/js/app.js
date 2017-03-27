@@ -15,13 +15,20 @@ const apiURL = (() => {
 })()
 
 function scrollEvent (event) {
-  let nav = document.querySelector('nav')
+  let nav = document.querySelector('nav'),
+    early = document.querySelector("div#early-bird-bar");
 
   if (window.scrollY === 0) {
     nav.classList.remove('scroll')
+    early.classList.remove('scroll')
   } else {
     nav.classList.add('scroll')
+    early.classList.add('scroll')
   }
+}
+
+function hideEarly (event) {
+    event.srcElement.offsetParent.style.visibility = "hidden"
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   scrollEvent()
   window.addEventListener('scroll', scrollEvent)
+  document.querySelector("div#early-bird-bar span").addEventListener('click', hideEarly)
 
   switch (window.location.pathname) {
     case '/':

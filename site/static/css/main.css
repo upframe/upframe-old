@@ -855,6 +855,54 @@ nav.scroll svg path {
     fill: #121952;
 }
 
+div#early-bird-bar {
+    display: none;
+    position: fixed;
+    top: 4.3em;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 3.5em;
+    -webkit-transition: background .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: background .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: background .2s ease-in-out, transform .2s ease-in-out;
+    transition: background .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    background-color: #ff3855;
+}
+
+div#early-bird-bar>div * {
+    display: inline-block;
+}
+
+div#early-bird-bar>div {
+    max-width: 90em;
+    width: 100%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    line-height: 3.5em;
+}
+
+div#early-bird-bar.scroll {
+    display: block;
+}
+
+div#early-bird-bar img {
+    vertical-align: middle;
+    margin: 0 0.5em;
+}
+
+div#early-bird-bar a.btn {
+    line-height: normal;
+    line-height: initial;
+    margin: 0 0.5em;
+    padding: .3em 1.1em;
+}
+
+div#early-bird-bar span {
+    cursor: pointer;
+}
+
 @media (max-width: 720px) {
     nav {
         -webkit-transform: translateY(calc(-100% + 4.3em));
@@ -887,6 +935,12 @@ nav.scroll svg path {
     nav li a {
         margin: 0;
         padding: 0;
+    }
+}
+
+@media (max-width: 1125px) {
+    div#early-bird-bar {
+        visibility: hidden;
     }
 }
 
