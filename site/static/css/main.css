@@ -702,7 +702,7 @@ h2 {
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+            transform: rotate(0deg);
     -webkit-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
@@ -2470,8 +2470,8 @@ div#early-bird-bar span {
 
 #apply main>form {
     margin-left: 5em;
-    -ms-flex-preferred-size: 67%;
-        flex-basis: 67%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
 }
 
 #apply main>form h2 {
@@ -2610,16 +2610,94 @@ form textarea {
     z-index: 2;
 }
 
-form p {
-    display: none;
-    text-align: right;
-}
-
 #apply main>form .btn {
     margin-left: auto;
     display: block;
     -webkit-transition: border-color .25s ease, color .25s ease, background .25s ease;
     transition: border-color .25s ease, color .25s ease, background .25s ease;
+}
+
+#apply form.hide {
+    -webkit-animation: .25s ease hide forwards;
+            animation: .25s ease hide forwards;
+}
+
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    1% {
+        opacity: 0;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    1% {
+        opacity: 0;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+#apply #success {
+    opacity: 0;
+    display: none;
+}
+
+#apply #success.show {
+    -webkit-animation: .25s ease show forwards;
+            animation: .25s ease show forwards;
+}
+
+#apply #success h3 {
+    color: #121952;
+    font-size: 1.875em;
+    font-weight: bold;
+}
+
+#apply #success p:first-of-type {
+    color: #ff3855;
+    font-size: 1.250em;
+    font-weight: bold;
 }
 
 #apply main>div {

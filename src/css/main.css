@@ -1,5 +1,4 @@
 @import "normalize.css/normalize.css";
-
 :root {
     --oxford-blue: #121952;
     --upframe-pink: #ff3855;
@@ -246,9 +245,7 @@ h2 {
     background-color: #fff;
     opacity: 1;
     left: 0;
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
 
@@ -433,7 +430,6 @@ div#early-bird-bar a.btn {
 div#early-bird-bar span {
     cursor: pointer;
 }
-
 
 @media (max-width: 720px) {
     nav {
@@ -1830,7 +1826,7 @@ div#early-bird-bar span {
 
 #apply main>form {
     margin-left: 5em;
-    flex-basis: 67%;
+    flex-basis: 70%;
 }
 
 #apply main>form h2 {
@@ -1967,15 +1963,63 @@ form textarea {
     z-index: 2;
 }
 
-form p {
-    display: none;
-    text-align: right;
-}
-
 #apply main>form .btn {
     margin-left: auto;
     display: block;
     transition: border-color .25s ease, color .25s ease, background .25s ease;
+}
+
+#apply form.hide {
+    animation: .25s ease hide forwards;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    1% {
+        opacity: 0;
+        display: block;
+    }
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}
+
+#apply #success {
+    opacity: 0;
+    display: none;
+}
+
+#apply #success.show {
+    animation: .25s ease show forwards;
+}
+
+#apply #success h3 {
+    color: var(--oxford-blue);
+    font-size: 1.875em;
+    font-weight: bold;
+}
+
+#apply #success p:first-of-type {
+    color: var(--upframe-pink);
+    font-size: 1.250em;
+    font-weight: bold;
 }
 
 #apply main>div {

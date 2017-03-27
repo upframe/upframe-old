@@ -60,7 +60,8 @@ function submit (event) {
       console.log(response)
 
       form.classList.remove('sending')
-      form.classList.add('success')
+      form.classList.add('hide')
+      document.getElementById('success').classList.add('show')
       form.querySelector('p').style.display = 'block'
       form.querySelector('.btn').style.display = 'none'
     })
