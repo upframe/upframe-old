@@ -39,19 +39,19 @@ slug: apply
 
     <form>
         <h2>Application Form</h2>
-        <div>
+        <div class="to-hide">
             <label>First name</label>
             <input class="writing-effect" required type="text" name="first_name">
-        </div><div>
+        </div><div class="to-hide">
             <label>Last name</label>
             <input class="writing-effect" required type="text" name="last_name">
         </div>
-        <div>
+        <div class="to-hide">
             <label>Your email</label>
             <input class="writing-effect" required type="email" name="email">
-        </div>
+        </div class="to-hide">
 
-        <div class="checkbox">
+        <div class="checkbox to-hide">
             <input id="tac" type="checkbox" required>
             <label for="tac">I agree with the <a id="tac-link">Terms and Conditions</a>.</label>
         </div>
@@ -69,7 +69,7 @@ slug: apply
 
         </div>
 
-        <input type="submit" value="Submit Application" class="btn btn-red btn-red-full">
+        <input type="submit" value="Submit Application" class="btn btn-red btn-red-full to-hide">
 
         <div class="loading">
             <div class="loading-circle">

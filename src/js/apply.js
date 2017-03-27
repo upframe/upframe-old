@@ -68,6 +68,13 @@ function submit (event) {
     .catch(function (err) {
       form.classList.remove('sending')
       form.classList.add('error')
+
+      document.getElementById('success').classList.add('show')
+      let hide = form.querySelectorAll('.to-hide')
+      for (let i = 0; i < hide.length; i++) {
+        hide[i].style.display = 'none'
+      }
+
       form.querySelector('.btn').value = 'Something went wrong'
       console.log(err)
     })

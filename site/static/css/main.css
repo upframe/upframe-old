@@ -2617,75 +2617,16 @@ form textarea {
     transition: border-color .25s ease, color .25s ease, background .25s ease;
 }
 
-#apply form.hide {
-    -webkit-animation: .25s ease hide forwards;
-            animation: .25s ease hide forwards;
-}
-
-@-webkit-keyframes hide {
-    0% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-        display: none;
-    }
-}
-
-@keyframes hide {
-    0% {
-        opacity: 1;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-        display: none;
-    }
-}
-
-@-webkit-keyframes show {
-    0% {
-        opacity: 0;
-        display: none;
-    }
-    1% {
-        opacity: 0;
-        display: block;
-    }
-    100% {
-        opacity: 1;
-        display: block;
-    }
-}
-
-@keyframes show {
-    0% {
-        opacity: 0;
-        display: none;
-    }
-    1% {
-        opacity: 0;
-        display: block;
-    }
-    100% {
-        opacity: 1;
-        display: block;
-    }
-}
-
 #apply #success {
     opacity: 0;
-    display: none;
+    max-height: 0;
+    -webkit-transition: .25s ease opacity, .25s ease max-height;
+    transition: .25s ease opacity, .25s ease max-height;
 }
 
 #apply #success.show {
-    -webkit-animation: .25s ease show forwards;
-            animation: .25s ease show forwards;
+    opacity: 1;
+    max-height: 20em;
 }
 
 #apply #success h3 {
