@@ -57,16 +57,22 @@ function submit (event) {
     body: new window.FormData(form)
   }).then(handleErrors)
     .then(function (response) {
-      console.log(response)
-
       form.classList.remove('sending')
-      form.classList.add('success')
+
+      document.getElementById('success').classList.add('show')
+      let hide = form.querySelectorAll('.to-hide')
+      for (let i = 0; i < hide.length; i++) {
+        hide[i].style.display = 'none'
+      }
+
       form.querySelector('p').style.display = 'block'
       form.querySelector('.btn').style.display = 'none'
+      document.cookie = "earlybird=0; expires=1491091200; path=/"
     })
     .catch(function (err) {
       form.classList.remove('sending')
       form.classList.add('error')
+
       form.querySelector('.btn').value = 'Something went wrong'
       console.log(err)
     })

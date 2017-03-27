@@ -39,26 +39,37 @@ slug: apply
 
     <form>
         <h2>Application Form</h2>
-        <div>
+        <div class="to-hide">
             <label>First name</label>
             <input class="writing-effect" required type="text" name="first_name">
-        </div><div>
+        </div><div class="to-hide">
             <label>Last name</label>
             <input class="writing-effect" required type="text" name="last_name">
         </div>
-        <div>
+        <div class="to-hide">
             <label>Your email</label>
             <input class="writing-effect" required type="email" name="email">
-        </div>
+        </div class="to-hide">
 
-        <div class="checkbox">
+        <div class="checkbox to-hide">
             <input id="tac" type="checkbox" required>
             <label for="tac">I agree with the <a id="tac-link">Terms and Conditions</a>.</label>
         </div>
 
+        <div id="success">
+            <h3>Aaaaaand you're halfway done! <img src="/img/cross-fingers.svg"></h3>
 
-        <p>Thank you! You will be reached in 2min. Please check your inbox.</p>
-        <input type="submit" value="Submit Application" class="btn btn-red btn-red-full">
+            <p>What's next?</p>
+
+            <p>To <strong>complete your application you must fill the form we'll send in a few moments to your e-mail inbox.</strong></p>
+
+            <p>If you don't receive it, send us an e-mail to <a href="mailto:malik@upframe.co">malik@upframe.co</a>.</p>
+
+            <p>The €90 early bird are available for complete applications until April 1st! <img src="/img/run.svg"><img src="/img/run.svg"></p>
+
+        </div>
+
+        <input type="submit" value="Submit Application" class="btn btn-red btn-red-full to-hide">
 
         <div class="loading">
             <div class="loading-circle">
