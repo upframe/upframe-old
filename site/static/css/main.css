@@ -702,7 +702,7 @@ h2 {
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     -webkit-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
 }
@@ -867,7 +867,7 @@ nav.scroll svg path {
     transition: background .2s ease-in-out, -webkit-transform .2s ease-in-out;
     transition: background .2s ease-in-out, transform .2s ease-in-out;
     transition: background .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    background-color: var(--upframe-pink);
+    background-color: #ff3855;
 }
 
 #early-bird-bar>div * {
@@ -897,7 +897,7 @@ nav.scroll svg path {
     line-height: initial;
     margin: 0 0.5em;
     padding: .3em 1.1em;
-    color: var(--oxford-blue);
+    color: #121952;
     border-color: #fff;
     background: #fff
 }
@@ -2474,8 +2474,8 @@ nav.scroll svg path {
 
 #apply main>form {
     margin-left: 5em;
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+    -ms-flex-preferred-size: 67%;
+        flex-basis: 67%;
 }
 
 #apply main>form h2 {
@@ -2614,35 +2614,16 @@ form textarea {
     z-index: 2;
 }
 
+form p {
+    display: none;
+    text-align: right;
+}
+
 #apply main>form .btn {
     margin-left: auto;
     display: block;
     -webkit-transition: border-color .25s ease, color .25s ease, background .25s ease;
     transition: border-color .25s ease, color .25s ease, background .25s ease;
-}
-
-#apply #success {
-    opacity: 0;
-    max-height: 0;
-    -webkit-transition: .25s ease opacity, .25s ease max-height;
-    transition: .25s ease opacity, .25s ease max-height;
-}
-
-#apply #success.show {
-    opacity: 1;
-    max-height: 20em;
-}
-
-#apply #success h3 {
-    color: #121952;
-    font-size: 1.875em;
-    font-weight: bold;
-}
-
-#apply #success p:first-of-type {
-    color: #ff3855;
-    font-size: 1.250em;
-    font-weight: bold;
 }
 
 #apply main>div {
@@ -2677,7 +2658,6 @@ form textarea {
     position: absolute;
     height: 1em;
     background: #f7f7f7;
-    left: 0;
     bottom: -.6em;
 }
 
