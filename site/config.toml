@@ -6,17 +6,16 @@ googleAnalytics = "UA-93489376-1"
 enableRobotsTXT = true
 
 [params]
-  Description = "Upframe aims to become a global reference and authority in pre-acceleration, shaping the next generation of entrepreneurs by building an immersive experience focused on young aspiring startup builders."
-  Image = "img/home.jpg"
-  [params.Webmaster]
-    Bing = ""
-    Google = ""
-
-[social]
-  Facebook = "upframe"
-  GitHub = "upframe"
-  GooglePlus = ""
-  Instagram = "upframe"
-  LinkedIn = "upframe"
-  Twitter = "upframeHQ"
-  YouTube = ""
+    Description = "Upframe aims to become a global reference and authority in pre-acceleration, shaping the next generation of entrepreneurs by building an immersive experience focused on young aspiring startup builders."
+    Image = "img/home.jpg"
+    [params.Webmaster]
+        Bing = ""
+        Google = ""
+    [params.Social]
+        Facebook = "upframe"
+        GitHub = "upframe"
+        GooglePlus = ""
+        Instagram = "upframe"
+        LinkedIn = "upframe"
+        Twitter = "upframeHQ"
+        YouTube = ""
