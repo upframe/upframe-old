@@ -2614,11 +2614,6 @@ form textarea {
     z-index: 2;
 }
 
-form p {
-    display: none;
-    text-align: right;
-}
-
 #apply main>form .btn {
     margin-left: auto;
     display: block;
@@ -2747,6 +2742,30 @@ form p {
 #apply form.sending .loading {
     opacity: 1;
     display: block;
+}
+
+#apply #success {
+    opacity: 0;
+    max-height: 0;
+    -webkit-transition: .25s ease opacity, .25s ease max-height;
+    transition: .25s ease opacity, .25s ease max-height;
+}
+
+#apply #success.show {
+    opacity: 1;
+    max-height: 20em;
+}
+
+#apply #success h3 {
+    color: #121952;
+    font-size: 1.875em;
+    font-weight: bold;
+}
+
+#apply #success p:first-of-type {
+    color: #ff3855;
+    font-size: 1.250em;
+    font-weight: bold;
 }
 
 /* * * * * * * * * * *
