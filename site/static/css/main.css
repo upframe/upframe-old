@@ -2653,6 +2653,7 @@ form textarea {
     position: absolute;
     height: 1em;
     background: #f7f7f7;
+    left: 0;
     bottom: -.6em;
 }
 

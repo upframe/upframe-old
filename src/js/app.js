@@ -5,6 +5,7 @@ import * as mentors from './mentors'
 import * as apply from './apply'
 import * as pay from './pay'
 import * as home from './home'
+import { getCookie } from './cookie'
 
 const apiURL = (() => {
   if (window.location.hostname !== 'upframe.co') {
@@ -15,35 +16,35 @@ const apiURL = (() => {
 })()
 
 function scrollEvent (event) {
-  let nav = document.querySelector('nav'),
-    early = document.querySelector("div#early-bird-bar");
+  let nav = document.querySelector('nav')
 
   if (window.scrollY === 0) {
     nav.classList.remove('scroll')
-    if(early) early.classList.remove('scroll')
   } else {
     nav.classList.add('scroll')
-    if(early) early.classList.add('scroll')
   }
 }
 
-function earlyBirdBar() {
-    if(decodeURIComponent(document.cookie).length) {
-        let cookies = decodeURIComponent(document.cookie).split(";");
-        for(let i = 0; i < cookies.length; i++) {
-            if(cookies[i].split("=")[0] == "earlybird" && cookies[i].split("=")[1] == "0") {
-                document.querySelector("#early-bird-bar").remove()
-                return
-            }
-        }
-    }
-    document.cookie = "earlybird=1; expires=1491091200; path=/"
-    document.querySelector("#early-bird-bar span").addEventListener("click", hideEarly)
+function earlyBirdBar () {
+  const earlyCookie = getCookie('earlybird')
+  if (earlyCookie !== '0') {
+    window.addEventListener('scroll', () => {
+      let early = document.querySelector('div#early-bird-bar')
+
+      if (window.scrollY === 0) {
+        early.classList.remove('scroll')
+      } else {
+        early.classList.add('scroll')
+      }
+    })
+
+    document.querySelector('#early-bird-bar span').addEventListener('click', hideEarly)
+  }
 }
 
 function hideEarly (event) {
-    document.cookie = "earlybird=0; expires=1491091200; path=/"
-    event.srcElement.offsetParent.style.visibility = "hidden"
+  document.cookie = 'earlybird=0; expires=1491091200; path=/'
+  event.srcElement.offsetParent.style.visibility = 'hidden'
 }
 
 document.addEventListener('DOMContentLoaded', () => {
