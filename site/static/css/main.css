@@ -855,58 +855,6 @@ nav.scroll svg path {
     fill: #121952;
 }
 
-#early-bird-bar {
-    display: none;
-    position: fixed;
-    top: 4.3em;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height: 3.5em;
-    -webkit-transition: background .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    transition: background .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    transition: background .2s ease-in-out, transform .2s ease-in-out;
-    transition: background .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    background-color: #ff3855;
-}
-
-#early-bird-bar>div * {
-    display: inline-block;
-}
-
-#early-bird-bar>div {
-    max-width: 90em;
-    width: 100%;
-    margin: auto;
-    color: white;
-    text-align: center;
-    line-height: 3.5em;
-}
-
-#early-bird-bar.scroll {
-    display: block;
-}
-
-#early-bird-bar img {
-    vertical-align: middle;
-    margin: 0 0.5em;
-}
-
-#early-bird-bar a.btn {
-    line-height: normal;
-    line-height: initial;
-    margin: 0 0.5em;
-    padding: .3em 1.1em;
-    color: #121952;
-    border-color: #fff;
-    background: #fff
-}
-
-#early-bird-bar span {
-    cursor: pointer;
-    font-size: 0.75em;
-}
-
 @media (max-width: 720px) {
     nav {
         -webkit-transform: translateY(calc(-100% + 4.3em));
@@ -939,12 +887,6 @@ nav.scroll svg path {
     nav li a {
         margin: 0;
         padding: 0;
-    }
-}
-
-@media (max-width: 1125px) {
-    div#early-bird-bar {
-        visibility: hidden;
     }
 }
 
@@ -2235,40 +2177,6 @@ nav.scroll svg path {
 #talk-applications p:last-of-type a {
     text-decoration: underline;
     font-weight: bold;
-}
-
-#early-bird {
-    background-color: #121952;
-    box-shadow: 2px -1px 4px 0px rgba(0, 0, 0, .1), -.6em .6em 0 rgba(255, 56, 85, 1);
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    max-width: 17em;
-    padding: 1em;
-}
-
-#early-bird p {
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 0;
-}
-
-#early-bird h3 {
-    font-size: 1.125em;
-    color: #00e5d4;
-    text-align: center;
-    line-height: 1.5;
-    margin: 0;
-}
-
-@media (max-width: 1200px) {
-    #early-bird {
-        position: relative;
-        margin: 2em auto;
-        width: 90%;
-        height: auto;
-        right: 0;
-        top: 0;
-    }
 }
 
 #sequence {

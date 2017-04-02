@@ -25,28 +25,6 @@ function scrollEvent (event) {
   }
 }
 
-function earlyBirdBar () {
-  const earlyCookie = getCookie('earlybird')
-  if (earlyCookie !== '0') {
-    window.addEventListener('scroll', () => {
-      let early = document.querySelector('div#early-bird-bar')
-
-      if (window.scrollY === 0) {
-        early.classList.remove('scroll')
-      } else {
-        early.classList.add('scroll')
-      }
-    })
-
-    document.querySelector('#early-bird-bar span').addEventListener('click', hideEarly)
-  }
-}
-
-function hideEarly (event) {
-  document.cookie = 'earlybird=0; expires=1491091200; path=/'
-  event.srcElement.offsetParent.style.visibility = 'hidden'
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   smoothScroll.init({
     offset: 150,
@@ -55,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   scrollEvent()
   window.addEventListener('scroll', scrollEvent)
-  earlyBirdBar()
 
   switch (window.location.pathname) {
     case '/':
