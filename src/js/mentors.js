@@ -47,12 +47,13 @@ function open (event) {
   const mentor = event.currentTarget.parentElement
 
   window.history.pushState(
-      '',
-      document.title,
-      window.location.pathname + '#' + mentor.id
+    '',
+    document.title,
+    window.location.pathname + '#' + mentor.id
   )
 
   popup.querySelector('img').src = mentor.querySelector('img').src
+  popup.querySelector('img').srcset = mentor.querySelector('img').srcset
   popup.querySelector('.name').innerHTML = mentor.querySelector('.name').innerHTML
   popup.querySelector('.role').innerHTML = mentor.querySelector('.role').innerHTML
   popup.querySelector('.description').innerHTML = mentor.querySelector('.description').innerHTML

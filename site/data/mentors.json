@@ -65,21 +65,21 @@
         "Name": "André Albuquerque",
         "Slug": "andre-albuquerque",
         "Role": "Head of Growth @ Uniplaces",
-        "Description": "empty",
+        "Description": "andre-albuquerque.markdown",
         "LinkedIn": "https://www.linkedin.com/in/andredalbuq/"
     },
     {
         "Name": "André Costa",
         "Slug": "andre-costa",
         "Role": "Country Manager @ Waynabox",
-        "Description": "empty",
+        "Description": "andre-costa.markdown",
         "LinkedIn": "https://www.linkedin.com/in/nogdacosta/"
     },
     {
         "Name": "André Rodrigues Lopes",
         "Slug": "andre-rodrigues-lopes",
         "Role": "Co-founder @ Altar.io",
-        "Description": "empty",
+        "Description": "andre-rodrigues-lopes.markdown",
         "LinkedIn": "https://www.linkedin.com/in/andrerodrigueslopes/"
     },
     {
@@ -109,5 +109,26 @@
         "Role": "Lead Experience Design @ Novabase",
         "Description": "tiago.markdown",
         "LinkedIn": "https://www.linkedin.com/in/tiagotomas/"
+    },
+    {
+        "Name": "Tiago Moreiras",
+        "Slug": "tiago-moreiras",
+        "Role": "Head of Product @ Landing.jobs",
+        "Description": "tiago-moreiras.markdown",
+        "LinkedIn": "https://linkedin.com/in/tiagofmoreiras"
+    },
+    {
+        "Name": "Gonçalo Fortes",
+        "Slug": "goncalo-fortes",
+        "Role": "Founder & CEO @ Prodsmart",
+        "Description": "goncalo-fortes.markdown",
+        "LinkedIn": "https://www.linkedin.com/in/gonfortes/"
+    },
+    {
+        "Name": "Sérgio Pereira",
+        "Slug": "sergio-pereira",
+        "Role": "CTO @ FutureFuel.io",
+        "Description": "sergio-pereira.markdown",
+        "LinkedIn": "https://www.linkedin.com/in/sergiomcpereira/"
     }
 ]
