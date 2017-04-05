@@ -54,8 +54,8 @@ gulp.task('server', ['hugo', 'css', 'js'], () => {
     server: {
       baseDir: './dist',
       middleware: function (req, res, next) {
-        if (req.url === '/pay') {
-          req.url = '/pay.html'
+        if (req.url === '/pay' || req.url.startsWith('/pay?')) {
+          req.url = req.url.replace('/pay', '/pay.html', 1)
         }
 
         return next()

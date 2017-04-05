@@ -45,13 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
       apply.init(apiURL)
       break
     case '/pay':
-      pay.pay()
+      pay.pay(apiURL)
       break
     case '/pay/cancel':
-      pay.cancel()
+      pay.cancel(apiURL)
       break
     case '/pay/confirm':
-      pay.confirm()
+      pay.confirm(apiURL)
       break
   }
 
