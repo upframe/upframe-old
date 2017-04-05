@@ -11,8 +11,14 @@ private: true
 </header>
 
 <main class="pay">
-    <h2>Dear <span id="person">Name</span>,</h2>
-    <p>We're sorry to hear you're leaving. You're payment was successfully canceled.</p>
+    <div id="process-success">
+        <h2>Dear <span id="person">Name</span>,</h2>
+        <p>We're sorry to hear you're leaving. You're payment was successfully canceled.</p>
+    </div>
+
+    <div id="process-error" style="display: none">
+        <p><strong>Something went wrong:</strong> try to reach us and give us the full URL you're trying to access.</p>
+    </div>
 
     <div class="loading">
         <div class="loading-circle">

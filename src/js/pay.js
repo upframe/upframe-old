@@ -19,7 +19,7 @@ function isValid () {
 
 export function pay (apiURL) {
   if (!isValid()) {
-    h2.innerHTML = 'No address email provided.'
+    document.querySelector('h2').innerHTML = 'No address email provided.'
     closeLoading()
     return
   }
@@ -43,21 +43,38 @@ export function pay (apiURL) {
 }
 
 export function cancel (apiURL) {
-  if (!isValid()) {
-    window.alert('Wrong URL!')
-  }
-
-  let name = document.querySelector('#person')
-// closeLoading()
-// window.alert('Payment cancel page!')
+  confirmCancelHandler(`${apiURL}/pay/cancel`)
 }
 
 export function confirm (apiURL) {
+  confirmCancelHandler(`${apiURL}/pay/confirm`)
+}
+
+function confirmCancelHandler (url) {
   if (!isValid()) {
-    window.alert('Wrong URL!')
+    document.querySelector('#process-success').style.display = 'none'
+    document.querySelector('#process-error').style.display = 'block'
+    closeLoading()
+    return
   }
 
-  let name = document.querySelector('#person')
-
-// window.alert('Payment confirm page!')
+  fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8'
+    },
+    body: window.location.search.substr(1)
+  }).then(handleErrors)
+    .then(function (res) { return res.json() })
+    .then(function (response) {
+      document.querySelector('#person').innerHTML = response['Content']['Name']
+      closeLoading()
+    })
+    .catch(function (err) {
+      document.querySelector('#process-success').style.display = 'none'
+      document.querySelector('#process-error').style.display = 'block'
+      closeLoading()
+      console.log(err)
+    })
 }
