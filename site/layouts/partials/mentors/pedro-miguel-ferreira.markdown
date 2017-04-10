@@ -1,0 +1,3 @@
+Pedro specialty is assisting organizations in making robust strategies in rapidly changing environments, by creating a “safe space” where people can 'play' and unlock new learnings, new knowledge and new paths to success.
+
+Combining a solid background in facilitation and extensive knowledge in organizational design and positive psychology, Pedro´s creates a unique framework for change and innovation process leading organizations to thinking differently about complex issues and challenging opportunities. Expertise: innovation, change management, participatory decision-making, collective intelligence & co-creation process.
