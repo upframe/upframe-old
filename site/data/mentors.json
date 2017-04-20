@@ -144,5 +144,12 @@
         "Role": "Co-Founder @ Beta-i",
         "Description": "empty",
         "LinkedIn": "https://www.linkedin.com/in/pedromferre/"
+    },
+    {
+        "Name": "Maria Guimarães",
+        "Slug": "maria-guimaraes",
+        "Role": "COO @ Startup Lisboa",
+        "Description": "maria-guimaraes",
+        "LinkedIn": "https://www.linkedin.com/in/maria-guimar%C3%A3es-88b60425/"
     }
 ]
