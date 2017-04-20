@@ -2,10 +2,7 @@
 
 import * as smoothScroll from 'smooth-scroll'
 import * as mentors from './mentors'
-import * as apply from './apply'
-import * as pay from './pay'
 import * as home from './home'
-import { getCookie } from './cookie'
 
 const apiURL = (() => {
   if (window.location.hostname !== 'upframe.co') {
@@ -40,18 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
       break
     case '/mentors':
       mentors.init()
-      break
-    case '/apply':
-      apply.init(apiURL)
-      break
-    case '/pay':
-      pay.pay(apiURL)
-      break
-    case '/pay/cancel':
-      pay.cancel(apiURL)
-      break
-    case '/pay/confirm':
-      pay.confirm(apiURL)
       break
   }
 
