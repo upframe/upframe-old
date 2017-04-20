@@ -4,3 +4,4 @@ errors.log
 Caddyfile
 public
 *.log
+*.exe
