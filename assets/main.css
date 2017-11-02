@@ -1,6 +1,6 @@
 body {
     font-family: 'Noto Sans', sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .container {
@@ -8,6 +8,10 @@ body {
     margin-right: auto;
     margin-left: auto;
     max-width: 750px;
+}
+
+.container > p {
+    word-spacing: .14em;
 }
 
 * {
