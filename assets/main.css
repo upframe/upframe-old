@@ -10,6 +10,15 @@ img {
     max-width: 100%;
 }
 
+header {
+    margin: 1.5em 0 0.7em;
+}
+
+#logo {
+    max-width: 11em;
+    width: 100%;
+}
+
 .team {
     display: flex;
     flex-wrap: wrap;
