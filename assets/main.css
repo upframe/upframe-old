@@ -5,3 +5,35 @@ body {
     max-width: 750px;
     line-height: 1.5;
 }
+
+img {
+    max-width: 100%;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4em 0;
+}
+
+.team > div {
+    flex-basis: calc(50% - 0.5em);
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.team img {
+    border-radius: 50%;
+    width: 5em;
+    margin-right: 1em;
+}
+
+.team p {
+    margin: 0;
+}
+
+.team p:first-of-type {
+   font-weight: bold;
+}
