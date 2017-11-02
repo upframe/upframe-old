@@ -1,0 +1,14 @@
+title: Upframe
+email: hacdias@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  File Manager is a stylish and elegant web file manager you can use
+  as your own cloud or integrate on your own applications.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://upframe.co"
+twitter_username: upframehq
+github_username:  upframe
+google_analytics: UA-59697241-1
+markdown: kramdown
+kramdown: 
+  syntax_highlighter_opts:
+    disable : true
