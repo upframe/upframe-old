@@ -77,3 +77,9 @@ header {
     background: #2856d4;
     color: #fff;
 }
+
+@media (max-width: 500px) {
+    .team > div {
+        flex-basis: 100%;
+    }
+}
