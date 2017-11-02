@@ -1,3 +1,0 @@
-Graduated in Industrial Design and being a professional for almost 10 years now, Paulo is the Founder and User Experience Director of laux, a small UX Design studio from Lisbon. He spends most of his time researching, strategizing, designing and testing ideas and digital products for several international clients in areas ranging from HealthCare, FinTech, Government, Utilities and even Sports.
-
-Paulo is also an Advisor in several Companies, organizes events and Meetups in Lisbon about UX Design and Blockchain Technologies and some other ones where people just get together to drink some beers and have fun after-work. Despite all of this, every once in a while he caters to the occasional talk or workshop because he really loves to teach and inspire others.

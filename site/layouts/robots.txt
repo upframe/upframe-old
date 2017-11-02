@@ -1,7 +1,0 @@
-User-agent: *
-
-{{- if not (eq (printf "%v" .Site.BaseURL) "https://upframe.co/") }}
-Disallow: /
-{{- else }}
-Disallow:
-{{- end }}
