@@ -12,6 +12,8 @@ body {
 
 .container > p {
     word-spacing: .14em;
+    font-size: 17px;
+    line-height: 1.70;
 }
 
 * {
