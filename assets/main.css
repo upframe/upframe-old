@@ -49,6 +49,7 @@ header {
 }
 .team p:first-of-type {
     font-weight: bold;
+    text-decoration: underline;
 }
 #newsletter {
     background: #030e2b;
