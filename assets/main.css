@@ -3,82 +3,8 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 750px;
-}
-
-.container > p {
-    word-spacing: .14em;
-    font-size: 17px;
-    line-height: 1.70;
-}
-
 * {
     box-sizing: border-box;
-}
-img {
-    max-width: 100%;
-}
-header {
-    margin: 1.5em 0 0.7em;
-}
-#logo {
-    max-width: 9.5em;
-    width: 100%;
-}
-.team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 3em auto;
-}
-.team > div {
-    /* flex-basis: calc(50% - 0.5em); */
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.5em;
-}
-.team img {
-    border-radius: 50%;
-    width: 4em;
-    margin-right: 1em;
-}
-.team p {
-    margin: 0;
-}
-.team p:first-of-type {
-    font-weight: bold;
-    text-decoration: underline;
-}
-#newsletter {
-    background: #030e2b;
-    padding: 4em;
-    margin: 0em 0;
-}
-#newsletter input {
-    border: 0;
-    padding: .7em 1em;
-    display: block;
-}
-#newsletter input[type="email"] {
-    width: 100%;
-    margin-bottom: 1em;
-}
-#newsletter form > div {
-    display: flex;
-    justify-content: space-between;
-}
-#newsletter form > div > input {
-    flex-basis: 49%;
-}
-
-#newsletter input[type="submit"] {
-    cursor: pointer;
-    background: #2856d4;
-    color: #fff;
 }
 
 #bg-video {
@@ -86,10 +12,4 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
-}
-
-@media (max-width: 500px) {
-    .team > div {
-        flex-basis: 100%;
-    }
 }
