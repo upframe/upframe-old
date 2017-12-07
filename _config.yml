@@ -3,7 +3,7 @@ email: hello@upframe.co
 description: > # this means to ignore newlines until "baseurl:"
   Upframe 2.0 is on the way.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://upframe.co"
+url: "https://upframe.io"
 twitter_username: upframehq
 github_username:  upframe
 google_analytics: UA-93489376-1
