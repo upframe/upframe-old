@@ -12,6 +12,7 @@ p {
   color: white;
   font-size: 45px;
   padding: 50px;
+  position: fixed;
 }
 
 #bg-video {
