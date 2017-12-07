@@ -7,6 +7,13 @@ body {
     box-sizing: border-box;
 }
 
+p {
+  z-index: 50px;
+  color: white;
+  font-size: 45px;
+  padding: 50px;
+}
+
 #bg-video {
     position: fixed;
     top: 0;
