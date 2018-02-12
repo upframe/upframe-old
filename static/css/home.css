@@ -1,1 +1,45 @@
-body {}
+body {
+  margin: 0px;
+}
+
+#strong-name {
+  margin-top: 0px;
+  margin-left: 50px;
+  padding-top: 25px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2.5em;
+  color: #FFFFFF;
+}
+
+.background-container {
+  margin: 0;
+  background-color: #050E2C;
+  height: 75vh;
+}
+
+#jumbotron {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 78px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align-last: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+button {
+  transition: #050E2C .9s;
+  padding: .6em 2.5em;
+  color: #3C58FF;
+  border: 0;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
