@@ -44,8 +44,11 @@ nav {
     justify-content: space-between;
     width: 95%;
     max-width: 1200px;
-    margin: 1.5em auto;
+    margin: 0 auto;
     align-items: center;
+    position: relative;
+    height: 4.5em;
+    color: white;
 }
 
 nav * {
@@ -58,7 +61,6 @@ nav #logo {
     font-style: italic;
     font-size: 1.5em;
     font-weight: 700;
-    color: #212121;
 }
 
 nav a {
@@ -173,10 +175,6 @@ nav ul li a.active {
     display: none
 }
 
-.home nav #logo {
-    color: white;
-}
-
 @media (max-width: 930px) {
     .home form {
         flex-wrap: wrap;
@@ -197,6 +195,25 @@ nav ul li a.active {
     }
 }
 
+header {
+    background: var(--deep-blue);
+    color: #fff;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -5em 0 2em 0;
+    position: relative;
+    z-index: -1;
+    flex-direction: column;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
 article li,
 article p {
     font-family: Georgia, Times, 'Times New Roman', serif;
@@ -204,6 +221,7 @@ article p {
     line-height: 1.6;
 }
 
+.container,
 .listing,
 .pagination,
 article .highlight>pre,
@@ -221,13 +239,7 @@ article .highlight {
 article>header {
     width: 100%;
     max-width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-    color: #fff;
-    margin-bottom: 2em;
+    height: 85vh;
 }
 
 article figure#banner img {
@@ -272,6 +284,7 @@ article header time {
 
 article header h1 {
     margin: 0 auto;
+    font-size: 2em;
 }
 
 article header p {
