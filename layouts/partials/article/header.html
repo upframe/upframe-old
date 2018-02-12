@@ -1,5 +1,6 @@
  {{ if isset .Params "image" -}}
-<figure id="banner" class="full"><img src="{{ .Site.BaseURL }}/images/{{ .Params.image }}.jpg"></figure>
+<div style="background-image: url({{ .Site.BaseURL }}/images/{{ .Params.image }}.jpg)" id="banner"></div>
+
 {{- end }}
 <header>
     {{ if eq .Type "post" -}}

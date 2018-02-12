@@ -60,6 +60,15 @@ article figure#banner img {
     display: block;
 }
 
+article #banner {
+    width: 100%;
+    height: 14em;
+    max-width: 100%;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: red;
+}
+
 article header time {
     display: block;
     text-transform: uppercase;
@@ -276,4 +285,10 @@ hr {
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin: 1.2em auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #535353;
 }
