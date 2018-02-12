@@ -1,5 +1,4 @@
 body {
-  margin: 0px;
   overflow: hidden;
 }
 
@@ -8,49 +7,21 @@ body {
   margin-left: 50px;
   padding-top: 25px;
   font-family: 'Noto Sans', sans-serif;
-  font-size: 2.5em;
+  font-style: italic;
+  font-size: 1.5em;
   font-weight: 700;
   color: #FFFFFF;
 }
 
-#jumbotron {
-
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 65px;
+.content-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10%;
   font-family: 'Noto Sans', sans-serif;
 }
 
-#form {
-  margin-top: 15vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  vertical-align: middle;
-  width: inherit;
-}
-
-#name-input {
-  height: 50px;
-  text-align: center;
-  width: 20%
-}
-
-#email-input {
-  height: 50px;
-  text-align: center;
-  width: 45%;
-}
-
-.submit-button {
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    height: 50px;
-    text-align: center;
-    width: 30%;
-}
-
 .submit-button:hover {
-    background-color: #1976D2;
+    background-color: #3355D8;
     color: white;
 }
 
@@ -61,26 +32,86 @@ body {
   width: 100vw;
 }
 
-.content-container {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 10%;
+#jumbotron {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 48px;
   font-family: 'Noto Sans', sans-serif;
+  width: 300px;
+  vertical-align: center;
+  margin: auto;
 }
 
-.middle {
-  margin:auto;
+@media (min-width: 600px) {
+  #jumbotron {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Noto Sans', sans-serif;
+    width: 460px;
+    vertical-align: center;
+    margin: auto;
+  }
+}
+
+#form {
+  display: flex;
+  margin: 10vh 5vw;
+}
+
+#form input {
+  height: 50px;
+  flex-grow: 1;
+  margin: 0 .25em .5em;
+  outline: 0;
+}
+
+#form input[type="text"],
+#form input[type="submit"] {
+  width: 25%;
+}
+
+#form input[type="email"] {
   width: 50%;
 }
 
-button {
-  padding: .6em 2.5em;
+#form input[type="text"],
+#form input[type="email"] {
+  padding: 0 1em;
+}
+
+
+#form input[type="submit"] {
   color: #FFFFFF;
   background-color: #3C58FF;
   border: 0;
   border-radius: 3px;
-  outline: none;
   cursor: pointer;
   font-weight: 700;
   letter-spacing: 1.4px;
+  text-align: center;
+  transition: .4s ease background-color;
+}
+
+@media (max-width: 930px) {
+  #form {
+    flex-wrap: wrap;
+  }
+
+  #form input[type="text"],
+  #form input[type="email"] {
+    width: calc(50% - 1em);
+  }
+
+  #form input[type="submit"] {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #form input[type="text"],
+  #form input[type="email"] {
+    width: 100%;
+  }
 }
