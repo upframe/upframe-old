@@ -1,4 +1,5 @@
 baseurl: 'https://upframe.io/'
+disqusShortname: upframe
 languageCode: en
 paginate: 15
 pluralizelisttitles: false
@@ -19,3 +20,13 @@ params:
   Webmaster:
     Bing: B471CBBC9EF6900039C6BBF251EF277C
     Google: nVQ4_x6m6ZTRAzclMPNxpB0iMgK-xoIj_d-l85u32nY
+
+backend:
+  name: git-gateway
+  branch: master
+
+menu:
+  main:
+    - name: Blog
+      weight: 1
+      url: /blog/
