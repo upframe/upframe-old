@@ -44,8 +44,11 @@ nav {
     justify-content: space-between;
     width: 95%;
     max-width: 1200px;
-    margin: 1.5em auto;
+    margin: 0 auto;
     align-items: center;
+    position: relative;
+    height: 4.5em;
+    color: white;
 }
 
 nav * {
@@ -58,7 +61,6 @@ nav #logo {
     font-style: italic;
     font-size: 1.5em;
     font-weight: 700;
-    color: #212121;
 }
 
 nav a {
@@ -163,10 +165,6 @@ nav ul li a.active {
     display: none
 }
 
-.home nav #logo {
-    color: white;
-}
-
 @media (max-width: 930px) {
     .home form {
         flex-wrap: wrap;
@@ -215,9 +213,11 @@ article>header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 80vh;
+    height: 85vh;
     color: #fff;
-    margin-bottom: 2em;
+    margin: -5em 0 2em 0;
+    padding: 5em 0 0 0;
+    z-index: -1;
 }
 
 article figure#banner img {
