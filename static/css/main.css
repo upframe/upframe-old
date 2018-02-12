@@ -115,10 +115,20 @@ nav ul li a.active {
 
 .home h1 {
     text-align: center;
-    font-size: 5em;
+    font-size: 8vw;
     font-family: 'Noto Sans', sans-serif;
     margin: auto;
     max-width: 11em;
+}
+
+@media (min-width: 930px) {
+  .home h1 {
+      text-align: center;
+      font-size: 5em;
+      font-family: 'Noto Sans', sans-serif;
+      margin: auto;
+      max-width: 11em;
+  }
 }
 
 .home form {
