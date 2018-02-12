@@ -94,14 +94,9 @@ nav ul li a {
     padding: 0.5em;
 }
 
-nav ul li a.active,
 nav ul li a:hover {
     background-color: var(--deep-blue);
     color: #fff;
-}
-
-nav ul li a.active {
-    background: var(--medium-blue);
 }
 
 .home {
@@ -363,11 +358,12 @@ header h1 {
     margin: 0;
 }
 
+.serif,
 article li,
 article p {
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 1.1em;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .container,
@@ -610,6 +606,10 @@ blockquote::after {
 
 .listing li a * {
     margin: 0;
+}
+
+.listing h3 {
+    font-size: 2em;
 }
 
 .listing li a time {

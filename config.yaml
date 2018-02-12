@@ -1,4 +1,4 @@
-baseurl: 'https://upframe.netlify.com/'
+baseurl: 'https://upframe.io/'
 disqusShortname: upframe
 languageCode: en
 paginate: 15
@@ -30,3 +30,6 @@ menu:
     - name: Blog
       weight: 1
       url: /blog/
+
+taxonomies:
+  author: authors

@@ -3,7 +3,7 @@
 <main role="main">
 	<header>
 		<div class='container'>
-			<h1>{{ .Title }}</h1>
+			<h1>{{ partial "title.html" . }}</h1>
 		</div>
 	</header>
 
@@ -13,8 +13,9 @@
 			<li>
 				<a href="{{ .Permalink }}">
 					<h3>{{ .Title }}</h3>
-					<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
 				</a>
+				<p class="serif">{{slicestr .Summary 0 250}}...</p>
+
 			</li>
 			{{ end }}
 		</ul>
