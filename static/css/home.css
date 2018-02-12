@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  overflow: hidden;
 }
 
 #strong-name {
@@ -8,38 +9,78 @@ body {
   padding-top: 25px;
   font-family: 'Noto Sans', sans-serif;
   font-size: 2.5em;
+  font-weight: 700;
   color: #FFFFFF;
+}
+
+#jumbotron {
+
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 65px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#form {
+  margin-top: 15vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  vertical-align: middle;
+  width: inherit;
+}
+
+#name-input {
+  height: 50px;
+  text-align: center;
+  width: 20%
+}
+
+#email-input {
+  height: 50px;
+  text-align: center;
+  width: 45%;
+}
+
+.submit-button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    height: 50px;
+    text-align: center;
+    width: 30%;
+}
+
+.submit-button:hover {
+    background-color: #1976D2;
+    color: white;
 }
 
 .background-container {
   margin: 0;
   background-color: #050E2C;
-  height: 75vh;
+  height: 100vh;
+  width: 100vw;
 }
 
-#jumbotron {
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 78px;
+.content-container {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10%;
   font-family: 'Noto Sans', sans-serif;
 }
 
-.container {
-  margin-right: 10%;
-  margin-left: 10%;
-  text-align-last: center;
-  font-family: 'Noto Sans', sans-serif;
+.middle {
+  margin:auto;
+  width: 50%;
 }
 
 button {
-  transition: #050E2C .9s;
   padding: .6em 2.5em;
-  color: #3C58FF;
+  color: #FFFFFF;
+  background-color: #3C58FF;
   border: 0;
   border-radius: 3px;
   outline: none;
   cursor: pointer;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 1.4px;
 }
