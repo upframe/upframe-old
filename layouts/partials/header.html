@@ -9,7 +9,7 @@
   {{ partial "head/includes" .}}
   {{ if not .IsNode }}{{ if eq .Type "post" }}{{ partial "schema/article" . }}{{ end }}{{ end }}
 
-  {{ if .IsHome - }}
+  {{ if .IsHome }}
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {{ end }}
 </head>
