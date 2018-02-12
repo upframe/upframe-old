@@ -8,7 +8,7 @@ description:    An utilitarian take — The good entrepreneur understands the sh
 
 I have been thinking a lot about the meaning of this word lately. Wikipedia defines an entrepreneur as a _person who starts, organizes and manages any enterprise, especially a business, usually with considerable initiative and risk_. English dictionaries define it as the _activity of setting up a business or taking on financial risks in the hope of profit_.
 
-> “Não queremos só ligar as pessoas, queremos fazer as coisas acontecer, servir de catalizador de Lisboa como uma capital tecnológica onde todas as pessoas trabalham de uma forma mais aberta para alcançar os mesmos objetivos.”
+> Não queremos só ligar as pessoas, queremos fazer as coisas acontecer, servir de catalizador de Lisboa como uma capital tecnológica onde todas as pessoas trabalham de uma forma mais aberta para alcançar os mesmos objetivos.
 
 With the ever growing and widespread use of the word, these definitions can become a hazard because the word 'entrepreneurship' is often associated with glamour and success and by encapsulating both the good traits of entrepreneurship and the bad ones, often undermined, they lead aspiring entrepreneurs on a bitter road paved with anxiety and frustration: Taking on financial risks in the hope of profit don't necessarily make you a successful, good entrepreneur. In fact, they may as well make you a bad one (yes, bad entrepreneurs are real).
 
