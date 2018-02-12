@@ -94,14 +94,9 @@ nav ul li a {
     padding: 0.5em;
 }
 
-nav ul li a.active,
 nav ul li a:hover {
     background-color: var(--deep-blue);
     color: #fff;
-}
-
-nav ul li a.active {
-    background: var(--medium-blue);
 }
 
 .home {
