@@ -1,4 +1,4 @@
-baseurl: 'https://upframe.io/'
+baseurl: 'https://upframe.netlify.com/'
 disqusShortname: upframe
 languageCode: en
 paginate: 15
