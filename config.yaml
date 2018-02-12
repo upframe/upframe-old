@@ -30,3 +30,6 @@ menu:
     - name: Blog
       weight: 1
       url: /blog/
+
+taxonomies:
+  author: authors
