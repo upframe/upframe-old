@@ -185,54 +185,6 @@ blockquote p {
     height: 100%;
 }
 
-#disqus {
-    display: none;
-}
-
-#disqus+div>div {
-    display: none;
-}
-
-#disqus:checked+div>div {
-    display: block;
-}
-
-.share {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.share>* {
-    cursor: pointer;
-    color: #fff;
-    padding: .5em;
-    background-color: rgba(0, 0, 0, 0.84);
-    transition: .5s ease all;
-    width: 18%;
-}
-
-.share>*:hover {
-    color: #fff;
-    opacity: .8;
-}
-
-.share .twitter {
-    background-color: #00aced;
-}
-
-.share .facebook {
-    background-color: #3b5998;
-}
-
-.share .gplus {
-    background-color: #dd4b39;
-}
-
-.share .linkedin {
-    background-color: #007bb6;
-}
-
 .nextprev {
     display: flex;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
