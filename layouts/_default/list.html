@@ -1,8 +1,13 @@
 {{ partial "header" . }}
 
 <main role="main">
+	<header>
+		<div class='container'>
+			<h1>{{ .Title }}</h1>
+		</div>
+	</header>
+
 	<div class="listing">
-		<h1>{{ .Title }}</h1>
 		<ul>
 			{{ range .Paginator.Pages }}
 			<li>
