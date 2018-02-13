@@ -34,7 +34,7 @@ collections:
         widget: "text"
   - name: "authors"
     label: "Authors"
-    file: "data/authors.yml"
+    folder: "data/authors"
     slug: "{{slug}}"
     editor:
       preview: false
