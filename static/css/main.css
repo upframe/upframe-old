@@ -1,4 +1,4 @@
-    .nextprev,
+.nextprev,
 nav {
     justify-content: space-between
 }
@@ -112,6 +112,12 @@ nav ul li {
 nav ul li a {
     transition: all .2s ease-in-out;
     padding: .5em
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 2em 0;
 }
 
 .home,
@@ -480,20 +486,11 @@ blockquote::after {
 }
 
 .listing li a {
-    display: flex;
-    align-content: center;
-    margin: 1em 0
+    margin: 1em 0;
 }
 
-.listing li a * {
+.listing li a h3 {
     margin: 0
-}
-
-.listing li a time {
-    margin-left: auto;
-    color: rgba(0, 0, 0, .3);
-    width: 7em;
-    text-align: right
 }
 
 .pagination {
@@ -525,10 +522,4 @@ blockquote::after {
 hr {
     border: 0;
     border-top: 1px solid
-}
-
-footer {
-    text-align: center;
-    font-size: 0.8em;
-    margin: 2em 0;
 }

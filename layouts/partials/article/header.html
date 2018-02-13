@@ -1,7 +1,7 @@
 <header>
     {{ if isset .Params "image" -}}
     <div id="banner">
-        <img src="{{ .Site.BaseURL }}/images/{{ .Params.image }}.jpg">
+        <img src="{{ .Params.image | absURL }}">
         <div></div>
     </div>
     {{- end }}
