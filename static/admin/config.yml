@@ -36,8 +36,16 @@ collections:
     label: "Author"
     folder: "data/authors"
     create: true
+    editor:
+      preview: false
     fields:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Photo", name: "photo", widget: "image"}
       - {label: "Short Bio", name: "short_bio", widget: "text"}
       - {label: "Bio", name: "bio", widget: "markdown"}
+      - label: "Social"
+        name: "social"
+        widget: "object"
+        fields:
+          - {label: "Facebook", required: false, name: "facebook", widget: "string"}
+          - {label: "Twitter", required: false, name: "twitter", widget: "string"}
