@@ -28,4 +28,5 @@ menu:
       url: /blog/
 
 taxonomies:
+  tag: tags
   author: authors

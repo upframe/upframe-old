@@ -13,15 +13,15 @@
 			<li>
 				<a href="{{ .Permalink }}">
 					<h3>{{ .Title }}</h3>
+					<p class="serif">
+						{{- if gt (len .Summary) 250 -}}
+							{{- slicestr .Summary 0 250 -}}...
+						{{- else -}}
+							{{- .Summary -}}
+						{{- end -}}
+					</p>
 				</a>
 
-				<p class="serif">
-					{{- if gt (len .Summary) 250 -}}
-						{{- slicestr .Summary 0 250 -}}...
-					{{- else -}}
-						{{- .Summary -}}
-					{{- end -}}
-				</p>
 			</li>
 			{{ end }}
 		</ul>
