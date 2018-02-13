@@ -14,11 +14,18 @@
 				<a href="{{ .Permalink }}">
 					<h3>{{ .Title }}</h3>
 				</a>
-				<p class="serif">{{slicestr .Summary 0 250}}...</p>
 
+				<p class="serif">
+					{{- if gt (len .Summary) 250 -}}
+						{{- slicestr .Summary 0 250 -}}...
+					{{- else -}}
+						{{- .Summary -}}
+					{{- end -}}
+				</p>
 			</li>
 			{{ end }}
 		</ul>
+
 		{{ partial "pagination" . }}
 	</div>
 </main>
