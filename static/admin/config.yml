@@ -37,6 +37,7 @@ collections:
     folder: "data/authors"
     slug: "{{slug}}"
     create: true
+    extension: "yml"
     editor:
       preview: false
     fields:
