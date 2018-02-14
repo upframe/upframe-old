@@ -16,7 +16,7 @@ nav>a:first-of-type {
 
 .home h1,
 body {
-    font-family: 'Noto Sans', sans-serif
+    font-family: 'Noto Sans', sans-serif;
 }
 
 header,
@@ -526,4 +526,16 @@ blockquote::after {
 hr {
     border: 0;
     border-top: 1px solid
+}
+
+.biggy {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-weight: 600;
+}
+
+.biggy:hover {
+    background-color: #3C58FF;
+    border-color: #3C58FF;
 }

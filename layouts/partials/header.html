@@ -23,5 +23,8 @@
       {{ range .Site.Menus.main -}}
         <li><a href="{{ .URL }}" {{if eq $currentPage.RelPermalink .URL }}class="active"{{end}}>{{ .Name }}</a></li>
       {{end}}
+      {{ if not .IsHome }}
+        <li><a class='biggy' href='{{ .URL }}'>Keep me posted</a></li>
+      {{ end }}
     </ul>
   </nav>
