@@ -108,8 +108,8 @@ nav ul li {
 }
 
 nav ul li a {
-    transition: all .2s ease-in-out;
-    padding: .5em
+    transition: all .5s ease-in-out;
+    padding: .5em;
 }
 
 footer {
@@ -313,8 +313,8 @@ article #banner {
 }
 
 #banner div {
-    background-color: #3C58FF;
-    opacity: .3
+    background-color: #060e2d;
+    opacity: 0.3;
 }
 
 article header span {
@@ -529,10 +529,11 @@ hr {
 }
 
 .biggy {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     padding: 0.5em 1em;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -0.2px;
 }
 
 .biggy:hover {
