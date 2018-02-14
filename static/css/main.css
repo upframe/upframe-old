@@ -187,7 +187,7 @@ article p {
     height: 50px;
     flex-grow: 1;
     margin: 0 .4em .5em;
-    outline: 0;
+    outline: 0
 }
 
 .home form input[type=text],
@@ -201,7 +201,8 @@ article p {
 
 .home form input[type=text],
 .home form input[type=email] {
-    padding: 0 1em
+    padding: 0 1em;
+    outline: 0
 }
 
 .home form input[type=submit] {
@@ -213,7 +214,7 @@ article p {
     font-weight: 700;
     letter-spacing: .1em;
     text-align: center;
-    transition: .4s ease background-color
+    transition: .4s ease background-color;
 }
 
 .home footer {
