@@ -3,7 +3,8 @@ type:           post
 title:          Random Thoughts on Entrepreneurship
 date:	          2017-02-12 20:05:27+00:00
 image:          /images/random-thoughts.jpg
-author:         [malikpiara]
+authors:
+  - malikpiara
 description:    An utilitarian take — The good entrepreneur understands the sheer importance of pain relievers and pleasure gainers.
 ---
 

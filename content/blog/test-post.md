@@ -1,6 +1,10 @@
 ---
 type: post
 title: Test Post
+authors:
+  - malikpiara
+  - hacdias
+  - ulissesferreira
 date: 2018-02-13T17:10:47.110Z
 ---
 This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).

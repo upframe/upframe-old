@@ -42,7 +42,8 @@ collections:
       preview: false
     fields:
       - {label: "ID", name: "title", widget: "string"}
-      - {label: "Name", name: "name", widget: "string"}
+      - {label: "First Name", name: "first_name", widget: "string"}
+      - {label: "Last Name", name: "last_name", widget: "string"}
       - {label: "Photo", name: "photo", widget: "image"}
       - {label: "Short Bio", name: "short_bio", widget: "text"}
       - {label: "Bio", name: "bio", widget: "markdown"}
