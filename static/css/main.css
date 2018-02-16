@@ -242,12 +242,13 @@ header {
     background: var(--deep-blue);
     color: #fff;
     height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: -5em 0 2em;
     z-index: -1;
     flex-direction: column;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    text-align: center
 }
 
 header h1 {
@@ -282,7 +283,6 @@ article>header {
     height: 85vh;
     position: relative;
     overflow: hidden;
-    display: flex;
 }
 
 #banner div,
@@ -320,9 +320,8 @@ article #banner {
 article header span {
     display: block;
     font-style: italic;
-    margin: 0.2em auto;
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: .9em;
+    margin: 1em auto;
+    color: rgba(255, 255, 255, 0.9)!important;
 }
 
 article header h1 {
@@ -337,25 +336,6 @@ article header p {
     margin-bottom: 1.3em
 }
 
-.author {
-    margin-top: 6em;
-}
-
-.author img {
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 50%;
-    margin: 0.3em 0;
-}
-
-.author.multiple img {
-    margin-left: -1em;
-}
-
-.author.multiple {
-    margin-left: 1em;
-}
-
 article ol,
 article ul {
     padding-left: 3em
@@ -364,7 +344,7 @@ article ul {
 article .highlight,
 article p code,
 article pre {
-    background-color: #f8f8f8 !important
+    background-color: #f8f8f8!important
 }
 
 article .highlight {
@@ -561,17 +541,16 @@ hr {
     border-color: #3C58FF;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
     header h1 {
-        font-size: 3.5em;
+        font-size: 3em;
     }
+
     nav ul li {
         margin-left: unset;
     }
+
     nav ul li a {
-        font-size: .8em;
-    }
-    .biggy {
-        font-weight: 600;
+        font-size: 3.5vw;
     }
 }
