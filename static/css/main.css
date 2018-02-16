@@ -336,21 +336,40 @@ article header p {
     margin-bottom: 1.3em
 }
 
+.author {
+    margin-top: 6em;
+}
+    
+.author img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin: 0.3em 0;
+}
+
+.author.multiple img {
+    margin-left: -1em;
+}
+
+.author.multiple {
+    margin-left: 1em;
+}
+
 article ol,
 article ul {
-    padding-left: 3em
+    padding-left: 3em;
 }
 
 article .highlight,
 article p code,
 article pre {
-    background-color: #f8f8f8!important
+    background-color: #f8f8f8 !important;
 }
 
 article .highlight {
     padding: 2em;
     white-space: pre-wrap;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 article p code {
