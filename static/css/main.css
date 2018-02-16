@@ -561,3 +561,21 @@ hr {
     background-color: #3C58FF;
     border-color: #3C58FF;
 }
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    nav ul li {
+        margin-left: unset;
+    }
+
+    nav ul li a {
+        font-size: .8em;
+    }
+
+    .biggy {
+        font-weight: 600;
+    }
+}
