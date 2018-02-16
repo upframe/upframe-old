@@ -338,7 +338,7 @@ article header p {
 }
 
 .author {
-    margin-top: 6em;
+    margin-top: 5vh;
 }
 
 .author img {
@@ -572,5 +572,9 @@ hr {
 
     nav ul li a {
         font-size: 3.5vw;
+    }
+
+    article header h1 {
+        font-size: 11vw;
     }
 }
