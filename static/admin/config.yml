@@ -41,7 +41,8 @@ collections:
     editor:
       preview: false
     fields:
-      - {label: "Name", name: "title", widget: "string"}
+      - {label: "ID", name: "title", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
       - {label: "Photo", name: "photo", widget: "image"}
       - {label: "Short Bio", name: "short_bio", widget: "text"}
       - {label: "Bio", name: "bio", widget: "markdown"}
