@@ -246,6 +246,8 @@ header {
     z-index: -1;
     flex-direction: column;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 header h1 {
@@ -280,6 +282,7 @@ article>header {
     height: 85vh;
     position: relative;
     overflow: hidden;
+    display: flex;
 }
 
 #banner div,
@@ -312,10 +315,6 @@ article #banner {
 #banner div {
     background-color: #060e2d;
     opacity: 0.3;
-}
-
-article .container {
-    margin-top: 10em;
 }
 
 article header span {
@@ -566,15 +565,12 @@ hr {
     header h1 {
         font-size: 3.5em;
     }
-
     nav ul li {
         margin-left: unset;
     }
-
     nav ul li a {
         font-size: .8em;
     }
-
     .biggy {
         font-weight: 600;
     }
