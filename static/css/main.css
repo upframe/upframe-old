@@ -73,7 +73,7 @@ body {
 :root {
     --deep-blue: #050E2C;
     --medium-blue: #3C58FF;
-    --funny-blue: #001566
+    --funny-blue: #001566;
 }
 
 nav {
@@ -86,26 +86,25 @@ nav {
 
 nav * {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 nav #logo {
-    margin: 0;
-    font-size: 1.7em
+    width: 10em;
 }
 
 nav>a:first-of-type span {
     font-weight: 400;
-    color: rgba(0, 0, 0, .5)
+    color: rgba(0, 0, 0, .5);
 }
 
 nav ul {
-    list-style-type: none
+    list-style-type: none;
 }
 
 nav ul li {
     margin-left: 1em;
-    display: inline-block
+    display: inline-block;
 }
 
 nav ul li a {
