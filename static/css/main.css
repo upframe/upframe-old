@@ -370,19 +370,20 @@ article pre {
 article .highlight {
     padding: 2em;
     white-space: pre-wrap;
-    word-wrap: break-word
+    word-wrap: break-word;
 }
 
 article p code {
     font-size: .8em;
-    padding: .2em .5em
+    padding: .2em .5em;
+    white-space: pre-wrap;
 }
 
 article .video-player,
 article figure.medium {
     max-width: 800px;
     margin: 2em auto;
-    text-align: center
+    text-align: center;
 }
 
 article figure img {
