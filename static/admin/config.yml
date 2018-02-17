@@ -25,6 +25,9 @@ collections:
         name: "image"
         required: false
         widget: "image"
+      - label: "Authors"
+        name: "authors"
+        widget: "list"
       - label: "Body"
         name: "body"
         widget: "markdown"
