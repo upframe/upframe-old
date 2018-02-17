@@ -240,7 +240,7 @@ article p {
 }
 
 header {
-    background: var(--deep-blue);
+    background: var(--funny-blue);
     color: #fff;
     height: 25em;
     margin: -5em 0 2em;
@@ -572,15 +572,12 @@ hr {
     header h1 {
         font-size: 3em;
     }
-
     nav ul li {
         margin-left: unset;
     }
-
     nav ul li a {
         font-size: 3.5vw;
     }
-
     article header h1 {
         font-size: 11vw !important;
     }
