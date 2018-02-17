@@ -282,7 +282,6 @@ article>header {
     height: 85vh;
     position: relative;
     overflow: hidden;
-    display: flex;
 }
 
 #banner div,
@@ -298,18 +297,17 @@ article figure#banner img {
 }
 
 article #banner {
-    max-width: calc(100% + 2em);
     width: calc(100% + 2em);
     height: calc(100% + 2em);
     z-index: -1;
-    filter: blur(5px);
     position: absolute;
     left: -1em;
     top: -1em;
 }
 
 #banner img {
-    object-fit: cover
+    object-fit: cover;
+    filter: blur(5px);
 }
 
 #banner div {
@@ -323,11 +321,14 @@ article header span {
     margin: 0.2em auto;
     color: rgba(255, 255, 255, 0.9) !important;
     font-size: .9em;
+    letter-spacing: -0.1px;
 }
 
 article header h1 {
     margin: 0 auto;
-    font-size: 5vw;
+    font-size: 3.75rem;
+    line-height: 1.2;
+    letter-spacing: 2.4px;
     font-family: 'Times', 'Georgia', serif;
 }
 
@@ -338,7 +339,7 @@ article header p {
 }
 
 .author {
-    margin-top: 5vh;
+    margin-top: 6vh;
 }
 
 .author img {
@@ -584,7 +585,7 @@ hr {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
     article header h1 {
         font-size: 8vw;
     }
