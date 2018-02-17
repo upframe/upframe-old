@@ -72,7 +72,8 @@ body {
 
 :root {
     --deep-blue: #050E2C;
-    --medium-blue: #3C58FF
+    --medium-blue: #3C58FF;
+    --funny-blue: #001566
 }
 
 nav {
@@ -311,7 +312,7 @@ article #banner {
 }
 
 #banner div {
-    background-color: #060e2d;
+    background-color: var(--funny-blue);
     opacity: 0.3;
 }
 
