@@ -568,12 +568,18 @@ hr {
 }
 
 @media (max-width: 450px) {
+    nav #logo {
+        width: 8em;
+    }
+
     header h1 {
         font-size: 3em;
     }
+
     nav ul li {
         margin-left: unset;
     }
+
     nav ul li a {
         font-size: 3.5vw;
     }
