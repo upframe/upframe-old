@@ -328,8 +328,8 @@ article header span {
 article header h1 {
     margin: 0 auto;
     font-size: 3.75rem;
-    line-height: 1.2;
-    letter-spacing: 2.4px;
+    line-height: 1.37;
+    letter-spacing: 0.4px;
     font-family: 'PT Serif', 'Georgia', serif;
 }
 
