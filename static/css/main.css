@@ -376,7 +376,11 @@ article .highlight {
 article p code {
     font-size: .8em;
     padding: .2em .5em;
+}
+
+article code {
     white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 article .video-player,
