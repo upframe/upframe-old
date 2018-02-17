@@ -81,7 +81,8 @@ nav {
     margin: 0 auto;
     align-items: center;
     height: 4.5em;
-    color: #fff
+    color: #fff;
+    padding-top: 2em;
 }
 
 nav * {
