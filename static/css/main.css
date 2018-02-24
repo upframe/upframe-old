@@ -289,7 +289,7 @@ article>header {
 
 article span#read-progress {
     display: block;
-    height: 0.6em;
+    height: 0.5em;
     max-width: 100%;
     width: 0;
     background: #0076fa;
