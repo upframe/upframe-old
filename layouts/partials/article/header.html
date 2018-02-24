@@ -16,9 +16,6 @@
         {{- end }}
     </div>
 </header>
-{{ if eq .Type "post" -}}
-<span id="read-progress"></span>
-{{- end }}
 
 {{ if isset .Params "subtitle" -}}
 <p>{{.Params.subtitle}}</p>
