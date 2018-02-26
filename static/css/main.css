@@ -299,10 +299,9 @@ article span#read-progress {
 }
 
 #banner div,
-#banner img,
 article #banner {
     height: 100%;
-    width: 100%
+    width: 100%;
 }
 
 article figure#banner img {
@@ -319,12 +318,13 @@ article #banner {
     top: -1em;
 }
 
-#banner img {
-    object-fit: cover;
-    filter: blur(5px);
+#banner div.background {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#banner div {
+#banner div.overlay {
     background-color: var(--funny-blue);
     opacity: 0.3;
 }
