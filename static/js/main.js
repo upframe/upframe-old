@@ -15,5 +15,12 @@ function scrollPerc() {
 }
 
 document.addEventListener("scroll", ev => {
-  document.querySelector("span#read-progress").style.width = String(scrollPerc() + "%");
+  let progressbar = document.querySelector("span#read-progress");
+  progressbar.style.width = String(scrollPerc() + "%");
+
+  if(window.pageYOffset >= 799) {
+    progressbar.classList.add("fixed");
+  } else {
+    progressbar.classList.remove("fixed");
+  }
 });

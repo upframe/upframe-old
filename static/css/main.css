@@ -298,6 +298,12 @@ article span#read-progress {
     transition: .5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+article span#read-progress.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 #banner div,
 article #banner {
     height: 100%;
@@ -322,6 +328,7 @@ article #banner {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 #banner div.overlay {
