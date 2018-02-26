@@ -267,7 +267,8 @@ article p {
 .listing,
 .pagination,
 article .highlight>pre,
-article #content>* {
+article #content>*,
+article footer>* {
     width: calc(100% - 64px);
     max-width: 700px;
     margin-right: auto;
