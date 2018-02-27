@@ -18,7 +18,7 @@ document.addEventListener("scroll", ev => {
   let progressbar = document.querySelector("span#read-progress");
   progressbar.style.width = String(scrollPerc() + "%");
 
-  if(window.pageYOffset >= progressbar.parentElement.offsetTop) {
+  if(window.pageYOffset >= (progressbar.parentElement.offsetTop - progressbar.offsetHeight)) {
     progressbar.classList.add("fixed");
   } else {
     progressbar.classList.remove("fixed");
