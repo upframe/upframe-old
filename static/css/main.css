@@ -329,6 +329,8 @@ article #banner {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 #banner div.overlay {
