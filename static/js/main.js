@@ -23,4 +23,7 @@ document.addEventListener("scroll", ev => {
   } else {
     progressbar.classList.remove("fixed");
   }
+
+  let parallax = document.querySelector("#parallax");
+  //parallax.style.transform = `translate3d(0px, ${window.pageYOffset}px, 0px)`;
 });
