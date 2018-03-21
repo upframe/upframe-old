@@ -4,12 +4,12 @@
     <article>
     {{ partial "article/header" . }}
     {{ if eq .Type "post" }}
+    
     <div id="content">
         <span id="read-progress"></span>
-    {{ .Content }}
+        {{ .Content }}
     </div>
-    {{ end }}
-    {{ if eq .Type "post" }}
+    
     {{ partial "article/footer" . }}
     {{ end }}
     </article>

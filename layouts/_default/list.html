@@ -14,11 +14,11 @@
 				<a href="{{ .Permalink }}">
 					<h3>{{ .Title }}</h3>
 					<p class="serif">
-						{{- if gt (len .Summary) 250 -}}
-							{{- slicestr .Summary 0 250 -}}...
-						{{- else -}}
-							{{- .Summary -}}
-						{{- end -}}
+						{{ if gt (len .Summary) 275 }}
+							{{ safeHTML (slicestr .Summary 0 275) }}...
+						{{ else }}
+							{{ safeHTML (.Summary) }}
+						{{ end }}
 					</p>
 				</a>
 
