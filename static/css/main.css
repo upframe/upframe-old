@@ -256,7 +256,7 @@ header {
 
 header .container {
     position: absolute;
-    top: 25em;
+    top: 45vh;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -430,7 +430,7 @@ article figure.full {
 }
 
 article figure.small {
-    width: 25em
+    width: 25em;
 }
 
 table {
