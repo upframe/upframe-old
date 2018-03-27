@@ -243,18 +243,80 @@ article p {
 header {
     background: var(--funny-blue);
     color: #fff;
-    height: 25em;
-    margin: -5em 0 2em;
+    margin: -5em 0 0 0;
     z-index: -1;
     flex-direction: column;
     text-align: center;
     display: flex;
     justify-content: center;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header .container {
+    position: absolute;
+    top: 25em;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 header h1 {
     font-size: 4em;
     margin: 0
+}
+
+header span {
+    display: block;
+    font-style: italic;
+    margin: 0.2em auto;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: .9em;
+    letter-spacing: -0.1px;
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 3.75rem;
+    line-height: 1.37;
+    letter-spacing: 0.4px;
+    font-family: 'PT Serif', 'Georgia', serif;
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: -.5em;
+    margin-bottom: 1.3em
+}
+
+.author {
+    margin-top: 6vh;
+}
+
+.author img {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    margin: 0.3em 0;
+}
+
+.author.multiple img {
+    margin-left: -1em;
+}
+
+.author.multiple {
+    margin-left: 1em;
+}
+
+#banner img#parallax {
+    object-fit: cover;
+    width: 100%;
+    filter: blur(5px);
+}
+
+#banner div.overlay {
+    background-color: var(--funny-blue);
+    opacity: 0.4;
 }
 
 article li,
@@ -277,15 +339,6 @@ article footer>* {
 
 article .highlight {
     max-width: 850px
-}
-
-article>header {
-    width: 100%;
-    max-width: 100%;
-    height: 85vh;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 0;
 }
 
 article span#read-progress {
@@ -322,64 +375,6 @@ article #banner {
     position: absolute;
     left: -1em;
     top: -1em;
-}
-
-
-#banner div#parallax {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    filter: blur(5px);
-}
-
-#banner div.overlay {
-    background-color: var(--funny-blue);
-    opacity: 0.4;
-}
-
-article header span {
-    display: block;
-    font-style: italic;
-    margin: 0.2em auto;
-    color: rgba(255, 255, 255, 0.9) !important;
-    font-size: .9em;
-    letter-spacing: -0.1px;
-}
-
-article header h1 {
-    margin: 0 auto;
-    font-size: 3.75rem;
-    line-height: 1.37;
-    letter-spacing: 0.4px;
-    font-family: 'PT Serif', 'Georgia', serif;
-}
-
-article header p {
-    font-size: 1.3em;
-    margin-top: -.5em;
-    margin-bottom: 1.3em
-}
-
-.author {
-    margin-top: 6vh;
-}
-
-.author img {
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 50%;
-    margin: 0.3em 0;
-}
-
-.author.multiple img {
-    margin-left: -1em;
-}
-
-.author.multiple {
-    margin-left: 1em;
 }
 
 article ol,
@@ -536,7 +531,7 @@ blockquote::after {
 
 .listing ul {
     padding: 0;
-    margin: 0;
+    margin: 1em 0 0 0;
     list-style: none
 }
 

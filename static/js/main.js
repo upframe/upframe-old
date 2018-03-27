@@ -7,23 +7,46 @@ function getDocHeight() {
   )
 }
 
-function scrollPerc() {
+function windowScrollPerc() {
   let windowHeight = window.innerHeight || (document.documentElement || document.body).clientHeight,
       docHeight = getDocHeight(),
       scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
   return Math.floor((scrollTop / (docHeight - windowHeight)) * 100); 
 }
 
-document.addEventListener("scroll", ev => {
+function readingProgress() {
   let progressbar = document.querySelector("span#read-progress");
-  progressbar.style.width = String(scrollPerc() + "%");
+  progressbar.style.width = String(windowScrollPerc() + "%");
 
-  if(window.pageYOffset >= (progressbar.parentElement.offsetTop - progressbar.offsetHeight - 10)) {
+  if(window.pageYOffset >= (progressbar.parentElement.offsetTop - progressbar.offsetHeight)) {
     progressbar.classList.add("fixed");
   } else {
     progressbar.classList.remove("fixed");
   }
+}
 
-  let parallax = document.querySelector("#parallax");
-  //parallax.style.transform = `translate3d(0px, ${window.pageYOffset}px, 0px)`;
+function headerParallax() {
+  let el = document.querySelector("header"),
+      y = 0,
+      clientHeight = el.clientHeight;
+
+  while(el) {
+    y += (el.offsetTop - el.scrollTop + el.clientTop);
+    el = el.offsetParent;
+  }
+
+  let scroll = Math.floor(100 * ((window.pageYOffset - y) / clientHeight));
+  console.log(1 - 2*(scroll/100));
+
+  let title = document.querySelector("header .container .wrapper"),
+      img = document.querySelector("header img"),
+      banner = document.querySelector("#banner");
+  title.style.transform = `translateY(${window.pageYOffset/3}px)`;
+  img.style.transform = `scale(${1 + (scroll/1000)}, ${1 + (scroll/1000)})`;
+  banner.style.opacity = (1 - 2* (scroll/100));
+}
+
+document.addEventListener("scroll", ev => {
+  readingProgress();
+  headerParallax();
 });
