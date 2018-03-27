@@ -1,15 +1,7 @@
 <header>
     {{ if isset .Params "image" -}}
     <div id="banner">
-        <!--
-        <div style="background-image: url('{{ .Params.image | absURL }}');" id="parallax"></div>
-        -->
-        <img src="{{ .Params.image | absURL }}" id="parallax">
-        <!--
-        <div id="parallax">
-            <img src="{{ .Params.image | absURL }}" class="background">
-        </div>
-        -->        
+        <img src="{{ .Params.image | absURL }}" id="parallax">    
         <div class="overlay"></div>
     </div>
     {{- end }}

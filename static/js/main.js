@@ -36,7 +36,6 @@ function headerParallax() {
   }
 
   let scroll = Math.floor(100 * ((window.pageYOffset - y) / clientHeight));
-  console.log(1 - 2*(scroll/100));
 
   let title = document.querySelector("header .container .wrapper"),
       img = document.querySelector("header img"),
@@ -48,5 +47,7 @@ function headerParallax() {
 
 document.addEventListener("scroll", ev => {
   readingProgress();
-  headerParallax();
+  if(document.querySelector("header #banner")) {
+    headerParallax();
+  }
 });
