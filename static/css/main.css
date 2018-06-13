@@ -588,6 +588,10 @@ hr {
     border-color: #3C58FF;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 450px) {
     nav #logo {
         width: 8em;

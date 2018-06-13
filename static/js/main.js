@@ -11,7 +11,7 @@ function windowScrollPerc() {
   let windowHeight = window.innerHeight || (document.documentElement || document.body).clientHeight,
       docHeight = getDocHeight(),
       scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-  return Math.floor((scrollTop / (docHeight - windowHeight)) * 100); 
+  return Math.floor((scrollTop / (docHeight - windowHeight)) * 100);
 }
 
 function readingProgress() {
@@ -44,6 +44,11 @@ function headerParallax() {
   img.style.transform = `scale(${1 + (scroll/1000)}, ${1 + (scroll/1000)})`;
   banner.style.opacity = (1 - 2* (scroll/100));
 }
+
+function onSubmit(token) {
+  document.getElementById("subscribe").submit();
+}
+
 
 document.addEventListener("scroll", ev => {
   readingProgress();

@@ -3,10 +3,18 @@
 <main>
   <h1>Anyone can become an Entrepreneur.</h1>
 
-  <form name="subscribe" netlify>
+  <form id="subscribe" name="subscribe" netlify-honeypot="bot-field" netlify-recaptcha netlify>
+    <p class="hidden">
+      <input name="bot-field"></input>
+    </p>
     <input name="name" type="text" placeholder="First name, e.g. Darth" required></input>
     <input name="email" type="email" placeholder="Email, e.g. darth@vader.empire" required></input>
-    <input type="submit" class="submit-button" value="Keep me posted" />
+    <input
+      type="submit"
+      class="g-recaptcha submit-button"
+      data-sitekey="6Lc13F4UAAAAAJuZ2eIXaYhyq-U1xPFClxM_5sOc"
+      data-callback='onSubmit'
+      value="Keep me posted" />
   </form>
 </main>
 
