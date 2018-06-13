@@ -46,11 +46,7 @@ function headerParallax() {
 }
 
 function onSubmit(token) {
-  if ((!document.getElementById("name").value.equals("")) && (!document.getElementById("email").value.equals(""))) {
-    document.getElementById("subscribe").submit();
-  } else {
-    alert('Invalid inputs')
-  }
+  document.getElementById("subscribe").submit();
 }
 
 
