@@ -1,0 +1,27 @@
+body {
+  background-color: #9067f6;
+  margin-left: 5%;
+}
+
+p {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+.middle {
+  margin-bottom: 50px;
+}
+
+.middle > p {
+  margin: 0px;
+  font-weight: 100;
+}
+
+#logo {
+  margin-top: 15%;
+  margin-bottom: 50px;
+  width: 9em;
+  display: block;
+}
