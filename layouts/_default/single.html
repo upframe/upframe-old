@@ -1,0 +1,18 @@
+{{ partial "header" . }}
+
+<main role="main" class="single">
+    <article>
+    {{ partial "article/header" . }}
+    {{ if eq .Type "post" }}
+    
+    <div id="content">
+        <span id="read-progress"></span>
+        {{ .Content }}
+    </div>
+    
+    {{ partial "article/footer" . }}
+    {{ end }}
+    </article>
+</main>
+
+{{ partial "footer" . }}

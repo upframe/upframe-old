@@ -1,0 +1,24 @@
+<header>
+    {{ if isset .Params "image" -}}
+    <div id="banner">
+        <img src="{{ .Params.image | absURL }}" id="parallax">    
+        <div class="overlay"></div>
+    </div>
+    {{- end }}
+
+    <div class='container'>
+        <div class='wrapper'>
+            <h1>{{ .Title }}</h1>
+            {{ if eq .Type "post" -}}
+
+            {{ partial "article/authors" . }}
+
+            <span>on <time datetime="{{ .Date.Format " 2006-01-02 " }}">{{ .Date.Format "January 2, 2006" }}</time></span>
+            {{- end }}
+        </div>
+    </div>
+</header>
+
+{{ if isset .Params "subtitle" -}}
+<p>{{.Params.subtitle}}</p>
+{{- end -}}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  {{ partial "head/base" . }}
+  {{ partial "head/open_graph" . }}
+  {{ partial "head/twitter" .}}
+  {{ partial "head/webmaster" .}}
+  {{ partial "head/icons" .}}
+  {{ partial "head/includes" .}}
+  {{ if not .IsNode }}{{ if eq .Type "post" }}{{ partial "schema/article" . }}{{ end }}{{ end }}
+
+  {{ if .IsHome }}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  {{ end }}
+</head>
+
+<body {{ if .IsHome }}class='home'{{ end }}>
+  <nav>
+    <a href="/"><img id="logo" src="/images/logotype.svg"></a>
+
+    <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main -}}
+        <li><a href="{{ .URL }}" {{if eq $currentPage.RelPermalink .URL }}class="active"{{end}}>{{ .Name }}</a></li>
+      {{end}}
+      {{ if not .IsHome }}
+        <li><a class='biggy' href='/'>Keep me posted</a></li>
+      {{ end }}
+    </ul>
+  </nav>

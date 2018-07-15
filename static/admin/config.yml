@@ -1,0 +1,58 @@
+display_url: https://upframe.io
+backend:
+  name: git-gateway
+  branch: master
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Type"
+        name: "type"
+        widget: "hidden"
+        default: "post"
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Featured Image"
+        name: "image"
+        required: false
+        widget: "image"
+      - label: "Authors"
+        name: "authors"
+        widget: "list"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+    meta:
+      - label: "SEO Description"
+        name: "description"
+        widget: "text"
+  - name: "authors"
+    label: "Authors"
+    folder: "data/authors"
+    slug: "{{slug}}"
+    create: true
+    extension: "yml"
+    editor:
+      preview: false
+    fields:
+      - {label: "ID", name: "title", widget: "string"}
+      - {label: "First Name", name: "first_name", widget: "string"}
+      - {label: "Last Name", name: "last_name", widget: "string"}
+      - {label: "Photo", name: "photo", widget: "image"}
+      - {label: "Short Bio", name: "short_bio", widget: "text"}
+      - {label: "Bio", name: "bio", widget: "markdown"}
+      - label: "Social"
+        name: "social"
+        widget: "object"
+        fields:
+          - {label: "Facebook", required: false, name: "facebook", widget: "string"}
+          - {label: "Twitter", required: false, name: "twitter", widget: "string"}
