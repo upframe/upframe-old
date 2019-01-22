@@ -7,11 +7,9 @@ import ErrorPage from '../error/';
 
 export default class Position extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      company: props.company,
-      position: props.position,
+    state = {
+      company: this.props.company,
+      position: this.props.position,
       currentInternship: { //These are all the fields we need. Before we get them we display a placeholder
         Company: 'Loading',
         Title: 'Loading',
@@ -27,7 +25,6 @@ export default class Position extends Component {
         JobDescription: 'Loading'
       }
     }
-  }
 
   getCurrentJob = (records) => {
     for (let i = 0; i < records.length; i++) {

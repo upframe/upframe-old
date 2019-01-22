@@ -1,5 +1,5 @@
 // 60 seconds
-const EXPIRY = 60 * 1000;
+const EXPIRY = 60000;
 
 export class APIservice {
   constructor() {
@@ -15,7 +15,7 @@ export class APIservice {
     return {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${PREACT_APP_AIRTABLEKEY}`
+        'Authorization': `Bearer ${process.env.PREACT_APP_AIRTABLEKEY}` //'Authorization': `Bearer ${PREACT_APP_AIRTABLEKEY}`
       }
     }
   }
