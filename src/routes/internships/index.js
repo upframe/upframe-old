@@ -5,6 +5,7 @@ import APIservice from '../../components/api';
 export default class Internships extends Component {
 
   state = {
+    offersLoaded: false,
     offers: []
   }
 
@@ -14,7 +15,7 @@ export default class Internships extends Component {
     APIservice.getAllOffers().then((data) => {
       console.log(data)
       let filteredOffers = data.records.filter((element) => this.isComplete(element))
-      this.setState({ offers: filteredOffers })
+      this.setState({ offersLoaded: true, offers: filteredOffers })
     })
   }
 
@@ -39,29 +40,43 @@ export default class Internships extends Component {
   }
 
   render() {
-    return (
-      <div class={style.home}>
-        <div className="container">
-          <div className="offerList">
-            {this.state.offers.map((offer) => {
-              return (
-                <a href={this.createLink(offer.fields.Company, offer.fields.Title)} style={{ textDecoration: 'none' }} key={offer.id}>
-                  <div className="offerItem" data-id={offer.id} key={offer.id}>
-                    <div className="mainInfo">
-                      <p id="company">{offer.fields.Company}</p>
-                      <h2>{offer.fields.Title}</h2>
+    if (!this.state.offersLoaded) {
+      return (
+        <div class={style.center}>
+          <div class={style.loader}></div>
+        </div>
+      )
+    } else if (this.state.offers === []) {
+      return (
+        <div class={style.home}>
+          <h1>No offers avaliable at the moment</h1>
+        </div>
+      )
+    } else {
+      return (
+        <div class={style.home}>
+          <div className="container">
+            <div className="offerList">
+              {this.state.offers.map((offer) => {
+                return (
+                  <a href={this.createLink(offer.fields.Company, offer.fields.Title)} style={{ textDecoration: 'none' }} key={offer.id}>
+                    <div className="offerItem" data-id={offer.id} key={offer.id}>
+                      <div className="mainInfo">
+                        <p id="company">{offer.fields.Company}</p>
+                        <h2>{offer.fields.Title}</h2>
+                      </div>
+                      <div className="secondaryInfo badge">
+                        {offer.fields.Location}
+                      </div>
                     </div>
-                    <div className="secondaryInfo badge">
-                      {offer.fields.Location}
-                    </div>
-                  </div>
-                </a>
-              )
-            })}
+                  </a>
+                )
+              })}
+            </div>
           </div>
         </div>
-      </div>
-    )
+      )
+    }
   }
 
 }

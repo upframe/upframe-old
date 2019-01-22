@@ -3,3 +3,20 @@
 	min-height: 100%;
 	width: 100%;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  margin-top: 20vh;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #ff004b;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+}
