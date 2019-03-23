@@ -146,6 +146,12 @@ nav ul li#link:hover::after {
   width: 100%;
 }
 
+nav ul li#link.active::after {
+  width: 100%;
+}
+
+
+
 header #main {
   position: absolute;
   top: 50%;
