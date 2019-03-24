@@ -262,5 +262,6 @@ header #main #objectives .card p {
 @media (max-width: 640px) {
   header #main #objectives {
     grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
   }
 }
