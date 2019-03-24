@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <link rel='stylesheet' href='css/main.css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet'>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Startup Weekend Lisbon 2019</title>
+
+    <script src='app.js'></script>
   </head>
   
   <body>
@@ -23,39 +26,39 @@
           
           <ul class='flex justifycontent-between alignitems-center'>
             <li id='link'>Sobre</li>
-            <li id='link'><a href='/faq' class='secondary'>FAQ</a></li>
+            <li id='link'><a id='faq' class='secondary'>FAQ</a></li>
             <li><button class='btn primary btn-fill'>Apply</button></li>
           </ul>
         </div>
       </nav>
       
       <div id='main' class='margin-0-auto'>
-        <div id='intro' class='margin-0-auto'>
+        <div id='intro' class='margin-0-auto' data-aos='fade-up' data-aos-duration='750'>
           <h1 class='text-center text-color secondary margin-0-auto'>A Tua Experiência Startup Começa Aqui</h1>
           <p class='text-center text-color tertiary margin-1'>Junta-te ao evento da Google e da Techstars que ajudou
             a criar mais de 5000 Startups em todo o mundo.</p>
         </div>
 
-        <div id='objectives' class='flex justifycontent-between margin-0-auto'>
-          <div class='card flex flex-column justifycontent-center'>
+        <div id='objectives' class='grid margin-0-auto'>
+          <div class='card flex flex-column justifycontent-center' data-aos='fade-up' data-aos-duration='750' data-aos-delay='250'>
             <img src="/media/learn.svg">
             <h2 class='text-color secondary text-center margin-0'>Aprende</h2>
             <p class='text-color text-center tertiary'>Vem aprender o que é preciso para construir uma startup de raiz.</p>
             <p class='text-color text-center tertiary'>Vamos dar-te as ferramentas que te vão ajudar a passar da teoria à ação.</p>
           </div>
-          <div class='card flex flex-column justifycontent-center'>
+          <div class='card flex flex-column justifycontent-center' data-aos='fade-up' data-aos-duration='750' data-aos-delay='500'>
             <img src="/media/discover.svg">
             <h2 class='text-color secondary text-center margin-0'>Descobre</h2>
             <p class='text-color text-center tertiary'>Vem aprender o que é preciso para construir uma startup de raiz.</p>
             <p class='text-color text-center tertiary'>Vamos dar-te as ferramentas que te vão ajudar a passar da teoria à ação.</p>
           </div>
-          <div class='card flex flex-column justifycontent-center'>
+          <div class='card flex flex-column justifycontent-center' data-aos='fade-up' data-aos-duration='750' data-aos-delay='750'>
             <img src="/media/start.svg">
             <h2 class='text-color secondary text-center margin-0'>Começa</h2>
             <p class='text-color text-center tertiary'>Vem aprender o que é preciso para construir uma startup de raiz.</p>
             <p class='text-color text-center tertiary'>Vamos dar-te as ferramentas que te vão ajudar a passar da teoria à ação.</p>
           </div>
-          <div class='card flex flex-column justifycontent-center'>
+          <div class='card flex flex-column justifycontent-center' data-aos='fade-up' data-aos-duration='750' data-aos-delay='1000'>
             <img src="/media/connect.svg">
             <h2 class='text-color secondary text-center margin-0'>Liga-te</h2>
             <p class='text-color text-center tertiary'>Conhece pessoas com fome de fazer acontecer. Talento e diversidade são coisa que não falta no Startup Weekend.</p>
@@ -64,5 +67,11 @@
         </div>
       </div>
     </header>
+
+    <!-- Load and init AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
