@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  margin: 0 0 0 0;
 }
 
 /* COLORS*/
@@ -335,5 +336,18 @@ header #faq .faq-item .faq-answer {
   header #main #objectives {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
+  }
+}
+
+/* Temos que dar fix do header */
+@media (max-width: 450px) {
+  
+  header #main > div:first-of-type h1 {
+    max-width: 85%;
+    font-size: 2.7rem;
+  }
+
+  header #main > div:first-of-type p {
+    font-size: 1.5rem;
   }
 }
