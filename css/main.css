@@ -68,8 +68,16 @@ ul {
   display: flex;
 }
 
+.flex.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .flex.flex-column {
   flex-direction: column;
+}
+
+.flex.flex-row {
+  flex-direction: row;
 }
 
 .flex.justifycontent-between {
@@ -253,11 +261,11 @@ header #main #objectives .card p {
 }
 
 #faq-grid {
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 3rem;
+  flex-flow: column wrap;
 }
 
 header #faq .faq-item {
+  flex-basis: 40%;
   border: 2px solid var(--secondary);
   border-radius: 5px;
   margin: 5px 5px 5px 5px;
