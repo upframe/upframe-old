@@ -26,7 +26,7 @@
           
           <ul class='flex justifycontent-between alignitems-center'>
             <li id='link'>Sobre</li>
-            <li id='link'><a id='faq' class='secondary'>FAQ</a></li>
+            <li id='link' onClick='slideDownFaq()'><a id='faq-link' class='secondary'>FAQ</a></li>
             <li><button class='btn primary btn-fill'>Apply</button></li>
           </ul>
         </div>
@@ -63,6 +63,30 @@
             <h2 class='text-color secondary text-center margin-0'>Liga-te</h2>
             <p class='text-color text-center tertiary'>Conhece pessoas com fome de fazer acontecer. Talento e diversidade são coisa que não falta no Startup Weekend.</p>
             <p class='text-color text-center tertiary'>Pronto para encontrar pessoas com as quais podes passar a contar?</p>
+          </div>
+        </div>
+      </div>
+
+      <div id='faq' class='margin-0-auto container'>
+        <h1>FAQ</h1>
+        <div id='faq-grid' class='grid'>
+          <div id='1' class='faq-item'>
+            <p class='faq-question'>Tenho de trazer equipa?</p>
+            <span id='signal-1'>+</span>
+            <p id='answer-1' class='faq-answer none'>Não é necessário para a participação. Vai haver um tempo dedicado à construção de equipas
+            </p>
+          </div>
+          <div id='2' class='faq-item'>
+            <p class='faq-question'>Este evento é só para developers?</p>
+            <span id='signal-2'>+</span>
+            <p id='answer-2' class='faq-answer none'>Não, qualquer pessoa pode participar desde que esteja interessada em construir algo novo.
+              Vai haver algum enfoque em development, business e design mas nada implica que os participantes tenham que vir
+              destas areas.</p>
+          </div>
+          <div id='3' class='faq-item'>
+            <p class='faq-question'>Preciso de ser estudante?</p>
+            <span id='signal-3'>+</span>
+            <p id='answer-3' class='faq-answer none'>Não! A média de idades da nossa última edição foi 26. Qualquer pessoa é bem vinda.</p>
           </div>
         </div>
       </div>

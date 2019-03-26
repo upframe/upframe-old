@@ -4,6 +4,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* COLORS*/
@@ -103,6 +104,18 @@ ul {
 
 .padding-1 {
   padding: 1rem;
+}
+
+/* DISPLAY */
+
+.none {
+  display: none;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 90%;
 }
 
 /* CARDS */
@@ -233,6 +246,53 @@ header #main #objectives .card p {
   margin: 1rem 1rem;
 }
 
+/* FAQ */
+
+#faq h1 {
+  color: var(--secondary);
+}
+
+#faq-grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 3rem;
+}
+
+header #faq .faq-item {
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+  margin: 5px 5px 5px 5px;
+  padding: 0px 0 0px 20px;
+  position: relative;
+  color: var(--secondary);
+  font-weight: 500;
+  font-size: 24px;
+  transition: all 1s ease-in-out;
+}
+
+header #faq .faq-item:target {
+  line-height: 0;
+  height: auto;
+}
+
+
+header #faq .faq-item span {
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  line-height: 0;
+}
+
+header #faq .faq-item .faq-question {
+  
+}
+
+header #faq .faq-item .faq-answer {
+  color: #7e8192;
+  font-size: 22px;
+  line-height: 1.27;
+  padding: 5px 5px 5px 5px;
+}
+
 /* MOBILE */
 @media (max-width: 1200px) {
   header #main #objectives {
@@ -256,6 +316,10 @@ header #main #objectives .card p {
   header #main #objectives {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1rem;
+  }
+
+  #faq-grid {
+    grid-template-columns: 1fr;
   }
 }
 
