@@ -1,27 +1,17 @@
 function addHamburger() {
-  let hamburgerMenu = document.querySelector('.hamburger-menu')
+  let hamburgerMenu = document.querySelector('.hamburger-menu'),
+    hamburger = document.querySelector('.hamburger')
 
-  if (hamburgerMenu) {
-    // add .active class on click
+  if (hamburgerMenu && hamburger) {
+    // set click listener on hamburger icon
     hamburgerMenu.addEventListener('click', (e) => {
-      let icon = document.querySelector('.hamburger')
-      
-      if (icon.classList.contains('active')) {
-        document.querySelector('.hamburger-menu').classList.remove('open')
-        icon.classList.remove('active')
-      } else {
-        document.querySelector('.hamburger-menu').classList.add('open')
-        icon.classList.add('active')
-      }
-    })
-
-    document.body.addEventListener('click', (e) => {
-      let target = e.target
+      hamburgerMenu.classList.toggle('open')
+      hamburger.classList.toggle('active')
     })
   }
 }
 
-function init() {
+function addFaqSlideDown() {
   document.getElementById('1').addEventListener('click', function () {
     document.getElementById('answer-1').classList.toggle('none')
     document.getElementById('signal-1').innerHTML = document.getElementById('signal-1').innerHTML === '+' ? '-' : '+'
@@ -34,15 +24,18 @@ function init() {
     document.getElementById('answer-3').classList.toggle('none')
     document.getElementById('signal-3').innerHTML = document.getElementById('signal-3').innerHTML === '+' ? '-' : '+'
   });
+}
 
 function init() {
   addHamburger()
-}
-
-function slideDownFaq() {
-  document.querySelector('#faq').scrollIntoView()
+  addFaqSlideDown()
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   init();
 })
+
+/* slide down to faq */
+function slideDownFaq() {
+  document.querySelector('#faq').scrollIntoView()
+}

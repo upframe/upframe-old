@@ -328,6 +328,7 @@ header #faq .faq-item .faq-answer {
 @media (max-width: 720px) {
   nav .hamburger-menu {
     display: block;
+    z-index: 11;
     cursor: pointer;
     position: absolute;
     right: 5vw;
@@ -335,7 +336,7 @@ header #faq .faq-item .faq-answer {
 
   nav .hamburger-menu .hamburger {
     display: block;
-    width: 5vw;
+    width: 1.5rem;
     height: 0.25rem;
     background-color: var(--secondary);
     transition: .25s ease-in-out all;
@@ -346,7 +347,7 @@ header #faq .faq-item .faq-answer {
     content: '';
     display: block;
     position: relative;
-    width: 5vw;
+    width: 1.5rem;
     height: 0.25rem;
     background-color: var(--secondary);
     transition: .25s ease-in-out all;
@@ -366,12 +367,12 @@ header #faq .faq-item .faq-answer {
   }
 
   nav .hamburger-menu .hamburger.active::before {
-    bottom: 0.5rem;
+    bottom: 0;
     transform: rotate(45deg);
   }
 
   nav .hamburger-menu .hamburger.active::after {
-    top: 0.25rem;
+    top: -0.25rem;
     transform: rotate(-45deg);
   }
 
@@ -383,7 +384,8 @@ header #faq .faq-item .faq-answer {
   }
 
   nav ul {
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     width: 50%;
     height: 100%;
     left: 110%;
