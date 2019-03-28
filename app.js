@@ -8,6 +8,15 @@ function addHamburger() {
       hamburgerMenu.classList.toggle('open')
       hamburger.classList.toggle('active')
     })
+
+    document.body.addEventListener('click', (e) => {
+      let el = e.target;
+
+      if (!el.closest('nav') && hamburger.classList.contains('active')) {
+        hamburgerMenu.classList.toggle('open')
+        hamburger.classList.toggle('active')
+      }
+    })
   }
 }
 
