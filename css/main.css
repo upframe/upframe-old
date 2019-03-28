@@ -438,3 +438,10 @@ header #faq .faq-item .faq-answer {
     font-size: 1.5rem;
   }
 }
+
+/* DISABLE ANIMATION DELAY IN MOBILE DEVICES */
+@media screen and (max-width: 640px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+} 
