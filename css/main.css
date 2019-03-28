@@ -144,6 +144,10 @@ nav #logo img {
   margin-top: 2rem;
 }
 
+nav .hamburger-menu {
+  display: none;
+}
+
 nav ul {
   margin-left: auto;
 }
@@ -253,6 +257,79 @@ header #main #objectives .card p {
 }
 
 @media (max-width: 720px) {
+  nav .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 5vw;
+  }
+
+  nav .hamburger-menu .hamburger {
+    display: block;
+    width: 5vw;
+    height: 0.25rem;
+    background-color: var(--secondary);
+    transition: .25s ease-in-out all;
+  }
+
+  nav .hamburger-menu .hamburger::before,
+  nav .hamburger-menu .hamburger::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 5vw;
+    height: 0.25rem;
+    background-color: var(--secondary);
+    transition: .25s ease-in-out all;
+  }
+
+  nav .hamburger-menu .hamburger::before {
+    bottom: 0.5rem;
+  }
+
+  nav .hamburger-menu .hamburger::after {
+    top: 0.25rem;
+  }
+
+  /* HAMBURGER MENU OPEN */
+  nav  .hamburger-menu .hamburger.active {
+    background: rgba(0,0,0,0);
+  }
+
+  nav .hamburger-menu .hamburger.active::before {
+    bottom: 0.5rem;
+    transform: rotate(45deg);
+  }
+
+  nav .hamburger-menu .hamburger.active::after {
+    top: 0.25rem;
+    transform: rotate(-45deg);
+  }
+
+  nav .hamburger-menu.open ~ ul {
+    left: 50%;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: unset;
+  }
+
+  nav ul {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 110%;
+    top: 0%;
+    background-color: #fff;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    transition: .25s ease all;
+  }
+
+  nav ul li {
+    flex-basis: unset;
+    margin: 1rem 0rem 1rem 0.25rem !important;
+  }
+
   header #main #objectives {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1rem;
