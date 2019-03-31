@@ -278,6 +278,7 @@ header #faq .faq-item {
   font-weight: 500;
   font-size: 24px;
   transition: all 1s ease-in-out;
+  cursor: pointer;
 }
 
 header #faq .faq-item:target {
